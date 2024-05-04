@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  amb01:
+    container_name: moodleserver
+    build: .
+    ports:
+      - "3333:80"
+      - "9443:443"
+    volumes:
+      - ./moodle:/var/www/html
+      - ./moodledata:/var/www/moodledata
+    links:
+      - database
+
+  database:
+    image: postgres:latest
+    container_name: moodledb
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=moodle
+      - POSTGRES_USER=moodle_user
+      - POSTGRES_PASSWORD=mymoodlepass
