@@ -1,0 +1,20 @@
+:root{
+    --btnPrimary: #00a7e7;
+}
+
+.btn{
+    background-color: var(--btnPrimary);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    color: var(--btnPrimary);
+    background-color: white;
+    border-color: var(--btnPrimary);
+}
+
+.modal-backdrop{
+    opacity: 0.7;
+}
