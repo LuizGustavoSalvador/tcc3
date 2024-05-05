@@ -4,11 +4,13 @@ require_login();
 
 class fetchPermissions {
     private $pluginSlug;
+    private $pluginName;
     private $context;
 
-    public function __construct($slug) {
+    public function __construct($slug, $name) {
         global $USER;
         $this->pluginSlug = $slug;
+        $this->pluginName = $name;
         $this->context = context_system::instance();
     }
 
@@ -16,14 +18,15 @@ class fetchPermissions {
         $permissionsDetails = $this->getPermissionsDetails();
 
         $html = '<div class="modal-header">
-                    <h5 class="modal-title" id="permissionsModalLabel">Permissões Necessárias</h5>
-                    <button type="button" class="btn-close" onclick="closeModal()"></button>
+                    <h5 class="modal-title" id="permissionsModalLabel">Permissões Necessárias do plugin ' . $this->pluginName . '</h5>
+                    <button type="button" class="btn-close" onclick="closeModal()"><i class="fa-solid fa-circle-xmark"></i></button>
                 </div>
                 <div class="modal-body">';
 
         foreach ($permissionsDetails as $permission => $isGranted) {
-            $status = $isGranted ? 'Permitido' : 'Não Permitido';
-            $html .= "<p>{$permission}: {$status}</p>";
+            $status = $isGranted ? '<i class="fa fa-check"></i>' : '<i class="fa fa-times"></i>';
+            $allowClass = $isGranted ? 'allow' : 'not-allow';
+            $html .= "<p class='{$allowClass}''>{$permission} {$status}</p>";
         }
 
         $html .= '</div>
@@ -37,7 +40,7 @@ class fetchPermissions {
     private function getPermissionsDetails() {
         $permissionsMap = [
             'block_xp' => ['install' => 'moodle/site:installplugins', 'configure' => 'block/xp:config'],
-            'block_game' => ['install' => 'moodle/site:installplugins', 'configure' => 'block/game:config'],
+            'game' => ['install' => 'moodle/site:installplugins', 'configure' => 'block/game:config'],
             'trail' => ['install' => 'moodle/site:installplugins', 'configure' => 'format/trail:config']
         ];
 
@@ -50,8 +53,7 @@ class fetchPermissions {
     }
 }
 
-// Uso da classe
-if (isset($_GET['slug'])) {
-    $permissionLoader = new fetchPermissions($_GET['slug']);
+if (isset($_GET['slug']) && isset($_GET['name'])) {
+    $permissionLoader = new fetchPermissions($_GET['slug'], $_GET['name']);
     echo $permissionLoader->getPermissionsHtml();
 }
