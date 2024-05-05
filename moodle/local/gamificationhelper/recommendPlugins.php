@@ -49,7 +49,7 @@ if (!empty($recommended_plugins)) {
             echo html_writer::start_tag('p');
                 echo html_writer::tag('span', $plugin['name']);
 
-                if (!array_key_exists($plugin['slug'], $pluginsInstalled)) {
+                if (\array_key_exists($plugin['slug'], $pluginsInstalled)) {
                     echo html_writer::tag('span', ' (Plugin já instalado)');
                 }
 
@@ -70,7 +70,7 @@ if (!empty($recommended_plugins)) {
                 'onclick' => "openPermissionsModal('{$plugin['slug']}', '{$plugin['name']}')"
             ]);
         
-            if (!array_key_exists($plugin['slug'], $pluginsInstalled)) {
+            if (!\array_key_exists($plugin['slug'], $pluginsInstalled)) {
                 echo html_writer::link(new moodle_url($plugin['url']), '<i class="fa fa-download" aria-hidden="true""></i>', ['class' => 'btn btn-primary', 'title' => 'Download']);
                 echo html_writer::link(new moodle_url('/admin/tool/installaddon/index.php'), '<i class="fa fa-cog" aria-hidden="true""></i>', ['class' => 'btn btn-primary', 'title' => 'Instalar', 'target' => '_blank']);
             }
