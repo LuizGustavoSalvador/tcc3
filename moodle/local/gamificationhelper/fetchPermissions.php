@@ -37,6 +37,7 @@ class fetchPermissions {
         return $html;
     }
 
+    // seperar as permissões para instalar o plugin e para configurar
     private function getPermissionsDetails() {
         $permissionsMap = [
             'block_xp' => ['install' => 'moodle/site:installplugins', 'configure' => 'block/xp:config'],

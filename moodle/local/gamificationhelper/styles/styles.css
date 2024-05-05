@@ -19,7 +19,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.7;
     z-index: 99999;
 }
 
@@ -32,6 +31,7 @@
 
 .permissions-modal .modal-content .btn-close{
     font-size: 20px;
+    margin-left: 10px;
     background-color: transparent;
     cursor: pointer;
     border: none;
