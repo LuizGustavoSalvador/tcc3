@@ -22,21 +22,21 @@ $pluginsInstalled = \array_merge($pluginManager->get_installed_plugins('block'),
 
 $recommendations = [
     'participation' => [
-        ['name' => 'Block Game', 'slug' => 'game', 'url' => 'https://moodle.org/plugins/download.php/21879/block_game_moodle39_2020010200.zip'],
-        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/23212/block_xp_moodle39_2020070400.zip']
+        ['name' => 'Block Game', 'slug' => 'game', 'url' => 'https://moodle.org/plugins/download.php/29329/block_game_moodle41_2023053101.zip'],
+        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip']
     ],
     'motivation' => [
-        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/23212/block_xp_moodle39_2020070400.zip']
+        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip']
     ],
     'challenge' => [
-        ['name' => 'Block Game', 'slug' => 'block_game', 'url' => 'https://moodle.org/plugins/download.php/21879/block_game_moodle39_2020010200.zip'],
-        ['name' => 'Format Trail', 'slug' => 'trail', 'url' => 'https://moodle.org/plugins/download.php/20901/format_trail_moodle39_2020062300.zip']
+        ['name' => 'Block Game', 'slug' => 'block_game', 'url' => 'https://moodle.org/plugins/download.php/29329/block_game_moodle41_2023053101.zip'],
+        ['name' => 'Format Trail', 'slug' => 'trail', 'url' => 'https://moodle.org/plugins/download.php/29369/format_trail_moodle42_2023060501.zip']
     ],
     'collaboration' => [
-        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/23212/block_xp_moodle39_2020070400.zip']
+        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip']
     ],
     'exploration' => [
-        ['name' => 'Format Trail', 'slug' => 'trail', 'url' => 'https://moodle.org/plugins/download.php/20901/format_trail_moodle39_2020062300.zip']
+        ['name' => 'Format Trail', 'slug' => 'trail', 'url' => 'https://moodle.org/plugins/download.php/29369/format_trail_moodle42_2023060501.zip']
     ]
 ];
 
@@ -71,8 +71,19 @@ if (!empty($recommended_plugins)) {
             ]);
         
             if (!\array_key_exists($plugin['slug'], $pluginsInstalled)) {
-                echo html_writer::link(new moodle_url($plugin['url']), '<i class="fa fa-download" aria-hidden="true""></i>', ['class' => 'btn btn-primary', 'title' => 'Download']);
-                echo html_writer::link(new moodle_url('/admin/tool/installaddon/index.php'), '<i class="fa fa-cog" aria-hidden="true""></i>', ['class' => 'btn btn-primary', 'title' => 'Instalar', 'target' => '_blank']);
+                echo html_writer::tag('a', '<i class="fa fa-download" aria-hidden="true""></i>', 
+                    [
+                        'href' => $plugin['url'],
+                        'class' => 'btn btn-primary', 
+                        'title' => 'Download',
+                        'download' => ''
+                    ]);
+                    
+                echo html_writer::link(new moodle_url('/admin/tool/installaddon/index.php'), '<i class="fa fa-cog" aria-hidden="true""></i>', [
+                    'class' => 'btn btn-primary', 
+                    'title' => 'Instalar', 
+                    'target' => '_blank'
+                ]);
             }
 
             echo html_writer::end_tag('div');
