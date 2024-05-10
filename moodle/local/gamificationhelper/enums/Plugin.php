@@ -1,4 +1,7 @@
 <?php
+
+namespace gamificationhelper\enums;
+
 enum Plugin: array
 {
     case BlockGame = [
@@ -18,15 +21,4 @@ enum Plugin: array
         'slug' => 'trail',
         'url' => 'https://moodle.org/plugins/download.php/29369/format_trail_moodle42_2023060501.zip'
     ];
-
-    public function getPlugins(): array
-    {
-        return match ($this) {
-            'participation' => [Plugin::BlockGame, Plugin::LevelUp],
-            'motivation' => [Plugin::LevelUp],
-            'challenge' => [Plugin::BlockGame, Plugin::FormatTrail],
-            'collaboration' => [Plugin::LevelUp],
-            'exploration' => [Plugin::FormatTrail]
-        };
-    }
 }

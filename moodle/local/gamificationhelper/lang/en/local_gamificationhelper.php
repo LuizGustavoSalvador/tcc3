@@ -18,3 +18,6 @@ $string['selectstyle'] = 'Select the style of approach to gamification';
 $string['norecommendations'] = 'No recommendations';
 $string['result'] = 'Results';
 $string['recommendations'] = 'Recommendations';
+$string['gamificationhelper:view'] = 'Access to the Gamification Helper';
+$string['gamificationhelper:manage'] = 'Allows configuration of the Gamification Helper';
+

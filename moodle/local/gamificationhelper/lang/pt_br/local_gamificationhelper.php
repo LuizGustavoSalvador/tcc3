@@ -17,3 +17,5 @@ $string['pluginsrecommended'] = 'Plugins recomendados';
 $string['pluginrecommendation'] = 'Plugin(s) recomendado(s) para você';
 $string['result'] = 'Resultado';
 $string['recommendations'] = 'Recomendações';
+$string['gamificationhelper:view'] = 'Acesso ao Auxiliar de Gamificação';
+$string['gamificationhelper:manage'] = 'Permite configurar o Auxiliar de Gamificação';

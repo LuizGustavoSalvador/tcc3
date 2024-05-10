@@ -1,7 +1,4 @@
 <?php 
-
-// File: /local/gamificationhelper/db/access.php
-
 defined('MOODLE_INTERNAL') || die();
 
 $capabilities = [
@@ -9,6 +6,8 @@ $capabilities = [
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => [
+            'teacher' => CAP_ALLOW,
+            'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW
         ],
         'clonepermissionsfrom' => 'moodle/site:config',

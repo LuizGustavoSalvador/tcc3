@@ -2,6 +2,9 @@
 
 require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
+require_once (__DIR__ . '/enums/RecommendationCategory.php');
+
+use gamificationhelper\enums\RecommendationCategory;
 
 require_login();
 admin_externalpage_setup('local_gamificationhelper_recommend');
@@ -20,31 +23,14 @@ $courseid = required_param('courseid', PARAM_INT);
 $pluginManager = core_plugin_manager::instance();
 $pluginsInstalled = \array_merge($pluginManager->get_installed_plugins('block'), $pluginManager->get_installed_plugins('format'));
 
-$recommendations = [
-    'participation' => [
-        ['name' => 'Block Game', 'slug' => 'game', 'url' => 'https://moodle.org/plugins/download.php/29329/block_game_moodle41_2023053101.zip'],
-        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip']
-    ],
-    'motivation' => [
-        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip']
-    ],
-    'challenge' => [
-        ['name' => 'Block Game', 'slug' => 'block_game', 'url' => 'https://moodle.org/plugins/download.php/29329/block_game_moodle41_2023053101.zip'],
-        ['name' => 'Format Trail', 'slug' => 'trail', 'url' => 'https://moodle.org/plugins/download.php/29369/format_trail_moodle42_2023060501.zip']
-    ],
-    'collaboration' => [
-        ['name' => 'Level Up', 'slug' => 'block_xp', 'url' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip']
-    ],
-    'exploration' => [
-        ['name' => 'Format Trail', 'slug' => 'trail', 'url' => 'https://moodle.org/plugins/download.php/29369/format_trail_moodle42_2023060501.zip']
-    ]
-];
-
-$recommended_plugins = $recommendations[$objective] ?? [];
-if (!empty($recommended_plugins)) {
+$recommendedCategory = RecommendationCategory::safeFrom($objective) ?: null;
+if (!empty($recommendedCategory)) {
+    $recommendedPlugins = $recommendedCategory->getPlugins();
     echo html_writer::tag('h4', get_string('pluginsrecommendedtxt', 'local_gamificationhelper'));
     echo html_writer::start_tag('ul', ['class' => 'recommendations-list']);
-    foreach ($recommended_plugins as $plugin) {
+    foreach ($recommendedPlugins as $pluginEnum) {
+        $plugin = $pluginEnum->value;
+
         echo html_writer::start_tag('li');
             echo html_writer::start_tag('p');
                 echo html_writer::tag('span', $plugin['name']);
