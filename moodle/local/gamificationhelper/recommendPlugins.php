@@ -1,10 +1,9 @@
 <?php
-
 require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
-require_once (__DIR__ . '/enums/RecommendationCategory.php');
+require_once(__DIR__ . '/classes/recomendationPlugin.php');
 
-use gamificationhelper\enums\RecommendationCategory;
+use gamificationhelper\classes\recomendationPlugin;
 
 require_login();
 admin_externalpage_setup('local_gamificationhelper_recommend');
@@ -23,14 +22,12 @@ $courseid = required_param('courseid', PARAM_INT);
 $pluginManager = core_plugin_manager::instance();
 $pluginsInstalled = \array_merge($pluginManager->get_installed_plugins('block'), $pluginManager->get_installed_plugins('format'));
 
-$recommendedCategory = RecommendationCategory::safeFrom($objective) ?: null;
-if (!empty($recommendedCategory)) {
-    $recommendedPlugins = $recommendedCategory->getPlugins();
+$recommendedPlugins = recomendationPlugin::getPlugins($objective);
+
+if (!empty($recommendedPlugins)) {
     echo html_writer::tag('h4', get_string('pluginsrecommendedtxt', 'local_gamificationhelper'));
     echo html_writer::start_tag('ul', ['class' => 'recommendations-list']);
-    foreach ($recommendedPlugins as $pluginEnum) {
-        $plugin = $pluginEnum->value;
-
+    foreach ($recommendedPlugins as $plugin) {
         echo html_writer::start_tag('li');
             echo html_writer::start_tag('p');
                 echo html_writer::tag('span', $plugin['name']);
@@ -42,40 +39,62 @@ if (!empty($recommendedCategory)) {
             echo html_writer::end_tag('p');
             echo html_writer::start_tag('div', ['class' => 'actions']);
 
-            echo html_writer::link('#', '<i class="fa fa-question-circle" aria-hidden="true""></i>', [
-                'class' => 'btn btn-about',
-                'title' => 'Sobre o plugin',
-                'data-slug' => $plugin['slug'],
-                'onclick' => "openPermissionsModal('{$plugin['slug']}, {$plugin['name']}')"
-            ]);
+            echo html_writer::link(
+                $plugin['url'],
+                '<i class="fa fa-question-circle" aria-hidden="true""></i>', 
+                [
+                    'class' => 'btn btn-about',
+                    'title' => get_string('btnAbout', 'local_gamificationhelper'),
+                    'target' => '_blank'
+                ]
+            );
 
-            echo html_writer::link('#', '<i class="fa fa-list-alt" aria-hidden="true""></i>', [
-                'class' => 'btn btn-permissions',
-                'title' => 'Permissões de instalação e configuração',
-                'data-slug' => $plugin['slug'],
-                'onclick' => "openPermissionsModal('{$plugin['slug']}', '{$plugin['name']}')"
-            ]);
+            echo html_writer::link(
+                '#', 
+                '<i class="fa fa-list-alt" aria-hidden="true""></i>', 
+                [
+                    'class' => 'btn btn-permissions',
+                    'title' => get_string('btnPermissions', 'local_gamificationhelper'),
+                    'data-slug' => $plugin['slug'],
+                    'onclick' => "openPermissionsModal('{$plugin['slug']}', '{$plugin['name']}')"
+                ]
+            );
         
             if (!\array_key_exists($plugin['slug'], $pluginsInstalled)) {
-                echo html_writer::tag('a', '<i class="fa fa-download" aria-hidden="true""></i>', 
+                echo html_writer::tag(
+                    'a', 
+                    '<i class="fa fa-download" aria-hidden="true""></i>', 
                     [
-                        'href' => $plugin['url'],
+                        'href' => $plugin['download'],
                         'class' => 'btn btn-primary', 
-                        'title' => 'Download',
+                        'title' => get_string('btnDownload', 'local_gamificationhelper'),
                         'download' => ''
-                    ]);
+                    ]
+                );
                     
-                echo html_writer::link(new moodle_url('/admin/tool/installaddon/index.php'), '<i class="fa fa-cog" aria-hidden="true""></i>', [
-                    'class' => 'btn btn-primary', 
-                    'title' => 'Instalar', 
-                    'target' => '_blank'
-                ]);
+                echo html_writer::link(
+                    new moodle_url('/admin/tool/installaddon/index.php'), 
+                    '<i class="fa fa-cog" aria-hidden="true""></i>', 
+                    [
+                        'class' => 'btn btn-primary', 
+                        'title' => get_string('btnInstall', 'local_gamificationhelper'),
+                        'target' => '_blank'
+                    ]
+                );
             }
 
             echo html_writer::end_tag('div');
         echo html_writer::end_tag('li');
     }
     echo html_writer::end_tag('ul');
+    echo html_writer::link(
+        new moodle_url('/local/gamificationhelper/setObjectives.php'),
+        'Voltar',
+        [
+            'class' => 'btn btn-primary', 
+            'title' => get_string('btnBack', 'local_gamificationhelper'),
+        ]
+    );
 } else {
     echo html_writer::tag('p', get_string('norecommendations', 'local_gamificationhelper'));
 }

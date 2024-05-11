@@ -5,6 +5,76 @@
     --grayDark: #333333;
 }
 
+.gamificationhelper-content h2{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.gamificationhelper-content p, .gamificationhelper-content label {
+    font-size: 1rem;
+}
+
+.gamificationhelper-content .btn-start{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.gamificationhelper-content .txt-promt-select{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gamificationhelper-content .mform {
+    width: 100%;
+    margin: auto;
+}
+
+.gamificationhelper-content .mform .row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gamificationhelper-content .mform .row > div{
+    max-width: unset;
+    width: 100%;
+}
+
+.gamificationhelper-content .mform .row label {
+    text-align: center;
+    width: 100%;
+}
+
+.gamificationhelper-content .mform .row select{
+    width: 250px;
+}
+
+.gamificationhelper-content .mform .row select, .gamificationhelper-content .mform .row label {
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+.gamificationhelper-content .form-buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gamificationhelper-content .form-buttons .btn{
+    width: 100px;
+}
+
+.gamificationhelper-content .recommendations-list{
+    padding: 20px;
+    border: 1px solid var(--primary);
+    width: fit-content;
+    border-radius: 4px;
+    list-style: none;
+    margin: 30px 0;
+}
+
 .modal-backdrop{
     position: absolute;
     left: 0;
@@ -59,15 +129,6 @@
 
 .permissions-modal .not-allow{
     color: var(--error);
-}
-
-.recommendations-list{
-    padding: 20px;
-    border: 1px solid var(--primary);
-    width: fit-content;
-    border-radius: 4px;
-    list-style: none;
-    margin: 30px 0;
 }
 
 .recommendations-list li{

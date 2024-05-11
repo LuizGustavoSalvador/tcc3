@@ -3,7 +3,6 @@
 require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 require_once($CFG->libdir . '/formslib.php');
-require_once($CFG->dirroot . '/local/gamificationhelper/classes/selectCourseForm.php');
 
 require_login();
 admin_externalpage_setup('local_gamificationhelper');
@@ -14,14 +13,27 @@ $PAGE->set_heading(get_string('pluginname', 'local_gamificationhelper'));
 $PAGE->requires->css(new moodle_url('/local/gamificationhelper/styles/styles.css'));
 
 echo $OUTPUT->header();
+
+echo html_writer::start_tag('div', ['class' => 'gamificationhelper-content']);
+
 echo $OUTPUT->heading(get_string('welcome', 'local_gamificationhelper'));
 
-$form = new selectCourseForm();
-if ($form->is_cancelled()) {
-} elseif ($fromform = $form->get_data()) {   
-    redirect(new moodle_url('/local/gamificationhelper/setObjectives.php', ['courseid' => $fromform->courseid]));
-} else {
-    $form->display();
-}
+echo html_writer::tag('p', get_string('introduction', 'local_gamificationhelper'));
 
+echo html_writer::tag('p', get_string('availablePlugins', 'local_gamificationhelper'));
+
+echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
+
+echo html_writer::tag('p', '<b>' . get_string('blockGame', 'local_gamificationhelper') . '</b> - '. get_string('blockGameDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('levelUp', 'local_gamificationhelper') . '</b> - '. get_string('levelUpDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('formatTrail', 'local_gamificationhelper') . '</b> - '. get_string('formatTrailDesc', 'local_gamificationhelper'));
+
+echo html_writer::end_tag('ul');
+
+echo html_writer::link(
+    new moodle_url('setObjectives.php'), 
+    get_string('btnStart', 'local_gamificationhelper'), ['class' => 'btn btn-primary btn-start'
+]);
+
+echo html_writer::end_tag('div');
 echo $OUTPUT->footer();
