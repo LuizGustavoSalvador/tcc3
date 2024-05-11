@@ -15,13 +15,17 @@ $string['gamificationhelper:view'] = 'Acesso ao Auxiliar de Gamificação';
 $string['gamificationhelper:manage'] = 'Permite configurar o Auxiliar de Gamificação';
 
 // Buttons
-$string['btnAbout'] = 'Sobre o plugin';
+$string['btnAbout'] = 'Sobre';
+$string['btnAboutDesc'] = 'Abre a página do plugin no Moodle para mais informações.';
 
-$string['btnPermissions'] = 'Permissões de instalação e configuração';
+$string['btnPermissions'] = 'Permissões';
+$string['btnPermissionsDesc'] = 'Exibe uma modal com as permissões necessárias para usar e configurar o plugin.';
 
-$string['btnDownload'] = 'Baixar';
+$string['btnDownload'] = 'Download';
+$string['btnDownloadDesc'] = 'Disponível apenas se o plugin não estiver instalado, permite o download direto do plugin.';
 
-$string['btnInstall'] = 'Instalar e configurar';
+$string['btnInstall'] = 'Instalação';
+$string['btnInstallDesc'] = 'Abre uma modal com instruções passo a passo para instalar e configurar o plugin.';
 
 $string['btnStart'] = 'Iniciar o guia';
 
@@ -44,10 +48,22 @@ $string['formatTrailDesc'] = 'Proporciona uma jornada gamificada onde os alunos 
 $string['welcome'] = 'Bem-vindo ao Auxiliar de Gamificação!';
 
 $string['introduction'] = 'Este plugin foi desenvolvido para ajudar professores a selecionarem os melhores plugins de 
-gamificação, com base nos objetivos educacionais que desejam alcançar e no modelo de gamificação mais adequado. 
+gamificação, baseando-se nos objetivos educacionais desejados e no modelo de gamificação mais adequado. 
 Utilizamos o modelo Octalysis como referência teórica para nossas recomendações.';
 
+$string['adminRequired'] = 'Para instalar qualquer plugin de gamificação recomendado, você deve possuir permissões de 
+administrador devido às políticas de controle de instalação do Moodle. Se você é um professor e deseja que um plugin 
+seja instalado, solicite a instalação ao administrador do seu sistema.';
+
+$string['pluginInstallation'] = 'Ao final do processo, os plugins recomendados serão listados com base nos seus objetivos 
+e estilo de abordagem escolhidos. Você poderá explorar cada plugin em detalhes:';
+
 $string['availablePlugins'] = 'Plugins de gamificação disponíveis:';
+
+$string['alreadyInstalled'] = 'Plugin já instalado';
+
+$string['pluginInstalledNote'] = 'Plugins já instalados são indicados com a nota 
+"(' . $string['alreadyInstalled'] . ')" ao lado do nome.';
 
 // Objectives
 $string['defineObjectivesTitle'] = 'Definir os objetivos e abordagem';

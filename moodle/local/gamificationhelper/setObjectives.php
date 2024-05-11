@@ -26,11 +26,11 @@ echo html_writer::tag('p', get_string('txtListObjectives', 'local_gamificationhe
 
 echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 
-echo html_writer::tag('p', '<b>' . get_string('participation', 'local_gamificationhelper') . '</b> - '. get_string('participationDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('motivation', 'local_gamificationhelper') . '</b> - '. get_string('motivationDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('challenge', 'local_gamificationhelper') . '</b> - '. get_string('challengeDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('collaboration', 'local_gamificationhelper') . '</b> - '. get_string('collaborationDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('exploration', 'local_gamificationhelper') . '</b> - '. get_string('explorationDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('participation', 'local_gamificationhelper') . '</b>: '. get_string('participationDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('motivation', 'local_gamificationhelper') . '</b>: '. get_string('motivationDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('challenge', 'local_gamificationhelper') . '</b>: '. get_string('challengeDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('collaboration', 'local_gamificationhelper') . '</b>: '. get_string('collaborationDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('exploration', 'local_gamificationhelper') . '</b>: '. get_string('explorationDesc', 'local_gamificationhelper'));
 
 echo html_writer::end_tag('ul');
 
@@ -38,10 +38,10 @@ echo html_writer::tag('p', get_string('txtListApproach', 'local_gamificationhelp
 
 echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 
-echo html_writer::tag('p', '<b>' . get_string('competitive', 'local_gamificationhelper') . '</b> - '. get_string('competitiveDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('cooperative', 'local_gamificationhelper') . '</b> - '. get_string('cooperativeDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('independent', 'local_gamificationhelper') . '</b> - '. get_string('independentDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('explorative', 'local_gamificationhelper') . '</b> - '. get_string('explorativeDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('competitive', 'local_gamificationhelper') . '</b>: '. get_string('competitiveDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('cooperative', 'local_gamificationhelper') . '</b>: '. get_string('cooperativeDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('independent', 'local_gamificationhelper') . '</b>: '. get_string('independentDesc', 'local_gamificationhelper'));
+echo html_writer::tag('p', '<b>' . get_string('explorative', 'local_gamificationhelper') . '</b>: '. get_string('explorativeDesc', 'local_gamificationhelper'));
 
 echo html_writer::end_tag('ul');
 

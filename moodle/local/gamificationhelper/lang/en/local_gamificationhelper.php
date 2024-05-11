@@ -16,12 +16,16 @@ $string['gamificationhelper:manage'] = 'Allows configuration of the Gamification
 
 // Buttons
 $string['btnAbout'] = 'About the plugin';
+$string['btnAboutDesc'] = 'Opens the plugin’s page on Moodle for more information.';
 
 $string['btnPermissions'] = 'Installation and configuration permissions';
+$string['btnPermissionsDesc'] = 'Displays a modal with the necessary permissions to use and configure the plugin.';
 
 $string['btnDownload'] = 'Download';
+$string['btnDownloadDesc'] = 'Available only if the plugin is not already installed, allows direct download of the plugin.';
 
 $string['btnInstall'] = 'Install and config';
+$string['btnInstallDesc'] = 'Opens a modal with step-by-step instructions for installing and configuring the plugin.';
 
 $string['btnStart'] = 'Start';
 
@@ -47,7 +51,19 @@ $string['introduction'] = 'This plugin is designed to assist teachers in selecti
 on the educational objectives they wish to achieve and the most suitable gamification model to apply. 
 We use the Octalysis framework as the theoretical basis for our recommendations.';
 
+$string['adminRequired'] = 'To install any recommended gamification plugin, you must have administrator permissions due 
+to Moodle’s installation control policies. If you are a teacher and wish for a plugin to be installed, please request 
+installation from your system administrator.';
+
+$string['pluginInstallation'] = 'At the end of the process, recommended plugins will be listed based on your chosen 
+objectives and approach style. You can explore each plugin in detail:';
+
 $string['availablePlugins'] = 'Available gamification plugins:';
+
+$string['alreadyInstalled'] = 'plugin already installed';
+
+$string['pluginInstalledNote'] = 'Plugins that are already installed are indicated with the note 
+"(' . $string['alreadyInstalled'] . ')" next to the name.';
 
 // Objectives
 $string['defineObjectivesTitle'] = 'Define the objectives and approach';

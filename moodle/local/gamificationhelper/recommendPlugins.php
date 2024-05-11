@@ -13,7 +13,6 @@ $PAGE->set_title(get_string('pluginsrecommended', 'local_gamificationhelper'));
 $PAGE->set_heading(get_string('pluginrecommendation', 'local_gamificationhelper'));
 $PAGE->requires->css(new moodle_url('/local/gamificationhelper/styles/styles.css'));
 
-echo $OUTPUT->header();
 
 $objective = required_param('objective', PARAM_ALPHANUMEXT);
 $style = required_param('learningstyle', PARAM_ALPHANUMEXT);
@@ -24,6 +23,10 @@ $pluginsInstalled = \array_merge($pluginManager->get_installed_plugins('block'),
 
 $recommendedPlugins = recomendationPlugin::getPlugins($objective);
 
+echo $OUTPUT->header();
+
+echo html_writer::start_tag('div', ['class' => 'gamificationhelper-content']);
+
 if (!empty($recommendedPlugins)) {
     echo html_writer::tag('h4', get_string('pluginsrecommendedtxt', 'local_gamificationhelper'));
     echo html_writer::start_tag('ul', ['class' => 'recommendations-list']);
@@ -33,7 +36,7 @@ if (!empty($recommendedPlugins)) {
                 echo html_writer::tag('span', $plugin['name']);
 
                 if (\array_key_exists($plugin['slug'], $pluginsInstalled)) {
-                    echo html_writer::tag('span', ' (Plugin já instalado)');
+                    echo html_writer::tag('span', ' (' . get_string('alreadyInstalled', 'local_gamificationhelper') . ')');
                 }
 
             echo html_writer::end_tag('p');
@@ -98,6 +101,8 @@ if (!empty($recommendedPlugins)) {
 } else {
     echo html_writer::tag('p', get_string('norecommendations', 'local_gamificationhelper'));
 }
+
+echo html_writer::end_tag('div');
 
 ?>
 <script>

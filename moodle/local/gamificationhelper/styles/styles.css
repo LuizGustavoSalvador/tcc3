@@ -75,6 +75,42 @@
     margin: 30px 0;
 }
 
+.recommendations-list li{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.recommendations-list li p{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.recommendations-list li .actions{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.recommendations-list li .btn-about, .recommendations-list li .btn-permissions{
+    background-color: var(--gray);
+    color: white;
+}
+
+.recommendations-list li .btn-about:hover, .recommendations-list li .btn-permissions:hover{
+    background-color: var(--secondary);
+    color: var(--gray);
+}
+
+.recommendations-list li:not(:last-of-type){
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary);
+}
+
+/* Modal */
 .modal-backdrop{
     position: absolute;
     left: 0;
@@ -123,45 +159,6 @@
     color: var(--success);
 }
 
-.permissions-modal .not-allow i{
-
-}
-
 .permissions-modal .not-allow{
     color: var(--error);
-}
-
-.recommendations-list li{
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
-}
-
-.recommendations-list li p{
-    margin: 0;
-    margin-right: 10px;
-}
-
-.recommendations-list li .actions{
-    width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
-
-.recommendations-list li .btn-about, .recommendations-list li .btn-permissions{
-    background-color: var(--gray);
-    color: white;
-}
-
-.recommendations-list li .btn-about:hover, .recommendations-list li .btn-permissions:hover{
-    background-color: var(--secondary);
-    color: var(--gray);
-}
-
-.recommendations-list li:not(:last-of-type){
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--primary);
 }
