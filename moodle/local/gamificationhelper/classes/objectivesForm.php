@@ -9,18 +9,18 @@ class objectivesForm extends moodleform {
         $mform = $this->_form;
 
         $mform->addElement('select', 'objective', get_string('selectObjective', 'local_gamificationhelper'), [
-            'participation' => get_string('participation', 'local_gamificationhelper'),
-            'motivation' => get_string('motivation', 'local_gamificationhelper'),
-            'challenge' => get_string('challenge', 'local_gamificationhelper'),
-            'collaboration' => get_string('collaboration', 'local_gamificationhelper'),
-            'exploration' => get_string('exploration', 'local_gamificationhelper'),
+            'developmentAndAchievement' => get_string('developmentAndAchievement', 'local_gamificationhelper'),
+            'ownershipAndPossession' => get_string('ownershipAndPossession', 'local_gamificationhelper'),
+            'empowermentAndCreativity' => get_string('empowermentAndCreativity', 'local_gamificationhelper'),
+            'explorationAndDiscovery' => get_string('explorationAndDiscovery', 'local_gamificationhelper'),
+            'socialInfluenceAndRelatedness' => get_string('socialInfluenceAndRelatedness', 'local_gamificationhelper'),
         ]);
         
         $mform->addElement('select', 'learningstyle', get_string('selectStyle', 'local_gamificationhelper'), [
             'competitive' => get_string('competitive', 'local_gamificationhelper'),
             'cooperative' => get_string('cooperative', 'local_gamificationhelper'),
             'independent' => get_string('independent', 'local_gamificationhelper'),
-            'explorative' => get_string('explorative', 'local_gamificationhelper')
+            'epicNarrative' => get_string('epicNarrative', 'local_gamificationhelper')
         ]);
 
         $formButtons = '<div class="form-buttons">';

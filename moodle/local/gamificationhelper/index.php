@@ -26,10 +26,10 @@ echo html_writer::tag('p', get_string('pluginInstallation', 'local_gamificationh
 
 echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 
-echo html_writer::tag('p', '<b>' . get_string('btnAbout', 'local_gamificationhelper') . '</b>: '. get_string('btnAboutDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('btnPermissions', 'local_gamificationhelper') . '</b>: '. get_string('btnPermissionsDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('btnDownload', 'local_gamificationhelper') . '</b>: '. get_string('btnDownloadDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('btnInstall', 'local_gamificationhelper') . '</b>: '. get_string('btnInstallDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('btnAbout', 'local_gamificationhelper') . '</b>: '. get_string('btnAboutDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('btnPermissions', 'local_gamificationhelper') . '</b>: '. get_string('btnPermissionsDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('btnDownload', 'local_gamificationhelper') . '</b>: '. get_string('btnDownloadDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('btnInstall', 'local_gamificationhelper') . '</b>: '. get_string('btnInstallDesc', 'local_gamificationhelper'));
 
 echo html_writer::end_tag('ul');
 
@@ -37,9 +37,9 @@ echo html_writer::tag('p', get_string('availablePlugins', 'local_gamificationhel
 
 echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 
-echo html_writer::tag('p', '<b>' . get_string('blockGame', 'local_gamificationhelper') . '</b>: '. get_string('blockGameDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('levelUp', 'local_gamificationhelper') . '</b>: '. get_string('levelUpDesc', 'local_gamificationhelper'));
-echo html_writer::tag('p', '<b>' . get_string('formatTrail', 'local_gamificationhelper') . '</b>: '. get_string('formatTrailDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('blockGame', 'local_gamificationhelper') . '</b>: '. get_string('blockGameDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('levelUp', 'local_gamificationhelper') . '</b>: '. get_string('levelUpDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('formatTrail', 'local_gamificationhelper') . '</b>: '. get_string('formatTrailDesc', 'local_gamificationhelper'));
 
 echo html_writer::end_tag('ul');
 echo html_writer::tag('p', get_string('pluginInstalledNote', 'local_gamificationhelper'));

@@ -1,16 +1,14 @@
 <?php
 
 $string['pluginname'] = 'Moodle Gamification Helper';
-$string['description'] = 'Easily install and manage gamification plugins from here.';
+
 $string['installplugin'] = 'Install new plugin';
-$string['selectcourse'] = 'Select course';
-$string['pluginsrecommended'] = 'Recommended plugins';
-$string['pluginsrecommendedtxt'] = 'Below is a list of plugins that will help your gamification';
-$string['pluginrecommendation'] = 'Recommended Plugins for You';
+
+
 $string['norecommendations'] = 'No specific recommendations could be made based on your inputs.';
 $string['norecommendations'] = 'No recommendations';
-$string['result'] = 'Results';
-$string['recommendations'] = 'Recommendations';
+
+// Permissions
 $string['gamificationhelper:view'] = 'Access to the Gamification Helper';
 $string['gamificationhelper:manage'] = 'Allows configuration of the Gamification Helper';
 
@@ -68,50 +66,77 @@ $string['pluginInstalledNote'] = 'Plugins that are already installed are indicat
 // Objectives
 $string['defineObjectivesTitle'] = 'Define the objectives and approach';
 
-$string['defineObjectivesDescription'] = 'In this step, define what goals you want to achieve and what style you prefer.
-I would like to adopt gamification.';
+$string['defineObjectivesDescription'] = 'In this step, define which objectives you wish to achieve and which style of 
+gamification you would like to adopt.';
 
 $string['txtListObjectives'] = 'Explore the following objectives for gamification:';
 
-$string['participation'] = 'Participation';
-$string['participationDesc'] = 'Encourage greater student engagement in course activities, promoting active and 
-consistent participation.';
+$string['developmentAndAchievement'] = 'Development and Achievement';
+$string['developmentAndAchievementDesc'] = 'Encourage overcoming and accomplishment through point systems and rewards, 
+promoting continuous development and a sense of achievement among students.';
 
-$string['motivation'] = 'Motivation';
-$string['motivationDesc'] = 'Drive student engagement through strategic rewards and continuous positive feedback.';
+$string['ownershipAndPossession'] = 'Ownership and Possession';
+$string['ownershipAndPossessionDesc'] = 'Promote the accumulation and personalization of resources that students feel 
+are their own, strengthening emotional connection and engagement with the learning material.';
 
-$string['challenge'] = 'Challenge';
-$string['challengeDesc'] = 'Provide challenges that test students limits and skills, promoting growth and learning 
-through overcoming.';
+$string['empowermentAndCreativity'] = 'Empowerment and Creativity';
+$string['empowermentAndCreativityDesc'] = 'Provide freedom to explore and create unique solutions within a structured 
+environment, stimulating innovation and critical thinking.';
 
-$string['collaboration'] = 'Collaboration';
-$string['collaborationDesc'] = 'Enhance interaction and teamwork among students, encouraging the exchange of ideas and 
-joint solutions.';
+$string['explorationAndDiscovery'] = 'Exploration and Discovery';
+$string['explorationAndDiscoveryDesc'] = 'Stimulate curiosity and autonomous exploration of content, allowing students 
+to discover new knowledge and connections in an innovative way.';
 
-$string['exploration'] = 'Exploration';
-$string['explorationDesc'] = 'Stimulate students curiosity and investigative spirit, allowing them to explore content 
-and concepts autonomously and innovatively.';
+$string['socialInfluenceAndRelatedness'] = 'Social Influence and Relatedness';
+$string['socialInfluenceAndRelatednessDesc'] = 'Facilitate meaningful interactions and collaborations among students, 
+promoting a sense of community and belonging that enhances the learning experience.';
 
 $string['txtListApproach'] = 'Select from the following gamification approach styles:';
 
 $string['competitive'] = 'Competitive';
-$string['competitiveDesc'] = 'Create an environment where students are motivated to compete against each other, with 
-elements such as leaderboards, achievements, and rewards that highlight individual performance.';
+$string['competitiveDesc'] = 'Create an environment where students compete against each other, aiming for individual 
+excellence through leaderboards and rewards that highlight standout performance.';
 
 $string['cooperative'] = 'Cooperative';
-$string['cooperativeDesc'] = 'Develop an environment that encourages students to join forces and collaborate, promoting 
-joint work aimed at achieving common goals creatively and productively.';
+$string['cooperativeDesc'] = 'Develop an environment that promotes joint work and collaboration among students to 
+achieve common goals, using tools and activities that encourage cooperation.';
 
 $string['independent'] = 'Independent';
-$string['independentDesc'] = 'Allow students to pursue their learning autonomously, emphasizing self-guidance and the 
-personalization of the educational journey.';
+$string['independentDesc'] = 'Allow students to lead their own learning, exploring content autonomously and utilizing 
+resources that facilitate self-education and the personalization of their educational path.';
 
-$string['explorative'] = 'Explorative';
-$string['explorativeDesc'] = 'Create an environment where students are encouraged to investigate and discover new 
-knowledge, fostering autonomy and innovation in the learning process.';
+$string['epicNarrative'] = 'Epic Narrative';
+$string['epicNarrativeDesc'] = 'Engage students in a grand story or mission that transcends everyday activities, 
+providing a greater and more inspiring purpose for the learning process.';
 
-$string['promptSelect'] = 'Please select your preferences below to tailor the gamification experience to your educational needs:';
+$string['promptSelect'] = 'Please select your preferences below to tailor the gamification experience to your 
+educational needs:';
 
 $string['selectObjective'] = 'Select the Objective to be Achieved:';
 
 $string['selectStyle'] = 'Select the Gamification Approach Style:';
+
+// Recommendation plugin page
+$string['selectObjective'] = 'Select the Objective to be Achieved:';
+
+$string['noRecommendationsTitle'] = 'No Matching Plugins Found';
+
+$string['noRecommendations'] = 'Currently, no available plugins directly match the selected objective of "{$a->objective}" 
+and the approach of "{$a->approach}". This tool explores a limited set of plugins to demonstrate how gamification can 
+be implemented effectively in Moodle. This may occur due to:';
+
+$string['noRecommendationsReason1'] = 'The specific features required by your chosen combination are not supported by 
+the current set of plugins.';
+
+$string['noRecommendationsReason2'] = 'The uniqueness of your selected objective and approach, suggesting a potential 
+area for future plugin development or customization.';
+
+$string['noRecommendationsConclusion'] = 'This scenario highlights the potential for new developments in Moodle 
+gamification. We encourage you to engage with the Moodle community or plugin developers to explore or initiate new 
+gamification solutions that meet your educational needs.';
+
+$string['recommendationPluginDesc'] = 'The plugins listed below have been selected based on the objectives and 
+approaches you specified. They are designed to enrich the learning environment with gamification elements that can 
+enhance student engagement and motivation.';
+
+$string['recommendationPluginTitlePage'] = 'Recommended Gamification Plugins for Your Course';

@@ -10,8 +10,16 @@
     margin: 1rem 0;
 }
 
-.gamificationhelper-content p, .gamificationhelper-content label {
+.gamificationhelper-content p, .gamificationhelper-content label, .gamificationhelper-content li {
     font-size: 1rem;
+}
+
+.gamificationhelper-content li {
+    margin-bottom: 1rem;
+}
+
+.gamificationhelper-content ul{
+    list-style-type: none;
 }
 
 .gamificationhelper-content .btn-start{
@@ -47,7 +55,7 @@
 }
 
 .gamificationhelper-content .mform .row select{
-    width: 250px;
+    width: 270px;
 }
 
 .gamificationhelper-content .mform .row select, .gamificationhelper-content .mform .row label {
@@ -75,7 +83,7 @@
     margin: 30px 0;
 }
 
-.recommendations-list li{
+.gamificationhelper-content .recommendations-list li{
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -83,31 +91,37 @@
     margin: 10px 0;
 }
 
-.recommendations-list li p{
+.gamificationhelper-content .recommendations-list li p{
     margin: 0;
     margin-right: 10px;
 }
 
-.recommendations-list li .actions{
+.gamificationhelper-content .recommendations-list li .actions{
     width: fit-content;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
 }
 
-.recommendations-list li .btn-about, .recommendations-list li .btn-permissions{
+.gamificationhelper-content .recommendations-list li .btn-about, 
+.gamificationhelper-content .recommendations-list li .btn-permissions{
     background-color: var(--gray);
     color: white;
 }
 
-.recommendations-list li .btn-about:hover, .recommendations-list li .btn-permissions:hover{
+.gamificationhelper-content .recommendations-list li .btn-about:hover, 
+.gamificationhelper-content .recommendations-list li .btn-permissions:hover{
     background-color: var(--secondary);
     color: var(--gray);
 }
 
-.recommendations-list li:not(:last-of-type){
+.gamificationhelper-content .recommendations-list li:not(:last-of-type){
     padding-bottom: 10px;
     border-bottom: 1px solid var(--primary);
+}
+
+.gamificationhelper-content .no-recommendations-list{
+    list-style-type: decimal;
 }
 
 /* Modal */
@@ -124,14 +138,14 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -30%);
     z-index: 99999;
 }
 
 .permissions-modal .modal-content{
-    width: 500px;
+    width: 700px;
     height: auto;
-    min-height: 500px;
+    min-height: 700px;
     justify-content: space-between;
 }
 
