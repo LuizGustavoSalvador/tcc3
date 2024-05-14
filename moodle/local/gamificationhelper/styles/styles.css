@@ -1,7 +1,5 @@
 
 :root{
-    --success: #28a745;
-    --error: #dc3545;
     --grayDark: #333333;
 }
 
@@ -10,7 +8,8 @@
     margin: 1rem 0;
 }
 
-.gamificationhelper-content p, .gamificationhelper-content label, .gamificationhelper-content li {
+.gamificationhelper-content p, .gamificationhelper-content label, .gamificationhelper-content li,
+.permissions-modal li, .permissions-modal p {
     font-size: 1rem;
 }
 
@@ -138,14 +137,14 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-30%, -30%);
+    transform: translate(-25%, -25%);
     z-index: 99999;
 }
 
 .permissions-modal .modal-content{
-    width: 700px;
+    width: 800px;
     height: auto;
-    min-height: 700px;
+    min-height: 800px;
     justify-content: space-between;
 }
 
@@ -165,14 +164,23 @@
     color: var(--grayDark);
 }
 
-.permissions-modal .allow i{
+.permissions-modal li {
+    list-style-type: none;
+}
+
+.permissions-modal .allow, .permissions-modal .allow-li i, .permissions-modal .allow-li strong{
     color: var(--success);
 }
 
-.permissions-modal .allow{
-    color: var(--success);
+.permissions-modal .not-allow, .permissions-modal .not-allow-li i, .permissions-modal .not-allow-li strong{
+    color: var(--danger);
 }
 
-.permissions-modal .not-allow{
-    color: var(--error);
+.permissions-modal .not-allow-warning, .permissions-modal .not-allow-warning-li i, .permissions-modal .not-allow-warning-li strong{
+    color: var(--warning);
+}
+
+.permissions-modal .list-permissions{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }

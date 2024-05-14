@@ -4,9 +4,29 @@ $string['pluginname'] = 'Auxiliar de configuração para Gamificação do Moodle
 
 $string['installplugin'] = 'Instalar plugin';
 
-// Permissions
+// Gamification Helper Permissions
 $string['gamificationhelper:view'] = 'Acesso ao Auxiliar de Gamificação';
 $string['gamificationhelper:manage'] = 'Permite configurar o Auxiliar de Gamificação';
+
+// Trail Format permissions
+$string['formatTrail:changeimagecontaineralignment'] = 'Alterar ou repor o alinhamento do container de imagem';
+$string['formatTrail:changeimagecontainernavigation'] = 'Alterar ou repor a navegação do container de imagem';
+$string['formatTrail:changeimagecontainersize'] = 'Alterar ou redefinir o tamanho do container da imagem';
+$string['formatTrail:changeimageresizemethod'] = 'Alterar ou redefinir o método de redimensionamento da imagem';
+$string['formatTrail:changeimagecontainerstyle'] = 'Alterar ou redefinir o estilo do container da imagem';
+$string['formatTrail:changesectiontitleoptions'] = 'Alterar ou redefinir as opções do título da seção';
+
+// Level Up XP Block permissions
+$string['blockXp:addinstance'] = 'Adicionar um novo bloco';
+$string['blockXp:manage'] = 'Gerenciar todos os aspectos dos pontos de experiência';
+$string['blockXp:viewlogs'] = 'Acessar os logs';
+$string['blockXp:viewreport'] = 'Ver o relatório';
+
+// Block Game permissions
+$string['blockGame:addinstance'] = 'Adicionar um novo bloco Jogo';
+
+// General Moodle permissions
+$string['moodleSite:manageblocks'] = 'Gerenciar blocos';
 
 // Buttons
 $string['btnAbout'] = 'Sobre';
@@ -68,33 +88,42 @@ gamificação gostaria de adotar.';
 $string['txtListObjectives'] = 'Explore os seguintes objetivos para a gamificação:';
 
 $string['developmentAndAchievement'] = 'Desenvolvimento e Realização';
-$string['developmentAndAchievementDesc'] = 'Incentivar a superação e conquista através de sistemas de pontos e recompensas, promovendo o desenvolvimento contínuo e o senso de realização dos alunos.';
+$string['developmentAndAchievementDesc'] = 'Incentivar a superação e conquista através de sistemas de pontos e 
+recompensas, promovendo o desenvolvimento contínuo e o senso de realização dos alunos.';
 
 $string['ownershipAndPossession'] = 'Propriedade e Posse';
-$string['ownershipAndPossessionDesc'] = 'Promover a acumulação e personalização de recursos que os alunos sentem como seus, fortalecendo a conexão emocional e o engajamento com o material de aprendizado.';
+$string['ownershipAndPossessionDesc'] = 'Promover a acumulação e personalização de recursos que os alunos sentem como 
+seus, fortalecendo a conexão emocional e o engajamento com o material de aprendizado.';
 
 $string['empowermentAndCreativity'] = 'Empoderamento e Criatividade';
-$string['empowermentAndCreativityDesc'] = 'Oferecer liberdade para explorar e criar soluções únicas dentro de um ambiente estruturado, estimulando a inovação e o pensamento crítico.';
+$string['empowermentAndCreativityDesc'] = 'Oferecer liberdade para explorar e criar soluções únicas dentro de um 
+ambiente estruturado, estimulando a inovação e o pensamento crítico.';
 
 $string['explorationAndDiscovery'] = 'Exploração e Descoberta';
-$string['explorationAndDiscoveryDesc'] = 'Estimular a curiosidade e a exploração autônoma dos conteúdos, permitindo que os alunos descubram novos conhecimentos e conexões de maneira inovadora.';
+$string['explorationAndDiscoveryDesc'] = 'Estimular a curiosidade e a exploração autônoma dos conteúdos, permitindo 
+que os alunos descubram novos conhecimentos e conexões de maneira inovadora.';
 
 $string['socialInfluenceAndRelatedness'] = 'Influência Social e Pertencimento';
-$string['socialInfluenceAndRelatednessDesc'] = 'Facilitar interações e colaborações significativas entre os alunos, promovendo um senso de comunidade e pertencimento que melhora a experiência de aprendizado.';
+$string['socialInfluenceAndRelatednessDesc'] = 'Facilitar interações e colaborações significativas entre os alunos, 
+promovendo um senso de comunidade e pertencimento que melhora a experiência de aprendizado.';
 
 $string['txtListApproach'] = 'Selecione entre os seguintes estilos de abordagens para a gamificação:';
 
 $string['competitive'] = 'Competitiva';
-$string['competitiveDesc'] = 'Criar um ambiente onde os alunos competem entre si, visando a excelência individual através de tabelas de classificação e recompensas que destacam o desempenho destacado.';
+$string['competitiveDesc'] = 'Criar um ambiente onde os alunos competem entre si, visando a excelência individual 
+através de tabelas de classificação e recompensas que destacam o desempenho destacado.';
 
 $string['cooperative'] = 'Cooperativa';
-$string['cooperativeDesc'] = 'Desenvolver um ambiente que promova trabalho conjunto e colaboração entre os alunos para alcançar objetivos comuns, utilizando ferramentas e atividades que estimulem a cooperação.';
+$string['cooperativeDesc'] = 'Desenvolver um ambiente que promova trabalho conjunto e colaboração entre os alunos 
+para alcançar objetivos comuns, utilizando ferramentas e atividades que estimulem a cooperação.';
 
 $string['independent'] = 'Independente';
-$string['independentDesc'] = 'Permitir que os alunos conduzam seu próprio aprendizado, explorando conteúdos de forma autônoma e utilizando recursos que facilitam a autoeducação e a personalização do percurso educativo.';
+$string['independentDesc'] = 'Permitir que os alunos conduzam seu próprio aprendizado, explorando conteúdos de forma 
+autônoma e utilizando recursos que facilitam a autoeducação e a personalização do percurso educativo.';
 
 $string['epicNarrative'] = 'Narrativa Épica';
-$string['epicNarrativeDesc'] = 'Engajar os alunos em uma grande história ou missão que transcenda as atividades cotidianas, proporcionando um propósito maior e mais inspirador para o processo de aprendizagem.';
+$string['epicNarrativeDesc'] = 'Engajar os alunos em uma grande história ou missão que transcenda as atividades 
+cotidianas, proporcionando um propósito maior e mais inspirador para o processo de aprendizagem.';
 
 $string['promptSelect'] = 'Por favor, selecione suas preferências abaixo para personalizar a experiência de gamificação 
 conforme suas necessidades educacionais:';
@@ -127,3 +156,18 @@ que você especificou. Eles são projetados para enriquecer o ambiente de aprend
 podem aumentar o engajamento e a motivação dos alunos.';
 
 $string['recommendationPluginTitlePage'] = 'Plugins de Gamificação Recomendados para Seu Curso';
+
+// Modal permission
+$string['permissionsDescription'] = 'Esta modal apresenta o status das permissões necessárias para utilizar as 
+funcionalidades deste plugin. Cada ícone e cor representam um estado diferente:';
+
+
+$string['permissionGranted'] = '<strong>Verde</strong>: A permissão foi concedida.';
+
+$string['permissionDenied'] = '<strong>Vermelho</strong>: A permissão não foi concedida. Solicite as permissões ao 
+administrador para utilizar/configurar este plugin.';
+
+$string['permissionDeniedNotInstalled'] = '<strong>Amarelo</strong>: A permissão não foi concedida e o plugin ainda não 
+está instalado. As permissões listadas em amarelo serão validadas como permitidas ou não após a instalação do plugin.';
+
+$string['permissionsListTitle'] = 'Lista de permissões:';

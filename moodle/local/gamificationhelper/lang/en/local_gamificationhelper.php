@@ -8,9 +8,29 @@ $string['installplugin'] = 'Install new plugin';
 $string['norecommendations'] = 'No specific recommendations could be made based on your inputs.';
 $string['norecommendations'] = 'No recommendations';
 
-// Permissions
+// Gamification Helper Permissions
 $string['gamificationhelper:view'] = 'Access to the Gamification Helper';
 $string['gamificationhelper:manage'] = 'Allows configuration of the Gamification Helper';
+
+// Trail Format permissions
+$string['formatTrail:changeimagecontaineralignment'] = 'Change or reset the image container alignment';
+$string['formatTrail:changeimagecontainernavigation'] = 'Change or reset the image container navigation';
+$string['formatTrail:changeimagecontainersize'] = 'Change or reset the image container size';
+$string['formatTrail:changeimagecontainerstyle'] = 'Change or reset the image container style';
+$string['formatTrail:changeimageresizemethod'] = 'Change or reset the image resize method';
+$string['formatTrail:changesectiontitleoptions'] = 'Change or reset the section title options';
+
+// Level Up XP Block permissions
+$string['blockXp:manage'] = 'Manage all aspects of experience points';
+$string['blockXp:viewlogs'] = 'View the logs';
+$string['blockXp:viewreport'] = 'View the report';
+$string['blockXp:addinstance'] = 'Add a new block';
+
+// Block Game permissions
+$string['blockGame:addinstance'] = 'Add a new Game block';
+
+// General Moodle permissions
+$string['moodleSite:manageblocks'] = 'Manage blocks on a page';
 
 // Buttons
 $string['btnAbout'] = 'About the plugin';
@@ -140,3 +160,18 @@ approaches you specified. They are designed to enrich the learning environment w
 enhance student engagement and motivation.';
 
 $string['recommendationPluginTitlePage'] = 'Recommended Gamification Plugins for Your Course';
+
+// Modal permission
+$string['permissionsDescription'] = 'This modal displays the status of the permissions required to use the features 
+of this plugin. Each icon and color represent a different state:';
+
+
+$string['permissionGranted'] = '<strong>Green</strong>: The permission has been granted.';
+
+$string['permissionDenied'] = '<strong>Red</strong>: The permission has not been granted. Please request permissions 
+from the administrator to use/configure this plugin.';
+
+$string['permissionDeniedNotInstalled'] = '<strong>Yellow</strong>: The permission has not been granted and the plugin 
+is not yet installed. Permissions listed in yellow will be validated as allowed or not once the plugin is installed.';
+
+$string['permissionsListTitle'] = 'List of permissions:';
