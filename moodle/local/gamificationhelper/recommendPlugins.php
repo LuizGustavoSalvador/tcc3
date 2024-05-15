@@ -1,8 +1,10 @@
 <?php
 require_once(__DIR__ . '/../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
+require_once(__DIR__ . '/classes/modalInstallPlugin.php');
 require_once(__DIR__ . '/classes/recommendationPlugin.php');
 
+use gamificationhelper\classes\modalInstallPlugin;
 use gamificationhelper\classes\recommendationPlugin;
 
 require_login();
@@ -73,19 +75,18 @@ if (!empty($recommendedPlugins)) {
                         'download' => ''
                     ]
                 );
-                    
-                echo html_writer::link(
-                    new moodle_url('/admin/tool/installaddon/index.php'), 
-                    '<i class="fa fa-cog" aria-hidden="true""></i>', 
-                    [
-                        'class' => 'btn btn-primary', 
-                        'title' => get_string('btnInstall', 'local_gamificationhelper'),
-                        'target' => '_blank'
-                    ]
-                );
             }
 
+            echo html_writer::link('#', 
+            '<i class="fa fa-cog" aria-hidden="true"></i>', 
+            [
+                'class' => 'btn btn-primary', 
+                'title' => get_string('btnInstall', 'local_gamificationhelper'),
+                'onclick' => "openInstallModal('{$plugin['slug']}')",
+            ]);
+
             echo html_writer::end_tag('div');
+            echo modalInstallPlugin::getModalHTML($plugin['slug']);
         echo html_writer::end_tag('li');
     }
     echo html_writer::end_tag('ul');
@@ -135,9 +136,19 @@ function closeModal() {
     document.getElementById('permissionsModal').style.display = 'none';
     document.querySelector('.modal-backdrop').style.display = 'none';
 }
+
+function openInstallModal(pluginSlug) {
+    var modal = document.getElementById('installModal' + pluginSlug);
+    modal.style.display = 'block';
+}
+
+function closeModal(pluginSlug) {
+    var modal = document.getElementById('installModal' + pluginSlug);
+    modal.style.display = 'none';
+}
 </script>
 
-<div id="permissionsModal" class="permissions-modal" style="display:none;">
+<div id="permissionsModal" class="gamification-helper-modal" style="display:none;">
         <div id="permissionsModalBody" class="modal-content"></div>
 </div>
 <div class="modal-backdrop" onclick="closeModal()" style="display:none;"></div>

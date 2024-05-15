@@ -133,7 +133,21 @@
     margin-top: -60px;
 }
 
-.permissions-modal{
+.gamification-helper-modal .content::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .gamification-helper-modal .content::-webkit-scrollbar-track {
+    background: var(--secondary);
+  }
+  
+  .gamification-helper-modal .content::-webkit-scrollbar-thumb {
+    background-color: var(--grayDark);
+    border-radius: 20px;
+    border: 3px solid var(--secondary);
+  }
+
+.gamification-helper-modal{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -141,14 +155,21 @@
     z-index: 99999;
 }
 
-.permissions-modal .modal-content{
+.gamification-helper-modal .modal-content{
     width: 800px;
     height: auto;
-    min-height: 800px;
+    height: 800px;
     justify-content: space-between;
 }
 
-.permissions-modal .modal-content .btn-close{
+.gamification-helper-modal .content{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.gamification-helper-modal .modal-content .btn-close{
     font-size: 20px;
     margin-left: 10px;
     background-color: transparent;
@@ -156,31 +177,31 @@
     border: none;
 }
 
-.permissions-modal .modal-content .btn-close{
+.gamification-helper-modal .modal-content .btn-close{
     color: var(--gray);
 }
 
-.permissions-modal .modal-content .btn-close:hover{
+.gamification-helper-modal .modal-content .btn-close:hover{
     color: var(--grayDark);
 }
 
-.permissions-modal li {
+.gamification-helper-modal li {
     list-style-type: none;
 }
 
-.permissions-modal .allow, .permissions-modal .allow-li i, .permissions-modal .allow-li strong{
+.gamification-helper-modal .allow, .gamification-helper-modal .allow-li i, .gamification-helper-modal .allow-li strong{
     color: var(--success);
 }
 
-.permissions-modal .not-allow, .permissions-modal .not-allow-li i, .permissions-modal .not-allow-li strong{
+.gamification-helper-modal .not-allow, .gamification-helper-modal .not-allow-li i, .gamification-helper-modal .not-allow-li strong{
     color: var(--danger);
 }
 
-.permissions-modal .not-allow-warning, .permissions-modal .not-allow-warning-li i, .permissions-modal .not-allow-warning-li strong{
+.gamification-helper-modal .not-allow-warning, .gamification-helper-modal .not-allow-warning-li i, .gamification-helper-modal .not-allow-warning-li strong{
     color: var(--warning);
 }
 
-.permissions-modal .list-permissions{
+.gamification-helper-modal .list-permissions{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }

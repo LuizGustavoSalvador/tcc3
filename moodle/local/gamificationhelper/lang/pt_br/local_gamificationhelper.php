@@ -1,34 +1,30 @@
 <?php
 
+/**
+ * Gamification Helper
+ */
+
 $string['pluginname'] = 'Auxiliar de configuração para Gamificação do Moodle';
 
 $string['installplugin'] = 'Instalar plugin';
 
-// Gamification Helper Permissions
+// Permissions
 $string['gamificationhelper:view'] = 'Acesso ao Auxiliar de Gamificação';
+
 $string['gamificationhelper:manage'] = 'Permite configurar o Auxiliar de Gamificação';
-
-// Trail Format permissions
-$string['formatTrail:changeimagecontaineralignment'] = 'Alterar ou repor o alinhamento do container de imagem';
-$string['formatTrail:changeimagecontainernavigation'] = 'Alterar ou repor a navegação do container de imagem';
-$string['formatTrail:changeimagecontainersize'] = 'Alterar ou redefinir o tamanho do container da imagem';
-$string['formatTrail:changeimageresizemethod'] = 'Alterar ou redefinir o método de redimensionamento da imagem';
-$string['formatTrail:changeimagecontainerstyle'] = 'Alterar ou redefinir o estilo do container da imagem';
-$string['formatTrail:changesectiontitleoptions'] = 'Alterar ou redefinir as opções do título da seção';
-
-// Level Up XP Block permissions
-$string['blockXp:addinstance'] = 'Adicionar um novo bloco';
-$string['blockXp:manage'] = 'Gerenciar todos os aspectos dos pontos de experiência';
-$string['blockXp:viewlogs'] = 'Acessar os logs';
-$string['blockXp:viewreport'] = 'Ver o relatório';
-
-// Block Game permissions
-$string['blockGame:addinstance'] = 'Adicionar um novo bloco Jogo';
 
 // General Moodle permissions
 $string['moodleSite:manageblocks'] = 'Gerenciar blocos';
 
-// Buttons
+// Modal
+$string['modalTitle'] = 'Instalação e Configuração de {$a}';
+
+/**********************************************************************************************************************/
+
+/**
+ * Buttons
+ */
+
 $string['btnAbout'] = 'Sobre';
 $string['btnAboutDesc'] = 'Abre a página do plugin no Moodle para mais informações.';
 
@@ -47,18 +43,12 @@ $string['btnNext'] = 'Próximo';
 
 $string['btnBack'] = 'Voltar';
 
-// Plugins
-$string['blockGame'] = 'Block Game';
-$string['blockGameDesc'] = 'Transforma atividades e recursos em uma experiência de jogo por blocos.';
+/**********************************************************************************************************************/
 
-$string['levelUp'] = 'Level Up XP - Gamification';
-$string['levelUpDesc'] = 'Permite a criação de sistemas de pontos de experiência que motivam os alunos através de 
-progressão visual e recompensas.';
+/**
+ * Main Page
+ */
 
-$string['formatTrail'] = 'Trail format';
-$string['formatTrailDesc'] = 'Proporciona uma jornada gamificada onde os alunos seguem trilhas de aprendizado estruturadas.';
-
-// Main page
 $string['welcome'] = 'Bem-vindo ao Auxiliar de Gamificação!';
 
 $string['introduction'] = 'Este plugin foi desenvolvido para ajudar professores a selecionarem os melhores plugins de 
@@ -79,7 +69,12 @@ $string['alreadyInstalled'] = 'Plugin já instalado';
 $string['pluginInstalledNote'] = 'Plugins já instalados são indicados com a nota 
 "(' . $string['alreadyInstalled'] . ')" ao lado do nome.';
 
-// Objectives
+/**********************************************************************************************************************/
+
+/**
+ * Page - Objectives
+ */
+
 $string['defineObjectivesTitle'] = 'Definir os objetivos e abordagem';
 
 $string['defineObjectivesDescription'] = 'Nesta etapa, defina quais objetivos você deseja alcançar e qual estilo de 
@@ -132,7 +127,12 @@ $string['selectObjective'] = 'Selecione o Objetivo a ser Atingido:';
 
 $string['selectStyle'] = 'Selecione o Estilo de Abordagem para a Gamificação:';
 
-// Recommendation plugin page
+/**********************************************************************************************************************/
+
+/**
+ * Page - Recommendation plugin
+ */
+
 $string['selectObjective'] = 'Selecione o Objetivo a ser Atingido:';
 
 $string['noRecommendationsTitle'] = 'Nenhum Plugin Correspondente Encontrado';
@@ -157,7 +157,12 @@ podem aumentar o engajamento e a motivação dos alunos.';
 
 $string['recommendationPluginTitlePage'] = 'Plugins de Gamificação Recomendados para Seu Curso';
 
-// Modal permission
+/**********************************************************************************************************************/
+
+/**
+ * Modal permission
+ */
+
 $string['permissionsDescription'] = 'Esta modal apresenta o status das permissões necessárias para utilizar as 
 funcionalidades deste plugin. Cada ícone e cor representam um estado diferente:';
 
@@ -171,3 +176,116 @@ $string['permissionDeniedNotInstalled'] = '<strong>Amarelo</strong>: A permissã
 está instalado. As permissões listadas em amarelo serão validadas como permitidas ou não após a instalação do plugin.';
 
 $string['permissionsListTitle'] = 'Lista de permissões:';
+
+/**********************************************************************************************************************/
+
+/**
+ * Block Game
+ */
+
+// About
+$string['blockGame'] = 'Block Game';
+
+$string['blockGameDesc'] = 'Transforma atividades e recursos em uma experiência de jogo por blocos.';
+
+// Permissions
+$string['blockGame:addinstance'] = 'Adicionar um novo bloco Jogo';
+
+// Tutorial
+$string['blockGameInstallIntro'] = 'Este guia passo a passo ajudará você a instalar o plugin Block XP em seu ambiente 
+Moodle. Certifique-se de seguir cada passo cuidadosamente para garantir uma instalação bem-sucedida.';
+
+$string['blockGameInstallStep1'] = 'Primeiro, localize o arquivo .zip que você baixou. Você precisa arrastá-lo para a área 
+de upload no Moodle ou clicar em "Escolher um arquivo" para abrir o explorador de arquivos do seu computador e selecionar 
+o arquivo manualmente.';
+
+$string['blockGameInstallStep2'] = 'No Moodle, na área de administração de plugins, clique em "Instalar plugin do arquivo 
+ZIP". Isso abrirá uma tela onde você deve carregar o arquivo .zip do plugin.';
+
+$string['blockGameInstallStep3'] = 'Após carregar o arquivo, uma tela de validação mostrará se o arquivo do plugin está 
+correto e pronto para ser instalado. Clique em "Continuar" se tudo estiver correto para prosseguir com a instalação.';
+
+$string['blockGameInstallStep4'] = 'O Moodle então verificará se o plugin é compatível com sua versão atual do Moodle e se 
+todos os requisitos necessários estão satisfeitos. Uma lista de status aparecerá mostrando "OK" para requisitos satisfeitos 
+ou "Verificar" para itens que precisam de atenção.';
+
+$string['blockGameInstallStep5'] = 'Na tela final de verificação, você verá a opção "Atualizar a base de dados do Moodle 
+agora". Clique nesse botão para completar a instalação do plugin.';
+
+$string['blockGameInstallStep6'] = 'Após clicar para atualizar o banco de dados, uma tela de confirmação mostrará 
+"Atualizando para nova versão". Clique em "Continuar" para finalizar a instalação.';
+
+$string['blockGameConfigIntro'] = 'Após a instalação do Block XP, você precisará configurá-lo para atender às necessidades 
+do seu curso. Este guia explica como ajustar cada configuração disponível no plugin.';
+
+$string['blockGameGeneralSettings'] = 'Na administração do plugin, você encontrará várias opções para personalizar como o 
+Block XP funciona no seu curso. Aqui estão os detalhes de cada configuração:';
+
+$string['blockGameUseAvatar'] = 'Define se o uso de avatar será permitido por padrão. Avatares podem ser usados para 
+personalizar a experiência do aluno e aumentar o engajamento.';
+
+$string['blockGameReplaceAvatars'] = 'Permite alterar todos os avatares disponíveis para os usuários do plugin. Você pode 
+carregar novas imagens se desejar personalizar os avatares padrão.';
+
+$string['blockGameAllowAvatarChange'] = 'Permite que os participantes do curso alterem seus avatares. Isso pode aumentar a 
+personalização mas pode diminuir a consistência visual se muitas alterações forem permitidas.';
+
+$string['blockGameShowPlayerInfo'] = 'Mostra informações do jogador, como progresso e conquistas, em todos os cursos em que 
+ele participa, aumentando a transparência e motivação.';
+
+$string['blockGamePointForActivities'] = 'Contabiliza a nota das atividades como pontos, convertendo resultados acadêmicos 
+em elementos gamificados para motivar os alunos.';
+
+$string['blockGameDailyBonus'] = 'Define pontos por dia de acesso, incentivando os alunos a acessarem o curso regularmente 
+para maximizar seus pontos.';
+
+$string['blockGameLevelDisplay'] = 'Permite mostrar o nível atual do aluno, proporcionando um sentido de progresso e 
+conquista.';
+
+$string['blockGameCustomLevelImages'] = 'Permite carregar imagens personalizadas para cada nível, permitindo que você 
+customize completamente a aparência dos níveis no curso.';
+
+$string['blockGameCourseConfigIntro'] = 'Para configurar o Block XP em um curso específico:';
+
+$string['blockGameAddBlock'] = 'No "Modo de edição" do curso, use a "Gaveta de blocos" para adicionar o bloco "Jogo" ao curso.';
+
+$string['blockGameConfigureBlock'] = 'Configure o bloco recém-adicionado para definir específicos de gamificação, como 
+pontuação por atividades e configurações de visualização.';
+
+$string['blockGameConfigSaveChanges'] = 'Após ajustar todas as configurações, não esqueça de clicar em "Salvar mudanças" 
+para aplicar as novas configurações ao curso.';
+
+/**********************************************************************************************************************/
+
+/**
+ * Level Up XP - Gamification
+ */
+
+// About
+$string['levelUp'] = 'Level Up XP - Gamification';
+$string['levelUpDesc'] = 'Permite a criação de sistemas de pontos de experiência que motivam os alunos através de 
+progressão visual e recompensas.';
+
+// Permissions
+$string['blockXp:addinstance'] = 'Adicionar um novo bloco';
+$string['blockXp:manage'] = 'Gerenciar todos os aspectos dos pontos de experiência';
+$string['blockXp:viewlogs'] = 'Acessar os logs';
+$string['blockXp:viewreport'] = 'Ver o relatório';
+
+/**********************************************************************************************************************/
+
+/**
+ * Trail Format
+ */
+
+// About
+$string['formatTrail'] = 'Trail format';
+$string['formatTrailDesc'] = 'Proporciona uma jornada gamificada onde os alunos seguem trilhas de aprendizado estruturadas.';
+
+// Permissions
+$string['formatTrail:changeimagecontaineralignment'] = 'Alterar ou repor o alinhamento do container de imagem';
+$string['formatTrail:changeimagecontainernavigation'] = 'Alterar ou repor a navegação do container de imagem';
+$string['formatTrail:changeimagecontainersize'] = 'Alterar ou redefinir o tamanho do container da imagem';
+$string['formatTrail:changeimageresizemethod'] = 'Alterar ou redefinir o método de redimensionamento da imagem';
+$string['formatTrail:changeimagecontainerstyle'] = 'Alterar ou redefinir o estilo do container da imagem';
+$string['formatTrail:changesectiontitleoptions'] = 'Alterar ou redefinir as opções do título da seção';
