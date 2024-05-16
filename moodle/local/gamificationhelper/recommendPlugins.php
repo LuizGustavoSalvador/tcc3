@@ -132,26 +132,26 @@ function openPermissionsModal(slug, name) {
         .catch(error => console.error('Ocorreu um erro ao listar a permissões:', error));
 }
 
-function closeModal() {
+function closeModalPermisson() {
     document.getElementById('permissionsModal').style.display = 'none';
     document.querySelector('.modal-backdrop').style.display = 'none';
 }
 
 function openInstallModal(pluginSlug) {
-    var modal = document.getElementById('installModal' + pluginSlug);
-    modal.style.display = 'block';
+    document.getElementById('installModal' + pluginSlug).style.display = 'block';
+    document.querySelector('.modal-backdrop').style.display = 'block';
 }
 
 function closeModal(pluginSlug) {
-    var modal = document.getElementById('installModal' + pluginSlug);
-    modal.style.display = 'none';
+    document.getElementById('installModal' + pluginSlug).style.display = 'none';
+    document.querySelector('.modal-backdrop').style.display = 'none';
 }
 </script>
 
 <div id="permissionsModal" class="gamification-helper-modal" style="display:none;">
         <div id="permissionsModalBody" class="modal-content"></div>
 </div>
-<div class="modal-backdrop" onclick="closeModal()" style="display:none;"></div>
+<div class="modal-backdrop" onclick="closeModalPermisson()" style="display:none;"></div>
 
 <?php
 echo $OUTPUT->footer();

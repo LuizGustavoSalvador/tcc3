@@ -195,66 +195,115 @@ $string['blockGameDesc'] = 'Transforms activities and resources into a block-bas
 $string['blockGame:addinstance'] = 'Add a new Game block';
 
 // Tutorial
-$string['blockGameInstallIntro'] = 'This step-by-step guide will help you install the Block XP plugin on your Moodle 
-environment. Please follow each step carefully to ensure a successful installation.';
+$string['modalTitle'] = 'Installation and Configuration';
+$string['blockGame'] = 'Block Game';
+$string['levelUp'] = 'Level Up XP';
+$string['formatTrail'] = 'Trail Format';
 
-$string['blockGameInstallStep1'] = 'First, locate the .zip file you have downloaded. You need to drag it to the upload 
-area in Moodle or click "Choose a file" to open your computer\'s file explorer and select the file manually.';
+// Installation of the Plugin (Admin Only)
+$string['blockGameInstallIntro'] = 'Installation of the Plugin (Admin Only)';
+$string['blockGameDownload'] = 'Download Plugin: Go to Block Game and click "Download".';
+$string['blockGameInstallStep1'] = 'Drag the .zip file you downloaded to the file area or click "Choose a file" to open your computer\'s file directory.';
+$string['blockGameInstallStep2'] = 'Click "Install plugin from ZIP file".';
+$string['blockGameValidation'] = 'Plugin Validation: A plugin validation screen will appear. If successful, click "Continue".';
+$string['blockGameMoodleVersionInfo'] = 'Moodle Version Information: After the plugin is verified, a screen will appear with information about the Moodle version:';
+$string['blockGameMoodleCheck'] = 'Moodle checks if all requirements to continue running are met.';
+$string['blockGameStatusOK'] = 'OK - The component is correct and without any issues.';
+$string['blockGameStatusVerify'] = 'Verify - ...';
+$string['blockGamePluginVerification'] = 'Plugin Verification: On the "Plugin Verification" screen, the plugin is already in the Moodle database and is ready to update. Click "Update the Moodle database now".';
+$string['blockGameUpdateVersion'] = 'Updating to New Version: On the "Updating to new version" screen, click "Continue".';
 
-$string['blockGameInstallStep2'] = 'In Moodle, within the plugin administration area, click on "Install plugin from ZIP 
-file." This will open a screen where you should upload the plugin\'s .zip file.';
+// Plugin Configuration
+$string['blockGameConfigIntro'] = 'Plugin Configuration';
 
-$string['blockGameInstallStep3'] = 'After uploading the file, a validation screen will show if the plugin file is correct 
-and ready to be installed. Click "Continue" if everything is correct to proceed with the installation.';
+$string['blockGameDefaultConfig'] = 'Default Plugin Configuration:';
 
-$string['blockGameInstallStep4'] = 'Moodle will then check if the plugin is compatible with your current version of Moodle 
-and if all necessary requirements are met. A status list will appear showing "OK" for satisfied requirements or "Check" for items that need attention.';
+$string['blockGameConfigNote'] = 'After installation, the plugin\'s default configuration screen will open. If there is 
+no specific configuration for a course, the default configurations will be used. Changing the plugin\'s default settings 
+is optional.';
 
-$string['blockGameInstallStep5'] = 'On the final verification screen, you will see the option "Upgrade Moodle database 
-now." Click this button to complete the plugin installation.';
+$string['blockGameConfigFields'] = 'Configure Fields:';
 
-$string['blockGameInstallStep6'] = 'After clicking to update the database, a confirmation screen will show "Upgrading to 
-a new version." Click "Continue" to finalize the installation.';
+$string['blockGameUseAvatar'] = 'Use Avatar: Allows the use of avatars.';
 
-$string['blockGameConfigIntro'] = 'After installing Block XP, you will need to configure it to suit your course\'s needs. 
-This guide explains how to adjust each available setting within the plugin.';
+$string['blockGameReplaceAvatars'] = 'Replace Avatar Images: Allows you to change all available avatars.';
 
-$string['blockGameGeneralSettings'] = 'In the plugin administration, you will find several options to customize how 
-Block XP functions in your course. Here are the details of each setting:';
+$string['blockGameAllowAvatarChange'] = 'Allow Avatar Change in Course: Defines if participants can change their avatars.';
 
-$string['blockGameUseAvatar'] = 'Defines whether the use of an avatar will be allowed by default. Avatars can be used to 
-personalize the student experience and increase engagement.';
+$string['blockGameShowPlayerInfo'] = 'Show Player Info: Shows information about all the participant\'s courses.';
 
-$string['blockGameReplaceAvatars'] = 'Allows you to change all the avatars available to plugin users. You can upload new 
-images if you wish to customize the default avatars.';
+$string['blockGamePointForActivities'] = 'Point Activity Grades: Counts the activity grades as points.';
 
-$string['blockGameAllowAvatarChange'] = 'Allows course participants to change their avatars. This can increase 
-personalization but may reduce visual consistency if many changes are allowed.';
+$string['blockGameDailyBonus'] = 'Daily Bonus: Defines points per day of access.';
 
-$string['blockGameShowPlayerInfo'] = 'Displays player information, such as progress and achievements, across all courses 
-they are enrolled in, increasing transparency and motivation.';
+$string['blockGameBonusForBadge'] = 'Bonus for Badge: Applies points for each badge earned.';
 
-$string['blockGamePointForActivities'] = 'Counts the grade of activities as points, converting academic results into 
-gamified elements to motivate students.';
+$string['blockGameShowRanking'] = 'Show Ranking: Allows viewing the ranking.';
 
-$string['blockGameDailyBonus'] = 'Sets points for daily access, encouraging students to access the course regularly to 
-maximize their points.';
+$string['blockGamePreserveIdentity'] = 'Preserve User Identity: Preserves the user\'s identity in the ranking.';
 
-$string['blockGameLevelDisplay'] = 'Allows displaying the current level of the student, providing a sense of progress and 
-achievement.';
+$string['blockGameShowScore'] = 'Show Score: Shows the participants\' scores.';
 
-$string['blockGameCustomLevelImages'] = 'Allows you to upload custom images for each level, enabling you to fully customize 
-the appearance of levels in the course.';
+$string['blockGameShowLevel'] = 'Show Level: Shows the participants\' levels.';
 
-$string['blockGameCourseConfigIntro'] = 'To configure Block XP in a specific course:';
+$string['blockGameCustomLevelImages'] = 'Replace Level Images: Allows you to change all the level images.';
 
-$string['blockGameAddBlock'] = 'In the course\'s "Edit mode," use the "Blocks drawer" to add the "Game" block to the course.';
+$string['blockGameNumberOfLevels'] = 'Number of Levels: Defines the number of levels for the courses.';
 
-$string['blockGameConfigureBlock'] = 'Configure the newly added block to set gamification specifics, such as scoring for 
-activities and display settings.';
+$string['blockGameSaveChanges'] = 'Save Changes: After checking the fields, click "Save changes".';
 
-$string['blockGameConfigSaveChanges'] = 'After adjusting all the settings, do not forget to click "Save changes" to apply 
-the new settings to the course.';
+$string['blockGameCourseConfig'] = 'Configuration for a Specific Course';
+
+$string['blockGameAccessCourses'] = 'Access My Courses: Go to "My courses" and select the desired course.';
+
+$string['blockGameEditMode'] = 'Edit Mode: In the top right corner of the screen, click "Edit mode".';
+
+$string['blockGameAddBlock'] = 'Add Block: Open the "Block drawer" and click "Add a block", selecting the "Game" option. 
+A plugin card will appear in the tab.';
+
+$string['blockGameConfigureBlock'] = 'Configure Game Block: Click the gear icon on the plugin card and select "Configure 
+Game block". A modal with configurations will appear.';
+
+$string['blockGameBlockSettings'] = 'Block Settings:';
+
+$string['blockGameEditTitle'] = 'Edit Title: Provide a title for the block.';
+
+$string['blockGameShowCourseName'] = 'Show Course Name: Displays or hides the course name.';
+
+$string['blockGameShowPlayerInfo'] = 'Show Player Info: Shows information about all the participant\'s courses.';
+
+$string['blockGamePointActivities'] = 'Point Activity Grades: Counts grades as points.';
+
+$string['blockGameDailyBonus'] = 'Daily Bonus: Defines points per day of access.';
+
+$string['blockGameShowGroupRanking'] = 'Show Group Ranking: Displays the ranking by group.';
+
+$string['blockGameGroupPointsCalculation'] = 'Group Points Calculation: Private and disabled field.';
+
+$string['blockGameShowRanking'] = 'Show Ranking: Allows the participant to see the ranking.';
+
+$string['blockGameRankingListLimit'] = 'Ranking List Limit: Defines the number of participants shown in the ranking.';
+
+$string['blockGamePreserveIdentity'] = 'Preserve User Identity: Preserves the user\'s identity in the ranking.';
+
+$string['blockGameShowScore'] = 'Show Score: Displays the score in the block.';
+
+$string['blockGameShowLevel'] = 'Show Level: Displays the level in the block.';
+
+$string['blockGameNumberOfLevels'] = 'Number of Levels: Defines the number of levels for the course.';
+
+$string['blockGameSectionCompletionPoints'] = 'Section Completion Points Settings: Configures the points for each course 
+section.';
+
+$string['blockGameActivityCompletionPoints'] = 'Activity Completion Points: Configures the points for each course activity. 
+In the topic list, click the edit icon and configure the points in the "Game points" tab.';
+
+$string['blockGameBlockDisplaySettings'] = 'Where to Display This Block: Defines where the block will appear.';
+
+$string['blockGamePageSettings'] = 'On This Page: Defines the block\'s visibility and position on the page.';
+
+$string['blockGameSaveBlockConfig'] = 'Save Changes: After configuring the block, click "Save changes".';
+
 
 /**********************************************************************************************************************/
 

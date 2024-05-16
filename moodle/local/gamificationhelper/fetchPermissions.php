@@ -18,7 +18,7 @@ class fetchPermissions {
         $permissionsDetails = $this->getPermissionsDetails();
         $html = '<div class="modal-header">
                     <h5 class="modal-title" id="permissionsModalLabel">Permissões Necessárias do plugin ' . $this->pluginName . '</h5>
-                    <button type="button" class="btn-close" onclick="closeModal()"><i class="fa fa-times"></i></button>
+                    <button type="button" class="btn-close" onclick="closeModalPermisson()"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="modal-body">
                     <p>' . get_string('permissionsDescription', 'local_gamificationhelper') . '</p>

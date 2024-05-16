@@ -135,17 +135,17 @@
 
 .gamification-helper-modal .content::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  .gamification-helper-modal .content::-webkit-scrollbar-track {
+}
+
+.gamification-helper-modal .content::-webkit-scrollbar-track {
     background: var(--secondary);
-  }
-  
-  .gamification-helper-modal .content::-webkit-scrollbar-thumb {
+}
+
+.gamification-helper-modal .content::-webkit-scrollbar-thumb {
     background-color: var(--grayDark);
     border-radius: 20px;
     border: 3px solid var(--secondary);
-  }
+}
 
 .gamification-helper-modal{
     position: absolute;
@@ -186,7 +186,17 @@
 }
 
 .gamification-helper-modal li {
-    list-style-type: none;
+    font-weight: normal !important;
+    border-bottom: unset !important;
+}
+
+.gamification-helper-modal ol li {
+    display: list-item !important;
+    list-style-type: decimal !important;
+}
+
+.gamification-helper-modal ul li {
+    list-style-type: none !important;
 }
 
 .gamification-helper-modal .allow, .gamification-helper-modal .allow-li i, .gamification-helper-modal .allow-li strong{
