@@ -2,215 +2,104 @@
 
 namespace gamificationhelper\classes;
 
+require_once(__DIR__ . '/recommendationPlugin.php');
+
+use gamificationhelper\classes\recommendationPlugin;
+
 class ModalInstallPlugin {
 
-    public static function getModalHTML($pluginSlug) {
-        $steps = self::getPluginSteps($pluginSlug);
+    public static function getModalHTML(string $slug) {
+        $pluginData = \reset(recommendationPlugin::getPlugins('', '', $slug));
+        $modalTitle = get_string('modalTitle', 'local_gamificationhelper', $pluginData['name']);
+        $steps = self::getPluginStepsContent($slug);
+
         if (!$steps) {
             return '';
         }
 
-        $strModalTitle = get_string('modalTitle', 'local_gamificationhelper', $steps['name']);
-        $html = '<div class="modal-backdrop" onclick="closeModal(\'' . $pluginSlug . '\')" style="display:none;"></div>
-            <div id="installModal' . $pluginSlug . '" class="gamification-helper-modal" style="display:none;">
+        $html = '<div class="modal-backdrop" onclick="closeModal(\'' . $slug . '\')" style="display:none;"></div>
+            <div id="installModal' . $slug . '" class="gamification-helper-modal" style="display:none;">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="permissionsModalLabel">' . $strModalTitle . '</h5>
-                    <button type="button" class="btn-close" onclick="closeModal(\'' . $pluginSlug . '\')"><i class="fa fa-times"></i></button>
+                    <h3 class="modal-title" id="permissionsModalLabel">' . $modalTitle . '</h3>
+                    <button type="button" class="btn-close" onclick="closeModal(\'' . $slug . '\')"><i class="fa fa-times"></i></button>
                 </div>
-                <div class="content">
-                <ol>';
-
-        foreach ($steps['instructions'] as $step) {
-            $html .= '<li>' . get_string($step, 'local_gamificationhelper') . '</li>';
-        }
-
-        $html .= '</ol></div>
+                <div class="content install-plugin-content">' . $steps . '</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="closeModal(\'' . $pluginSlug . '\')">Close</button>
+                    <a href="http://localhost:3333/admin/tool/installaddon/index.php" class="btn btn-primary" target="_blank">'. get_string('btnInstall', 'local_gamificationhelper') .'</a>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal(\'' . $slug . '\')">Fechar</button>
                 </div></div></div>';
 
         return $html;
     }
 
-    private static function getPluginSteps($pluginSlug) {
-        $steps = [
-            'game' => [
-                'name' => 'blockGame',
-                'instructions' => [
-                    'blockGameInstallIntro',
-                    'blockGameDownload',
-                    'blockGameInstallStep1',
-                    'blockGameInstallStep2',
-                    'blockGameValidation',
-                    'blockGameMoodleVersionInfo',
-                    'blockGameMoodleCheck',
-                    'blockGameStatusOK',
-                    'blockGameStatusVerify',
-                    'blockGamePluginVerification',
-                    'blockGameUpdateVersion',
-                    'blockGameConfigIntro',
-                    'blockGameDefaultConfig',
-                    'blockGameConfigNote',
-                    'blockGameConfigFields',
-                    'blockGameUseAvatar',
-                    'blockGameReplaceAvatars',
-                    'blockGameAllowAvatarChange',
-                    'blockGameShowPlayerInfo',
-                    'blockGamePointForActivities',
-                    'blockGameDailyBonus',
-                    'blockGameBonusForBadge',
-                    'blockGameShowRanking',
-                    'blockGamePreserveIdentity',
-                    'blockGameShowScore',
-                    'blockGameShowLevel',
-                    'blockGameCustomLevelImages',
-                    'blockGameNumberOfLevels',
-                    'blockGameSaveChanges',
-                    'blockGameCourseConfig',
-                    'blockGameAccessCourses',
-                    'blockGameEditMode',
-                    'blockGameAddBlock',
-                    'blockGameConfigureBlock',
-                    'blockGameBlockSettings',
-                    'blockGameEditTitle',
-                    'blockGameShowCourseName',
-                    'blockGameShowPlayerInfo',
-                    'blockGamePointActivities',
-                    'blockGameDailyBonus',
-                    'blockGameShowGroupRanking',
-                    'blockGameGroupPointsCalculation',
-                    'blockGameShowRanking',
-                    'blockGameRankingListLimit',
-                    'blockGamePreserveIdentity',
-                    'blockGameShowScore',
-                    'blockGameShowLevel',
-                    'blockGameNumberOfLevels',
-                    'blockGameSectionCompletionPoints',
-                    'blockGameActivityCompletionPoints',
-                    'blockGameBlockDisplaySettings',
-                    'blockGamePageSettings',
-                    'blockGameSaveBlockConfig'
-                ]
-            ],
-            'block_xp' => [
-                'name' => 'levelUp',
-                'instructions' => [
-                    'blockXpInstallIntro',
-                    'blockXpDownload',
-                    'blockXpInstallStep1',
-                    'blockXpInstallStep2',
-                    'blockXpValidation',
-                    'blockXpMoodleVersionInfo',
-                    'blockXpMoodleCheck',
-                    'blockXpStatusOK',
-                    'blockXpStatusVerify',
-                    'blockXpPluginVerification',
-                    'blockXpUpdateVersion',
-                    'blockXpConfigIntro',
-                    'blockXpDefaultConfig',
-                    'blockXpConfigNote',
-                    'blockXpConfigFields',
-                    'blockXpUseAvatar',
-                    'blockXpReplaceAvatars',
-                    'blockXpAllowAvatarChange',
-                    'blockXpShowPlayerInfo',
-                    'blockXpPointForActivities',
-                    'blockXpDailyBonus',
-                    'blockXpBonusForBadge',
-                    'blockXpShowRanking',
-                    'blockXpPreserveIdentity',
-                    'blockXpShowScore',
-                    'blockXpShowLevel',
-                    'blockXpCustomLevelImages',
-                    'blockXpNumberOfLevels',
-                    'blockXpSaveChanges',
-                    'blockXpCourseConfig',
-                    'blockXpAccessCourses',
-                    'blockXpEditMode',
-                    'blockXpAddBlock',
-                    'blockXpConfigureBlock',
-                    'blockXpBlockSettings',
-                    'blockXpEditTitle',
-                    'blockXpShowCourseName',
-                    'blockXpShowPlayerInfo',
-                    'blockXpPointActivities',
-                    'blockXpDailyBonus',
-                    'blockXpShowGroupRanking',
-                    'blockXpGroupPointsCalculation',
-                    'blockXpShowRanking',
-                    'blockXpRankingListLimit',
-                    'blockXpPreserveIdentity',
-                    'blockXpShowScore',
-                    'blockXpShowLevel',
-                    'blockXpNumberOfLevels',
-                    'blockXpSectionCompletionPoints',
-                    'blockXpActivityCompletionPoints',
-                    'blockXpBlockDisplaySettings',
-                    'blockXpPageSettings',
-                    'blockXpSaveBlockConfig'
-                ]
-            ],
-            'trail' => [
-                'name' => 'formatTrail',
-                'instructions' => [
-                    'trailInstallIntro',
-                    'trailDownload',
-                    'trailInstallStep1',
-                    'trailInstallStep2',
-                    'trailValidation',
-                    'trailMoodleVersionInfo',
-                    'trailMoodleCheck',
-                    'trailStatusOK',
-                    'trailStatusVerify',
-                    'trailPluginVerification',
-                    'trailUpdateVersion',
-                    'trailConfigIntro',
-                    'trailDefaultConfig',
-                    'trailConfigNote',
-                    'trailConfigFields',
-                    'trailUseAvatar',
-                    'trailReplaceAvatars',
-                    'trailAllowAvatarChange',
-                    'trailShowPlayerInfo',
-                    'trailPointForActivities',
-                    'trailDailyBonus',
-                    'trailBonusForBadge',
-                    'trailShowRanking',
-                    'trailPreserveIdentity',
-                    'trailShowScore',
-                    'trailShowLevel',
-                    'trailCustomLevelImages',
-                    'trailNumberOfLevels',
-                    'trailSaveChanges',
-                    'trailCourseConfig',
-                    'trailAccessCourses',
-                    'trailEditMode',
-                    'trailAddBlock',
-                    'trailConfigureBlock',
-                    'trailBlockSettings',
-                    'trailEditTitle',
-                    'trailShowCourseName',
-                    'trailShowPlayerInfo',
-                    'trailPointActivities',
-                    'trailDailyBonus',
-                    'trailShowGroupRanking',
-                    'trailGroupPointsCalculation',
-                    'trailShowRanking',
-                    'trailRankingListLimit',
-                    'trailPreserveIdentity',
-                    'trailShowScore',
-                    'trailShowLevel',
-                    'trailNumberOfLevels',
-                    'trailSectionCompletionPoints',
-                    'trailActivityCompletionPoints',
-                    'trailBlockDisplaySettings',
-                    'trailPageSettings',
-                    'trailSaveBlockConfig'
-                ]
-            ]
-        ];
+    private static function getPluginStepsContent(string $slug): string
+    {
+        $html = '<h5 class="section-title title-install">'. get_string('defaultInstallInstallIntro', 'local_gamificationhelper') .'</h5>
+        <ol>
+            <li>' . get_string('defaultInstallInstallStep1', 'local_gamificationhelper') . '</li>
+            <li>' . get_string('defaultInstallInstallStep2', 'local_gamificationhelper') . '</li>
+            <li>' . get_string('defaultInstallValidation', 'local_gamificationhelper') . '</li>
+            <li>' . get_string('defaultInstallMoodleVersionInfo', 'local_gamificationhelper') . '</li>
+            <li>' . get_string('defaultInstallMoodleCheck', 'local_gamificationhelper') . '</li>
+            <li>' . get_string('blockGameStatusOK', 'local_gamificationhelper') . '</li>
+            <li>' . get_string('defaultInstallInstallIntro', 'local_gamificationhelper') . '</li>
+            <li>' . get_string('defaultInstallUpdateVersion', 'local_gamificationhelper') . '</li>
+        </ol>
+        <h5 class="section-title">' . get_string('defaultInstallDefaultConfig', 'local_gamificationhelper') . '</h5>
+        <p class="section-desc">' . get_string('defaultInstallConfigNote', 'local_gamificationhelper') . '</p>
+        <span class="section-subtitle"><strong>' . get_string('defaultInstallConfigFields', 'local_gamificationhelper') . '</strong></span>';
 
-        return $steps[$pluginSlug] ?? null;
+        if($slug === 'blockGame'){
+            $html .= '<ol>
+                <li>' . get_string('blockGameUseAvatar', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameReplaceAvatars', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameAllowAvatarChange', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameShowPlayerInfo', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGamePointForActivities', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDailyBonus', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameBonusForBadge', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameShowRanking', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGamePreserveIdentity', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameShowScore', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameShowLevel', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameCustomLevelImages', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameNumberOfLevels', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSaveChanges', 'local_gamificationhelper') . '</li>
+            </ol>
+            <h5 class="section-title">' . get_string('defaultInstallCourseConfig', 'local_gamificationhelper') . '</h5>
+            <ol>
+                <li>' . get_string('blockGameAccessCourses', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameEditMode', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameAddBlock', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameConfigureBlock', 'local_gamificationhelper') . '</li>
+                <li><span>' . get_string('blockGameBlockSettings', 'local_gamificationhelper') . '</span>
+                    <ol class="sub-list">
+                        <li>' . get_string('blockGameEditTitle', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameShowCourseName', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameShowPlayerInfo', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGamePointActivities', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameDailyBonus', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameShowGroupRanking', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameGroupPointsCalculation', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameShowRanking', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameRankingListLimit', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGamePreserveIdentity', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameShowScore', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameShowLevel', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockGameNumberOfLevels', 'local_gamificationhelper') . '</li>
+                    </ol>
+                </li>
+                <li>' . get_string('blockGameSectionCompletionPoints', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameActivityCompletionPoints', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameBlockDisplaySettings', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGamePageSettings', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSaveBlockConfig', 'local_gamificationhelper') . '</li>
+            </ol>';
+        }
+
+        $html .= '';
+
+        return $html;
     }
 }

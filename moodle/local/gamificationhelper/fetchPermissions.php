@@ -89,11 +89,11 @@ class fetchPermissions {
 
     private function getPermissionsMap() {
         return [
-            'game' => [
+            'blockGame' => [
                 'moodle/site:manageblocks' => get_string('moodleSite:manageblocks', 'local_gamificationhelper') . ': moodle/site:manageblocks',
                 'block/game:addinstance' => get_string('blockGame:addinstance', 'local_gamificationhelper') . ': block/game:addinstance'
             ],
-            'block_xp' => [
+            'blockXp' => [
                 'moodle/site:manageblocks' => get_string('moodleSite:manageblocks', 'local_gamificationhelper') . ': moodle/site:manageblocks',
                 'block/xp:addinstance' => get_string('blockXp:addinstance', 'local_gamificationhelper') . ': block/xp:addinstance',
                 'block/xp:manage' => get_string('blockXp:manage', 'local_gamificationhelper') . ': block/xp:manage',

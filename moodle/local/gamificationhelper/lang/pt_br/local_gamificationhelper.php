@@ -6,7 +6,7 @@
 
 $string['pluginname'] = 'Auxiliar de configuração para Gamificação do Moodle';
 
-$string['installplugin'] = 'Instalar plugin';
+$string['installplugin'] = 'Instalar e configurar plugin';
 
 // Permissions
 $string['gamificationhelper:view'] = 'Acesso ao Auxiliar de Gamificação';
@@ -17,7 +17,7 @@ $string['gamificationhelper:manage'] = 'Permite configurar o Auxiliar de Gamific
 $string['moodleSite:manageblocks'] = 'Gerenciar blocos';
 
 // Modal
-$string['modalTitle'] = 'Instalação e Configuração de {$a}';
+$string['modalTitle'] = 'Instalação e Configuração - {$a}';
 
 /**********************************************************************************************************************/
 
@@ -180,6 +180,49 @@ $string['permissionsListTitle'] = 'Lista de permissões:';
 /**********************************************************************************************************************/
 
 /**
+ * Default install plugin
+ */
+
+ // Instalação do Plugin (Admin)
+$string['defaultInstallInstallIntro'] = 'Instalação do Plugin (Apenas para Administradores)';
+
+$string['defaultInstallInstallStep1'] = 'Arraste o arquivo .zip que foi baixado até a área de arquivos ou clique em "Escolher 
+um arquivo" para abrir o diretório de arquivos do seu computador.';
+
+$string['defaultInstallInstallStep2'] = 'Clique em "Instalar plugin do arquivo ZIP".';
+
+$string['defaultInstallValidation'] = 'Uma tela de validação do plugin será exibida. Se a validação for bem-sucedida, 
+clique em "Continuar".';
+
+$string['defaultInstallMoodleVersionInfo'] = 'Após a verificação do plugin, uma tela de informação sobre a versão do 
+Moodle será exibida:';
+
+$string['defaultInstallMoodleCheck'] = 'O Moodle verifica se todos os requisitos para continuar funcionando estão sendo 
+cumpridos.';
+
+$string['defaultInstallStatusOK'] = 'OK - O componente está correto e sem problemas.';
+
+$string['defaultInstallPluginVerification'] = 'Verificação de Plugins: Na tela "Verificação de plugins", o plugin já está no 
+banco de dados do Moodle e está pronto para ser atualizado. Clique em "Atualizar a base de dados do Moodle agora".';
+
+$string['defaultInstallUpdateVersion'] = 'Atualizando para Nova Versão: Na tela "Atualizando para nova versão", clique em 
+"Continuar".';
+
+$string['defaultInstallConfigIntro'] = 'Configuração do Plugin';
+
+$string['defaultInstallDefaultConfig'] = 'Configuração Padrão do Plugin';
+
+$string['defaultInstallConfigNote'] = 'Após a instalação, a tela de configuração padrão do plugin será exibida. Se não 
+houver configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os dados padrão do 
+plugin é opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico por padrão.';
+
+$string['defaultInstallConfigFields'] = 'Configurar Campos:';
+
+$string['defaultInstallCourseConfig'] = 'Configuração para um Curso Específico';
+
+/**********************************************************************************************************************/
+
+/**
  * Block Game
  */
 
@@ -192,124 +235,78 @@ $string['blockGameDesc'] = 'Transforma atividades e recursos em uma experiência
 $string['blockGame:addinstance'] = 'Adicionar um novo bloco Jogo';
 
 // Tutorial
-$string['modalTitle'] = 'Instalação e Configuração';
 
-$string['blockGameInstallIntro'] = 'Instalação do Plugin (Apenas para Administradores)';
+$string['blockGame'] = 'Block Game';
+$string['levelUp'] = 'Level Up XP';
+$string['formatTrail'] = 'Trail Format';
 
-$string['blockGameDownload'] = 'Baixar Plugin: Acesse Block Game e clique em "Download".';
+// Configuração do Plugin
+$string['blockGameUseAvatar'] = '<strong>Utilizar Avatar:</strong> Permite o uso de avatares.';
+$string['blockGameReplaceAvatars'] = '<strong>Substituir Imagens de Avatares:</strong> Permite alterar todos os avatares disponíveis.';
+$string['blockGameAllowAvatarChange'] = '<strong>Permitir Mudança de Avatar no Curso:</strong> Define se os participantes podem alterar seus avatares.';
+$string['blockGameShowPlayerInfo'] = '<strong>Mostrar Informações do Jogador:</strong> Exibe informações de todos os cursos do participante.';
+$string['blockGamePointForActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza a nota das atividades como pontos.';
+$string['blockGameDailyBonus'] = '<strong>Bônus do Dia:</strong> Define pontos por dia de acesso.';
+$string['blockGameBonusForBadge'] = '<strong>Bônus para Emblema:</strong> Aplica pontos para cada emblema conquistado.';
+$string['blockGameShowRanking'] = '<strong>Mostrar Classificação:</strong> Permite que os participantes vejam a classificação.';
+$string['blockGamePreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do usuário na classificação.';
+$string['blockGameShowScore'] = '<strong>Mostrar Pontuação:</strong> Exibe a pontuação dos participantes.';
+$string['blockGameShowLevel'] = '<strong>Mostrar Nível:</strong> Exibe o nível dos participantes.';
+$string['blockGameCustomLevelImages'] = '<strong>Substituir Imagens de Níveis:</strong> Permite alterar todas as imagens dos níveis.';
+$string['blockGameNumberOfLevels'] = '<strong>Número de Níveis:</strong> Define o número de níveis para os cursos.';
+$string['blockGameSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em "Salvar mudanças".';
 
-$string['blockGameInstallStep1'] = 'Arraste o arquivo .zip que foi baixado até a área de arquivos ou clique em "Escolha 
-um arquivo" para abrir o diretório de arquivos do seu computador.';
+// Configuração para um Curso Específico
+$string['blockGameAccessCourses'] = '<strong>Acessar Meus Cursos:</strong> Vá em "Meus cursos" e selecione o curso 
+desejado.';
 
-$string['blockGameInstallStep2'] = 'Clique em "Instalar plugin do arquivo ZIP".';
+$string['blockGameEditMode'] = '<strong>Modo de Edição:</strong> No canto superior direito da tela, clique em "Modo de 
+edição".';
 
-$string['blockGameValidation'] = 'Validação do Plugin: Abrirá uma tela de validação do plugin. Caso seja bem-sucedido, 
-clique em "Continuar".';
+$string['blockGameAddBlock'] = '<strong>Adicionar Bloco:</strong> Abra a "Gaveta de blocos" clicando no ícone de seta 
+logo abaixo do botão de "Modo de edição". Clique em "Adicionar um bloco" e selecione a opção "Jogo". Um card do plugin 
+aparecerá na aba.';
 
-$string['blockGameMoodleVersionInfo'] = 'Informação sobre a Versão do Moodle: Após a verificação do plugin, abrirá a tela 
-de informação sobre a versão do Moodle:';
+$string['blockGameConfigureBlock'] = '<strong>Configurar Bloco Jogo:</strong> Clique no ícone de engrenagem dentro do 
+card do plugin e selecione "Configurar bloco Jogo". Aparecerá um modal com as configurações.';
 
-$string['blockGameMoodleCheck'] = 'O Moodle checa se todos os requisitos para continuar rodando estão sendo cumpridos.';
+$string['blockGameBlockSettings'] = '<strong>Configurações do Bloco:</strong>';
 
-$string['blockGameStatusOK'] = 'OK - O componente está correto e sem problemas.';
+$string['blockGameEditTitle'] = '<strong>Editar Título:</strong> Informe um título para o bloco.';
 
-$string['blockGameStatusVerify'] = 'Verificar - ...';
+$string['blockGameShowCourseName'] = '<strong>Mostrar Nome do Curso:</strong> Exibe ou não o nome do curso.';
 
-$string['blockGamePluginVerification'] = 'Verificação de Plugins: Na tela "Verificação de plugins", o plugin já está no 
-banco de dados do Moodle e está pronto para atualizar. Clique em "Atualizar a base de dados do Moodle agora".';
+$string['blockGamePointActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza as notas das atividades 
+como pontos.';
+$string['blockGameShowGroupRanking'] = '<strong>Mostrar Classificação por Grupo:</strong> Exibe a classificação por grupo.';
 
-$string['blockGameUpdateVersion'] = 'Atualizando para Nova Versão: Na tela "Atualizando para nova versão", clique em 
-"Continuar".';
+$string['blockGameGroupPointsCalculation'] = '<strong>Cálculo para Pontos de Grupo:</strong> Campo privado e desabilitado.';
 
-$string['blockGameConfigIntro'] = 'Configuração do Plugin';
+$string['blockGameRankingListLimit'] = '<strong>Limite da Lista de Classificação:</strong> Define o número de 
+participantes exibidos na classificação.';
 
-$string['blockGameDefaultConfig'] = 'Configuração Padrão do Plugin:';
+$string['blockGamePreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do 
+usuário na classificação.';
 
-$string['blockGameConfigNote'] = 'Após a instalação, abrirá a tela de configuração padrão do plugin. Se não houver 
-configuração específica para um curso, as configurações padrão serão utilizadas. Alterar os dados padrão do plugin é opcional.';
+$string['blockGameShowScore'] = '<strong>Mostrar Pontuação:</strong> Exibe a pontuação no bloco.';
 
-$string['blockGameConfigFields'] = 'Configurar Campos:';
+$string['blockGameShowLevel'] = '<strong>Mostrar Nível:</strong> Exibe o nível no bloco.';
 
-$string['blockGameUseAvatar'] = 'Utilizar Avatar: Permite o uso de avatares.';
+$string['blockGameNumberOfLevels'] = '<strong>Número de Níveis:</strong> Define o número de níveis do curso.';
 
-$string['blockGameReplaceAvatars'] = 'Substituir Imagens de Avatares: Permite alterar todos os avatares disponíveis.';
+$string['blockGameSectionCompletionPoints'] = '<strong>Configurações de Pontuação de Seção:</strong> Configura a 
+pontuação de cada seção do curso.';
 
-$string['blockGameAllowAvatarChange'] = 'Permitir Mudança de Avatar no Curso: Define se os participantes podem alterar 
-seus avatares.';
+$string['blockGameActivityCompletionPoints'] = '<strong>Pontuação por Conclusão de Atividade:</strong> Configura a 
+pontuação de cada atividade do curso. Na lista de tópicos, clique no ícone de edição e configure a pontuação na aba 
+"Pontos do jogo".';
 
-$string['blockGameShowPlayerInfo'] = 'Mostrar Informações do Jogador: Mostra informações de todos os cursos do participante.';
+$string['blockGameBlockDisplaySettings'] = '<strong>Onde Exibir Este Bloco:</strong> Define onde o bloco aparecerá.';
 
-$string['blockGamePointForActivities'] = 'Pontuar Notas de Atividades: Contabiliza a nota das atividades como pontos.';
+$string['blockGamePageSettings'] = '<strong>Nesta Página:</strong> Define a visibilidade e posição do bloco na página.';
 
-$string['blockGameDailyBonus'] = 'Bônus do Dia: Define pontos por dia de acesso.';
-
-$string['blockGameBonusForBadge'] = 'Bônus para Emblema: Aplica pontuação para cada emblema conquistado.';
-
-$string['blockGameShowRanking'] = 'Mostrar Classificação: Permite visualizar a classificação.';
-
-$string['blockGamePreserveIdentity'] = 'Preservar Identidade do Usuário: Preserva a identidade do usuário na classificação.';
-
-$string['blockGameShowScore'] = 'Mostrar Pontuação: Mostra a pontuação dos participantes.';
-
-$string['blockGameShowLevel'] = 'Mostrar Nível: Mostra o nível dos participantes.';
-
-$string['blockGameCustomLevelImages'] = 'Substituir Imagens de Níveis: Permite alterar todas as imagens dos níveis.';
-
-$string['blockGameNumberOfLevels'] = 'Número de Níveis: Define o número de níveis para os cursos.';
-
-$string['blockGameSaveChanges'] = 'Salvar Configurações: Após checar os campos, clique em "Salvar mudanças".';
-
-$string['blockGameCourseConfig'] = 'Configuração para um Curso Específico';
-
-$string['blockGameAccessCourses'] = 'Acessar Meus Cursos: Vá em "Meus cursos" e selecione o curso desejado.';
-
-$string['blockGameEditMode'] = 'Modo de Edição: No canto superior direito da tela, clique em "Modo de edição".';
-
-$string['blockGameAddBlock'] = 'Adicionar Bloco: Abra a "Gaveta de blocos" e clique em "Adicionar um bloco", selecionando 
-a opção "Jogo". Um card do plugin aparecerá na aba.';
-
-$string['blockGameConfigureBlock'] = 'Configurar Bloco Jogo: Clique no ícone de engrenagem no card do plugin e selecione 
-"Configurar bloco Jogo". Aparecerá um modal com configurações.';
-
-$string['blockGameBlockSettings'] = 'Configurações do Bloco:';
-
-$string['blockGameEditTitle'] = 'Editar Título: Informe um título para o bloco.';
-
-$string['blockGameShowCourseName'] = 'Mostrar Nome do Curso: Exibe ou não o nome do curso.';
-
-$string['blockGameShowPlayerInfo'] = 'Mostrar Informações do Jogador: Mostra informações de todos os cursos do participante.';
-
-$string['blockGamePointActivities'] = 'Pontuar Notas de Atividades: Contabiliza notas como pontos.';
-
-$string['blockGameDailyBonus'] = 'Bônus do Dia: Define pontos por dia de acesso.';
-
-$string['blockGameShowGroupRanking'] = 'Mostrar Classificação por Grupo: Mostra a classificação por grupo.';
-
-$string['blockGameGroupPointsCalculation'] = 'Cálculo para Pontos de Grupo: Campo privado e desabilitado.';
-
-$string['blockGameShowRanking'] = 'Mostrar Classificação: Permite o participante ver a classificação.';
-
-$string['blockGameRankingListLimit'] = 'Limite da Lista de Classificação: Define a quantidade de participantes exibidos 
-na classificação.';
-$string['blockGamePreserveIdentity'] = 'Preservar Identidade do Usuário: Preserva a identidade do usuário na classificação.';
-
-$string['blockGameShowScore'] = 'Mostrar Pontuação: Mostra a pontuação no bloco.';
-
-$string['blockGameShowLevel'] = 'Mostrar Nível: Mostra o nível no bloco.';
-
-$string['blockGameNumberOfLevels'] = 'Número de Níveis: Define o número de níveis do curso.';
-
-$string['blockGameSectionCompletionPoints'] = 'Configurações de Pontuação de Seção: Configura a pontuação de cada seção 
-do curso.';
-
-$string['blockGameActivityCompletionPoints'] = 'Pontuação por Conclusão de Atividade: Configura a pontuação de cada 
-atividade do curso. Na lista de tópicos, clique no ícone de edição e configure a pontuação na aba "Pontos do jogo".';
-
-$string['blockGameBlockDisplaySettings'] = 'Onde Exibir Este Bloco: Define onde o bloco aparecerá.';
-
-$string['blockGamePageSettings'] = 'Nesta Página: Define a visibilidade e posição do bloco na página.';
-
-$string['blockGameSaveBlockConfig'] = 'Salvar Configurações: Após configurar o bloco, clique em "Salvar mudanças".';
+$string['blockGameSaveBlockConfig'] = '<strong>Salvar Configurações:</strong> Após configurar o bloco, clique em 
+"Salvar mudanças".';
 
 /**********************************************************************************************************************/
 

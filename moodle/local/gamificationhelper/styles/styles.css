@@ -215,3 +215,51 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
+.gamification-helper-modal .install-plugin-content{
+    padding: 1rem;
+}
+
+.gamification-helper-modal .install-plugin-content ol li{
+    display: block;
+}
+
+.gamification-helper-modal .install-plugin-content ol li:first-child{
+    counter-reset: item;
+}
+
+.gamification-helper-modal .install-plugin-content ol li{
+    counter-increment: item;
+    list-style-type: none !important;
+    position: relative;
+}
+
+.gamification-helper-modal .install-plugin-content ol li:before {
+    content:counters(item, ".") ". "; 
+    position: absolute; 
+    margin-right: 100%; 
+    right: 10px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.gamification-helper-modal .install-plugin-content .title-install{
+    margin-top: 20px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-desc{
+    text-align: justify;
+    font-weight: normal;
+}
+
+.gamification-helper-modal .install-plugin-content .section-subtitle{
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 18px;
+}

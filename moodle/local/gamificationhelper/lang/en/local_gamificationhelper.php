@@ -183,6 +183,41 @@ $string['permissionsListTitle'] = 'List of permissions:';
 /**********************************************************************************************************************/
 
 /**
+ * Default install plugin
+ */
+
+// Plugin Installation (Admin)
+$string['defaultInstallInstallIntro'] = 'Plugin Installation (Admins Only)';
+
+$string['defaultInstallInstallStep1'] = 'Drag the downloaded .zip file to the file area or click "Choose a file" to open the file directory on your computer.';
+
+$string['defaultInstallInstallStep2'] = 'Click "Install plugin from ZIP file".';
+
+$string['defaultInstallValidation'] = 'A plugin validation screen will be displayed. If the validation is successful, click "Continue".';
+
+$string['defaultInstallMoodleVersionInfo'] = 'After verifying the plugin, a screen with information about the Moodle version will be displayed:';
+
+$string['defaultInstallMoodleCheck'] = 'Moodle checks if all requirements for continued operation are met.';
+
+$string['defaultInstallStatusOK'] = 'OK - The component is correct and without issues.';
+
+$string['defaultInstallPluginVerification'] = 'Plugin Verification: On the "Plugin verification" screen, the plugin is already in the Moodle database and is ready to be updated. Click "Upgrade Moodle database now".';
+
+$string['defaultInstallUpdateVersion'] = 'Updating to New Version: On the "Updating to new version" screen, click "Continue".';
+
+$string['defaultInstallConfigIntro'] = 'Plugin Configuration';
+
+$string['defaultInstallDefaultConfig'] = 'Default Plugin Configuration:';
+
+$string['defaultInstallConfigNote'] = 'After installation, the default plugin configuration screen will be displayed. If there are no specific configurations for a course, the default settings will be used. Changing the default plugin settings is optional and should only be done if you want the plugin to adopt a specific behavior by default.';
+
+$string['defaultInstallConfigFields'] = 'Configure Fields:';
+
+$string['defaultInstallCourseConfig'] = 'Course-Specific Configuration';
+
+/**********************************************************************************************************************/
+
+/**
  * Block Game
  */
 
@@ -214,96 +249,84 @@ $string['blockGamePluginVerification'] = 'Plugin Verification: On the "Plugin Ve
 $string['blockGameUpdateVersion'] = 'Updating to New Version: On the "Updating to new version" screen, click "Continue".';
 
 // Plugin Configuration
-$string['blockGameConfigIntro'] = 'Plugin Configuration';
+$string['blockGameUseAvatar'] = '<strong>Use Avatar:</strong> Allows the use of avatars.';
 
-$string['blockGameDefaultConfig'] = 'Default Plugin Configuration:';
+$string['blockGameReplaceAvatars'] = '<strong>Replace Avatar Images:</strong> Allows changing all available avatars.';
 
-$string['blockGameConfigNote'] = 'After installation, the plugin\'s default configuration screen will open. If there is 
-no specific configuration for a course, the default configurations will be used. Changing the plugin\'s default settings 
-is optional.';
+$string['blockGameAllowAvatarChange'] = '<strong>Allow Avatar Change in Course:</strong> Defines if participants can 
+change their avatars.';
 
-$string['blockGameConfigFields'] = 'Configure Fields:';
+$string['blockGameShowPlayerInfo'] = '<strong>Show Player Information:</strong> Displays information from all the 
+participant\'s courses.';
 
-$string['blockGameUseAvatar'] = 'Use Avatar: Allows the use of avatars.';
+$string['blockGamePointForActivities'] = '<strong>Score Activity Grades:</strong> Converts activity grades into points.';
 
-$string['blockGameReplaceAvatars'] = 'Replace Avatar Images: Allows you to change all available avatars.';
+$string['blockGameDailyBonus'] = '<strong>Daily Bonus:</strong> Sets points per day of access.';
 
-$string['blockGameAllowAvatarChange'] = 'Allow Avatar Change in Course: Defines if participants can change their avatars.';
+$string['blockGameBonusForBadge'] = '<strong>Bonus for Badge:</strong> Applies points for each badge earned.';
 
-$string['blockGameShowPlayerInfo'] = 'Show Player Info: Shows information about all the participant\'s courses.';
+$string['blockGameShowRanking'] = '<strong>Show Ranking:</strong> Allows participants to see the ranking.';
 
-$string['blockGamePointForActivities'] = 'Point Activity Grades: Counts the activity grades as points.';
+$string['blockGamePreserveIdentity'] = '<strong>Preserve User Identity:</strong> Preserves the user\'s identity in the 
+ranking.';
 
-$string['blockGameDailyBonus'] = 'Daily Bonus: Defines points per day of access.';
+$string['blockGameShowScore'] = '<strong>Show Score:</strong> Displays participants\' scores.';
 
-$string['blockGameBonusForBadge'] = 'Bonus for Badge: Applies points for each badge earned.';
+$string['blockGameShowLevel'] = '<strong>Show Level:</strong> Displays participants\' levels.';
 
-$string['blockGameShowRanking'] = 'Show Ranking: Allows viewing the ranking.';
+$string['blockGameCustomLevelImages'] = '<strong>Replace Level Images:</strong> Allows changing all level images.';
 
-$string['blockGamePreserveIdentity'] = 'Preserve User Identity: Preserves the user\'s identity in the ranking.';
+$string['blockGameNumberOfLevels'] = '<strong>Number of Levels:</strong> Sets the number of levels for the courses.';
 
-$string['blockGameShowScore'] = 'Show Score: Shows the participants\' scores.';
+$string['blockGameSaveChanges'] = '<strong>Save Settings:</strong> After configuring the fields, click "Save changes".';
 
-$string['blockGameShowLevel'] = 'Show Level: Shows the participants\' levels.';
+// Course-Specific Configuration
+$string['blockGameAccessCourses'] = '<strong>Access My Courses:</strong> Go to "My courses" and select the desired course.';
 
-$string['blockGameCustomLevelImages'] = 'Replace Level Images: Allows you to change all the level images.';
+$string['blockGameEditMode'] = '<strong>Edit Mode:</strong> In the top right corner of the screen, click "Turn editing on".';
 
-$string['blockGameNumberOfLevels'] = 'Number of Levels: Defines the number of levels for the courses.';
+$string['blockGameAddBlock'] = '<strong>Add Block:</strong> Open the "Block drawer" by clicking the arrow icon just 
+below the "Turn editing on" button. Click "Add a block" and select the "Game" option. A plugin card will appear on the 
+tab.';
 
-$string['blockGameSaveChanges'] = 'Save Changes: After checking the fields, click "Save changes".';
+$string['blockGameConfigureBlock'] = '<strong>Configure Game Block:</strong> Click the gear icon on the plugin card and 
+select "Configure Game block". A modal with settings will appear.';
 
-$string['blockGameCourseConfig'] = 'Configuration for a Specific Course';
+$string['blockGameBlockSettings'] = '<strong>Block Settings:</strong>';
 
-$string['blockGameAccessCourses'] = 'Access My Courses: Go to "My courses" and select the desired course.';
+$string['blockGameEditTitle'] = '<strong>Edit Title:</strong> Enter a title for the block.';
 
-$string['blockGameEditMode'] = 'Edit Mode: In the top right corner of the screen, click "Edit mode".';
+$string['blockGameShowCourseName'] = '<strong>Show Course Name:</strong> Displays or hides the course name.';
 
-$string['blockGameAddBlock'] = 'Add Block: Open the "Block drawer" and click "Add a block", selecting the "Game" option. 
-A plugin card will appear in the tab.';
+$string['blockGamePointActivities'] = '<strong>Score Activity Grades:</strong> Converts activity grades into points.';
 
-$string['blockGameConfigureBlock'] = 'Configure Game Block: Click the gear icon on the plugin card and select "Configure 
-Game block". A modal with configurations will appear.';
+$string['blockGameShowGroupRanking'] = '<strong>Show Group Ranking:</strong> Displays the group ranking.';
 
-$string['blockGameBlockSettings'] = 'Block Settings:';
+$string['blockGameGroupPointsCalculation'] = '<strong>Group Points Calculation:</strong> Private and disabled field.';
 
-$string['blockGameEditTitle'] = 'Edit Title: Provide a title for the block.';
+$string['blockGameRankingListLimit'] = '<strong>Ranking List Limit:</strong> Sets the number of participants displayed 
+in the ranking.';
+$string['blockGamePreserveIdentity'] = '<strong>Preserve User Identity:</strong> Preserves the user\'s identity in the 
+ranking.';
+$string['blockGameShowScore'] = '<strong>Show Score:</strong> Displays the score in the block.';
 
-$string['blockGameShowCourseName'] = 'Show Course Name: Displays or hides the course name.';
+$string['blockGameShowLevel'] = '<strong>Show Level:</strong> Displays the level in the block.';
 
-$string['blockGameShowPlayerInfo'] = 'Show Player Info: Shows information about all the participant\'s courses.';
+$string['blockGameNumberOfLevels'] = '<strong>Number of Levels:</strong> Sets the number of levels for the course.';
 
-$string['blockGamePointActivities'] = 'Point Activity Grades: Counts grades as points.';
+$string['blockGameSectionCompletionPoints'] = '<strong>Section Completion Points Settings:</strong> Configures the points 
+for each course section.';
 
-$string['blockGameDailyBonus'] = 'Daily Bonus: Defines points per day of access.';
+$string['blockGameActivityCompletionPoints'] = '<strong>Activity Completion Points:</strong> Configures the points for 
+each course activity. In the list of course topics, click the edit icon and configure the points in the "Game points" tab.';
 
-$string['blockGameShowGroupRanking'] = 'Show Group Ranking: Displays the ranking by group.';
+$string['blockGameBlockDisplaySettings'] = '<strong>Where to Display This Block:</strong> Defines where the block will 
+appear.';
 
-$string['blockGameGroupPointsCalculation'] = 'Group Points Calculation: Private and disabled field.';
+$string['blockGamePageSettings'] = '<strong>On This Page:</strong> Defines the visibility and position of the block on 
+the page.';
 
-$string['blockGameShowRanking'] = 'Show Ranking: Allows the participant to see the ranking.';
-
-$string['blockGameRankingListLimit'] = 'Ranking List Limit: Defines the number of participants shown in the ranking.';
-
-$string['blockGamePreserveIdentity'] = 'Preserve User Identity: Preserves the user\'s identity in the ranking.';
-
-$string['blockGameShowScore'] = 'Show Score: Displays the score in the block.';
-
-$string['blockGameShowLevel'] = 'Show Level: Displays the level in the block.';
-
-$string['blockGameNumberOfLevels'] = 'Number of Levels: Defines the number of levels for the course.';
-
-$string['blockGameSectionCompletionPoints'] = 'Section Completion Points Settings: Configures the points for each course 
-section.';
-
-$string['blockGameActivityCompletionPoints'] = 'Activity Completion Points: Configures the points for each course activity. 
-In the topic list, click the edit icon and configure the points in the "Game points" tab.';
-
-$string['blockGameBlockDisplaySettings'] = 'Where to Display This Block: Defines where the block will appear.';
-
-$string['blockGamePageSettings'] = 'On This Page: Defines the block\'s visibility and position on the page.';
-
-$string['blockGameSaveBlockConfig'] = 'Save Changes: After configuring the block, click "Save changes".';
-
+$string['blockGameSaveBlockConfig'] = '<strong>Save Settings:</strong> After configuring the block, click "Save changes".';
 
 /**********************************************************************************************************************/
 
