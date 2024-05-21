@@ -148,17 +148,18 @@
 }
 
 .gamification-helper-modal{
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-25%, -25%);
+    transform: translate(-50%, -50%);
     z-index: 99999;
 }
 
 .gamification-helper-modal .modal-content{
-    width: 800px;
+    max-width: 1000px;
+    width: 100%;
     height: auto;
-    height: 800px;
+    height: 80vh;
     justify-content: space-between;
 }
 
@@ -220,6 +221,17 @@
     padding: 1rem;
 }
 
+.gamification-helper-modal .install-plugin-content img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: fit-content;
+    height: auto;
+    margin-bottom: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
 .gamification-helper-modal .install-plugin-content ol li{
     display: block;
 }
@@ -262,4 +274,15 @@
     display: block;
     margin-top: 25px;
     margin-bottom: 18px;
+}
+
+.gamification-helper-modal .install-plugin-content .support-link-list{
+    padding-left: 30px;
+}
+
+.gamification-helper-modal .install-plugin-content .support-link-list li{
+    color: var(--blue);
+    margin-left: 0;
+    display: list-item;
+    list-style-type: disc !important;
 }

@@ -183,13 +183,15 @@ $string['permissionsListTitle'] = 'Lista de permissões:';
  * Default install plugin
  */
 
- // Instalação do Plugin (Admin)
+// Instalação do Plugin (Admin)
 $string['defaultInstallInstallIntro'] = 'Instalação do Plugin (Apenas para Administradores)';
 
-$string['defaultInstallInstallStep1'] = 'Arraste o arquivo .zip que foi baixado até a área de arquivos ou clique em "Escolher 
+$string['defaultInstallInstallStep1'] = 'Clique no botão "Instalação" para abrir a página de instalação de plugins.';
+
+$string['defaultInstallInstallStep2'] = 'Arraste o arquivo .zip que foi baixado até a área de arquivos ou clique em "Escolher 
 um arquivo" para abrir o diretório de arquivos do seu computador.';
 
-$string['defaultInstallInstallStep2'] = 'Clique em "Instalar plugin do arquivo ZIP".';
+$string['defaultInstallInstallStep3'] = 'Clique em "Instalar plugin do arquivo ZIP".';
 
 $string['defaultInstallValidation'] = 'Uma tela de validação do plugin será exibida. Se a validação for bem-sucedida, 
 clique em "Continuar".';
@@ -220,6 +222,8 @@ $string['defaultInstallConfigFields'] = 'Configurar Campos:';
 
 $string['defaultInstallCourseConfig'] = 'Configuração para um Curso Específico';
 
+$string['defaultInstallSupportLinks'] = 'Acesse os seguintes links para obter mais informações e suporte';
+
 /**********************************************************************************************************************/
 
 /**
@@ -242,19 +246,40 @@ $string['formatTrail'] = 'Trail Format';
 
 // Configuração do Plugin
 $string['blockGameUseAvatar'] = '<strong>Utilizar Avatar:</strong> Permite o uso de avatares.';
-$string['blockGameReplaceAvatars'] = '<strong>Substituir Imagens de Avatares:</strong> Permite alterar todos os avatares disponíveis.';
-$string['blockGameAllowAvatarChange'] = '<strong>Permitir Mudança de Avatar no Curso:</strong> Define se os participantes podem alterar seus avatares.';
-$string['blockGameShowPlayerInfo'] = '<strong>Mostrar Informações do Jogador:</strong> Exibe informações de todos os cursos do participante.';
-$string['blockGamePointForActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza a nota das atividades como pontos.';
+
+$string['blockGameReplaceAvatars'] = '<strong>Substituir Imagens de Avatares:</strong> Permite alterar todos os avatares 
+disponíveis.';
+
+$string['blockGameAllowAvatarChange'] = '<strong>Permitir Mudança de Avatar no Curso:</strong> Define se os participantes 
+podem alterar seus avatares.';
+
+$string['blockGameShowPlayerInfo'] = '<strong>Mostrar Informações do Jogador:</strong> Exibe informações de todos os cursos 
+do participante.';
+
+$string['blockGamePointForActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza a nota das atividades 
+como pontos.';
+
 $string['blockGameDailyBonus'] = '<strong>Bônus do Dia:</strong> Define pontos por dia de acesso.';
+
 $string['blockGameBonusForBadge'] = '<strong>Bônus para Emblema:</strong> Aplica pontos para cada emblema conquistado.';
-$string['blockGameShowRanking'] = '<strong>Mostrar Classificação:</strong> Permite que os participantes vejam a classificação.';
-$string['blockGamePreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do usuário na classificação.';
+
+$string['blockGameShowRanking'] = '<strong>Mostrar Classificação:</strong> Permite que os participantes vejam a 
+classificação.';
+
+$string['blockGamePreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do usuário 
+na classificação.';
+
 $string['blockGameShowScore'] = '<strong>Mostrar Pontuação:</strong> Exibe a pontuação dos participantes.';
+
 $string['blockGameShowLevel'] = '<strong>Mostrar Nível:</strong> Exibe o nível dos participantes.';
-$string['blockGameCustomLevelImages'] = '<strong>Substituir Imagens de Níveis:</strong> Permite alterar todas as imagens dos níveis.';
+
+$string['blockGameCustomLevelImages'] = '<strong>Substituir Imagens de Níveis:</strong> Permite alterar todas as imagens 
+dos níveis.';
+
 $string['blockGameNumberOfLevels'] = '<strong>Número de Níveis:</strong> Define o número de níveis para os cursos.';
-$string['blockGameSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em "Salvar mudanças".';
+
+$string['blockGameSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em "Salvar 
+mudanças".';
 
 // Configuração para um Curso Específico
 $string['blockGameAccessCourses'] = '<strong>Acessar Meus Cursos:</strong> Vá em "Meus cursos" e selecione o curso 
@@ -307,6 +332,13 @@ $string['blockGamePageSettings'] = '<strong>Nesta Página:</strong> Define a vis
 
 $string['blockGameSaveBlockConfig'] = '<strong>Salvar Configurações:</strong> Após configurar o bloco, clique em 
 "Salvar mudanças".';
+
+$string['blockGameSupportLink1'] = 'Como instalar plugins';
+
+$string['blockGameSupportLink2'] = 'Como instalar e configurar o plugin Block Game';
+
+$string['blockGameSupportLink3'] = 'Gamificação na Prática com a Plataforma Moodle';
+
 
 /**********************************************************************************************************************/
 

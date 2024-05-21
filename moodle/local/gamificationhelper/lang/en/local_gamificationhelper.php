@@ -189,9 +189,11 @@ $string['permissionsListTitle'] = 'List of permissions:';
 // Plugin Installation (Admin)
 $string['defaultInstallInstallIntro'] = 'Plugin Installation (Admins Only)';
 
-$string['defaultInstallInstallStep1'] = 'Drag the downloaded .zip file to the file area or click "Choose a file" to open the file directory on your computer.';
+$string['defaultInstallInstallStep1'] = 'Click the "Install" button to open the plugin installation page.';
 
-$string['defaultInstallInstallStep2'] = 'Click "Install plugin from ZIP file".';
+$string['defaultInstallInstallStep2'] = 'Drag the downloaded .zip file to the file area or click "Choose a file" to open the file directory on your computer.';
+
+$string['defaultInstallInstallStep3'] = 'Click "Install plugin from ZIP file".';
 
 $string['defaultInstallValidation'] = 'A plugin validation screen will be displayed. If the validation is successful, click "Continue".';
 
@@ -215,6 +217,8 @@ $string['defaultInstallConfigFields'] = 'Configure Fields:';
 
 $string['defaultInstallCourseConfig'] = 'Course-Specific Configuration';
 
+$string['defaultInstallSupportLinks'] = 'Access the following links for more information and support';
+
 /**********************************************************************************************************************/
 
 /**
@@ -234,19 +238,6 @@ $string['modalTitle'] = 'Installation and Configuration';
 $string['blockGame'] = 'Block Game';
 $string['levelUp'] = 'Level Up XP';
 $string['formatTrail'] = 'Trail Format';
-
-// Installation of the Plugin (Admin Only)
-$string['blockGameInstallIntro'] = 'Installation of the Plugin (Admin Only)';
-$string['blockGameDownload'] = 'Download Plugin: Go to Block Game and click "Download".';
-$string['blockGameInstallStep1'] = 'Drag the .zip file you downloaded to the file area or click "Choose a file" to open your computer\'s file directory.';
-$string['blockGameInstallStep2'] = 'Click "Install plugin from ZIP file".';
-$string['blockGameValidation'] = 'Plugin Validation: A plugin validation screen will appear. If successful, click "Continue".';
-$string['blockGameMoodleVersionInfo'] = 'Moodle Version Information: After the plugin is verified, a screen will appear with information about the Moodle version:';
-$string['blockGameMoodleCheck'] = 'Moodle checks if all requirements to continue running are met.';
-$string['blockGameStatusOK'] = 'OK - The component is correct and without any issues.';
-$string['blockGameStatusVerify'] = 'Verify - ...';
-$string['blockGamePluginVerification'] = 'Plugin Verification: On the "Plugin Verification" screen, the plugin is already in the Moodle database and is ready to update. Click "Update the Moodle database now".';
-$string['blockGameUpdateVersion'] = 'Updating to New Version: On the "Updating to new version" screen, click "Continue".';
 
 // Plugin Configuration
 $string['blockGameUseAvatar'] = '<strong>Use Avatar:</strong> Allows the use of avatars.';
@@ -327,6 +318,12 @@ $string['blockGamePageSettings'] = '<strong>On This Page:</strong> Defines the v
 the page.';
 
 $string['blockGameSaveBlockConfig'] = '<strong>Save Settings:</strong> After configuring the block, click "Save changes".';
+
+$string['blockGameSupportLink1'] = 'How to install plugins';
+
+$string['blockGameSupportLink2'] = 'How to install and configure the Block Game plugin';
+
+$string['blockGameSupportLink3'] = 'Gamification in Practice with the Moodle Platform';
 
 /**********************************************************************************************************************/
 
