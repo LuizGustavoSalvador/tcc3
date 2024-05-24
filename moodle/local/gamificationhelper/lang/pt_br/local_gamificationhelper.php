@@ -437,10 +437,6 @@ $string['blockXpSettingsDescription'] = 'A aba Configurações inclui diversos c
 detalhada de cada um. Aqui você pode ajustar as configurações gerais do plugin para atender melhor às suas necessidades 
 específicas.';
 
-$string['blockXpSupportLinks'] = 'Links de Apoio';
-
-$string['blockXpSupportLinksDescription'] = 'Acesse os seguintes links para obter mais informações e suporte:';
-
 /**********************************************************************************************************************/
 
 /**
