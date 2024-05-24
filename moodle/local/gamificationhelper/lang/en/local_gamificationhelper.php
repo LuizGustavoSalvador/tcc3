@@ -347,6 +347,86 @@ $string['blockXp:viewreport'] = 'View the report';
 $string['blockXp:addinstance'] = 'Add a new block';
 
 // Tutorial
+$string['levelUpConfigIntro'] = 'Default Configuration of Level Up XP Plugin';
+
+$string['levelUpDefaultConfig'] = 'After installation, the default plugin configuration screen will be displayed. If 
+there are no specific configurations for a course, the default settings will be used. Changing the default plugin data 
+is optional and should be done only if you want the plugin to adopt specific behavior by default.';
+
+$string['levelUpLevelTab'] = 'Levels';
+
+$string['levelUpLevelDescription'] = 'This tab allows customization of the levels that course participants can achieve. 
+Here are the available options:';
+
+$string['levelUpLevelStart'] = '<strong>Start:</strong> Defines the number of points required to reach each level.';
+
+$string['levelUpLevelLength'] = '<strong>Length:</strong> Defines the additional points required to advance to the next 
+level.';
+$string['levelUpLevelName'] = '<strong>Name:</strong> Allows you to add a custom name for each level.';
+$string['levelUpLevelDescriptionField'] = '<strong>Description:</strong> Allows you to add a description for each level.';
+$string['levelUpPopupMessage'] = '<strong>Popup Notification Messages and Badge to Grant:</strong> Available only if Level 
+Up XP+ is added (paid feature).';
+
+$string['levelUpPointsTab'] = 'Points';
+
+$string['levelUpPointsDescription'] = 'In this tab, you can configure custom rules to award points to users when they 
+perform certain actions.';
+
+$string['levelUpCustomRules'] = '<strong>Add Custom Rules:</strong> Allows you to define specific actions that award 
+points to users, such as completing activities, accessing resources, among others.';
+
+$string['levelUpReportTab'] = 'Report';
+$string['levelUpReportDescription'] = 'The Report tab provides detailed information about the points of the participants.';
+$string['levelUpEditPoints'] = '<strong>Edit Participant Points:</strong> Allows you to manually credit or debit points for 
+users.';
+$string['levelUpLogTab'] = '<strong>Log Tab:</strong> Displays a detailed log of user actions and awarded points, useful for 
+monitoring progress and adjusting scoring rules.';
+
+$string['levelUpRankingTab'] = 'Ranking';
+
+$string['levelUpRankingDescription'] = 'The Ranking tab shows the classification of participants based on accumulated 
+points. This view can be used to foster healthy competition and student engagement.';
+
+$string['levelUpInfoTab'] = 'Information';
+
+$string['levelUpInfoDescription'] = 'In this tab, you can add support texts or additional information that will be 
+displayed to participants. These texts can include tips, game rules, or any other relevant information.';
+
+$string['levelUpBlockConfigTab'] = 'Configure Block';
+
+$string['levelUpBlockConfigDescription'] = 'This tab allows you to configure the position of the plugin block on the 
+screen and its visibility.';
+
+$string['levelUpBlockPosition'] = '<strong>Block Position:</strong> Defines where the block will be displayed on the 
+course page.';
+
+$string['levelUpBlockVisibility'] = '<strong>Visibility:</strong> Defines whether the block will be visible or not to 
+participants.';
+
+$string['levelUpPermissionsTab'] = 'Permissions';
+
+$string['levelUpPermissionsDescription'] = 'In this tab, you can define what permissions each user level will have. This 
+is useful for controlling access to certain plugin functionalities.';
+
+$string['levelUpEditPermissions'] = '<strong>Edit Permissions:</strong> Allows you to adjust permissions for different user 
+levels.';
+
+$string['levelUpCheckPermissionsTab'] = 'Check Permissions';
+
+$string['levelUpCheckPermissionsDescription'] = 'The Check Permissions tab displays a list of participants and their 
+respective permissions in the plugin.';
+
+$string['levelUpParticipantsPermissions'] = '<strong>List of Participants and Permissions:</strong> Shows which permissions 
+each user has.';
+
+$string['levelUpSettingsTab'] = 'Settings';
+
+$string['levelUpSettingsDescription'] = 'The Settings tab includes various default fields that already have a detailed 
+explanation for each one. Here you can adjust the general settings of the plugin to better meet your specific needs.';
+
+$string['levelUpSupportLinks'] = 'Support Links';
+
+$string['levelUpSupportLinksDescription'] = 'Access the following links for more information and support:';
 
 /**********************************************************************************************************************/
 

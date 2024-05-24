@@ -16,6 +16,7 @@ class recommendationPlugin {
         [
             'name' => 'Block Game',
             'slug' => 'blockGame',
+            'key' => 'game',
             'download' => 'https://moodle.org/plugins/download.php/29329/block_game_moodle41_2023053101.zip',
             'url' => 'https://moodle.org/plugins/block_game',
             'objectives' => [self::OWNERSHIP_AND_POSSESSION, self::SOCIAL_INFLUENCE_AND_RELATEDNESS],
@@ -24,6 +25,7 @@ class recommendationPlugin {
         [
             'name' => 'Level Up XP - Gamification',
             'slug' => 'blockXp',
+            'key' => 'block_xp',
             'download' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip',
             'url' => 'https://moodle.org/plugins/block_xp',
             'objectives' => [self::DEVELOPMENT_AND_ACHIEVEMENT, self::SOCIAL_INFLUENCE_AND_RELATEDNESS],
@@ -32,6 +34,7 @@ class recommendationPlugin {
         [
             'name' => 'Trail format',
             'slug' => 'trail',
+            'key' => 'trail',
             'download' => 'https://moodle.org/plugins/download.php/29369/format_trail_moodle42_2023060501.zip',
             'url' => 'https://moodle.org/plugins/trail',
             'objectives' => [self::EXPLORATION_AND_DISCOVERY, self::EMPOWERMENT_AND_CREATIVITY],
