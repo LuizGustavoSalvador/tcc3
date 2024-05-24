@@ -357,6 +357,90 @@ $string['blockXp:manage'] = 'Gerenciar todos os aspectos dos pontos de experiên
 $string['blockXp:viewlogs'] = 'Acessar os logs';
 $string['blockXp:viewreport'] = 'Ver o relatório';
 
+// Tutorial
+$string['blockXpConfigIntro'] = 'Configuração Padrão do Plugin Level Up XP';
+$string['blockXpDefaultConfig'] = 'Após a instalação, a tela de configuração padrão do plugin será exibida. Se não houver configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os dados padrão do plugin é opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico por padrão.';
+
+$string['blockXpLevelTab'] = 'Níveis';
+$string['blockXpLevelDescription'] = 'Esta aba permite a personalização dos níveis que os participantes do curso podem 
+atingir. Aqui estão as opções disponíveis:';
+$string['blockXpLevelStart'] = '<strong>Início:</strong> Define a quantidade de pontos necessários para atingir cada nível.';
+
+$string['blockXpLevelLength'] = '<strong>Comprimento:</strong> Define a quantidade de pontos adicionais necessários para 
+avançar ao próximo nível.';
+
+$string['blockXpLevelName'] = '<strong>Nome:</strong> Permite adicionar um nome personalizado para cada nível.';
+
+$string['blockXpLevelDescriptionField'] = '<strong>Descrição:</strong> Permite adicionar uma descrição para cada nível.';
+
+$string['blockXpPopupMessage'] = '<strong>Mensagens de Notificações do Popup e Emblema para Conceder:</strong> Disponíveis 
+apenas se o Level Up XP+ estiver adicionado (recurso pago).';
+
+$string['blockXpPointsTab'] = 'Pontos';
+
+$string['blockXpPointsDescription'] = 'Nesta aba, você pode configurar regras personalizadas para conceder pontos aos u
+suários quando realizarem determinadas ações.';
+
+$string['blockXpCustomRules'] = '<strong>Adicionar Regras Customizadas:</strong> Permite definir ações específicas que 
+concedem pontos aos usuários, como completar atividades, acessar recursos, entre outros.';
+
+$string['blockXpReportTab'] = 'Relatório';
+
+$string['blockXpReportDescription'] = 'A aba Relatório fornece informações detalhadas sobre os pontos dos participantes.';
+
+$string['blockXpEditPoints'] = '<strong>Editar Pontos do Participante:</strong> Permite creditar ou debitar pontos 
+manualmente para os usuários.';
+
+$string['blockXpLogTab'] = '<strong>Aba Log:</strong> Exibe um log detalhado das ações dos usuários e os pontos concedidos, 
+útil para monitorar o progresso e ajustar regras de pontuação.';
+
+$string['blockXpRankingTab'] = 'Ranking';
+
+$string['blockXpRankingDescription'] = 'A aba Ranking mostra a classificação dos participantes com base nos pontos 
+acumulados. Esta visualização pode ser utilizada para fomentar a competitividade saudável e o engajamento dos alunos.';
+
+$string['blockXpInfoTab'] = 'Informações';
+
+$string['blockXpInfoDescription'] = 'Nesta aba, você pode adicionar textos de apoio ou informações adicionais que serão 
+exibidas aos participantes. Esses textos podem incluir dicas, regras do jogo ou qualquer outra informação relevante.';
+
+$string['blockXpBlockConfigTab'] = 'Configurar Bloco';
+
+$string['blockXpBlockConfigDescription'] = 'Esta aba permite configurar a posição do bloco do plugin na tela e sua 
+visibilidade.';
+
+$string['blockXpBlockPosition'] = '<strong>Posicionamento do Bloco:</strong> Define onde o bloco será exibido na página 
+do curso.';
+
+$string['blockXpBlockVisibility'] = '<strong>Visibilidade:</strong> Define se o bloco será visível ou não para os 
+participantes.';
+
+$string['blockXpPermissionsTab'] = 'Permissões';
+
+$string['blockXpPermissionsDescription'] = 'Nesta aba, você pode definir quais permissões cada nível de usuário terá. 
+Isso é útil para controlar o acesso a determinadas funcionalidades do plugin.';
+
+$string['blockXpEditPermissions'] = '<strong>Editar Permissões:</strong> Permite ajustar as permissões para diferentes 
+níveis de usuário.';
+
+$string['blockXpCheckPermissionsTab'] = 'Checar Permissões';
+
+$string['blockXpCheckPermissionsDescription'] = 'A aba Checar Permissões exibe uma lista de participantes e suas respectivas 
+permissões no plugin.';
+
+$string['blockXpParticipantsPermissions'] = '<strong>Lista de Participantes e Permissões:</strong> Mostra quais permissões 
+cada usuário possui.';
+
+$string['blockXpSettingsTab'] = 'Configurações';
+
+$string['blockXpSettingsDescription'] = 'A aba Configurações inclui diversos campos padrão que já possuem uma explicação 
+detalhada de cada um. Aqui você pode ajustar as configurações gerais do plugin para atender melhor às suas necessidades 
+específicas.';
+
+$string['blockXpSupportLinks'] = 'Links de Apoio';
+
+$string['blockXpSupportLinksDescription'] = 'Acesse os seguintes links para obter mais informações e suporte:';
+
 /**********************************************************************************************************************/
 
 /**
