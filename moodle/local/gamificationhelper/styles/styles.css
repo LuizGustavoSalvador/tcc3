@@ -254,10 +254,16 @@
 }
 
 .gamification-helper-modal .install-plugin-content .section-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
     margin-top: 45px;
     margin-bottom: 20px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-title.admin {
+    font-size: 1.6rem;
+    margin-top: 25px;
+    margin-bottom: 45px;
 }
 
 .gamification-helper-modal .install-plugin-content .title-install{
@@ -270,10 +276,15 @@
 }
 
 .gamification-helper-modal .install-plugin-content .section-subtitle{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: block;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 18px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-subtitle.sub-with-description{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
 .gamification-helper-modal .install-plugin-content .support-link-list{
