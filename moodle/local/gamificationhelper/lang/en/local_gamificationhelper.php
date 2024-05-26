@@ -383,17 +383,17 @@ customize levels as needed. It is essential to keep students informed about thei
 actively participating in the course. The customization features allow teachers to tailor gamification to the specific 
 needs of their courses, making the learning experience more engaging and effective.';
 
-$string['blockXpLevel'] = 'Displays the level number and the amount of XP points needed to reach it. This visualization 
-helps students understand their progress and encourages them to reach the next level.';
+$string['blockXpInformationLevel'] = 'Displays the level number and the amount of XP points needed to reach it. This 
+visualization helps students understand their progress and encourages them to reach the next level.';
 
 $string['blockXpInformationUsageExample'] = '<strong>View Progress:</strong> Each colored star represents a specific level 
 that students can achieve. Hovering over a star shows how many points are needed to reach the next level.';
 
-$string['blockXpAddInformation'] = '<strong>Add Information:</strong> Allows including additional descriptions or goals that 
+$string['blockXpInformationAdd'] = '<strong>Add Information:</strong> Allows including additional descriptions or goals that 
 can help students better understand the level system and what is expected of them.';
 
-$string['blockXpCustomizeLevelsInstructions'] = '<strong>Customize Levels:</strong> Opens the "Levels" tab if you want to 
-change the point requirements or the appearance of the levels.';
+$string['blockXpInformationCustomizeLevelsInstructions'] = '<strong>Customize Levels:</strong> Opens the "Levels" tab 
+if you want to change the point requirements or the appearance of the levels.';
 
 // Report Tab - Report
 $string['blockXpReportTab'] = 'Report';

@@ -394,18 +394,18 @@ motivá-los a continuar participando ativamente do curso. As funcionalidades de 
 adaptar a gamificação às necessidades específicas de seus cursos, tornando a experiência de aprendizagem mais envolvente 
 e eficaz.';
 
-$string['blockXpLevel'] = 'Mostra o número do nível e a quantidade de pontos XP necessários para alcançá-lo. Esta 
+$string['blockXpInformationLevel'] = 'Mostra o número do nível e a quantidade de pontos XP necessários para alcançá-lo. Esta 
 visualização ajuda os alunos a entenderem seu progresso e os incentiva a alcançar o próximo nível.';
 
 $string['blockXpInformationUsageExample'] = '<strong>Visualizar Progresso:</strong> Cada estrela colorida representa um 
 nível específico que os alunos podem alcançar. Ao passar o cursor sobre uma estrela, é possível ver quantos pontos são 
 necessários para alcançar o próximo nível.';
 
-$string['blockXpAddInformation'] = '<strong>Adicionar Informações:</strong> Permite incluir descrições ou metas adicionais 
+$string['blockXpInformationAdd'] = '<strong>Adicionar Informações:</strong> Permite incluir descrições ou metas adicionais 
 que podem ajudar os alunos a entender melhor o sistema de níveis e o que é esperado deles.';
 
-$string['blockXpCustomizeLevelsInstructions'] = '<strong>Personalizar Níveis:</strong> Abrirá a aba "Níveis" caso desejar 
-alterar os requisitos de pontos ou a aparência dos níveis.';
+$string['blockXpInformationCustomizeLevelsInstructions'] = '<strong>Personalizar Níveis:</strong> Abrirá a aba "Níveis" 
+caso desejar alterar os requisitos de pontos ou a aparência dos níveis.';
 
 
 // Aba Ranking

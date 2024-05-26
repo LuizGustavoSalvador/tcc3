@@ -156,8 +156,18 @@ class ModalInstallPlugin
                 <li>' . get_string('blockXpStep3', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpStep4', 'local_gamificationhelper') . '</li>
             </ol>
-            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpReportTab', 'local_gamificationhelper') . '</strong></span>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpInformationTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpInformationTabDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'aba-informacoes.png', 'Informações gerais do curso com o Level up') .'
+            <ol>
+                <li>' . get_string('blockXpInformationLevel', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpInformationUsageExample', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpInformationAdd', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpInformationCustomizeLevelsInstructions', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpRankingTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpRankingDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'aba-ranking.png', 'Ranking dos participantes') .'
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpReportTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpReportDescription', 'local_gamificationhelper') . '</p>
             ' . self::getImageHTML($blockXpPath, 'aba-relatorio-editar-pontos.png', 'Como editar pontos manualmente') .'
@@ -252,9 +262,6 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpPlusTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpPlusDescription', 'local_gamificationhelper') . '</p>
-           
-            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpInfoTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpInfoDescription', 'local_gamificationhelper') . '</p>
 
 
 
