@@ -147,54 +147,135 @@ class ModalInstallPlugin
             ';
         } elseif ($slug === 'blockXp') {
             $html .= '<h5 class="section-title ' . $admin . '">' . get_string('defaultInstallCourseConfig', 'local_gamificationhelper') . '</h5>
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpLevelTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpLevelDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'aba-niveis-1.png', 'Aba níveis') .
-                self::getImageHTML($blockXpPath, 'aba-niveis-2.png', 'Aba níveis') . '
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpAccessSettingsTutorial', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpAccessSettingsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'bloco-level-up.png', 'Bloco geral level up') .'
             <ol>
+                <li>' . get_string('blockXpStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpStep3', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpStep4', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpReportTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpRankingDescription', 'local_gamificationhelper') . '</p>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpReportTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpReportDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'aba-relatorio-editar-pontos.png', 'Como editar pontos manualmente') .'
+            <ol>
+                <li>' . get_string('blockXpReportResetCourseData', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpReportEditPoints', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpReportViewLogs', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpReportDeleteUser', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpLogsTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpLogsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'aba-relatorio-logs.png', 'Lista de logs dos participantes') .'
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpLevelConfigTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpLevelConfigDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'aba-niveis-geral-1.png', 'Aba níveis') .
+                self::getImageHTML($blockXpPath, 'aba-niveis-geral-2.png', 'Aba níveis') . '
+            <ol>
+                <li>' . get_string('blockXpLevelNumberOfLevels', 'local_gamificationhelper') . '</li>
+                <li><span>' . get_string('blockXpLevelQuickEditPoints', 'local_gamificationhelper') . '</span>
+                    <ol class="sub-list">
+                        <li>' . get_string('blockXpLevelQuickEditEqual', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpLevelQuickEditIncreasing', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpLevelQuickEditSnowball', 'local_gamificationhelper') . '</li>
+                    </ol>
+                    ' . self::getImageHTML($blockXpPath, 'aba-niveis-edicao-rapida-pontos.png', 'Edição rápida de pontos') . '
+                </li>
                 <li>' . get_string('blockXpLevelStart', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpLevelLength', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpLevelName', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpLevelDescriptionField', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockXpPopupMessage', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpLevelPopupMessage', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpLevelBadgeAward', 'local_gamificationhelper') . '</li>
             </ol>
-            ' . self::getImageHTML($blockXpPath, 'aba-niveis-aparencia.png', 'Configurações de nível') . '
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpPointsTab', 'local_gamificationhelper') . '</strong></span>
+            ' . self::getImageHTML($blockXpPath, 'aba-niveis-configuracao.png', 'Configurações de nível') . '
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpLevelAppearanceTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpLevelAppearanceDescription', 'local_gamificationhelper') . '</p>
+            <ol>
+                <li>' . get_string('blockXpLevelBadge', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpLevelPointsSymbol', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpLevelPreview', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpLevelResetAppearance', 'local_gamificationhelper') . '</li>
+            </ol>
+            ' . self::getImageHTML($blockXpPath, 'aba-niveis-aparencia.png', 'Configurações de aparência do nível') . '
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpPointsTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpPointsDescription', 'local_gamificationhelper') . '</p>
             <ol>
-                <li>' . get_string('blockXpCustomRules', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPointsEventRulesDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPointsCompletionRulesDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPointsGradeRulesDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPointsDropsDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPointsImportDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPointsResetRulesDescription', 'local_gamificationhelper') . '</li>
             </ol>
-            ' . self::getImageHTML($blockXpPath, 'aba-pontos-regras-1.png', 'Configurações de pontos de regras') . 
-                self::getImageHTML($blockXpPath, 'aba-pontos-regras-2.png', 'Configurações de pontos de regras') . '
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpReportTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpReportDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'aba-pontos-1.png', 'Configurações de pontos de regras') . 
+                self::getImageHTML($blockXpPath, 'aba-pontos-2.png', 'Configurações de pontos de regras') . '
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpSettingsTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpSettingsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'aba-configuracoes-1.png', 'Configurações de do plugin') . 
+                self::getImageHTML($blockXpPath, 'aba-configuracoes-2.png', 'Configurações de do plugin') . '
             <ol>
-                <li>' . get_string('blockXpEditPoints', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($blockXpPath, 'aba-relatorio-editar-pontos.png', 'Como editar pontos manualmente') . '
-                <li>' . get_string('blockXpLogTab', 'local_gamificationhelper') . '</li>
+                <li><span>' . get_string('blockXpGeneralSettings', 'local_gamificationhelper') . '</span>
+                    <ol class="sub-list">
+                        <li>' . get_string('blockXpEnableXpGain', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpEnableInfoPage', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpEnableLevelUpNotifications', 'local_gamificationhelper') . '</li>
+                    </ol>
+                </li>
+                <li><span>' . get_string('blockXpRankingSettings', 'local_gamificationhelper') . '</span>
+                    <ol class="sub-list">
+                        <li>' . get_string('blockXpRankingSettingsEnable', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpRankingSettingsAnonymity', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpRankingSettingsParticipantLimit', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpRankingSettingsDisplay', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpRankingSettingsAdditionalColumns', 'local_gamificationhelper') . '</li>
+                    </ol>
+                </li>
+                <li><span>' . get_string('blockXpFraudProtectionSettings', 'local_gamificationhelper') . '</span>
+                    <ol class="sub-list">
+                        <li>' . get_string('blockXpFraudProtectionSettingsEnable', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpFraudProtectionSettingsMaxActionsInterval', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpFraudProtectionSettingsTimeRequiredBetweenIdenticalActions', 'local_gamificationhelper') . '</li>
+                    </ol>
+                </li>
+                <li><span>' . get_string('blockXpBlockAppearanceSettings', 'local_gamificationhelper') . '</span>
+                    <ol class="sub-list">
+                        <li>' . get_string('blockXpBlockAppearanceSettingsTitle', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpBlockAppearanceSettingsIntroduction', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpBlockAppearanceSettingsShowRankingSample', 'local_gamificationhelper') . '</li>
+                        <li>' . get_string('blockXpBlockAppearanceSettingsShowRecentRewards', 'local_gamificationhelper') . '</li>
+                    </ol>
+                </li>
             </ol>
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpRankingTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpRankingDescription', 'local_gamificationhelper') . '</p>
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpInfoTab', 'local_gamificationhelper') . '</strong></span>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpPlusTab', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpPlusDescription', 'local_gamificationhelper') . '</p>
+           
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpInfoTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpInfoDescription', 'local_gamificationhelper') . '</p>
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpBlockConfigTab', 'local_gamificationhelper') . '</strong></span>
+
+
+
+
+
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpBlockConfigTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpBlockConfigDescription', 'local_gamificationhelper') . '</p>
             <ol>
                 <li>' . get_string('blockXpBlockPosition', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpBlockVisibility', 'local_gamificationhelper') . '</li>
             </ol>
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpPermissionsTab', 'local_gamificationhelper') . '</strong></span>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpPermissionsTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpPermissionsDescription', 'local_gamificationhelper') . '</p>
             <ol>
                 <li>' . get_string('blockXpEditPermissions', 'local_gamificationhelper') . '</li>
             </ol>
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpCheckPermissionsTab', 'local_gamificationhelper') . '</strong></span>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpCheckPermissionsTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpCheckPermissionsDescription', 'local_gamificationhelper') . '</p>
             <ol>
                 <li>' . get_string('blockXpParticipantsPermissions', 'local_gamificationhelper') . '</li>
             </ol>
-            <span class="section-subtitle sub-with-desciption"><strong>' . get_string('blockXpSettingsTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpSettingsDescription', 'local_gamificationhelper') . '</p>
             <h5 class="section-title">' . get_string('defaultInstallSupportLinks', 'local_gamificationhelper') . '</h5>
             <ul class="support-link-list">
             </ul>

@@ -4,7 +4,7 @@
  * Gamification Helper
  */
 
-$string['pluginname'] = 'Moodle Gamification Helper';
+$string['pluginname'] = 'MGA - Moodle Gamification Assistant';
 
 $string['installplugin'] = 'Install new plugin';
 
@@ -37,11 +37,11 @@ $string['btnDownload'] = 'Download';
 
 $string['btnDownloadDesc'] = 'Available only if the plugin is not already installed, allows direct download of the plugin.';
 
-$string['btnInstall'] = 'Install and config';
+$string['btnInstall'] = 'Config plugin';
 
 $string['btnInstallDesc'] = 'Opens a modal with step-by-step instructions for installing and configuring the plugin.';
 
-$string['btnStart'] = 'Start';
+$string['btnStart'] = 'Start MGA';
 
 $string['btnNext'] = 'Next';
 
@@ -52,7 +52,7 @@ $string['btnBack'] = 'Back';
 /**
  * Main Page
  */
-$string['welcome'] = 'Welcome to the Gamification Helper!';
+$string['welcome'] = 'Welcome to MGA!';
 
 $string['introduction'] = 'This plugin is designed to assist teachers in selecting the best gamification plugins based 
 on the educational objectives they wish to achieve and the most suitable gamification model to apply. 
@@ -331,13 +331,13 @@ $string['blockGameSupportLink3'] = 'Gamification in Practice with the Moodle Pla
  * Level Up XP - Gamification
  */
 
-// About
+/****************************************** About ******************************************/
 $string['levelUp'] = 'Level Up XP - Gamification';
 
 $string['levelUpDesc'] = 'Enables the creation of experience point systems that motivate students through visual 
 progression and rewards.';
 
-// Permissions
+/*************************************** Permissions ***************************************/
 $string['blockXp:manage'] = 'Manage all aspects of experience points';
 
 $string['blockXp:viewlogs'] = 'View the logs';
@@ -346,34 +346,241 @@ $string['blockXp:viewreport'] = 'View the report';
 
 $string['blockXp:addinstance'] = 'Add a new block';
 
-// Tutorial
+/**************************************** Tutorial ****************************************/
 $string['blockXpConfigIntro'] = 'Default Configuration of Level Up XP Plugin';
 
 $string['blockXpDefaultConfig'] = 'After installation, the default plugin configuration screen will be displayed. If 
 there are no specific configurations for a course, the default settings will be used. Changing the default plugin data 
 is optional and should be done only if you want the plugin to adopt specific behavior by default.';
 
-$string['blockXpLevelTab'] = 'Levels';
+// How to Access the Settings
+$string['blockXpAccessSettingsTutorial'] = 'Accessing the Level Up XP Plugin Settings';
 
-$string['blockXpLevelDescription'] = 'This tab allows customization of the levels that course participants can achieve. 
-Here are the available options:';
+$string['blockXpAccessSettingsDescription'] = 'To configure the Level Up XP plugin and customize the gamification of 
+your course, follow the steps below:';
 
-$string['blockXpLevelStart'] = '<strong>Start:</strong> Defines the number of points required to reach each level.';
+$string['blockXpStep1'] = '<strong>Navigate to the Level Up XP Block:</strong> In your course panel, locate the Level 
+Up XP block. It displays a summary of your current progress, including the current level, total XP accumulated, ranking, 
+and recent rewards.';
 
-$string['blockXpLevelLength'] = '<strong>Length:</strong> Defines the additional points required to advance to the next 
-level.';
+$string['blockXpStep2'] = '<strong>Accessing the Settings:</strong> In the Level Up XP block, click on the "Settings" 
+option. This will open the page where you can adjust various plugin settings to customize the gamification experience 
+for your students.';
+
+$string['blockXpStep3'] = '<strong>Settings Tabs:</strong> On the settings page, you will find several tabs, each 
+dedicated to different aspects of the plugin.';
+
+$string['blockXpStep4'] = '<strong>XP+ Features:</strong> In some areas of the settings, you will see fields marked with 
+"XP+ required". These fields are extra features of the paid XP+ extension. However, these features are just additional 
+customizations and do not interfere with the gamification and results achievable with the base plugin.';
+
+// Information Tab
+$string['blockXpInformationTab'] = 'Information';
+
+$string['blockXpInformationTabDescription'] = 'The "Information" tab of the Level Up XP plugin provides a visual summary 
+of students\' levels in a course. In this tab, you can see the distribution of levels, add relevant information, and 
+customize levels as needed. It is essential to keep students informed about their progress and to motivate them to continue 
+actively participating in the course. The customization features allow teachers to tailor gamification to the specific 
+needs of their courses, making the learning experience more engaging and effective.';
+
+$string['blockXpLevel'] = 'Displays the level number and the amount of XP points needed to reach it. This visualization 
+helps students understand their progress and encourages them to reach the next level.';
+
+$string['blockXpInformationUsageExample'] = '<strong>View Progress:</strong> Each colored star represents a specific level 
+that students can achieve. Hovering over a star shows how many points are needed to reach the next level.';
+
+$string['blockXpAddInformation'] = '<strong>Add Information:</strong> Allows including additional descriptions or goals that 
+can help students better understand the level system and what is expected of them.';
+
+$string['blockXpCustomizeLevelsInstructions'] = '<strong>Customize Levels:</strong> Opens the "Levels" tab if you want to 
+change the point requirements or the appearance of the levels.';
+
+// Report Tab - Report
+$string['blockXpReportTab'] = 'Report';
+
+$string['blockXpReportDescription'] = 'The Report tab allows you to view and manage the levels and points of course 
+participants. Here, you can manually edit each student\'s points, check action logs, and reset the course score data.';
+
+$string['blockXpReportResetCourseData'] = '<strong>Reset course data:</strong> Resets all scores for all course participants. 
+This action resets all students\' levels and points, which is useful for restarting gamification in the course.';
+
+$string['blockXpReportEditPoints'] = '<strong>Edit points:</strong> Allows you to manually adjust a specific student\'s 
+points. By clicking "Edit," you can enter new point and level values for the selected participant and click "Save changes" 
+to apply the changes.';
+
+$string['blockXpReportViewLogs'] = '<strong>View logs:</strong> Displays records of actions taken by participants. Used 
+to monitor and review activities that resulted in point gains.';
+
+$string['blockXpReportDeleteUser'] = '<strong>Delete user:</strong> Removes the user from the ranking and deletes all 
+associated logs. If the intention is only to reset the user\'s points, it is recommended to set the points to 0, as 
+deleting a user does not affect their ability to earn points in the future.';
+
+// Report Tab - Logs
+$string['blockXpLogsTab'] = 'Logs';
+
+$string['blockXpLogsDescription'] = 'The Logs tab allows you to view and filter all event records that resulted in point 
+gains for course participants. This feature is useful for monitoring and reviewing activities performed by students.';
+
+// Levels Tab -> Configuration
+$string['blockXpLevelConfigTab'] = 'Level Configuration';
+
+$string['blockXpLevelConfigDescription'] = 'Customize the settings for each level, including the points required to reach 
+the level, names, and descriptions.';
+
+$string['blockXpLevelNumberOfLevels'] = '<strong>Number of Levels:</strong> Set the total number of levels that participants 
+can achieve. By default, Level Up XP sets up 10 levels of increasing difficulty.';
+
+$string['blockXpLevelQuickEditPoints'] = '<strong>Quick Edit Points:</strong> Allows you to quickly edit the points required 
+to reach each level. We recommend using the "Snowballing" method to create an environment where the early levels are not 
+too hard, but become increasingly challenging as the learner progresses.';
+
+$string['blockXpLevelQuickEditEqual'] = '<strong>Equal:</strong> All levels require the same number of points to be reached. 
+This method is simple but can take away the sense of achievement of reaching a level, as all levels are identical.';
+
+$string['blockXpLevelQuickEditIncreasing'] = '<strong>Increasing:</strong> Levels progressively take more points to be 
+reached. This method increases the difficulty linearly, making the points predictable for the instructor.';
+
+$string['blockXpLevelQuickEditSnowball'] = '<strong>Snowballing:</strong> Levels become exponentially harder to reach. 
+This method allows learners to quickly progress through the early levels, but requires greater effort in the later levels. 
+Recommended.';
+
+$string['blockXpLevelStart'] = '<strong>Start:</strong> Sets the number of points required to reach the level. 
+Note: Level 1 always starts at 0 points and cannot be changed.';
+
+$string['blockXpLevelLength'] = '<strong>Length:</strong> Sets the additional number of points needed to progress to the 
+next level.';
+
 $string['blockXpLevelName'] = '<strong>Name:</strong> Allows you to add a custom name for each level.';
-$string['blockXpLevelDescriptionField'] = '<strong>Description:</strong> Allows you to add a description for each level.';
-$string['blockXpPopupMessage'] = '<strong>Popup Notification Messages and Badge to Grant:</strong> Available only if Level 
-Up XP+ is added (paid feature).';
 
+$string['blockXpLevelDescriptionField'] = '<strong>Description:</strong> Allows you to add a description for each level. 
+This description will be displayed to participants on the information page.';
+
+$string['blockXpLevelPopupMessage'] = '<strong>Popup Notification Message:</strong> Optional message displayed in the popup 
+notification when the participant reaches the level. This option is available only with Level Up XP+ enabled.';
+
+$string['blockXpLevelBadgeAward'] = '<strong>Badge to Award:</strong> Allows you to select a badge to be awarded when the 
+participant reaches the level. This option is available only with Level Up XP+ enabled.';
+
+// Levels Tab -> Appearance
+$string['blockXpLevelAppearanceTab'] = 'Level Appearance';
+
+$string['blockXpLevelAppearanceDescription'] = 'Customize the appearance of the levels and the meaning of the points.';
+
+$string['blockXpLevelBadge'] = '<strong>Level Badges:</strong> Allows you to upload custom badges to represent each level.';
+
+$string['blockXpLevelPointsSymbol'] = '<strong>Points Symbol:</strong> Defines the symbol to be used for representing 
+experience points. This option is available only with Level Up XP+ enabled.';
+
+$string['blockXpLevelPreview'] = '<strong>Preview:</strong> Displays a preview of how the level badges will appear to the 
+course participants.';
+
+$string['blockXpLevelResetAppearance'] = '<strong>Reset Appearance to Defaults:</strong> Resets the appearance of all course 
+levels to the default settings. Be sure you want to apply this action, as it cannot be undone.';
+
+// Points Tab
 $string['blockXpPointsTab'] = 'Points';
 
-$string['blockXpPointsDescription'] = 'In this tab, you can configure custom rules to award points to users when they 
-perform certain actions.';
+$string['blockXpPointsDescription'] = 'Configure scoring rules based on events and other actions performed by users.';
 
-$string['blockXpCustomRules'] = '<strong>Add Custom Rules:</strong> Allows you to define specific actions that award 
-points to users, such as completing activities, accessing resources, among others.';
+$string['blockXpPointsEventRulesDescription'] = '<strong>Event Rules:</strong> Monitor actions and award points to students 
+as they perform specific activities. It is advisable to check the plugin Log page to identify which events are triggered as 
+students perform actions in the course.';
+
+$string['blockXpPointsCompletionRulesDescription'] = '<strong>Completion Rules:</strong> Award points to students as they 
+complete activities, sections, or courses. This feature requires Level Up XP+.';
+
+$string['blockXpPointsGradeRulesDescription'] = '<strong>Grade Rules:</strong> Allow users to receive points equivalent 
+to the grades they receive. This feature requires Level Up XP+.';
+
+$string['blockXpPointsDropsDescription'] = '<strong>Drops:</strong> These are snippets of code placed directly in the 
+content that grant points when found by a user. This feature requires Level Up XP+.';
+
+$string['blockXpPointsImportDescription'] = '<strong>Import Points:</strong> Allows importing points from a CSV file and 
+optionally sending a message to the recipient. This feature requires Level Up XP+.';
+
+$string['blockXpPointsResetRulesDescription'] = '<strong>Reset Course Rules to Default:</strong> This action resets all 
+course scoring rules to the default settings. Use this option with caution as it cannot be undone.';
+
+// Settings Tab
+$string['blockXpSettingsTab'] = 'Settings';
+
+$string['blockXpSettingsDescription'] = 'The Settings tab allows administrators and instructors to customize various options 
+of the Level Up XP plugin. This includes general adjustments like enabling XP points and notifications, ranking settings, 
+fraud protection to prevent abuse, and customizing the appearance of the Level Up XP block.';
+
+// Settings Tab -> General
+$string['blockXpGeneralSettings'] = 'General';
+
+$string['blockXpEnableXpGain'] = '<strong>Enable XP gain:</strong> Allows enabling or disabling the gain of experience 
+points in the course. When set to "No", no one will earn points in the course. This is useful for freezing earned points 
+or enabling them at a certain time. Note that this can also be controlled with more granularity using the block/xp:earnxp 
+capability.';
+
+$string['blockXpEnableInfoPage'] = '<strong>Enable info page:</strong> Controls whether the plugin\'s info page will be 
+accessible to students. When set to "No", students will not be able to see the info page.';
+
+$string['blockXpEnableLevelUpNotifications'] = '<strong>Enable level-up notifications:</strong> Controls whether students 
+will receive popup notifications when they reach a new level. When set to "Yes", students will see a popup congratulating 
+them on reaching a new level.';
+
+// Settings Tab -> Ranking
+$string['blockXpRankingSettings'] = 'Ranking';
+
+$string['blockXpRankingSettingsEnable'] = '<strong>Enable ranking:</strong> Allows enabling or disabling the ranking view for 
+students. When set to "No," students will not be able to view the ranking.';
+
+$string['blockXpRankingSettingsAnonymity'] = '<strong>Anonymity:</strong> Controls whether participants can see each other\'s 
+names and avatars in the ranking. When enabled, participants\' identities will be displayed. Otherwise, they will remain 
+anonymous.';
+
+$string['blockXpRankingSettingsParticipantLimit'] = '<strong>Participant limit:</strong> Controls how many participants will be 
+displayed in the ranking. You can choose to display all participants or limit the view to immediate neighbors (the two 
+participants above and below the current user, for example).';
+
+$string['blockXpRankingSettingsDisplay'] = '<strong>Ranking:</strong> Defines which columns will be displayed in the ranking. 
+Absolute ranking is the user\'s position in the ranking. Relative ranking is the difference in experience points between 
+a user and their neighbors.';
+
+$string['blockXpRankingSettingsAdditionalColumns'] = '<strong>Additional columns:</strong> Determines which additional columns are 
+displayed in the ranking. To select more than one column or deselect a selected column, press the CTRL or CMD key while 
+clicking.';
+
+// Settings Tab -> Fraud Protection
+$string['blockXpFraudProtectionSettings'] = 'Fraud Protection';
+
+$string['blockXpFraudProtectionSettingsEnable'] = '<strong>Enable fraud protection:</strong> Fraud protection provides a 
+simple and cost-effective mechanism to prevent students from abusing the system using obvious techniques, such as refreshing 
+the same page indefinitely or repeating the same action multiple times.';
+
+$string['blockXpFraudProtectionSettingsMaxActionsInterval'] = '<strong>Max. actions in time interval:</strong> The maximum 
+number of actions that will count towards gaining experience points during the provided time interval. Any subsequent actions 
+will be ignored. When this value is empty or zero, it is not applied.';
+
+$string['blockXpFraudProtectionSettingsTimeRequiredBetweenIdenticalActions'] = '<strong>Time required between identical 
+actions:</strong> The minimum amount of time required before an action that has previously occurred is accepted again. 
+An action is considered identical if it was performed in the same context and object; reading a forum post will be considered 
+identical if the same post is read again. When this value is empty or zero, it does not apply.';
+
+// Settings Tab -> Block Appearance
+$string['blockXpBlockAppearanceSettings'] = 'Block Appearance';
+
+$string['blockXpBlockAppearanceSettingsTitle'] = '<strong>Title:</strong> The title of the block.';
+
+$string['blockXpBlockAppearanceSettingsIntroduction'] = '<strong>Introduction:</strong> A short introductory message 
+displayed in the block. Students can dismiss the message, and in that case, they will not see it again.';
+
+$string['blockXpBlockAppearanceSettingsShowRankingSample'] = '<strong>Show ranking sample:</strong> The ranking sample 
+displays the user\'s ranking. It will also try to show the two people around the user. This feature requires that the 
+ranking table be activated and its rankings displayed.';
+
+$string['blockXpBlockAppearanceSettingsShowRecentRewards'] = '<strong>Show recent rewards:</strong> When enabled, the 
+block will display a small list of recent events that rewarded the student with points.';
+
+// XP+ Tab
+$string['blockXpPlusTab'] = '<strong>XP+</strong>';
+
+$string['blockXpPlusDescription'] = 'Level Up XP+ is a paid extension that offers extra features, but effective gamification 
+can be achieved with the base plugin alone, without the need to purchase the additional tool.';
 
 $string['blockXpReportTab'] = 'Report';
 $string['blockXpReportDescription'] = 'The Report tab provides detailed information about the points of the participants.';
@@ -418,11 +625,6 @@ respective permissions in the plugin.';
 
 $string['blockXpParticipantsPermissions'] = '<strong>List of Participants and Permissions:</strong> Shows which permissions 
 each user has.';
-
-$string['blockXpSettingsTab'] = 'Settings';
-
-$string['blockXpSettingsDescription'] = 'The Settings tab includes various default fields that already have a detailed 
-explanation for each one. Here you can adjust the general settings of the plugin to better meet your specific needs.';
 
 /**********************************************************************************************************************/
 
