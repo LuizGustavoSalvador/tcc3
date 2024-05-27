@@ -37,9 +37,11 @@ $string['btnDownload'] = 'Download';
 
 $string['btnDownloadDesc'] = 'Available only if the plugin is not already installed, allows direct download of the plugin.';
 
-$string['btnInstall'] = 'Config plugin';
+$string['btnConfig'] = 'Config plugin';
 
-$string['btnInstallDesc'] = 'Opens a modal with step-by-step instructions for installing and configuring the plugin.';
+$string['btnConfigDesc'] = 'Opens a modal with step-by-step instructions for installing and configuring the plugin.';
+
+$string['btnInstall'] = 'Install plugin';
 
 $string['btnStart'] = 'Start MGA';
 
@@ -219,6 +221,24 @@ $string['defaultInstallCourseConfig'] = 'Course-Specific Configuration';
 
 $string['defaultInstallSupportLinks'] = 'Access the following links for more information and support';
 
+$string['defaultSupportLink1'] = 'How to install plugins';
+
+// Request installation
+$string['defaultInstallPluginRequestTutorial'] = 'Requesting the Installation of a Plugin';
+
+$string['defaultInstallPluginRequestDescription'] = 'If you do not have administrative permissions to install plugins in 
+Moodle, follow the instructions below to request the installation of a plugin from the Moodle administrator.';
+
+$string['defaultInstallSendEmail'] = '<strong>Contact the Moodle Administrator:</strong> Send a message or email to the 
+administrator of your Moodle environment.';
+
+$string['defaultInstallAttachZipDescription'] = '<strong>Attach the ZIP File of the Plugin:</strong> Attach the ZIP file 
+of the desired plugin in the message so that the administrator can install it directly.';
+
+$string['defaultInstallPluginNameDescription'] = 'If the administrator prefers not to receive ZIP files, provide the name 
+of the plugin "{$a}" so that they can search for and install it directly from the Moodle plugin store.';
+
+
 /**********************************************************************************************************************/
 
 /**
@@ -272,6 +292,24 @@ $string['blockGameDefaultNumberOfLevels'] = '<strong>Number of Levels:</strong> 
 
 $string['blockGameDefaultSaveChanges'] = '<strong>Save Settings:</strong> After configuring the fields, click "Save changes".';
 
+// Adding Block Game to the Course
+$string['blockGameAddToCourseTutorial'] = 'How to Add Block Game to Your Course';
+
+$string['blockGameAddToCourseDescription'] = 'Follow the steps below to add the Block Game block to your course and start 
+using its gamification features.';
+
+$string['blockGameAddStep1'] = '<strong>Select the Desired Course:</strong> On the Moodle dashboard, select the course to 
+which you want to add Block Game.';
+
+$string['blockGameAddStep2'] = '<strong>Enable Edit Mode:</strong> Within the course, click the "Edit mode" button to allow 
+the addition of new blocks.';
+
+$string['blockGameAddStep3'] = '<strong>Open Block Drawer:</strong> With edit mode enabled, go to the side menu (block drawer) 
+and click on "Add a block".';
+
+$string['blockGameAddStep4'] = '<strong>Add Block:</strong> In the list of available blocks, find and select "Game". 
+The block will be added to your course.';
+
 // Course-Specific Configuration
 $string['blockGameAccessCourses'] = '<strong>Access My Courses:</strong> Go to "My courses" and select the desired course.';
 
@@ -320,11 +358,9 @@ the page.';
 
 $string['blockGameSaveBlockConfig'] = '<strong>Save Settings:</strong> After configuring the block, click "Save changes".';
 
-$string['blockGameSupportLink1'] = 'How to install plugins';
+$string['blockGameSupportLink1'] = 'How to install and configure the Block Game plugin';
 
-$string['blockGameSupportLink2'] = 'How to install and configure the Block Game plugin';
-
-$string['blockGameSupportLink3'] = 'Gamification in Practice with the Moodle Platform';
+$string['blockGameSupportLink2'] = 'Gamification in Practice with the Moodle Platform';
 
 /**********************************************************************************************************************/
 
@@ -705,6 +741,9 @@ respective permissions in the plugin.';
 
 $string['blockXpParticipantsPermissions'] = '<strong>List of Participants and Permissions:</strong> Shows which permissions 
 each user has.';
+
+// Support Links
+$string['blockXpSupportLink1'] = 'Official plugin documentation';
 
 /**********************************************************************************************************************/
 

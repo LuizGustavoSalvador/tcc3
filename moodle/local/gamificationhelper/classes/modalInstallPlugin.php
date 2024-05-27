@@ -7,11 +7,11 @@ require_once __DIR__ . '/recommendationPlugin.php';
 
 class ModalInstallPlugin
 {
-    public static function getModalHTML(string $slug)
+    public static function getModalHTML(string $slug, bool $hasInstalled)
     {
         $pluginData = \reset(recommendationPlugin::getPlugins('', '', $slug));
         $modalTitle = get_string('modalTitle', 'local_gamificationhelper', $pluginData['name']);
-        $steps = self::getPluginStepsContent($slug);
+        $steps = self::getPluginStepsContent($slug, $hasInstalled, $pluginData['name']);
 
         if (!$steps) {
             return '';
@@ -27,7 +27,7 @@ class ModalInstallPlugin
                 <div class="content install-plugin-content">' . $steps . '</div>
                 <div class="modal-footer">';
 
-        $html .= is_siteadmin() ? '<a href="http://localhost:3333/admin/tool/installaddon/index.php" class="btn btn-primary" target="_blank">' . get_string('btnInstall', 'local_gamificationhelper') . '</a>' : '';
+        $html .= !is_siteadmin() ? '<a href="http://localhost:3333/admin/tool/installaddon/index.php" class="btn btn-primary" target="_blank">' . get_string('btnInstall', 'local_gamificationhelper') . '</a>' : '';
         
         $html .= '<button type="button" class="btn btn-secondary" onclick="closeModal(\'' . $slug . '\')">Fechar</button>
                 </div></div></div>';
@@ -42,7 +42,7 @@ class ModalInstallPlugin
         return '<img src="' . $imageurl . '" alt="' . $altText . '" />';
     }
 
-    private static function getPluginStepsContent(string $slug): string
+    private static function getPluginStepsContent(string $slug, bool $hasInstalled, string $pluginName): string
     {
         $installPath = 'install';
         $blockGamePath = 'blockgame';
@@ -51,21 +51,31 @@ class ModalInstallPlugin
 
         $admin = !is_siteadmin() ? 'admin' : '';
 
-        $html = is_siteadmin() ? '<h5 class="section-title title-install">' . get_string('defaultInstallInstallIntro', 'local_gamificationhelper') . '</h5>
-        <ol>
-            <li>' . get_string('defaultInstallInstallStep1', 'local_gamificationhelper') . '</li>
-            <li>' . get_string('defaultInstallInstallStep2', 'local_gamificationhelper') . '</li>
-            ' . self::getImageHTML($installPath, 'area-upload-plugin.jpeg', 'Imagem área de arquivos para por o plugin') . '
-            <li>' . get_string('defaultInstallInstallStep3', 'local_gamificationhelper') . '</li>
-            <li>' . get_string('defaultInstallValidation', 'local_gamificationhelper') . '</li>
-            ' . self::getImageHTML($installPath, 'validacao-plugin.jpeg', 'Imagem validação do plugin') . '
-            <li>' . get_string('defaultInstallMoodleVersionInfo', 'local_gamificationhelper') . '</li>
-            <li>' . get_string('defaultInstallMoodleCheck', 'local_gamificationhelper') . '</li>
-            ' . self::getImageHTML($installPath, 'informacao-versao-moodle.png', 'Imagem atualização moodle') . '
-            <li>' . get_string('defaultInstallStatusOK', 'local_gamificationhelper') . '</li>
-            <li>' . get_string('defaultInstallUpdateVersion', 'local_gamificationhelper') . '</li>
-            ' . self::getImageHTML($installPath, 'atualizando-plugin.png', 'Imagem atualização plugin') . '
-        </ol>' : '';
+        if(is_siteadmin()){
+            $html = '<h5 class="section-title title-install">' . get_string('defaultInstallInstallIntro', 'local_gamificationhelper') . '</h5>
+            <ol>
+                <li>' . get_string('defaultInstallInstallStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('defaultInstallInstallStep2', 'local_gamificationhelper') . '</li>
+                ' . self::getImageHTML($installPath, 'area-upload-plugin.jpeg', 'Imagem área de arquivos para por o plugin') . '
+                <li>' . get_string('defaultInstallInstallStep3', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('defaultInstallValidation', 'local_gamificationhelper') . '</li>
+                ' . self::getImageHTML($installPath, 'validacao-plugin.jpeg', 'Imagem validação do plugin') . '
+                <li>' . get_string('defaultInstallMoodleVersionInfo', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('defaultInstallMoodleCheck', 'local_gamificationhelper') . '</li>
+                ' . self::getImageHTML($installPath, 'informacao-versao-moodle.png', 'Imagem atualização moodle') . '
+                <li>' . get_string('defaultInstallStatusOK', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('defaultInstallUpdateVersion', 'local_gamificationhelper') . '</li>
+                ' . self::getImageHTML($installPath, 'atualizando-plugin.png', 'Imagem atualização plugin') . '
+            </ol>';
+        }else{
+            $html = '<h5 class="section-title title-install">' . get_string('defaultInstallPluginRequestTutorial', 'local_gamificationhelper') . '</h5>
+            <p class="section-desc">' . get_string('defaultInstallPluginRequestDescription', 'local_gamificationhelper') . '</p>
+            <ol>
+                <li>' . get_string('defaultInstallSendEmail', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('defaultInstallAttachZipDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('defaultInstallPluginNameDescription', 'local_gamificationhelper', $pluginName) . '</li>
+            </ol>';
+        }
 
         if ($slug === 'blockGame') {
             $html .= is_siteadmin() ?
@@ -93,7 +103,16 @@ class ModalInstallPlugin
                 <li>' . get_string('blockGameDefaultSaveChanges', 'local_gamificationhelper') . '</li>
             </ol>' : '';
 
-            $html .= '<h5 class="section-title ' . $admin . '">' . get_string('defaultInstallCourseConfig', 'local_gamificationhelper') . '</h5>
+            $html .= '<span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameAddToCourseTutorial', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockGameAddToCourseDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockGamePath, 'adicionar-block-game-curso.png', 'Como adicionar o Block Game ao curso') .'
+            <ol>
+                <li>' . get_string('blockGameAddStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameAddStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameAddStep3', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameAddStep4', 'local_gamificationhelper') . '</li>
+            </ol>
+            <h5 class="section-title ' . $admin . '">' . get_string('defaultInstallCourseConfig', 'local_gamificationhelper') . '</h5>
             <ol>
                 <li>' . get_string('blockGameAccessCourses', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockGameEditMode', 'local_gamificationhelper') . '</li>
@@ -135,7 +154,7 @@ class ModalInstallPlugin
             <h5 class="section-title">' . get_string('defaultInstallSupportLinks', 'local_gamificationhelper') . '</h5>
             <ul class="support-link-list">
                 <li><a href="https://docs.moodle.org/404/en/Installing_plugins" target="_blank">
-                    ' . get_string('blockGameSupportLink1', 'local_gamificationhelper') . '
+                    ' . get_string('defaultSupportLink1', 'local_gamificationhelper') . '
                 </a></li>
                 <li><a href="https://www.youtube.com/watch?v=YPSUYfORn0g&ab_channel=prof_jota" target="_blank">
                     ' . get_string('blockGameSupportLink2', 'local_gamificationhelper') . '
@@ -297,29 +316,14 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpPlusTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpPlusDescription', 'local_gamificationhelper') . '</p>
-
-
-
-
-
-            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpBlockConfigTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpBlockConfigDescription', 'local_gamificationhelper') . '</p>
-            <ol>
-                <li>' . get_string('blockXpBlockPosition', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockXpBlockVisibility', 'local_gamificationhelper') . '</li>
-            </ol>
-            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpPermissionsTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpPermissionsDescription', 'local_gamificationhelper') . '</p>
-            <ol>
-                <li>' . get_string('blockXpEditPermissions', 'local_gamificationhelper') . '</li>
-            </ol>
-            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpCheckPermissionsTab', 'local_gamificationhelper') . '</strong></span>
-            <p>' . get_string('blockXpCheckPermissionsDescription', 'local_gamificationhelper') . '</p>
-            <ol>
-                <li>' . get_string('blockXpParticipantsPermissions', 'local_gamificationhelper') . '</li>
-            </ol>
             <h5 class="section-title">' . get_string('defaultInstallSupportLinks', 'local_gamificationhelper') . '</h5>
             <ul class="support-link-list">
+            <li><a href="https://docs.moodle.org/404/en/Installing_plugins" target="_blank">
+            ' . get_string('defaultSupportLink1', 'local_gamificationhelper') . '
+            </a></li>
+            <li><a href="https://docs.levelup.plus/xp/docs" target="_blank">
+                ' . get_string('blockXpSupportLink1', 'local_gamificationhelper') . '
+            </a></li>
             </ul>
             ';
         }

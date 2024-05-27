@@ -81,12 +81,12 @@ if (!empty($recommendedPlugins)) {
             '<i class="fa fa-cog" aria-hidden="true"></i>', 
             [
                 'class' => 'btn btn-primary', 
-                'title' => get_string('btnInstall', 'local_gamificationhelper'),
+                'title' => get_string('btnConfig', 'local_gamificationhelper'),
                 'onclick' => "openInstallModal('{$plugin['slug']}')",
             ]);
 
             echo html_writer::end_tag('div');
-            echo modalInstallPlugin::getModalHTML($plugin['slug']);
+            echo modalInstallPlugin::getModalHTML($plugin['slug'], \array_key_exists($plugin['key'], $pluginsInstalled));
         echo html_writer::end_tag('li');
     }
     echo html_writer::end_tag('ul');

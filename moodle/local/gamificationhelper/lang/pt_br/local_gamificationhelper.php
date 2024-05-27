@@ -34,8 +34,10 @@ $string['btnPermissionsDesc'] = 'Exibe uma modal com as permissões necessárias
 $string['btnDownload'] = 'Download';
 $string['btnDownloadDesc'] = 'Disponível apenas se o plugin não estiver instalado, permite o download direto do plugin.';
 
-$string['btnInstall'] = 'Configurar plugin';
-$string['btnInstallDesc'] = 'Abre uma modal com instruções passo a passo para instalar e configurar o plugin.';
+$string['btnConfig'] = 'Configurar plugin';
+$string['btnConfigDesc'] = 'Abre uma modal com instruções passo a passo para instalar e configurar o plugin.';
+
+$string['btnInstall'] = 'Instalar plugin';
 
 $string['btnStart'] = 'Iniciar o AGM';
 
@@ -219,6 +221,23 @@ $string['defaultInstallCourseConfig'] = 'Configuração para um Curso Específic
 
 $string['defaultInstallSupportLinks'] = 'Acesse os seguintes links para obter mais informações e suporte';
 
+$string['defaultSupportLink1'] = 'Como instalar plugins';
+
+// Solicitar instalação
+$string['defaultInstallPluginRequestTutorial'] = 'Solicitando a Instalação de um Plugin';
+
+$string['defaultInstallPluginRequestDescription'] = 'Se você não possui permissões administrativas para instalar plugins 
+no Moodle, siga as instruções abaixo para solicitar a instalação de um plugin para o administrador do Moodle.';
+
+$string['defaultInstallSendEmail'] = '<strong>Entre em contato com o administrador do Moodle:</strong> Envie uma mensagem 
+ou e-mail para o administrador do seu ambiente Moodle.';
+
+$string['defaultInstallAttachZipDescription'] = '<strong>Encaminhe o arquivo ZIP do plugin:</strong> Anexe o arquivo ZIP 
+do plugin desejado na mensagem para que o administrador possa instalá-lo diretamente.';
+
+$string['defaultInstallPluginNameDescription'] = 'Caso o administrador prefira não receber arquivos ZIP, informe o nome 
+do plugin "{$a}" para que ele possa buscar e instalar diretamente da loja de plugins do Moodle.';
+
 /**********************************************************************************************************************/
 
 /**
@@ -277,6 +296,24 @@ $string['blockGameDefaultNumberOfLevels'] = '<strong>Número de Níveis:</strong
 $string['blockGameDefaultSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em "Salvar 
 mudanças".';
 
+// Adicionar o Block Game ao Curso
+$string['blockGameAddToCourseTutorial'] = 'Como Adicionar o Block Game ao Seu Curso';
+
+$string['blockGameAddToCourseDescription'] = 'Siga os passos abaixo para adicionar o bloco Block Game ao seu curso e 
+começar a utilizar suas funcionalidades de gamificação.';
+
+$string['blockGameAddStep1'] = '<strong>Selecionar o Curso Desejado:</strong> No painel do Moodle, selecione o curso ao 
+qual você deseja adicionar o Block Game.';
+
+$string['blockGameAddStep2'] = '<strong>Habilitar Modo de Edição:</strong> Dentro do curso, clique no botão "Modo de edição" 
+para permitir a adição de novos blocos.';
+
+$string['blockGameAddStep3'] = '<strong>Abrir Gaveta de Blocos:</strong> Com o modo de edição ativado, vá até o menu lateral 
+(gaveta de blocos) e clique em "Adicionar um bloco".';
+
+$string['blockGameAddStep4'] = '<strong>Adicionar Bloco:</strong> Na lista de blocos disponíveis, encontre e selecione "Jogo". 
+O bloco será adicionado ao seu curso.';
+
 // Configuração para um Curso Específico
 $string['blockGameAccessCourses'] = '<strong>Acessar Meus Cursos:</strong> Vá em "Meus cursos" e selecione o curso 
 desejado.';
@@ -329,11 +366,9 @@ $string['blockGamePageSettings'] = '<strong>Nesta Página:</strong> Define a vis
 $string['blockGameSaveBlockConfig'] = '<strong>Salvar Configurações:</strong> Após configurar o bloco, clique em 
 "Salvar mudanças".';
 
-$string['blockGameSupportLink1'] = 'Como instalar plugins';
+$string['blockGameSupportLink1'] = 'Como instalar e configurar o plugin Block Game';
 
-$string['blockGameSupportLink2'] = 'Como instalar e configurar o plugin Block Game';
-
-$string['blockGameSupportLink3'] = 'Gamificação na Prática com a Plataforma Moodle';
+$string['blockGameSupportLink2'] = 'Gamificação na Prática com a Plataforma Moodle';
 
 
 /**********************************************************************************************************************/
@@ -679,13 +714,7 @@ $string['blockXpPlusTab'] = '<strong>XP+</strong>';
 
 $string['blockXpPlusDescription'] = 'O Level Up XP+ é uma extensão paga que oferece funcionalidades extras, mas a gamificação efetiva pode ser alcançada apenas com o plugin base, sem a necessidade de adquirir a ferramenta adicional.';
 
-//////
-
-$string['blockXpInfoTab'] = 'Informações';
-
-$string['blockXpInfoDescription'] = 'Nesta aba, você pode adicionar textos de apoio ou informações adicionais que serão 
-exibidas aos participantes. Esses textos podem incluir dicas, regras do jogo ou qualquer outra informação relevante.';
-
+////
 $string['blockXpBlockConfigTab'] = 'Configurar Bloco';
 
 $string['blockXpBlockConfigDescription'] = 'Esta aba permite configurar a posição do bloco do plugin na tela e sua 
@@ -712,6 +741,9 @@ permissões no plugin.';
 
 $string['blockXpParticipantsPermissions'] = '<strong>Lista de Participantes e Permissões:</strong> Mostra quais permissões 
 cada usuário possui.';
+
+// Links de apoio
+$string['blockXpSupportLink1'] = 'Documentação oficial do plugin';
 
 /**********************************************************************************************************************/
 
