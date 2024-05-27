@@ -148,9 +148,9 @@ class ModalInstallPlugin
         } elseif ($slug === 'blockXp') {
             $html .= is_siteadmin() ? '<h5 class="section-title">' . get_string('blockXpDefaultSettings', 'local_gamificationhelper') . '</h5>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpDefaultSettingsDescription', 'local_gamificationhelper') . '</strong></span>
-            ' . self::getImageHTML($blockGamePath, 'configuracao-padrao-level-up-1.png', 'Tela de configuração padrão do plugin') .
-                self::getImageHTML($blockGamePath, 'configuracao-padrao-level-up-2.png', 'Tela de configuração padrão do plugin') .
-                self::getImageHTML($blockGamePath, 'configuracao-padrao-level-up-3.png', 'Tela de configuração padrão do plugin') . '
+            ' . self::getImageHTML($blockXpPath, 'configuracao-padrao-level-up-1.png', 'Tela de configuração padrão do plugin') .
+                self::getImageHTML($blockXpPath, 'configuracao-padrao-level-up-2.png', 'Tela de configuração padrão do plugin') .
+                self::getImageHTML($blockXpPath, 'configuracao-padrao-level-up-3.png', 'Tela de configuração padrão do plugin') . '
             <ol>
                 <li>' . get_string('blockXpDefaultSettingsPointsContext', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpDefaultSettingsNavBarDisplay', 'local_gamificationhelper') . '</li>
