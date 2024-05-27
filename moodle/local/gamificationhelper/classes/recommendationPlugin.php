@@ -6,7 +6,7 @@ class recommendationPlugin {
     const DEVELOPMENT_AND_ACHIEVEMENT = 'developmentAndAchievement';
     const OWNERSHIP_AND_POSSESSION = 'ownershipAndPossession';
     const EMPOWERMENT_AND_CREATIVITY = 'empowermentAndCreativity';
-    const EXPLORATION_AND_DISCOVERY = 'explorationAndDiscovery';
+    const UNPREDICTABILITY_AND_CURIOSITY = 'unpredictabilityAndCuriosity';
     const SOCIAL_INFLUENCE_AND_RELATEDNESS = 'socialInfluenceAndRelatedness';
     const COMPETITIVE = 'competitive';
     const COOPERATIVE = 'cooperative';
@@ -37,7 +37,7 @@ class recommendationPlugin {
             'key' => 'trail',
             'download' => 'https://moodle.org/plugins/download.php/29369/format_trail_moodle42_2023060501.zip',
             'url' => 'https://moodle.org/plugins/trail',
-            'objectives' => [self::EXPLORATION_AND_DISCOVERY, self::EMPOWERMENT_AND_CREATIVITY],
+            'objectives' => [self::UNPREDICTABILITY_AND_CURIOSITY, self::EMPOWERMENT_AND_CREATIVITY],
             'approaches' => [self::INDEPENDENT, self::EPIC_NARRATIVE]
         ]
     ];

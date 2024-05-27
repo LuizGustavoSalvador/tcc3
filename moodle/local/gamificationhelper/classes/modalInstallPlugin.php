@@ -65,32 +65,32 @@ class ModalInstallPlugin
             <li>' . get_string('defaultInstallStatusOK', 'local_gamificationhelper') . '</li>
             <li>' . get_string('defaultInstallUpdateVersion', 'local_gamificationhelper') . '</li>
             ' . self::getImageHTML($installPath, 'atualizando-plugin.png', 'Imagem atualização plugin') . '
-        </ol>
-        <h5 class="section-title">' . get_string('defaultInstallDefaultConfig', 'local_gamificationhelper') . '</h5>
-        <p class="section-desc">' . get_string('defaultInstallConfigNote', 'local_gamificationhelper') . '</p>' : '';
+        </ol>' : '';
 
         if ($slug === 'blockGame') {
             $html .= is_siteadmin() ?
+            '<h5 class="section-title">' . get_string('blockGameDefaultConfig', 'local_gamificationhelper') . '</h5>
+            <p class="section-desc">' . get_string('blockGameDefaultConfigNote', 'local_gamificationhelper') . '</p>' . 
             self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-1.png', 'Tela de configuração padrão do plugin') .
             self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-2.png', 'Tela de configuração padrão do plugin') .
             self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-3.png', 'Tela de configuração padrão do plugin') . '
             
             <span class="section-subtitle"><strong>' . get_string('defaultInstallConfigFields', 'local_gamificationhelper') . '</strong></span>
             <ol>
-                <li>' . get_string('blockGameUseAvatar', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameReplaceAvatars', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameAllowAvatarChange', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameShowPlayerInfo', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGamePointForActivities', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameDailyBonus', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameBonusForBadge', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameShowRanking', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGamePreserveIdentity', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameShowScore', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameShowLevel', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameCustomLevelImages', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameNumberOfLevels', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameSaveChanges', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultUseAvatar', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultReplaceAvatars', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultAllowAvatarChange', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultShowPlayerInfo', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultPointForActivities', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultDailyBonus', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultBonusForBadge', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultShowRanking', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultPreserveIdentity', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultShowScore', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultShowLevel', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultCustomLevelImages', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultNumberOfLevels', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameDefaultSaveChanges', 'local_gamificationhelper') . '</li>
             </ol>' : '';
 
             $html .= '<h5 class="section-title ' . $admin . '">' . get_string('defaultInstallCourseConfig', 'local_gamificationhelper') . '</h5>
@@ -146,7 +146,42 @@ class ModalInstallPlugin
             </ul>
             ';
         } elseif ($slug === 'blockXp') {
-            $html .= '<h5 class="section-title ' . $admin . '">' . get_string('defaultInstallCourseConfig', 'local_gamificationhelper') . '</h5>
+            $html .= is_siteadmin() ? '<h5 class="section-title">' . get_string('blockXpDefaultSettings', 'local_gamificationhelper') . '</h5>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpDefaultSettingsDescription', 'local_gamificationhelper') . '</strong></span>
+            ' . self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-1.png', 'Tela de configuração padrão do plugin') .
+                self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-2.png', 'Tela de configuração padrão do plugin') .
+                self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-3.png', 'Tela de configuração padrão do plugin') . '
+            <ol>
+                <li>' . get_string('blockXpDefaultSettingsPointsContext', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsNavBarDisplay', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsAdminsCanEarnXp', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsKeepLogs', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsUsageReport', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsEnableInfos', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsEnableLevelUpNotif', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsEnableLeader', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsIdentityMode', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsNeighbours', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsRankMode', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsLadderCols', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsEnableCheatGuard', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsMaxActionsPerTime', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsTimeForMaxActions', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsTimeBetweenSameActions', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsBlockTitle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsBlockDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsRankingSnapshot', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpDefaultSettingsBlockRecentActivity', 'local_gamificationhelper') . '</li>
+            </ol>' : '';
+            $html .= '<span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockXpAddToCourseTutorial', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockXpAddToCourseDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockXpPath, 'adicionar-level-up-curso.png', 'Como adicionar o level up ao curso') .'
+            <ol>
+                <li>' . get_string('blockXpAddStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpAddStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpAddStep3', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpAddStep4', 'local_gamificationhelper') . '</li>
+            </ol>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpAccessSettingsTutorial', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpAccessSettingsDescription', 'local_gamificationhelper') . '</p>
             ' . self::getImageHTML($blockXpPath, 'bloco-level-up.png', 'Bloco geral level up') .'

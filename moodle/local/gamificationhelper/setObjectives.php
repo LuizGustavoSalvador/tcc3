@@ -29,7 +29,7 @@ echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 echo html_writer::tag('li', '<b>' . get_string('developmentAndAchievement', 'local_gamificationhelper') . '</b>: '. get_string('developmentAndAchievementDesc', 'local_gamificationhelper'));
 echo html_writer::tag('li', '<b>' . get_string('ownershipAndPossession', 'local_gamificationhelper') . '</b>: '. get_string('ownershipAndPossessionDesc', 'local_gamificationhelper'));
 echo html_writer::tag('li', '<b>' . get_string('empowermentAndCreativity', 'local_gamificationhelper') . '</b>: '. get_string('empowermentAndCreativityDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('explorationAndDiscovery', 'local_gamificationhelper') . '</b>: '. get_string('explorationAndDiscoveryDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('unpredictabilityAndCuriosity', 'local_gamificationhelper') . '</b>: '. get_string('unpredictabilityAndCuriosityDesc', 'local_gamificationhelper'));
 echo html_writer::tag('li', '<b>' . get_string('socialInfluenceAndRelatedness', 'local_gamificationhelper') . '</b>: '. get_string('socialInfluenceAndRelatednessDesc', 'local_gamificationhelper'));
 
 echo html_writer::end_tag('ul');

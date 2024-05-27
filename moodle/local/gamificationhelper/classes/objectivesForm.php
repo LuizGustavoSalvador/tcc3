@@ -12,7 +12,7 @@ class objectivesForm extends moodleform {
             'developmentAndAchievement' => get_string('developmentAndAchievement', 'local_gamificationhelper'),
             'ownershipAndPossession' => get_string('ownershipAndPossession', 'local_gamificationhelper'),
             'empowermentAndCreativity' => get_string('empowermentAndCreativity', 'local_gamificationhelper'),
-            'explorationAndDiscovery' => get_string('explorationAndDiscovery', 'local_gamificationhelper'),
+            'unpredictabilityAndCuriosity' => get_string('unpredictabilityAndCuriosity', 'local_gamificationhelper'),
             'socialInfluenceAndRelatedness' => get_string('socialInfluenceAndRelatedness', 'local_gamificationhelper'),
         ]);
         

@@ -94,9 +94,10 @@ $string['empowermentAndCreativity'] = 'Empoderamento e Criatividade';
 $string['empowermentAndCreativityDesc'] = 'Oferecer liberdade para explorar e criar soluções únicas dentro de um 
 ambiente estruturado, estimulando a inovação e o pensamento crítico.';
 
-$string['explorationAndDiscovery'] = 'Exploração e Descoberta';
-$string['explorationAndDiscoveryDesc'] = 'Estimular a curiosidade e a exploração autônoma dos conteúdos, permitindo 
-que os alunos descubram novos conhecimentos e conexões de maneira inovadora.';
+$string['unpredictabilityAndCuriosity'] = 'Imprevisibilidade e Curiosidade';
+$string['unpredictabilityAndCuriosityDesc'] = 'Estimular a curiosidade e a exploração autônoma dos conteúdos, permitindo 
+que os alunos descubram novos conhecimentos e conexões de maneira inovadora. A surpresa e a descoberta são poderosos 
+motivadores para engajar os alunos.';
 
 $string['socialInfluenceAndRelatedness'] = 'Influência Social e Pertencimento';
 $string['socialInfluenceAndRelatednessDesc'] = 'Facilitar interações e colaborações significativas entre os alunos, 
@@ -212,12 +213,6 @@ $string['defaultInstallUpdateVersion'] = 'Atualizando para Nova Versão: Na tela
 
 $string['defaultInstallConfigIntro'] = 'Configuração do Plugin';
 
-$string['defaultInstallDefaultConfig'] = 'Configuração Padrão do Plugin';
-
-$string['defaultInstallConfigNote'] = 'Após a instalação, a tela de configuração padrão do plugin será exibida. Se não 
-houver configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os dados padrão do 
-plugin é opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico por padrão.';
-
 $string['defaultInstallConfigFields'] = 'Configurar Campos:';
 
 $string['defaultInstallCourseConfig'] = 'Configuração para um Curso Específico';
@@ -230,55 +225,56 @@ $string['defaultInstallSupportLinks'] = 'Acesse os seguintes links para obter ma
  * Block Game
  */
 
-// About
+/****************************************** About ******************************************/
 $string['blockGame'] = 'Block Game';
 
 $string['blockGameDesc'] = 'Transforma atividades e recursos em uma experiência de jogo por blocos.';
 
-// Permissions
+/*************************************** Permissions ***************************************/
 $string['blockGame:addinstance'] = 'Adicionar um novo bloco Jogo';
 
-// Tutorial
+/**************************************** Tutorial ****************************************/
+// Configurações padrão
+$string['blockGameDefaultConfig'] = 'Configuração Padrão do Plugin';
 
-$string['blockGame'] = 'Block Game';
-$string['levelUp'] = 'Level Up XP';
-$string['formatTrail'] = 'Trail Format';
+$string['blockGameDefaultConfigNote'] = 'Após a instalação, a tela de configuração padrão do plugin será exibida. Se não 
+houver configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os dados padrão do 
+plugin é opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico por padrão.';
 
-// Configuração do Plugin
-$string['blockGameUseAvatar'] = '<strong>Utilizar Avatar:</strong> Permite o uso de avatares.';
+$string['blockGameDefaultUseAvatar'] = '<strong>Utilizar Avatar:</strong> Permite o uso de avatares.';
 
-$string['blockGameReplaceAvatars'] = '<strong>Substituir Imagens de Avatares:</strong> Permite alterar todos os avatares 
+$string['blockGameDefaultReplaceAvatars'] = '<strong>Substituir Imagens de Avatares:</strong> Permite alterar todos os avatares 
 disponíveis.';
 
-$string['blockGameAllowAvatarChange'] = '<strong>Permitir Mudança de Avatar no Curso:</strong> Define se os participantes 
+$string['blockGameDefaultAllowAvatarChange'] = '<strong>Permitir Mudança de Avatar no Curso:</strong> Define se os participantes 
 podem alterar seus avatares.';
 
-$string['blockGameShowPlayerInfo'] = '<strong>Mostrar Informações do Jogador:</strong> Exibe informações de todos os cursos 
+$string['blockGameDefaultShowPlayerInfo'] = '<strong>Mostrar Informações do Jogador:</strong> Exibe informações de todos os cursos 
 do participante.';
 
-$string['blockGamePointForActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza a nota das atividades 
+$string['blockGameDefaultPointForActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza a nota das atividades 
 como pontos.';
 
-$string['blockGameDailyBonus'] = '<strong>Bônus do Dia:</strong> Define pontos por dia de acesso.';
+$string['blockGameDefaultDailyBonus'] = '<strong>Bônus do Dia:</strong> Define pontos por dia de acesso.';
 
-$string['blockGameBonusForBadge'] = '<strong>Bônus para Emblema:</strong> Aplica pontos para cada emblema conquistado.';
+$string['blockGameDefaultBonusForBadge'] = '<strong>Bônus para Emblema:</strong> Aplica pontos para cada emblema conquistado.';
 
-$string['blockGameShowRanking'] = '<strong>Mostrar Classificação:</strong> Permite que os participantes vejam a 
+$string['blockGameDefaultShowRanking'] = '<strong>Mostrar Classificação:</strong> Permite que os participantes vejam a 
 classificação.';
 
-$string['blockGamePreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do usuário 
+$string['blockGameDefaultPreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do usuário 
 na classificação.';
 
-$string['blockGameShowScore'] = '<strong>Mostrar Pontuação:</strong> Exibe a pontuação dos participantes.';
+$string['blockGameDefaultShowScore'] = '<strong>Mostrar Pontuação:</strong> Exibe a pontuação dos participantes.';
 
-$string['blockGameShowLevel'] = '<strong>Mostrar Nível:</strong> Exibe o nível dos participantes.';
+$string['blockGameDefaultShowLevel'] = '<strong>Mostrar Nível:</strong> Exibe o nível dos participantes.';
 
-$string['blockGameCustomLevelImages'] = '<strong>Substituir Imagens de Níveis:</strong> Permite alterar todas as imagens 
+$string['blockGameDefaultCustomLevelImages'] = '<strong>Substituir Imagens de Níveis:</strong> Permite alterar todas as imagens 
 dos níveis.';
 
-$string['blockGameNumberOfLevels'] = '<strong>Número de Níveis:</strong> Define o número de níveis para os cursos.';
+$string['blockGameDefaultNumberOfLevels'] = '<strong>Número de Níveis:</strong> Define o número de níveis para os cursos.';
 
-$string['blockGameSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em "Salvar 
+$string['blockGameDefaultSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em "Salvar 
 mudanças".';
 
 // Configuração para um Curso Específico
@@ -358,10 +354,87 @@ $string['blockXp:viewlogs'] = 'Acessar os logs';
 $string['blockXp:viewreport'] = 'Ver o relatório';
 
 /**************************************** Tutorial ****************************************/
-$string['blockXpConfigIntro'] = 'Configuração Padrão do Plugin Level Up XP';
-$string['blockXpDefaultConfig'] = 'Após a instalação, a tela de configuração padrão do plugin será exibida. Se não houver 
-configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os dados padrão do plugin é 
-opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico por padrão.';
+// Configurações Padrão
+$string['blockXpDefaultSettings'] = 'Configurações Padrão do Plugin Level Up XP';
+
+$string['blockXpDefaultSettingsDescription'] = 'As configurações padrão do plugin Level Up XP permitem definir como o 
+plugin funcionará em todo o site. Configure as opções globais para a gamificação do curso, incluindo como os pontos são 
+usados, a visibilidade na navegação e se os administradores podem ganhar pontos.';
+
+$string['blockXpDefaultSettingsPointsContext'] = '<strong>Onde os pontos são usados?</strong> Quando selecionar "Em cursos", os pontos 
+de experiência ganhos serão contados apenas no curso onde o bloco foi adicionado. Se escolher "Para todo o site", os pontos 
+serão somados em todos os cursos, permitindo subir de nível globalmente.';
+
+$string['blockXpDefaultSettingsNavBarDisplay'] = '<strong>Mostrar na barra de navegação:</strong> Quando ativado, o nível do usuário será 
+exibido na barra de navegação superior.';
+
+$string['blockXpDefaultSettingsAdminsCanEarnXp'] = '<strong>Administradores podem ganhar pontos:</strong> Por padrão, os administradores 
+não ganham pontos. Esta configuração permite incluí-los no sistema de pontuação.';
+
+$string['blockXpDefaultSettingsKeepLogs'] = '<strong>Manter logs</strong> Define o tempo durante o qual os logs serão mantidos antes de 
+serem excluídos.';
+
+$string['blockXpDefaultSettingsUsageReport'] = '<strong>Compartilhar relatório de uso:</strong> Periodicamente compartilha informações de 
+uso anônimas com os desenvolvedores do plugin para ajudar a melhorar o plugin.';
+
+$string['blockXpDefaultSettingsEnableInfos'] = '<strong>Habilitar a página de informações:</strong> Quando desativado, a página de 
+informações não estará visível para os estudantes.';
+
+$string['blockXpDefaultSettingsEnableLevelUpNotif'] = '<strong>Habilitar notificações de mudança de nível:</strong> Quando ativado, os 
+estudantes verão um popup parabenizando-os por alcançar um novo nível.';
+
+$string['blockXpDefaultSettingsEnableLeader'] = '<strong>Habilitar ranking:</strong> Quando desativado, o ranking não estará visível para 
+os estudantes.';
+
+$string['blockXpDefaultSettingsIdentityMode'] = '<strong>Anonimato:</strong> Controla se os participantes podem ver o nome e o avatar uns 
+dos outros.';
+
+$string['blockXpDefaultSettingsNeighbours'] = '<strong>Limite de participantes:</strong> Controla quem é exibido no placar do ranking.';
+
+$string['blockXpDefaultSettingsRankMode'] = '<strong>Ranking:</strong> A classificação é a posição absoluta do usuário no ranking. A 
+classificação relativa é a diferença dos pontos de experiência entre um usuário e seus vizinhos.';
+
+$string['blockXpDefaultSettingsLadderCols'] = '<strong>Colunas adicionais:</strong> Esta configuração determina quais colunas adicionais 
+são exibidas no ranking.';
+
+$string['blockXpDefaultSettingsEnableCheatGuard'] = '<strong>Ativar proteção contra fraude:</strong> O cheat guard oferece um mecanismo 
+simples e eficaz para prevenir abusos no sistema de pontuação.';
+
+$string['blockXpDefaultSettingsMaxActionsPerTime'] = '<strong>Max. ações no intervalo de tempo:</strong> Define o número máximo de ações 
+que contarão para pontos durante um intervalo de tempo específico.';
+
+$string['blockXpDefaultSettingsTimeForMaxActions'] = '<strong>Intervalo de tempo para max. ações:</strong> Define o intervalo de tempo 
+durante o qual o usuário não deve exceder um número máximo de ações.';
+
+$string['blockXpDefaultSettingsTimeBetweenSameActions'] = '<strong>Tempo requerido entre ações idênticas:</strong> Define o tempo mínimo 
+entre ações idênticas para serem aceitas novamente.';
+
+$string['blockXpDefaultSettingsBlockTitle'] = '<strong>Título do bloco:</strong> Define o título do bloco.';
+
+$string['blockXpDefaultSettingsBlockDescription'] = '<strong>Descrição do bloco:</strong> Define uma mensagem de introdução exibida no bloco.';
+
+$string['blockXpDefaultSettingsRankingSnapshot'] = '<strong>Exibir amostra do ranking:</strong> Mostra uma amostra do ranking no bloco.';
+
+$string['blockXpDefaultSettingsBlockRecentActivity'] = '<strong>Mostrar recompensas recentes:</strong> Mostra uma lista de eventos 
+recentes que recompensaram o estudante com pontos.';
+
+// Adicionar o Level Up XP ao Curso
+$string['blockXpAddToCourseTutorial'] = 'Como Adicionar o Level Up XP ao Seu Curso';
+
+$string['blockXpAddToCourseDescription'] = 'Siga os passos abaixo para adicionar o bloco Level Up XP ao seu curso e 
+começar a utilizar as funcionalidades de gamificação.';
+
+$string['blockXpAddStep1'] = '<strong>Selecionar o Curso Desejado:</strong> No painel do Moodle, selecione o curso ao qual 
+você deseja adicionar o Level Up XP.';
+
+$string['blockXpAddStep2'] = '<strong>Habilitar Modo de edição:</strong> Dentro do curso, clique no botão "Modo de edição" 
+para permitir a adição de novos blocos.';
+
+$string['blockXpAddStep3'] = '<strong>Abrir Gaveta de Blocos:</strong> Com o modo de edição ativado, vá até o menu lateral 
+(gaveta de blocos) e clique em "Adicionar um bloco".';
+
+$string['blockXpAddStep4'] = '<strong>Adicionar Bloco:</strong> Na lista de blocos disponíveis, encontre e selecione 
+"Level Up XP". O bloco será adicionado ao seu curso.';
 
 // Como acessar as configurações
 $string['blockXpAccessSettingsTutorial'] = 'Acessando as Configurações do Plugin Level Up XP';
