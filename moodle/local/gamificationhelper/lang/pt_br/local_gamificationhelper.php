@@ -370,6 +370,20 @@ $string['blockGameSupportLink1'] = 'Como instalar e configurar o plugin Block Ga
 
 $string['blockGameSupportLink2'] = 'Gamificação na Prática com a Plataforma Moodle';
 
+// Como redefinir os pontos
+$string['blockGameResetPointsTutorial'] = 'Como Redefinir Pontos no Block Game';
+
+$string['blockGameResetPointsDescription'] = 'A opção "Redefinir Pontos" permite que todos os pontos acumulados pelos 
+alunos no curso sejam zerados. Ao redefinir a pontuação do curso, todos os usuários perdem seus pontos. Esta ação é 
+irreversível. Certifique-se de que deseja realmente fazer isso.';
+
+$string['blockGameResetPointsStep1'] = '<strong>Como acessar:</strong> Na interface do plugin Block Game, clique no ícone 
+de seta circular vermelha no widget do jogo.';
+
+$string['blockGameResetPointsStep2'] = '<strong>Selecionar Redefinir Pontos:</strong> Selecione a opção "Redefinir pontos".';
+
+$string['blockGameResetPointsStep3'] = '<strong>Confirmar Ação:</strong> Confirme a ação na janela de confirmação que 
+aparece clicando em "Sim".';
 
 /**********************************************************************************************************************/
 
@@ -377,7 +391,7 @@ $string['blockGameSupportLink2'] = 'Gamificação na Prática com a Plataforma M
  * Level Up XP - Gamification
  */
 
- /****************************************** About ******************************************/
+/****************************************** About ******************************************/
 $string['levelUp'] = 'Level Up XP - Gamification';
 $string['levelUpDesc'] = 'Permite a criação de sistemas de pontos de experiência que motivam os alunos através de 
 progressão visual e recompensas.';
@@ -688,7 +702,7 @@ a mesma página indefinidamente ou repetir a mesma ação repetidas vezes.';
 $string['blockXpFraudProtectionSettingsMaxActionsInterval'] = '<strong>Max. ações no intervalo de tempo:</strong> O número 
 máximo de ações que contarão para ganho de pontos de experiência durante o intervalo de tempo fornecido. Qualquer ação 
 subsequente será ignorada. Quando este valor está vazio ou é igual a zero, não é aplicado.';
-    
+
 $string['blockXpFraudProtectionSettingsTimeRequiredBetweenIdenticalActions'] = '<strong>Tempo requerido entre ações 
 idênticas:</strong> O tempo mínimo necessário antes que uma ação que já ocorreu anteriormente seja aceita novamente. 
 Uma ação é considerada idêntica se foi realizada no mesmo contexto e objeto; ler uma postagem no fórum será considerado 

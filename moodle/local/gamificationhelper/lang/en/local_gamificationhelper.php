@@ -362,6 +362,21 @@ $string['blockGameSupportLink1'] = 'How to install and configure the Block Game 
 
 $string['blockGameSupportLink2'] = 'Gamification in Practice with the Moodle Platform';
 
+// Reset points
+$string['blockGameResetPointsTutorial'] = 'How to Reset Points in Block Game';
+
+$string['blockGameResetPointsDescription'] = 'The "Reset Points" option allows all accumulated points by students in the 
+course to be reset. Resetting the course points will cause all users to lose their points. This action is irreversible. 
+Make sure you really want to do this.';
+
+$string['blockGameResetPointsStep1'] = '<strong>How to access:</strong> In the Block Game plugin interface, click the red 
+circular arrow icon in the game widget.';
+
+$string['blockGameResetPointsStep2'] = '<strong>Select Reset Points:</strong> Select the "Reset points" option.';
+
+$string['blockGameResetPointsStep3'] = '<strong>Confirm Action:</strong> Confirm the action in the confirmation window 
+that appears by clicking "Yes".';
+
 /**********************************************************************************************************************/
 
 /**

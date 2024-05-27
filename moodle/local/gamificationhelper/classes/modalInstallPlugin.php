@@ -28,7 +28,7 @@ class ModalInstallPlugin
                 <div class="modal-footer">';
 
         $html .= !is_siteadmin() ? '<a href="http://localhost:3333/admin/tool/installaddon/index.php" class="btn btn-primary" target="_blank">' . get_string('btnInstall', 'local_gamificationhelper') . '</a>' : '';
-        
+
         $html .= '<button type="button" class="btn btn-secondary" onclick="closeModal(\'' . $slug . '\')">Fechar</button>
                 </div></div></div>';
 
@@ -51,7 +51,7 @@ class ModalInstallPlugin
 
         $admin = !is_siteadmin() ? 'admin' : '';
 
-        if(is_siteadmin()){
+        if (is_siteadmin()) {
             $html = '<h5 class="section-title title-install">' . get_string('defaultInstallInstallIntro', 'local_gamificationhelper') . '</h5>
             <ol>
                 <li>' . get_string('defaultInstallInstallStep1', 'local_gamificationhelper') . '</li>
@@ -67,7 +67,7 @@ class ModalInstallPlugin
                 <li>' . get_string('defaultInstallUpdateVersion', 'local_gamificationhelper') . '</li>
                 ' . self::getImageHTML($installPath, 'atualizando-plugin.png', 'Imagem atualização plugin') . '
             </ol>';
-        }else{
+        } else {
             $html = '<h5 class="section-title title-install">' . get_string('defaultInstallPluginRequestTutorial', 'local_gamificationhelper') . '</h5>
             <p class="section-desc">' . get_string('defaultInstallPluginRequestDescription', 'local_gamificationhelper') . '</p>
             <ol>
@@ -80,7 +80,7 @@ class ModalInstallPlugin
         if ($slug === 'blockGame') {
             $html .= is_siteadmin() ?
             '<h5 class="section-title">' . get_string('blockGameDefaultConfig', 'local_gamificationhelper') . '</h5>
-            <p class="section-desc">' . get_string('blockGameDefaultConfigNote', 'local_gamificationhelper') . '</p>' . 
+            <p class="section-desc">' . get_string('blockGameDefaultConfigNote', 'local_gamificationhelper') . '</p>' .
             self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-1.png', 'Tela de configuração padrão do plugin') .
             self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-2.png', 'Tela de configuração padrão do plugin') .
             self::getImageHTML($blockGamePath, 'configuracao-block-game-parte-3.png', 'Tela de configuração padrão do plugin') . '
@@ -105,7 +105,7 @@ class ModalInstallPlugin
 
             $html .= '<span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameAddToCourseTutorial', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockGameAddToCourseDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockGamePath, 'adicionar-block-game-curso.png', 'Como adicionar o Block Game ao curso') .'
+            ' . self::getImageHTML($blockGamePath, 'adicionar-block-game-curso.png', 'Como adicionar o Block Game ao curso') . '
             <ol>
                 <li>' . get_string('blockGameAddStep1', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockGameAddStep2', 'local_gamificationhelper') . '</li>
@@ -151,6 +151,15 @@ class ModalInstallPlugin
                 ' . self::getImageHTML($blockGamePath, 'configurar-nesta-pagina.png', 'Define onde o bloco ficará') . '
                 <li>' . get_string('blockGameSaveBlockConfig', 'local_gamificationhelper') . '</li>
             </ol>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameResetPointsTutorial', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockGameResetPointsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockGamePath, 'redefinir-pontos-1.png', 'Como redefinir pontos') .
+                self::getImageHTML($blockGamePath, 'redefinir-pontos-2.png', 'Como redefinir pontos') . '
+            <ol>
+                <li>' . get_string('blockGameResetPointsStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameResetPointsStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameResetPointsStep3', 'local_gamificationhelper') . '</li>
+            </ol>
             <h5 class="section-title">' . get_string('defaultInstallSupportLinks', 'local_gamificationhelper') . '</h5>
             <ul class="support-link-list">
                 <li><a href="https://docs.moodle.org/404/en/Installing_plugins" target="_blank">
@@ -194,7 +203,7 @@ class ModalInstallPlugin
             </ol>' : '';
             $html .= '<span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockXpAddToCourseTutorial', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpAddToCourseDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'adicionar-level-up-curso.png', 'Como adicionar o level up ao curso') .'
+            ' . self::getImageHTML($blockXpPath, 'adicionar-level-up-curso.png', 'Como adicionar o level up ao curso') . '
             <ol>
                 <li>' . get_string('blockXpAddStep1', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpAddStep2', 'local_gamificationhelper') . '</li>
@@ -203,7 +212,7 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpAccessSettingsTutorial', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpAccessSettingsDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'bloco-level-up.png', 'Bloco geral level up') .'
+            ' . self::getImageHTML($blockXpPath, 'bloco-level-up.png', 'Bloco geral level up') . '
             <ol>
                 <li>' . get_string('blockXpStep1', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpStep2', 'local_gamificationhelper') . '</li>
@@ -212,7 +221,7 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpInformationTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpInformationTabDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'aba-informacoes.png', 'Informações gerais do curso com o Level up') .'
+            ' . self::getImageHTML($blockXpPath, 'aba-informacoes.png', 'Informações gerais do curso com o Level up') . '
             <ol>
                 <li>' . get_string('blockXpInformationLevel', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpInformationUsageExample', 'local_gamificationhelper') . '</li>
@@ -221,10 +230,10 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpRankingTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpRankingDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'aba-ranking.png', 'Ranking dos participantes') .'
+            ' . self::getImageHTML($blockXpPath, 'aba-ranking.png', 'Ranking dos participantes') . '
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpReportTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpReportDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'aba-relatorio-editar-pontos.png', 'Como editar pontos manualmente') .'
+            ' . self::getImageHTML($blockXpPath, 'aba-relatorio-editar-pontos.png', 'Como editar pontos manualmente') . '
             <ol>
                 <li>' . get_string('blockXpReportResetCourseData', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpReportEditPoints', 'local_gamificationhelper') . '</li>
@@ -233,7 +242,7 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpLogsTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpLogsDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'aba-relatorio-logs.png', 'Lista de logs dos participantes') .'
+            ' . self::getImageHTML($blockXpPath, 'aba-relatorio-logs.png', 'Lista de logs dos participantes') . '
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpLevelConfigTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpLevelConfigDescription', 'local_gamificationhelper') . '</p>
             ' . self::getImageHTML($blockXpPath, 'aba-niveis-geral-1.png', 'Aba níveis') .
@@ -275,11 +284,11 @@ class ModalInstallPlugin
                 <li>' . get_string('blockXpPointsImportDescription', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockXpPointsResetRulesDescription', 'local_gamificationhelper') . '</li>
             </ol>
-            ' . self::getImageHTML($blockXpPath, 'aba-pontos-1.png', 'Configurações de pontos de regras') . 
+            ' . self::getImageHTML($blockXpPath, 'aba-pontos-1.png', 'Configurações de pontos de regras') .
                 self::getImageHTML($blockXpPath, 'aba-pontos-2.png', 'Configurações de pontos de regras') . '
             <span class="section-subtitle sub-with-description"><strong>' . get_string('blockXpSettingsTab', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockXpSettingsDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockXpPath, 'aba-configuracoes-1.png', 'Configurações de do plugin') . 
+            ' . self::getImageHTML($blockXpPath, 'aba-configuracoes-1.png', 'Configurações de do plugin') .
                 self::getImageHTML($blockXpPath, 'aba-configuracoes-2.png', 'Configurações de do plugin') . '
             <ol>
                 <li><span>' . get_string('blockXpGeneralSettings', 'local_gamificationhelper') . '</span>
