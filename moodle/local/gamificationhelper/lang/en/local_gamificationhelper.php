@@ -892,7 +892,7 @@ Track, Treasure, River, Puzzle 1, and Puzzle 2.';
 $string['trailFormatSettingsCheckStyle'] = '<strong>Check style:</strong> Choose the check style that will appear when 
 the student completes all activities with completion criteria for the section, such as Check, Star, or Like.';
 
-$string['trailFormatSettingsContainerimageAlignment'] = '<strong>Image container alignment:</strong> Resets the image 
+$string['trailFormatSettingsContainerImageAlignment'] = '<strong>Image container alignment:</strong> Resets the image 
 container alignment to the default value. This alignment will be applied the same way as a course first displayed in trail 
 format. Options include "Left", "Center", and "Right". Choosing "Center" will center the image within the container, while 
 "Left" and "Right" will align the image to the left and right, respectively.';
@@ -926,3 +926,36 @@ container:</strong> Sets the text color for the currently selected image contain
 
 $string['trailFormatSettingsSelectedContainerColor'] = '<strong>Set the current color for the selected image container:</strong> 
 Sets the current color for the selected image container, 999999 for transparent.';
+
+$string['trailFormatSettingsSectionTitleHide'] = '<strong>Hide section title option:</strong> Define if you want to hide 
+the section title.';
+
+$string['trailFormatSettingsSectionTitleLength'] = '<strong>Section title track length option:</strong> Set the maximum 
+length of the section title in the track box. Enter "0" for no truncation.';
+
+$string['trailFormatSettingsSectionTitlePosition'] = '<strong>Section title box position option:</strong> Set the position 
+of the section title inside the track box to one of the following: "Inside" or "Outside".';
+
+$string['trailFormatSettingsSectionTitlePositionInside'] = '<strong>Section title box position when option "Inside":</strong> 
+Set the position of the section title when "Inside" the track box to one of the following: "Top", "Middle" or "Base".';
+
+$string['trailFormatSettingsSectionTitleHeight'] = '<strong>Section title box height:</strong> Height of the section title 
+box in pixels or 0 for calculated. When the box position is "Inside".';
+
+$string['trailFormatSettingsSectionTitleOpacity'] = '<strong>Section title box opacity:</strong> Opacity of the section 
+title box between 0 and 1 in increments of 0.1. When the box position is "Inside".';
+
+$string['trailFormatSettingsSectionTitleFontSize'] = '<strong>Section title font size:</strong> Section title font size 
+between 12 and 24 pixels, where 0 represents "not set, but inherited from the theme or any other CSS".';
+
+$string['trailFormatSettingsSectionTitleAlignment'] = '<strong>Section title alignment:</strong> Set the section title 
+alignment to "Left", "Center" or "Right".';
+
+$string['trailFormatSettingsSectionTitleTextColor'] = '<strong>Section title text color when option "Inside":</strong> Set 
+the text color of the section title when the option is "Inside".';
+
+$string['trailFormatSettingsSectionTitleBgColor'] = '<strong>Title background color:</strong> Set the background color of 
+the section title when the option is "Inside".';
+
+$string['trailFormatSettingsShowSummary'] = '<strong>Show summary:</strong> Show the section title summary when hovering 
+over the track box.';

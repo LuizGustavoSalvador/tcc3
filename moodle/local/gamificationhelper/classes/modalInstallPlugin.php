@@ -381,6 +381,17 @@ class ModalInstallPlugin
                 <li>' . get_string('trailFormatSettingsCurrentSectionColor', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsContainerImageTextColor', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsSelectedContainerColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleHide', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleLength', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitlePosition', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitlePositionInside', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleHeight', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleOpacity', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleFontSize', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleAlignment', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleTextColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleBgColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsShowSummary', 'local_gamificationhelper') . '</li>
             </ol>';
         }
 

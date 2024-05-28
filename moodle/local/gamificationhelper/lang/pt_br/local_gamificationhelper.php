@@ -922,3 +922,37 @@ selecionado:</strong> Define a cor do texto do container de imagens atual seleci
 
 $string['trailFormatSettingsSelectedContainerColor'] = '<strong>Defina a cor atual do container da imagem selecionada:</strong> 
 Define a cor atual do container da imagem selecionada, 999999 para transparente.';
+
+$string['trailFormatSettingsSectionTitleHide'] = '<strong>Ocultar opção do título da seção:</strong> Defina se deseja 
+ocultar o título da seção.';
+
+$string['trailFormatSettingsSectionTitleLength'] = '<strong>Opção de comprimento da trilha do título da seção:</strong> 
+Defina o comprimento máximo do título da seção na caixa de trilha. Digite "0" para não truncamento.';
+
+$string['trailFormatSettingsSectionTitlePosition'] = '<strong>Opção de posição da caixa de título da seção:</strong> Defina 
+a posição do título da seção dentro da caixa de trilha para um dos seguintes: "Dentro" ou "Fora".';
+
+$string['trailFormatSettingsSectionTitlePositionInside'] = '<strong>Posição da caixa de título da seção quando a opção 
+"Dentro":</strong> Defina a posição do título da seção quando "Dentro" a caixa de trilha para um dos seguintes: "Topo", 
+"Meio" ou "Base".';
+
+$string['trailFormatSettingsSectionTitleHeight'] = '<strong>Altura da caixa do título da seção:</strong> Altura da caixa 
+de título da seção em pixels ou 0 para calculado. Quando a posição da caixa é "Dentro".';
+
+$string['trailFormatSettingsSectionTitleOpacity'] = '<strong>Opacidade da caixa de título da seção:</strong> Opacidade da 
+caixa de título da seção entre 0 e 1 em incrementos de 0.1. Quando a posição da caixa é "Dentro".';
+
+$string['trailFormatSettingsSectionTitleFontSize'] = '<strong>Tamanho da fonte do título da seção:</strong> Tamanho da fonte 
+do título da seção entre 12 e 24 pixels, onde 0 representa "não definido, mas herdado do tema ou qualquer outro CSS".';
+
+$string['trailFormatSettingsSectionTitleAlignment'] = '<strong>Alinhamento do título da seção:</strong> Defina o alinhamento 
+do título da seção como "Esquerda", "Centro" ou "Direita".';
+
+$string['trailFormatSettingsSectionTitleTextColor'] = '<strong>Cor do texto do título da seção quando a opção "Dentro":</strong> 
+Defina a cor do texto do título da seção quando a opção "Dentro".';
+
+$string['trailFormatSettingsSectionTitleBgColor'] = '<strong>Cor do fundo do título:</strong> Defina a cor do fundo do 
+título da seção quando a opção "Dentro".';
+
+$string['trailFormatSettingsShowSummary'] = '<strong>Mostrar resumo:</strong> Mostrar o resumo do título da seção ao passar 
+o mouse sobre a caixa da trilha.';
