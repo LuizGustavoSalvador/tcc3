@@ -298,6 +298,9 @@ $string['blockGameAddToCourseTutorial'] = 'How to Add Block Game to Your Course'
 $string['blockGameAddToCourseDescription'] = 'Follow the steps below to add the Block Game block to your course and start 
 using its gamification features.';
 
+$string['blockGameResetPointsStep0'] = '<strong>Activate Edit Mode:</strong> The option to reset points will only be 
+available when the course edit mode is active and will appear only on the game card created by the teacher or moderator.';
+
 $string['blockGameAddStep1'] = '<strong>Select the Desired Course:</strong> On the Moodle dashboard, select the course to 
 which you want to add Block Game.';
 
@@ -311,53 +314,113 @@ $string['blockGameAddStep4'] = '<strong>Add Block:</strong> In the list of avail
 The block will be added to your course.';
 
 // Course-Specific Configuration
-$string['blockGameAccessCourses'] = '<strong>Access My Courses:</strong> Go to "My courses" and select the desired course.';
+$string['blockGameSettingsTutorial'] = 'Block Game Settings';
 
-$string['blockGameEditMode'] = '<strong>Edit Mode:</strong> In the top right corner of the screen, click "Turn editing on".';
+$string['blockGameSettingsDescription'] = 'To access the Block Game settings, ensure that the course editing mode is 
+enabled. The configuration option will only be available to the teacher or moderator who created the game. Follow the 
+instructions below to configure the Block Game:';
 
-$string['blockGameAddBlock'] = '<strong>Add Block:</strong> Open the "Block drawer" by clicking the arrow icon just 
-below the "Turn editing on" button. Click "Add a block" and select the "Game" option. A plugin card will appear on the 
-tab.';
+$string['blockGameSettingsEditTitle'] = '<strong>Edit title:</strong> Allows editing the block title.';
 
-$string['blockGameConfigureBlock'] = '<strong>Configure Game Block:</strong> Click the gear icon on the plugin card and 
-select "Configure Game block". A modal with settings will appear.';
+$string['blockGameSettingsShowCourseName'] = '<strong>Show course name:</strong> Displays the course name in the block.';
 
-$string['blockGameBlockSettings'] = '<strong>Block Settings:</strong>';
+$string['blockGameSettingsShowPlayerInfo'] = '<strong>Show player information:</strong> Shows information to the player 
+from all courses they are participating in.';
 
-$string['blockGameEditTitle'] = '<strong>Edit Title:</strong> Enter a title for the block.';
+$string['blockGameSettingsScoreActivityGrades'] = '<strong>Score activity grades:</strong> Use activity grades to score. 
+Only for numeric scales!';
 
-$string['blockGameShowCourseName'] = '<strong>Show Course Name:</strong> Displays or hides the course name.';
+$string['blockGameSettingsDailyBonus'] = '<strong>Daily bonus:</strong> Daily bonus badge, set points per day of access.';
 
-$string['blockGamePointActivities'] = '<strong>Score Activity Grades:</strong> Converts activity grades into points.';
+$string['blockGameSettingsShowGroupRanking'] = '<strong>Show group ranking:</strong> Displays the group ranking.';
 
-$string['blockGameShowGroupRanking'] = '<strong>Show Group Ranking:</strong> Displays the group ranking.';
+$string['blockGameSettingsGroupPointsCalculation'] = '<strong>Group points calculation:</strong> Select the method of 
+calculation for group points.';
 
-$string['blockGameGroupPointsCalculation'] = '<strong>Group Points Calculation:</strong> Private and disabled field.';
+$string['blockGameSettingsShowRanking'] = '<strong>Show ranking:</strong> Displays the ranking.';
 
-$string['blockGameRankingListLimit'] = '<strong>Ranking List Limit:</strong> Sets the number of participants displayed 
-in the ranking.';
-$string['blockGamePreserveIdentity'] = '<strong>Preserve User Identity:</strong> Preserves the user\'s identity in the 
-ranking.';
-$string['blockGameShowScore'] = '<strong>Show Score:</strong> Displays the score in the block.';
+$string['blockGameSettingsRankingLimit'] = '<strong>Ranking list limit:</strong> Controls the number of players to be 
+displayed in the ranking list. Select 0 (zero) to list all.';
 
-$string['blockGameShowLevel'] = '<strong>Show Level:</strong> Displays the level in the block.';
+$string['blockGameSettingsPreserveIdentity'] = '<strong>Preserve user identity:</strong> Preserve user identity in the 
+ranking list.';
 
-$string['blockGameNumberOfLevels'] = '<strong>Number of Levels:</strong> Sets the number of levels for the course.';
+$string['blockGameSettingsShowScore'] = '<strong>Show score:</strong> Showing the score.';
 
-$string['blockGameSectionCompletionPoints'] = '<strong>Section Completion Points Settings:</strong> Configures the points 
-for each course section.';
+$string['blockGameSettingsShowLevel'] = '<strong>Show Level:</strong> Show Level.';
 
-$string['blockGameActivityCompletionPoints'] = '<strong>Activity Completion Points:</strong> Configures the points for 
-each course activity. In the list of course topics, click the edit icon and configure the points in the "Game points" tab.';
+$string['blockGameSettingsNumberOfLevels'] = '<strong>Number of levels:</strong> Defines the number of levels. This field 
+disables the editing of the "Points for level ..." fields.';
 
-$string['blockGameBlockDisplaySettings'] = '<strong>Where to Display This Block:</strong> Defines where the block will 
-appear.';
+$string['blockGameSettingsPointsForLevel'] = '<strong>Points for level 1-15:</strong> Define the number of points required 
+to reach the respective level. Points can be adjusted as needed. Fields for unused levels are disabled.';
 
-$string['blockGamePageSettings'] = '<strong>On This Page:</strong> Defines the visibility and position of the block on 
-the page.';
+$string['blockGameSettingsCompletionPoints'] = 'Section Completion Points (completion criteria required)';
 
-$string['blockGameSaveBlockConfig'] = '<strong>Save Settings:</strong> After configuring the block, click "Save changes".';
+$string['blockGameSettingsCompletionPointsDescription'] = 'To configure the Game block in Moodle, you need to set scoring 
+criteria for the completion of sections/topics. These criteria are configured according to the structure of the course, 
+varying depending on the number of sections/topics present.';
 
+$string['blockGameSettingsPointsForCompletion'] = '<strong>Points for Section Completion:</strong> These fields allow you 
+to define how many points each student earns upon completing a specific section of the course.';
+
+$string['blockGameSettingsCompletionConditions'] = '<strong>Completion Conditions:</strong> These options determine when 
+section completion points are awarded to the participant. Conditions are set by editing an activity in the section, going 
+to the "Completion conditions" tab. Points will only be applied after all activities with defined completion conditions 
+are completed, thereby releasing the section\'s points. Configuring these conditions correctly is essential for the Game 
+block to function.';
+
+$string['blockGameSettingsActivityCompletionPoints'] = 'Activity /Resource Completion Points (mandatory completion 
+criteria):';
+
+$string['blockGameSettingsActivityCompletionPointsDescription'] = 'This setting allows assigning points to students for 
+completing specific activities or resources in the course. Each field represents an activity or resource created in the 
+course.';
+
+$string['blockGameSettingsPointsForActivityCompletion'] = '<strong>Points for Activity Completion:</strong> These fields 
+allow setting how many points each student earns for completing a specific activity or resource in the course.';
+
+$string['blockGameSettingsActivityCompletionConditions'] = '<strong>Completion Criteria:</strong> Activities must have 
+completion criteria defined for points to be applied. Even if points are configured, if the activity does not have a 
+completion criterion, the points will not be awarded.';
+
+$string['blockGameSettingsGamePointsTab'] = '<strong>Game Points:</strong> If the Game block is added to the course, 
+it is possible to configure the activity points directly in the activity\'s editing tab, by going to the "Game Points" 
+section.';
+
+$string['blockGameSettingsWhereToShow'] = 'Where to show this block';
+
+$string['blockGameSettingsWhereToShowDescription'] = 'Configure where the Game block will be displayed in the course, 
+including the specific page and screen region.';
+
+$string['blockGameSettingsBlockLocation'] = '<strong>Block original location:</strong> The original location where the 
+block was created. Block settings can cause it to appear in other places (contexts) within the original location. For 
+example, a block created on a course page can be displayed on the activities of that course. A block created on the site\'s 
+home page can be displayed across the entire site.';
+
+$string['blockGameSettingsShowOnPageType'] = '<strong>Show on page types:</strong> Selects the types of pages where the 
+block will be displayed. Options include "Any page", "Any course page", and "Any main course page type".';
+
+$string['blockGameSettingsDefaultRegion'] = '<strong>Default region:</strong> Defines the default region of the course 
+where the block will be displayed. Options may include regions such as "Right", "Left", etc., depending on the theme used.';
+
+$string['blockGameSettingsDefaultWeight'] = '<strong>Default weight:</strong> Allows adjusting the block\'s position within 
+the selected region. Lower values place the block closer to the top.';
+
+$string['blockGameSettingsOnThisPage'] = 'On this page';
+
+$string['blockGameSettingsOnThisPageDescription'] = 'Configure how the block will be displayed on this specific course page.';
+
+$string['blockGameSettingsVisible'] = '<strong>Visible:</strong> Defines whether the block will be visible or hidden on the page. 
+Options are "Yes" to make the block visible and "No" to hide it.';
+
+$string['blockGameSettingsRegion'] = '<strong>Region:</strong> Defines in which region of the page the block will be displayed. 
+Options vary depending on the theme used, such as "Right" or "Left".';
+
+$string['blockGameSettingsWeight'] = '<strong>Weight:</strong> Allows adjusting the block\'s position within the selected region. 
+Negative values place the block closer to the top, while positive values place it closer to the bottom.';
+
+// Support links
 $string['blockGameSupportLink1'] = 'How to install and configure the Block Game plugin';
 
 $string['blockGameSupportLink2'] = 'Gamification in Practice with the Moodle Platform';

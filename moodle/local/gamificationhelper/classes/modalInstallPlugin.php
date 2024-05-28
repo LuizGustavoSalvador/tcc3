@@ -112,50 +112,65 @@ class ModalInstallPlugin
                 <li>' . get_string('blockGameAddStep3', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockGameAddStep4', 'local_gamificationhelper') . '</li>
             </ol>
-            <h5 class="section-title ' . $admin . '">' . get_string('defaultInstallCourseConfig', 'local_gamificationhelper') . '</h5>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameSettingsTutorial', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockGameSettingsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-1.png', 'Configurações gerais do bloco') . 
+                self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-2.png', 'Configurações gerais do bloco') . 
+                self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-3.png', 'Configurações gerais do bloco') . '
             <ol>
-                <li>' . get_string('blockGameAccessCourses', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('blockGameEditMode', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($installPath, 'modo-edicao.png', 'Modo de edição') . '
-                <li>' . get_string('blockGameAddBlock', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($installPath, 'gaveta-blocos.png', 'Gaveta de blocos') . '
-                <li>' . get_string('blockGameConfigureBlock', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($blockGamePath, 'card-plugin.png', 'Card do plugin') . '
-                <li><span>' . get_string('blockGameBlockSettings', 'local_gamificationhelper') . '</span>
-                    <ol class="sub-list">
-                        <li>' . get_string('blockGameEditTitle', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameShowCourseName', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameShowPlayerInfo', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGamePointActivities', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameDailyBonus', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameShowGroupRanking', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameGroupPointsCalculation', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameShowRanking', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameRankingListLimit', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGamePreserveIdentity', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameShowScore', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameShowLevel', 'local_gamificationhelper') . '</li>
-                        <li>' . get_string('blockGameNumberOfLevels', 'local_gamificationhelper') . '</li>
-                    </ol>
-                    ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-parte-1.png', 'Configuração do bloco') . '
-                    ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-parte-2.png', 'Configuração do bloco') . '
-                    ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-parte-3.png', 'Configuração do bloco') . '
-                </li>
-                <li>' . get_string('blockGameSectionCompletionPoints', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($blockGamePath, 'configurar-pontuacao-atividade.png', 'Configuração de pontuação por atividade') . '
-                <li>' . get_string('blockGameActivityCompletionPoints', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($blockGamePath, 'configurar-pontuacao-topico-atividade-pontos.png', 'Configuração de pontuação por finalizar a atividade') . '
-                <li>' . get_string('blockGameBlockDisplaySettings', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($blockGamePath, 'configurar-exibicao-bloco.png', 'Configuração exibição do bloco') . '
-                <li>' . get_string('blockGamePageSettings', 'local_gamificationhelper') . '</li>
-                ' . self::getImageHTML($blockGamePath, 'configurar-nesta-pagina.png', 'Define onde o bloco ficará') . '
-                <li>' . get_string('blockGameSaveBlockConfig', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsEditTitle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsShowCourseName', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsShowPlayerInfo', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsScoreActivityGrades', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsDailyBonus', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsShowGroupRanking', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsGroupPointsCalculation', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsShowRanking', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsRankingLimit', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsPreserveIdentity', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsShowScore', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsShowLevel', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsNumberOfLevels', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsPointsForLevel', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameSettingsCompletionPoints', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockGameSettingsCompletionPointsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-pontuacao-secao.png', 'Configurações de pontuação por seção') . '
+            <ol>
+                <li>' . get_string('blockGameSettingsPointsForCompletion', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsCompletionConditions', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameSettingsActivityCompletionPoints', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockGameSettingsActivityCompletionPointsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-pontuacao-atividade.png', 'Configurações de pontuação por atividade') . '
+            <ol>
+                <li>' . get_string('blockGameSettingsPointsForActivityCompletion', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsActivityCompletionConditions', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsGamePointsTab', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameSettingsWhereToShow', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockGameSettingsWhereToShowDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-onde-exibir.png', 'Configurações onde exibir') . '
+            <ol>
+                <li>' . get_string('blockGameSettingsBlockLocation', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsShowOnPageType', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsDefaultRegion', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsDefaultWeight', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameSettingsOnThisPage', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('blockGameSettingsOnThisPageDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-nesta-pagina.png', 'Configurações nesta página') . '
+            <ol>
+                <li>' . get_string('blockGameSettingsVisible', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsRegion', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockGameSettingsWeight', 'local_gamificationhelper') . '</li>
             </ol>
             <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameResetPointsTutorial', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockGameResetPointsDescription', 'local_gamificationhelper') . '</p>
             ' . self::getImageHTML($blockGamePath, 'redefinir-pontos-1.png', 'Como redefinir pontos') .
                 self::getImageHTML($blockGamePath, 'redefinir-pontos-2.png', 'Como redefinir pontos') . '
             <ol>
+                <li>' . get_string('blockGameResetPointsStep0', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockGameResetPointsStep1', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockGameResetPointsStep2', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('blockGameResetPointsStep3', 'local_gamificationhelper') . '</li>

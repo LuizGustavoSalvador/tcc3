@@ -302,6 +302,10 @@ $string['blockGameAddToCourseTutorial'] = 'Como Adicionar o Block Game ao Seu Cu
 $string['blockGameAddToCourseDescription'] = 'Siga os passos abaixo para adicionar o bloco Block Game ao seu curso e 
 começar a utilizar suas funcionalidades de gamificação.';
 
+$string['blockGameResetPointsStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de redefinir pontos só estará 
+disponível quando o modo de edição do curso estiver ativo e aparecerá apenas no card do jogo criado pelo professor ou 
+moderador.';
+
 $string['blockGameAddStep1'] = '<strong>Selecionar o Curso Desejado:</strong> No painel do Moodle, selecione o curso ao 
 qual você deseja adicionar o Block Game.';
 
@@ -315,57 +319,116 @@ $string['blockGameAddStep4'] = '<strong>Adicionar Bloco:</strong> Na lista de bl
 O bloco será adicionado ao seu curso.';
 
 // Configuração para um Curso Específico
-$string['blockGameAccessCourses'] = '<strong>Acessar Meus Cursos:</strong> Vá em "Meus cursos" e selecione o curso 
-desejado.';
+$string['blockGameSettingsTutorial'] = 'Configurações do Block Game';
 
-$string['blockGameEditMode'] = '<strong>Modo de Edição:</strong> No canto superior direito da tela, clique em "Modo de 
-edição".';
+$string['blockGameSettingsDescription'] = 'Para acessar as configurações do Block Game, certifique-se de que o modo de 
+edição do curso esteja ativo. A opção de configuração estará disponível apenas para o professor ou moderador que criou o 
+jogo. Siga as instruções abaixo para configurar o Block Game:';
 
-$string['blockGameAddBlock'] = '<strong>Adicionar Bloco:</strong> Abra a "Gaveta de blocos" clicando no ícone de seta 
-logo abaixo do botão de "Modo de edição". Clique em "Adicionar um bloco" e selecione a opção "Jogo". Um card do plugin 
-aparecerá na aba.';
+$string['blockGameSettingsEditTitle'] = '<strong>Editar o título:</strong> Permite editar o título do bloco.';
 
-$string['blockGameConfigureBlock'] = '<strong>Configurar Bloco Jogo:</strong> Clique no ícone de engrenagem dentro do 
-card do plugin e selecione "Configurar bloco Jogo". Aparecerá um modal com as configurações.';
+$string['blockGameSettingsShowCourseName'] = '<strong>Mostrar nome do curso:</strong> Mostra o nome do curso no bloco.';
 
-$string['blockGameBlockSettings'] = '<strong>Configurações do Bloco:</strong>';
+$string['blockGameSettingsShowPlayerInfo'] = '<strong>Mostrar informações do jogador:</strong> Mostra informações ao jogador 
+de todos os cursos que ele participa.';
 
-$string['blockGameEditTitle'] = '<strong>Editar Título:</strong> Informe um título para o bloco.';
+$string['blockGameSettingsScoreActivityGrades'] = '<strong>Pontuar notas de atividades:</strong> Use notas de atividades 
+para pontuar. Apenas para escalas numéricas!';
 
-$string['blockGameShowCourseName'] = '<strong>Mostrar Nome do Curso:</strong> Exibe ou não o nome do curso.';
+$string['blockGameSettingsDailyBonus'] = '<strong>Bônus do dia:</strong> Emblema bônus do dia, definir pontos por dia de 
+acesso.';
 
-$string['blockGamePointActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza as notas das atividades 
-como pontos.';
-$string['blockGameShowGroupRanking'] = '<strong>Mostrar Classificação por Grupo:</strong> Exibe a classificação por grupo.';
+$string['blockGameSettingsShowGroupRanking'] = '<strong>Mostrar classificação por grupo:</strong> Mostrando a classificação 
+por grupo.';
 
-$string['blockGameGroupPointsCalculation'] = '<strong>Cálculo para Pontos de Grupo:</strong> Campo privado e desabilitado.';
+$string['blockGameSettingsGroupPointsCalculation'] = '<strong>Cálculo para pontos de grupo:</strong> Selecione o método 
+de cálculo para os pontos de grupo.';
 
-$string['blockGameRankingListLimit'] = '<strong>Limite da Lista de Classificação:</strong> Define o número de 
-participantes exibidos na classificação.';
+$string['blockGameSettingsShowRanking'] = '<strong>Mostrar classificação:</strong> Mostrando a classificação.';
 
-$string['blockGamePreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do 
-usuário na classificação.';
+$string['blockGameSettingsRankingLimit'] = '<strong>Limite da lista de classificação:</strong> Controla a quantidade de 
+jogadores a ser exibido na lista de classificação. Selecione 0 (zero) para listar todos.';
 
-$string['blockGameShowScore'] = '<strong>Mostrar Pontuação:</strong> Exibe a pontuação no bloco.';
+$string['blockGameSettingsPreserveIdentity'] = '<strong>Preservar identidade do usuário:</strong> Preservar identidade do 
+usuário na lista de classificação.';
 
-$string['blockGameShowLevel'] = '<strong>Mostrar Nível:</strong> Exibe o nível no bloco.';
+$string['blockGameSettingsShowScore'] = '<strong>Mostrar pontuação:</strong> Mostrando a pontuação.';
 
-$string['blockGameNumberOfLevels'] = '<strong>Número de Níveis:</strong> Define o número de níveis do curso.';
+$string['blockGameSettingsShowLevel'] = '<strong>Mostrar Nível:</strong> Mostrar Nível.';
 
-$string['blockGameSectionCompletionPoints'] = '<strong>Configurações de Pontuação de Seção:</strong> Configura a 
-pontuação de cada seção do curso.';
+$string['blockGameSettingsNumberOfLevels'] = '<strong>Número de níveis:</strong> Define o número de níveis. Esse campo 
+desabilita a edição dos campos "Pontos para o nível ...".';
 
-$string['blockGameActivityCompletionPoints'] = '<strong>Pontuação por Conclusão de Atividade:</strong> Configura a 
-pontuação de cada atividade do curso. Na lista de tópicos, clique no ícone de edição e configure a pontuação na aba 
-"Pontos do jogo".';
+$string['blockGameSettingsPointsForLevel'] = '<strong>Pontos para o nível 1-15:</strong> Defina a quantidade de pontos 
+necessários para alcançar o nível respectivo. Os pontos podem ser ajustados conforme necessário. Campos para níveis não 
+utilizados são desabilitados.';
 
-$string['blockGameBlockDisplaySettings'] = '<strong>Onde Exibir Este Bloco:</strong> Define onde o bloco aparecerá.';
+$string['blockGameSettingsCompletionPoints'] = 'Pontuar conclusão de seção (necessário critérios de conclusão)';
 
-$string['blockGamePageSettings'] = '<strong>Nesta Página:</strong> Define a visibilidade e posição do bloco na página.';
+$string['blockGameSettingsCompletionPointsDescription'] = 'Para configurar o bloco Jogo no Moodle, é necessário definir 
+critérios de pontuação para a conclusão de seções/tópicos. Esses critérios são configurados de acordo com a estrutura do 
+curso, variando conforme a quantidade de seções/tópicos presentes.';
 
-$string['blockGameSaveBlockConfig'] = '<strong>Salvar Configurações:</strong> Após configurar o bloco, clique em 
-"Salvar mudanças".';
+$string['blockGameSettingsPointsForCompletion'] = '<strong>Pontos por conclusão de seção:</strong> Esses campos permitem 
+definir quantos pontos cada aluno ganha ao concluir uma seção específica do curso.';
 
+$string['blockGameSettingsCompletionConditions'] = '<strong>Condições de Conclusão:</strong> Essas opções determinam quando 
+os pontos de conclusão de seção são atribuídos ao participante. As condições são definidas ao editar uma atividade na seção, 
+indo até a aba "Condições de conclusão". A pontuação só será aplicada após todas as atividades com condição de conclusão 
+definida serem concluídas, liberando assim a pontuação da seção. Configurar essas condições corretamente é essencial para 
+o funcionamento do bloco Jogo.';
+
+$string['blockGameSettingsActivityCompletionPoints'] = 'Pontuação por conclusão de Atividade /Recursos (critérios de 
+conclusão obrigatórios):';
+
+$string['blockGameSettingsActivityCompletionPointsDescription'] = 'Esta configuração permite atribuir pontos aos alunos 
+pela conclusão de atividades ou recursos específicos no curso. Cada campo representa uma atividade ou recurso criado no 
+curso.';
+
+$string['blockGameSettingsPointsForActivityCompletion'] = '<strong>Pontos por conclusão de Atividade:</strong> Esses 
+campos permitem definir quantos pontos cada aluno ganha ao concluir uma atividade ou recurso específico do curso.';
+
+$string['blockGameSettingsActivityCompletionConditions'] = '<strong>Critérios de Conclusão:</strong> As atividades precisam 
+ter critérios de conclusão definidos para que a pontuação seja aplicada. Mesmo que os pontos estejam configurados, se a 
+atividade não tiver um critério de conclusão, os pontos não serão atribuídos.';
+
+$string['blockGameSettingsGamePointsTab'] = '<strong>Pontos do Jogo:</strong> Se o bloco Jogo estiver adicionado ao curso, 
+é possível configurar os pontos da atividade diretamente na aba de edição da mesma, indo até a seção "Pontos do Jogo".';
+
+$string['blockGameSettingsWhereToShow'] = 'Onde exibir este bloco';
+
+$string['blockGameSettingsWhereToShowDescription'] = 'Configure onde o bloco Jogo será exibido no curso, incluindo a página 
+específica e a região na tela.';
+
+$string['blockGameSettingsBlockLocation'] = '<strong>Localização original do bloco:</strong> O local original onde o bloco foi 
+criado. As configurações de bloqueio podem fazer com que ele apareça em outros locais (contextos) dentro do local original. 
+Por exemplo, um bloco criado na página de um curso pode ser exibido nas atividades desse curso. Um bloco criado na página 
+inicial do site pode ser exibido em todo o site.';
+
+$string['blockGameSettingsShowOnPageType'] = '<strong>Mostrar nos tipos de página:</strong> Seleciona em quais tipos de página o 
+bloco será exibido. As opções incluem "Qualquer página", "Qualquer página de curso" e "Qualquer tipo de página principal 
+de curso".';
+
+$string['blockGameSettingsDefaultRegion'] = '<strong>Região padrão:</strong> Define em qual região do curso o bloco será exibido 
+por padrão. As opções podem incluir regiões como "Direita", "Esquerda", etc., dependendo do tema utilizado.';
+
+$string['blockGameSettingsDefaultWeight'] = '<strong>Peso padrão:</strong> Permite ajustar a posição do bloco dentro da região 
+selecionada. Valores mais baixos colocam o bloco mais próximo do topo.';
+
+$string['blockGameSettingsOnThisPage'] = 'Nessa página';
+
+$string['blockGameSettingsOnThisPageDescription'] = 'Configure como o bloco será exibido nesta página específica do curso.';
+
+$string['blockGameSettingsVisible'] = '<strong>Visível:</strong> Define se o bloco estará visível ou oculto na página. As opções 
+são "Sim" para tornar o bloco visível e "Não" para ocultá-lo.';
+
+$string['blockGameSettingsRegion'] = '<strong>Região:</strong> Define em qual região da página o bloco será exibido. As opções 
+variam de acordo com o tema utilizado, como "Direita" ou "Esquerda".';
+
+$string['blockGameSettingsWeight'] = '<strong>Peso:</strong> Permite ajustar a posição do bloco dentro da região selecionada. 
+Valores negativos colocam o bloco mais próximo do topo, enquanto valores positivos o colocam mais próximo da parte inferior.';
+
+// Links de apoio
 $string['blockGameSupportLink1'] = 'Como instalar e configurar o plugin Block Game';
 
 $string['blockGameSupportLink2'] = 'Gamificação na Prática com a Plataforma Moodle';
