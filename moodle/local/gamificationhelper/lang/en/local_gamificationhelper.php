@@ -892,7 +892,37 @@ Track, Treasure, River, Puzzle 1, and Puzzle 2.';
 $string['trailFormatSettingsCheckStyle'] = '<strong>Check style:</strong> Choose the check style that will appear when 
 the student completes all activities with completion criteria for the section, such as Check, Star, or Like.';
 
-$string['trailFormatSettingsContainerimagealignmentDescription'] = '<strong>Image container alignment:</strong> Resets the 
-image container alignment to the default value. This alignment will be applied the same way as a course first displayed in 
-trail format. Options include "Left", "Center", and "Right". Choosing "Center" will center the image within the container, 
-while "Left" and "Right" will align the image to the left and right, respectively.';
+$string['trailFormatSettingsContainerimageAlignment'] = '<strong>Image container alignment:</strong> Resets the image 
+container alignment to the default value. This alignment will be applied the same way as a course first displayed in trail 
+format. Options include "Left", "Center", and "Right". Choosing "Center" will center the image within the container, while 
+"Left" and "Right" will align the image to the left and right, respectively.';
+
+$string['trailFormatSettingsContainerImageWidth'] = '<strong>Set the width of the image container:</strong> Allows setting 
+the width of the image container, with options such as 192 and 210.';
+
+$string['trailFormatSettingsContainerImageProportion'] = '<strong>Set the image container proportion relative to width:</strong> 
+Defines the image container proportion, with options such as 3:2 and 3:1.';
+
+$string['trailFormatSettingsImageMethodResize'] = '<strong>Set the image resizing method:</strong> Defines the image resizing 
+method to "Scale" or "Crop".';
+
+$string['trailFormatSettingsBorderColor'] = '<strong>Set the border color:</strong> Allows choosing the border color for 
+the image.';
+
+$string['trailFormatSettingsBorderWidth'] = '<strong>Set the border width:</strong> Defines the border width between 1 
+and 10.';
+
+$string['trailFormatSettingsEnableBorderRadius'] = '<strong>Enable/disable the border radius:</strong> Allows enabling or 
+disabling the border radius for the image.';
+
+$string['trailFormatSettingsBackgroundColor'] = '<strong>Set the background color for the image container:</strong> Sets 
+the background color for the image container, 999999 for transparent.';
+
+$string['trailFormatSettingsCurrentSectionColor'] = '<strong>Set the current color for the selected section:</strong> Sets 
+the current color for the selected section.';
+
+$string['trailFormatSettingsContainerImageTextColor'] = '<strong>Set the text color for the currently selected image 
+container:</strong> Sets the text color for the currently selected image container.';
+
+$string['trailFormatSettingsSelectedContainerColor'] = '<strong>Set the current color for the selected image container:</strong> 
+Sets the current color for the selected image container, 999999 for transparent.';

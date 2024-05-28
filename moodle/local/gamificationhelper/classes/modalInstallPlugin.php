@@ -370,7 +370,17 @@ class ModalInstallPlugin
                 <li>' . get_string('trailFormatSettingsShowLockIcon', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsTrailStyle', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsCheckStyle', 'local_gamificationhelper') . '</li>
-                <li>' . get_string('trailFormatSettingsContainerimagealignmentDescription', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsContainerImageAlignment', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsContainerImageWidth', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsContainerImageProportion', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsImageMethodResize', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsBorderColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsBorderWidth', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsEnableBorderRadius', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsBackgroundColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsCurrentSectionColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsContainerImageTextColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSelectedContainerColor', 'local_gamificationhelper') . '</li>
             </ol>';
         }
 

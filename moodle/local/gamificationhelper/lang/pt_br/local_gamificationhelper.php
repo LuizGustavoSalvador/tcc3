@@ -888,8 +888,37 @@ Tesouro, Rio, Quebra-cabeças 1 e Quebra-cabeças 2.';
 $string['trailFormatSettingsCheckStyle'] = '<strong>Estilo do check:</strong> Escolha o estilo de check que aparecerá quando 
 o estudante concluir todas as atividades com critérios de conclusão da seção, podendo ser Check, Estrela ou Curti.';
 
-$string['trailFormatSettingsContainerimagealignmentDescription'] = '<strong>Alinhamento de container de imagem:</strong> 
-Redefine o alinhamento do container de imagem para o valor padrão. Este alinhamento será aplicado da mesma forma que um 
-curso exibido pela primeira vez no formato de trilha. Opções incluem "Esquerda", "Centro" e "Direita". Escolher "Centro" 
-irá centralizar a imagem dentro do container, enquanto "Esquerda" e "Direita" irão alinhar a imagem à esquerda e à direita, 
-respectivamente.';
+$string['trailFormatSettingsContainerImageAlignment'] = '<strong>Alinhamento de container de imagem:</strong> Redefine o 
+alinhamento do container de imagem para o valor padrão. Este alinhamento será aplicado da mesma forma que um curso exibido 
+pela primeira vez no formato de trilha. Opções incluem "Esquerda", "Centro" e "Direita". Escolher "Centro" irá centralizar 
+a imagem dentro do container, enquanto "Esquerda" e "Direita" irão alinhar a imagem à esquerda e à direita, respectivamente.';
+
+$string['trailFormatSettingsContainerImageWidth'] = '<strong>Defina a largura do container de imagem:</strong> Permite 
+definir a largura do container de imagem, com opções como 192 e 210.';
+
+$string['trailFormatSettingsContainerImageProportion'] = '<strong>Defina a proporção do container de imagens em relação 
+à largura:</strong> Define a proporção do container de imagens, com opções como 3:2 e 3:1.';
+
+$string['trailFormatSettingsImageMethodResize'] = '<strong>Defina o método de redimensionamento da imagem:</strong> Define 
+o método de redimensionamento da imagem para "Escala" ou "Recortar".';
+
+$string['trailFormatSettingsBorderColor'] = '<strong>Definir a cor da borda:</strong> Permite escolher a cor da borda da 
+imagem.';
+
+$string['trailFormatSettingsBorderWidth'] = '<strong>Definir a largura da borda:</strong> Define a largura da borda entre 
+1 e 10.';
+
+$string['trailFormatSettingsEnableBorderRadius'] = '<strong>Ativar/desativar o raio da borda:</strong> Permite ativar ou 
+desativar o raio da borda da imagem.';
+
+$string['trailFormatSettingsBackgroundColor'] = '<strong>Defina a cor de fundo do container de imagem:</strong> Define a 
+cor de fundo do container de imagem, 999999 para transparente.';
+
+$string['trailFormatSettingsCurrentSectionColor'] = '<strong>Defina a cor atual da seção selecionada:</strong> Define a 
+cor atual da seção selecionada.';
+
+$string['trailFormatSettingsContainerImageTextColor'] = '<strong>Defina a cor do texto do container de imagens atual 
+selecionado:</strong> Define a cor do texto do container de imagens atual selecionado.';
+
+$string['trailFormatSettingsSelectedContainerColor'] = '<strong>Defina a cor atual do container da imagem selecionada:</strong> 
+Define a cor atual do container da imagem selecionada, 999999 para transparente.';
