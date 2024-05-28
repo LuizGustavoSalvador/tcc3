@@ -828,14 +828,68 @@ $string['blockXpSupportLink1'] = 'Documentação oficial do plugin';
  * Trail Format
  */
 
-// About
+/****************************************** About ******************************************/
 $string['formatTrail'] = 'Trail format';
 $string['formatTrailDesc'] = 'Proporciona uma jornada gamificada onde os alunos seguem trilhas de aprendizado estruturadas.';
 
-// Permissions
+/*************************************** Permissions ***************************************/
 $string['formatTrail:changeimagecontaineralignment'] = 'Alterar ou repor o alinhamento do container de imagem';
 $string['formatTrail:changeimagecontainernavigation'] = 'Alterar ou repor a navegação do container de imagem';
 $string['formatTrail:changeimagecontainersize'] = 'Alterar ou redefinir o tamanho do container da imagem';
 $string['formatTrail:changeimageresizemethod'] = 'Alterar ou redefinir o método de redimensionamento da imagem';
 $string['formatTrail:changeimagecontainerstyle'] = 'Alterar ou redefinir o estilo do container da imagem';
 $string['formatTrail:changesectiontitleoptions'] = 'Alterar ou redefinir as opções do título da seção';
+
+/**************************************** Tutorial ****************************************/
+
+// Como acessar as configurações do plugin Trail Format
+$string['trailFormatAccessSettingsTutorial'] = 'Como acessar as configurações do plugin Trail Format';
+
+$string['trailFormatAccessSettingsDescription'] = 'Para configurar o plugin Trail Format no Moodle, siga os passos abaixo.';
+
+$string['trailFormatAccessStep1'] = '<strong>Selecionar o Curso Desejado:</strong> No painel do Moodle, selecione o curso 
+ao qual você deseja adicionar o Formato de Trilha.';
+
+$string['trailFormatAccessStep2'] = '<strong>Acessar Configurações do Curso:</strong> Dentro do curso, clique na aba 
+"Configurações" para acessar as configurações do curso.';
+
+$string['trailFormatAccessStep3'] = '<strong>Formato de Curso:</strong> Na seção "Formato de curso", localize o campo 
+"Formato" e selecione a opção "Formato de trilha" no menu suspenso.';
+
+$string['trailFormatAccessStep4'] = '<strong>Configurações do Formato de Trilha:</strong> Após selecionar "Formato de trilha", 
+os campos de configuração específicos para esse formato estarão disponíveis logo abaixo para serem ajustados conforme 
+necessário.';
+
+$string['trailFormatSettingsTitle'] = 'Como configurar os campos do Trail Format';
+
+$string['trailFormatSettingsDescription'] = 'A configuração do Trail Format permite que você ajuste diversos aspectos 
+visuais e funcionais do curso para otimizar a gamificação e o engajamento dos alunos. Embora os campos de cores não sejam 
+obrigatórios para a gamificação, eles oferecem uma melhor estilização do curso, permitindo que você adapte o visual 
+conforme suas necessidades e preferências.';
+
+$string['trailFormatSettingsNumberOfSections'] = '<strong>Número de seções:</strong> Este campo define o número de seções 
+no curso que terão o formato de trilha aplicado. Por padrão, ele já vem preenchido com a quantidade de seções do curso. 
+Você pode ajustar esse número conforme necessário para incluir mais ou menos seções no formato de trilha.';
+
+$string['trailFormatSettingsSectionHidden'] = '<strong>Seções escondidas:</strong> As seções ocultas podem ser exibidas 
+aos estudantes como "não disponíveis" na página do curso ou mantidas completamente ocultas.';
+
+$string['trailFormatSettingsCourseLayout'] = '<strong>Layout do curso:</strong> Seções do curso podem ser exibidas todas 
+em uma página ou separadas em diversas páginas.';
+
+$string['trailFormatSettingsHideSideNav'] = '<strong>Ocultar navegação lateral:</strong> Ocultar setas de navegação lateral.';
+
+$string['trailFormatSettingsShowLockIcon'] = '<strong>Mostrar cadeado quando tiver restrição:</strong> Mostrar imagem do 
+cadeado quando a seção tiver restrição.';
+
+$string['trailFormatSettingsTrailStyle'] = '<strong>Estilo da Trilha:</strong> Define o estilo visual da trilha, como Pista, 
+Tesouro, Rio, Quebra-cabeças 1 e Quebra-cabeças 2.';
+
+$string['trailFormatSettingsCheckStyle'] = '<strong>Estilo do check:</strong> Escolha o estilo de check que aparecerá quando 
+o estudante concluir todas as atividades com critérios de conclusão da seção, podendo ser Check, Estrela ou Curti.';
+
+$string['trailFormatSettingsContainerimagealignmentDescription'] = '<strong>Alinhamento de container de imagem:</strong> 
+Redefine o alinhamento do container de imagem para o valor padrão. Este alinhamento será aplicado da mesma forma que um 
+curso exibido pela primeira vez no formato de trilha. Opções incluem "Esquerda", "Centro" e "Direita". Escolher "Centro" 
+irá centralizar a imagem dentro do container, enquanto "Esquerda" e "Direita" irão alinhar a imagem à esquerda e à direita, 
+respectivamente.';

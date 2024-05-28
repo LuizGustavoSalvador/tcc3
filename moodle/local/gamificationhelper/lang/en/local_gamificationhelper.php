@@ -829,12 +829,12 @@ $string['blockXpSupportLink1'] = 'Official plugin documentation';
  * Trail Format
  */
 
-// About
+/****************************************** About ******************************************/
 $string['formatTrail'] = 'Trail format';
 
 $string['formatTrailDesc'] = 'Provides a gamified journey where students follow structured learning paths.';
 
-// Permissions
+/*************************************** Permissions ***************************************/
 $string['formatTrail:changeimagecontaineralignment'] = 'Change or reset the image container alignment';
 
 $string['formatTrail:changeimagecontainernavigation'] = 'Change or reset the image container navigation';
@@ -847,4 +847,52 @@ $string['formatTrail:changeimageresizemethod'] = 'Change or reset the image resi
 
 $string['formatTrail:changesectiontitleoptions'] = 'Change or reset the section title options';
 
-// Tutorial
+/**************************************** Tutorial ****************************************/
+// How to access the Trail Format plugin settings
+$string['trailFormatAccessSettingsTutorial'] = 'How to access the Trail Format plugin settings';
+
+$string['trailFormatAccessSettingsDescription'] = 'To configure the Trail Format plugin in Moodle, follow the steps below.';
+
+$string['trailFormatAccessStep1'] = '<strong>Select the Desired Course:</strong> On the Moodle dashboard, select the 
+course to which you want to add the Trail Format.';
+
+$string['trailFormatAccessStep2'] = '<strong>Access Course Settings:</strong> Within the course, click on the "Settings" 
+tab to access the course settings.';
+
+$string['trailFormatAccessStep3'] = '<strong>Course Format:</strong> In the "Course format" section, locate the "Format" 
+field and select the "Trail format" option from the dropdown menu.';
+
+$string['trailFormatAccessStep4'] = '<strong>Trail Format Settings:</strong> After selecting "Trail format," specific 
+configuration fields for this format will be available below to be adjusted as needed.';
+
+$string['trailFormatSettingsTitle'] = 'How to configure Trail Format fields';
+
+$string['trailFormatSettingsDescription'] = 'Configuring the Trail Format allows you to adjust various visual and functional 
+aspects of the course to optimize gamification and student engagement. While the color fields are not mandatory for gamification, 
+they provide better styling for the course, allowing you to customize the look according to your needs and preferences.';
+
+$string['trailFormatSettingsNumberOfSections'] = '<strong>Number of sections:</strong> This field sets the number of 
+sections in the course that will have the trail format applied. By default, it is pre-filled with the current number of 
+sections in the course. You can adjust this number as needed to include more or fewer sections in the trail format.';
+
+$string['trailFormatSettingsSectionHidden'] = '<strong>Hidden sections:</strong> Hidden sections can be displayed to 
+students as "not available" on the course page or kept completely hidden.';
+
+$string['trailFormatSettingsCourseLayout'] = '<strong>Course layout:</strong> Course sections can be displayed all on one 
+page or separated into multiple pages.';
+
+$string['trailFormatSettingsHideSideNav'] = '<strong>Hide side navigation:</strong> Hide side navigation arrows.';
+
+$string['trailFormatSettingsShowLockIcon'] = '<strong>Show lock icon when restricted:</strong> Show lock icon when the 
+section is restricted.';
+
+$string['trailFormatSettingsTrailStyle'] = '<strong>Trail style:</strong> Defines the visual style of the trail, such as 
+Track, Treasure, River, Puzzle 1, and Puzzle 2.';
+
+$string['trailFormatSettingsCheckStyle'] = '<strong>Check style:</strong> Choose the check style that will appear when 
+the student completes all activities with completion criteria for the section, such as Check, Star, or Like.';
+
+$string['trailFormatSettingsContainerimagealignmentDescription'] = '<strong>Image container alignment:</strong> Resets the 
+image container alignment to the default value. This alignment will be applied the same way as a course first displayed in 
+trail format. Options include "Left", "Center", and "Right". Choosing "Center" will center the image within the container, 
+while "Left" and "Right" will align the image to the left and right, respectively.';

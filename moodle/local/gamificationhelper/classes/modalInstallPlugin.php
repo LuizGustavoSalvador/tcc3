@@ -114,8 +114,8 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('blockGameSettingsTutorial', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('blockGameSettingsDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-1.png', 'Configurações gerais do bloco') . 
-                self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-2.png', 'Configurações gerais do bloco') . 
+            ' . self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-1.png', 'Configurações gerais do bloco') .
+                self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-2.png', 'Configurações gerais do bloco') .
                 self::getImageHTML($blockGamePath, 'configuracoes-bloco-geral-3.png', 'Configurações gerais do bloco') . '
             <ol>
                 <li>' . get_string('blockGameSettingsEditTitle', 'local_gamificationhelper') . '</li>
@@ -350,6 +350,28 @@ class ModalInstallPlugin
             </a></li>
             </ul>
             ';
+        } else {
+            $html .= '<h5 class="section-title">' . get_string('trailFormatAccessSettingsTutorial', 'local_gamificationhelper') . '</h5>
+            <span class="section-subtitle sub-with-description"><strong>' . get_string('trailFormatAccessSettingsDescription', 'local_gamificationhelper') . '</strong></span>
+            ' . self::getImageHTML($trailFormatPath, 'como-configurar-trail-format.png', 'Como configurar trail format') . '
+            <ol>
+                <li>' . get_string('trailFormatAccessStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatAccessStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatAccessStep3', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatAccessStep4', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('trailFormatSettingsTitle', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('trailFormatSettingsDescription', 'local_gamificationhelper') . '</p>
+            <ol>
+                <li>' . get_string('trailFormatSettingsNumberOfSections', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionHidden', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsCourseLayout', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsHideSideNav', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsShowLockIcon', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsTrailStyle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsCheckStyle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsContainerimagealignmentDescription', 'local_gamificationhelper') . '</li>
+            </ol>';
         }
 
         $html .= '';
