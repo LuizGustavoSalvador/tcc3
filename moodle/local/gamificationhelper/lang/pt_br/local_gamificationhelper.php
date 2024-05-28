@@ -954,5 +954,37 @@ Defina a cor do texto do título da seção quando a opção "Dentro".';
 $string['trailFormatSettingsSectionTitleBgColor'] = '<strong>Cor do fundo do título:</strong> Defina a cor do fundo do 
 título da seção quando a opção "Dentro".';
 
-$string['trailFormatSettingsShowSummary'] = '<strong>Mostrar resumo:</strong> Mostrar o resumo do título da seção ao passar 
-o mouse sobre a caixa da trilha.';
+$string['trailFormatSettingsShowSummary'] = '<strong>Mostrar resumo do título da seção na opção de hover:</strong> Mostrar 
+o resumo do título da seção ao passar o mouse sobre a caixa da trilha.';
+
+$string['trailFormatSettingsSectionTitleSummaryPosition'] = '<strong>Defina o resumo do título da seção na opção de posição 
+suspensa:</strong> Defina a posição de resumo do título da seção ao passar o mouse sobre a caixa de trilha para um dos 
+seguintes: "topo", "base", "esquerda" ou "direita".';
+
+$string['trailFormatSettingsSectionTitleSummaryMaxLength'] = '<strong>Defina o comprimento máximo do resumo do título da 
+seção em hover:</strong> Defina o comprimento máximo do resumo do título da seção ao passar o mouse sobre a caixa da trilha. 
+Digite "0" para não truncamento.';
+
+$string['trailFormatSettingsSectionTitleSummaryTextColor'] = '<strong>Defina a cor do texto de resumo do título da seção 
+em hover:</strong> Defina a cor do texto de resumo do título da seção em hover.';
+
+$string['trailFormatSettingsSectionTitleSummaryBackgroundColor'] = '<strong>Defina a cor de fundo do resumo do título da 
+seção em hover:</strong> Defina a cor de fundo do resumo do título da seção em hover.';
+
+$string['trailFormatSettingsSectionTitleSummaryOpacity'] = '<strong>Defina a opacidade de fundo do resumo do título da 
+seção em hover:</strong> Defina a opacidade de fundo do resumo do título da seção, entre 0 e 1 em incrementos de 0,1, ao 
+passar o mouse sobre o título da seção na caixa de trilha.';
+
+$string['trailFormatSettingsNewActivityNotification'] = '<strong>Mostrar nova imagem de notificação de atividade:</strong> 
+Mostrar a nova imagem de notificação de atividade quando uma nova atividade ou recurso for adicionado a uma seção.';
+
+$string['trailFormatSettingsAdjustPopupToWindow'] = '<strong>Ajusta o popup da seção à janela:</strong> Se habilitado, a 
+caixa pop-up com o conteúdo da seção vai caber no tamanho da janela e irá rolar para dentro se necessário. Se desativado, 
+a página inteira será rolada.';
+
+$string['trailFormatSettingsUnavailableGrayOutside'] = '<strong>Indisponível cinza por fora:</strong> Na exibição da trilha, 
+mostre imagens da seção indisponíveis em cinza e desvinculadas.';
+
+$string['trailFormatSettingsSection0OnOwnPage'] = '<strong>Seção 0 em sua própria página quando fora da trilha e em uma 
+única página de seção:</strong> Ter seção 0 em sua própria página quando estiver fora da trilha e a configuração "Layout 
+do curso" por "Uma seção por página".';

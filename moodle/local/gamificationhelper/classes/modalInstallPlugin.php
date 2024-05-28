@@ -362,6 +362,10 @@ class ModalInstallPlugin
             </ol>
             <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('trailFormatSettingsTitle', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('trailFormatSettingsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-1.png', 'Campos de configurações do trail format') . 
+                self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-2.png', 'Campos de configurações do trail format') . 
+                self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-3.png', 'Campos de configurações do trail format') . 
+                self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-4.png', 'Campos de configurações do trail format') . '
             <ol>
                 <li>' . get_string('trailFormatSettingsNumberOfSections', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsSectionHidden', 'local_gamificationhelper') . '</li>
@@ -392,6 +396,15 @@ class ModalInstallPlugin
                 <li>' . get_string('trailFormatSettingsSectionTitleTextColor', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsSectionTitleBgColor', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsShowSummary', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleSummaryPosition', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleSummaryMaxLength', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleSummaryTextColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleSummaryBackgroundColor', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSectionTitleSummaryOpacity', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsNewActivityNotification', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsAdjustPopupToWindow', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsUnavailableGrayOutside', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatSettingsSection0OnOwnPage', 'local_gamificationhelper') . '</li>
             </ol>';
         }
 

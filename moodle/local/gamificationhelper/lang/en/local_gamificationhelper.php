@@ -957,5 +957,37 @@ the text color of the section title when the option is "Inside".';
 $string['trailFormatSettingsSectionTitleBgColor'] = '<strong>Title background color:</strong> Set the background color of 
 the section title when the option is "Inside".';
 
-$string['trailFormatSettingsShowSummary'] = '<strong>Show summary:</strong> Show the section title summary when hovering 
-over the track box.';
+$string['trailFormatSettingsShowSummary'] = '<strong>Show section title summary on hover:</strong> Show the section title 
+summary when hovering over the track box.';
+
+$string['trailFormatSettingsSectionTitleSummaryPosition'] = '<strong>Define the section title summary position on 
+hover:</strong> Set the position of the section title summary when hovering over the trail box to one of the following: 
+"top", "bottom", "left", or "right".';
+
+$string['trailFormatSettingsSectionTitleSummaryMaxLength'] = '<strong>Set the maximum length of the section title summary 
+on hover:</strong> Set the maximum length of the section title summary when hovering over the trail box. Enter "0" for no 
+truncation.';
+
+$string['trailFormatSettingsSectionTitleSummaryTextColor'] = '<strong>Set the section title summary text color on 
+hover:</strong> Set the section title summary text color on hover.';
+
+$string['trailFormatSettingsSectionTitleSummaryBackgroundColor'] = '<strong>Set the section title summary background color 
+on hover:</strong> Set the section title summary background color on hover.';
+
+$string['trailFormatSettingsSectionTitleSummaryOpacity'] = '<strong>Set the section title summary background opacity on 
+hover:</strong> Set the section title summary background opacity, between 0 and 1 in increments of 0.1, when hovering over 
+the section title in the trail box.';
+
+$string['trailFormatSettingsNewActivityNotification'] = '<strong>Show new activity notification image:</strong> Show the 
+new activity notification image when a new activity or resource is added to a section.';
+
+$string['trailFormatSettingsAdjustPopupToWindow'] = '<strong>Adjust section popup to window:</strong> If enabled, the pop-up 
+box with the section content will fit the window size and scroll within if necessary. If disabled, the entire page will 
+scroll.';
+
+$string['trailFormatSettingsUnavailableGrayOutside'] = '<strong>Unavailable gray outside:</strong> In trail view, show 
+unavailable section images in gray and unlinked.';
+
+$string['trailFormatSettingsSection0OnOwnPage'] = '<strong>Section 0 on its own page when off-trail and on a single section 
+page:</strong> Have section 0 on its own page when off-trail and the "Course layout" setting is "One section per page".';
+
