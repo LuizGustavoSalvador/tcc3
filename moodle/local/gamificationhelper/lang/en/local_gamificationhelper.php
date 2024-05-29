@@ -848,10 +848,16 @@ $string['formatTrail:changeimageresizemethod'] = 'Change or reset the image resi
 $string['formatTrail:changesectiontitleoptions'] = 'Change or reset the section title options';
 
 /**************************************** Tutorial ****************************************/
+// Default settings
+$string['trailFormatDefaultSettings'] = 'Configurações Padrão do Plugin Trail Format';
+
+$string['trailFormatDefaultSettingsDescription'] = 'After installation, the plugin\'s default configuration screen will 
+be displayed. If there are no specific settings for a course, the default settings will be used. Changing the plugin\'s 
+default data is optional and should only be done if you want the plugin to adopt specific behavior by default. You can see 
+the description of the fields below in the section "How to configure the Trail Format fields".';
+
 // How to access the Trail Format plugin settings
 $string['trailFormatAccessSettingsTutorial'] = 'How to access the Trail Format plugin settings';
-
-$string['trailFormatAccessSettingsDescription'] = 'To configure the Trail Format plugin in Moodle, follow the steps below.';
 
 $string['trailFormatAccessStep1'] = '<strong>Select the Desired Course:</strong> On the Moodle dashboard, select the 
 course to which you want to add the Trail Format.';
@@ -864,6 +870,10 @@ field and select the "Trail format" option from the dropdown menu.';
 
 $string['trailFormatAccessStep4'] = '<strong>Trail Format Settings:</strong> After selecting "Trail format," specific 
 configuration fields for this format will be available below to be adjusted as needed.';
+
+$string['trailFormatAccessStep5'] = '<strong>Disabling the plugin:</strong> To disable the plugin for the course, you only 
+need to change the "Format" field option to another format. This will also cause all configurations made for the trail 
+format to be lost, but only if the format change is altered and saved.';
 
 $string['trailFormatSettingsTitle'] = 'How to configure Trail Format fields';
 

@@ -351,20 +351,27 @@ class ModalInstallPlugin
             </ul>
             ';
         } else {
+            $html .= is_siteadmin() ? '<h5 class="section-title">' . get_string('trailFormatDefaultSettings', 'local_gamificationhelper') . '</h5>
+            <p class="section-desc">' . get_string('trailFormatDefaultSettingsDescription', 'local_gamificationhelper') . '</p>' .
+            self::getImageHTML($trailFormatPath, 'configuracoes-gerais-trail-format-1.png', 'Tela de configuração padrão do plugin') .
+            self::getImageHTML($trailFormatPath, 'configuracoes-gerais-trail-format-2.png', 'Tela de configuração padrão do plugin') .
+            self::getImageHTML($trailFormatPath, 'configuracoes-gerais-trail-format-3.png', 'Tela de configuração padrão do plugin') .
+            self::getImageHTML($trailFormatPath, 'configuracoes-gerais-trail-format-4.png', 'Tela de configuração padrão do plugin') : '';
+
             $html .= '<h5 class="section-title">' . get_string('trailFormatAccessSettingsTutorial', 'local_gamificationhelper') . '</h5>
-            <span class="section-subtitle sub-with-description"><strong>' . get_string('trailFormatAccessSettingsDescription', 'local_gamificationhelper') . '</strong></span>
             ' . self::getImageHTML($trailFormatPath, 'como-configurar-trail-format.png', 'Como configurar trail format') . '
             <ol>
                 <li>' . get_string('trailFormatAccessStep1', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatAccessStep2', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatAccessStep3', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatAccessStep4', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailFormatAccessStep5', 'local_gamificationhelper') . '</li>
             </ol>
             <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('trailFormatSettingsTitle', 'local_gamificationhelper') . '</strong></span>
             <p>' . get_string('trailFormatSettingsDescription', 'local_gamificationhelper') . '</p>
-            ' . self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-1.png', 'Campos de configurações do trail format') . 
-                self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-2.png', 'Campos de configurações do trail format') . 
-                self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-3.png', 'Campos de configurações do trail format') . 
+            ' . self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-1.png', 'Campos de configurações do trail format') .
+                self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-2.png', 'Campos de configurações do trail format') .
+                self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-3.png', 'Campos de configurações do trail format') .
                 self::getImageHTML($trailFormatPath, 'configuracoes-trail-format-4.png', 'Campos de configurações do trail format') . '
             <ol>
                 <li>' . get_string('trailFormatSettingsNumberOfSections', 'local_gamificationhelper') . '</li>

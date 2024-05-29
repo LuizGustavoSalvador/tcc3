@@ -841,11 +841,16 @@ $string['formatTrail:changeimagecontainerstyle'] = 'Alterar ou redefinir o estil
 $string['formatTrail:changesectiontitleoptions'] = 'Alterar ou redefinir as opções do título da seção';
 
 /**************************************** Tutorial ****************************************/
+// Configuração padrão
+$string['trailFormatDefaultSettings'] = 'Configurações Padrão do Plugin Trail Format';
+
+$string['trailFormatDefaultSettingsDescription'] = 'Após a instalação, a tela de configuração padrão do plugin será 
+exibida. Se não houver configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os dados 
+padrão do plugin é opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico por 
+padrão. A descrição dos campos você pode ver abaixo na seção "Como configurar os campos do Trail Format".';
 
 // Como acessar as configurações do plugin Trail Format
 $string['trailFormatAccessSettingsTutorial'] = 'Como acessar as configurações do plugin Trail Format';
-
-$string['trailFormatAccessSettingsDescription'] = 'Para configurar o plugin Trail Format no Moodle, siga os passos abaixo.';
 
 $string['trailFormatAccessStep1'] = '<strong>Selecionar o Curso Desejado:</strong> No painel do Moodle, selecione o curso 
 ao qual você deseja adicionar o Formato de Trilha.';
@@ -859,6 +864,10 @@ $string['trailFormatAccessStep3'] = '<strong>Formato de Curso:</strong> Na seç�
 $string['trailFormatAccessStep4'] = '<strong>Configurações do Formato de Trilha:</strong> Após selecionar "Formato de trilha", 
 os campos de configuração específicos para esse formato estarão disponíveis logo abaixo para serem ajustados conforme 
 necessário.';
+
+$string['trailFormatAccessStep5'] = '<strong>Desabilitando o plugin:</strong> Para desabilitar o plugin do curso, é necessário 
+apenas alterar a opção do campo "Formato" para outra forma. Isso fará também com que todas as configurações feitas para 
+o formato de trilha sejam perdidas, mas apenas se for alterado e salvo a alteração de formato.';
 
 $string['trailFormatSettingsTitle'] = 'Como configurar os campos do Trail Format';
 
