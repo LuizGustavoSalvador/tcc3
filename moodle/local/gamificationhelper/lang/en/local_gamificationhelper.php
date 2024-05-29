@@ -991,3 +991,70 @@ unavailable section images in gray and unlinked.';
 $string['trailFormatSettingsSection0OnOwnPage'] = '<strong>Section 0 on its own page when off-trail and on a single section 
 page:</strong> Have section 0 on its own page when off-trail and the "Course layout" setting is "One section per page".';
 
+$string['trailResetOptions'] = 'Trail Reset Options';
+
+$string['trailResetOptionsDescription'] = 'The "Trail Reset Options" allow you to restore various settings to their 
+default values, as they were the first time the course was displayed in trail format. To access this tab, go to "desired 
+course" -> "settings" -> "Trail Reset Options". This can be useful for reverting changes and ensuring consistent display.';
+
+$string['trailResetTitle'] = 'Reset';
+
+$string['trailResetDescription'] = 'The "Reset" option allows you to reset specific trail format settings to their default 
+values for an individual course.';
+
+$string['trailResetAlignImageContainer'] = '<strong>Image container alignments:</strong> Resets the alignments of the 
+image container to the default value for all courses, so it will be the same as a course the first time it is in trail 
+format.';
+
+$string['trailResetImageContainerSize'] = '<strong>Image container sizes:</strong> Resets the sizes of the image containers 
+to the default value for all courses, so it will be the same as a course the first time it is in trail format.';
+
+$string['trailResetResizeImageMethod'] = '<strong>Image resizing methods:</strong> Resets the image resizing methods to 
+the default value for all courses, so it will be the same as the first in trail formatting.';
+
+$string['trailResetImageContainerStyle'] = '<strong>Image container styles:</strong> Resets the styles of the image 
+container to the default value for all courses, so it will be the same as the first in trail formatting.';
+
+$string['trailResetSectionTitle'] = '<strong>Section title options:</strong> Resets the section title options to the 
+default value for all courses, so it will be the same as the first time it is in trail format.';
+
+$string['trailResetNewActivity'] = '<strong>New activities:</strong> Resets the new activity notification images to the 
+default value for all courses, so it will be the same as a course the first time it is in trail format.';
+
+$string['trailResetPopupSectionWindow'] = '<strong>Adjust section pop-up to window:</strong> Restores the "Adjust to 
+window" section popup to the default value for all courses, so it will be the same as a course the first time it is in 
+trail format.';
+
+$string['trailResetImageNavigation'] = '<strong>Image container navigation:</strong> Resets the image container navigation 
+to the default value for all courses, so it will be the same as a course the first time it is in trail format.';
+
+$string['trailResetAllTitle'] = 'Reset All';
+
+$string['trailResetAllDescription'] = 'The "Reset All" option allows you to reset all trail format settings to their 
+default values for all courses.';
+
+$string['trailResetAllAlignImageContainer'] = '<strong>Image container alignments:</strong> Resets the alignments of the 
+image container to the default value for all courses, so it will be the same as a course the first time it is in trail 
+format.';
+
+$string['trailResetAllImageContainerSize'] = '<strong>Image container sizes:</strong> Resets the sizes of the image 
+containers to the default value for all courses, so it will be the same as a course the first time it is in trail format.';
+
+$string['trailResetAllResizeImageMethod'] = '<strong>Image resizing methods:</strong> Resets the image resizing methods 
+to the default value for all courses, so it will be the same as the first in trail formatting.';
+
+$string['trailResetAllImageContainerStyle'] = '<strong>Image container styles:</strong> Resets the styles of the image 
+container to the default value for all courses, so it will be the same as the first in trail formatting.';
+
+$string['trailResetAllSectionTitle'] = '<strong>Section title options:</strong> Resets the section title options to the 
+default value for all courses, so it will be the same as the first time it is in trail format.';
+
+$string['trailResetAllNewActivity'] = '<strong>New activities:</strong> Resets the new activity notification images to 
+the default value for all courses, so it will be the same as a course the first time it is in trail format.';
+
+$string['trailResetAllPopupSectionWindow'] = '<strong>Adjust section pop-up to window:</strong> Restores the "Adjust to 
+window" section popup to the default value for all courses, so it will be the same as a course the first time it is in 
+trail format.';
+
+$string['trailResetAllImageNavigation'] = '<strong>Image container navigation:</strong> Resets the image container 
+navigation to the default value for all courses, so it will be the same as a course the first time it is in trail format.';

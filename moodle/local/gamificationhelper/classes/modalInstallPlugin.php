@@ -405,6 +405,33 @@ class ModalInstallPlugin
                 <li>' . get_string('trailFormatSettingsAdjustPopupToWindow', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsUnavailableGrayOutside', 'local_gamificationhelper') . '</li>
                 <li>' . get_string('trailFormatSettingsSection0OnOwnPage', 'local_gamificationhelper') . '</li>
+            </ol>
+            <h5 class="section-title">' . get_string('trailResetOptions', 'local_gamificationhelper') . '</h5>
+            <p>' . get_string('trailResetOptionsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML($trailFormatPath, 'opcoes-redefinicao-trilha.png', 'Campos para redefinir a trilha para o padrão') . '
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('trailResetTitle', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('trailResetDescription', 'local_gamificationhelper') . '</p>
+            <ol>
+                <li>' . get_string('trailResetAlignImageContainer', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetImageContainerSize', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetResizeImageMethod', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetImageContainerStyle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetSectionTitle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetNewActivity', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetPopupSectionWindow', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetImageNavigation', 'local_gamificationhelper') . '</li>
+            </ol>
+            <span class="section-subtitle sub-with-description ' . $admin . '"><strong>' . get_string('trailResetAllTitle', 'local_gamificationhelper') . '</strong></span>
+            <p>' . get_string('trailResetAllDescription', 'local_gamificationhelper') . '</p>
+            <ol>
+                <li>' . get_string('trailResetAllAlignImageContainer', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetAllImageContainerSize', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetAllResizeImageMethod', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetAllImageContainerStyle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetAllSectionTitle', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetAllNewActivity', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetAllPopupSectionWindow', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('trailResetAllImageNavigation', 'local_gamificationhelper') . '</li>
             </ol>';
         }
 

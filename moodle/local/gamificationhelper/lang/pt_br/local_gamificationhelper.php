@@ -988,3 +988,81 @@ mostre imagens da seção indisponíveis em cinza e desvinculadas.';
 $string['trailFormatSettingsSection0OnOwnPage'] = '<strong>Seção 0 em sua própria página quando fora da trilha e em uma 
 única página de seção:</strong> Ter seção 0 em sua própria página quando estiver fora da trilha e a configuração "Layout 
 do curso" por "Uma seção por página".';
+
+$string['trailResetOptions'] = 'Opções de Redefinição de Trilha';
+
+$string['trailResetOptionsDescription'] = 'As "Opções de Redefinição de Trilha" permitem que você restaure várias 
+configurações para seus valores padrão, como estavam na primeira vez que o curso foi exibido no formato de trilha. Para 
+acessar esta aba, vá em "curso desejado" -> "configurações" -> "Opções de Redefinição de Trilha". Isso pode ser útil para 
+reverter mudanças e garantir uma exibição consistente.';
+
+$string['trailResetTitle'] = 'Resetar';
+
+$string['trailResetDescription'] = 'A opção "Resetar" permite redefinir configurações específicas do formato de trilha 
+para seus valores padrão em um curso individual.';
+
+$string['trailResetAlignImageContainer'] = '<strong>Alinhamentos de container de imagem:</strong> Redefine os alinhamentos 
+do container de imagens para o valor padrão de todos os cursos, de modo que será o mesmo de um curso na primeira vez que 
+estiver no formato de trilha.';
+
+$string['trailResetImageContainerSize'] = '<strong>Tamanhos de container de imagem:</strong> Redefine os tamanhos dos 
+containers de imagens para o valor padrão de todos os cursos, de modo que seja o mesmo de um curso na primeira vez que 
+estiver no formato de trilha.';
+
+$string['trailResetResizeImageMethod'] = '<strong>Métodos de redimensionamento de imagem:</strong> Redefine os métodos 
+de redimensionamento da imagem para o valor padrão para todos os cursos, de forma que seja o mesmo que o primeiro na 
+formatação da trilha.';
+
+$string['trailResetImageContainerStyle'] = '<strong>Estilos de container de imagem:</strong> Redefine os estilos do container 
+de imagem para o valor padrão de todos os cursos, de modo que seja o mesmo que o primeiro na formatação da trilha.';
+
+$string['trailResetSectionTitle'] = '<strong>Opções do título da seção:</strong> Redefine as opções do título da seção 
+para o valor padrão de todos os cursos, de modo que seja o mesmo que na primeira vez que estiver no formato de trilha.';
+
+$string['trailResetNewActivity'] = '<strong>Novas atividades:</strong> Redefine as novas imagens de notificação de 
+atividade para o valor padrão de todos os cursos, de forma que ela seja igual a um curso na primeira vez que estiver no 
+formato de trilha.';
+
+$string['trailResetPopupSectionWindow'] = '<strong>Ajustar a seção pop-up à janela:</strong> Restaura o popup da seção 
+"Ajustar para a janela" para o valor padrão para todos os cursos, então será o mesmo que um curso na primeira vez que estiver 
+no formato de trilha.';
+
+$string['trailResetImageNavigation'] = '<strong>Navegação por container de imagens:</strong> Redefine a navegação do 
+container de imagens para o valor padrão de todos os cursos, para que seja o mesmo de um curso na primeira vez que estiver 
+no formato de trilha.';
+
+$string['trailResetAllTitle'] = 'Resetar tudo';
+
+$string['trailResetAllDescription'] = 'A opção "Resetar tudo" permite redefinir todas as configurações do formato de 
+trilha para seus valores padrão em todos os cursos.';
+
+$string['trailResetAllAlignImageContainer'] = '<strong>Alinhamentos de container de imagem:</strong> Redefine os alinhamentos 
+do container de imagens para o valor padrão de todos os cursos, de modo que será o mesmo de um curso na primeira vez que 
+estiver no formato de trilha.';
+
+$string['trailResetAllImageContainerSize'] = '<strong>Tamanhos de container de imagem:</strong> Redefine os tamanhos dos 
+containers de imagens para o valor padrão de todos os cursos, de modo que seja o mesmo de um curso na primeira vez que 
+estiver no formato de trilha.';
+
+$string['trailResetAllResizeImageMethod'] = '<strong>Métodos de redimensionamento de imagem:</strong> Redefine os métodos 
+de redimensionamento da imagem para o valor padrão para todos os cursos, de forma que seja o mesmo que o primeiro na 
+formatação da trilha.';
+
+$string['trailResetAllImageContainerStyle'] = '<strong>Estilos de container de imagem:</strong> Redefine os estilos do 
+container de imagem para o valor padrão de todos os cursos, de modo que seja o mesmo que o primeiro na formatação da 
+trilha.';
+
+$string['trailResetAllSectionTitle'] = '<strong>Opções do título da seção:</strong> Redefine as opções do título da seção 
+para o valor padrão de todos os cursos, de modo que seja o mesmo que na primeira vez que estiver no formato de trilha.';
+
+$string['trailResetAllNewActivity'] = '<strong>Novas atividades:</strong> Redefine as novas imagens de notificação de 
+atividade para o valor padrão de todos os cursos, de forma que ela seja igual a um curso na primeira vez que estiver no 
+formato de trilha.';
+
+$string['trailResetAllPopupSectionWindow'] = '<strong>Ajustar a seção pop-up à janela:</strong> Restaura o popup da seção 
+"Ajustar para a janela" para o valor padrão para todos os cursos, então será o mesmo que um curso na primeira vez que 
+estiver no formato de trilha.';
+
+$string['trailResetAllImageNavigation'] = '<strong>Navegação por container de imagens:</strong> Redefine a navegação do 
+container de imagens para o valor padrão de todos os cursos, para que seja o mesmo de um curso na primeira vez que 
+estiver no formato de trilha.';
