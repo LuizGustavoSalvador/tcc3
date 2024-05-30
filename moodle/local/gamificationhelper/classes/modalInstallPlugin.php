@@ -249,12 +249,7 @@ class ModalInstallPlugin
             <p>' . get_string('blockGameResetPointsDescription', 'local_gamificationhelper') . '</p>
             ' . self::getImageHTML(
                     $blockGamePath, 
-                    'redefinir-pontos-1.png', 
-                    get_string('blockGameResetPointsTutorial', 'local_gamificationhelper')
-                ) .
-                self::getImageHTML(
-                    $blockGamePath, 
-                    'redefinir-pontos-2.png', 
+                    'redefinir-pontos-curso.png', 
                     get_string('blockGameResetPointsTutorial', 'local_gamificationhelper')
                 ) . '
             <ol>
