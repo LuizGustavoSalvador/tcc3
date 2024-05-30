@@ -10,7 +10,7 @@ $capabilities = [
             'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW
         ],
-        'clonepermissionsfrom' => 'moodle/site:config',
+        //'clonepermissionsfrom' => 'moodle/site:config',
     ],
     'local/gamificationhelper:view' => [
         'captype' => 'read',
