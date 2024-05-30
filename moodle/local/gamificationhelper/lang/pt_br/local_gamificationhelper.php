@@ -448,6 +448,63 @@ $string['blockGameResetPointsStep2'] = '<strong>Selecionar Redefinir Pontos:</st
 $string['blockGameResetPointsStep3'] = '<strong>Confirmar Ação:</strong> Confirme a ação na janela de confirmação que 
 aparece clicando em "Sim".';
 
+// Como remover o Block Game do curso
+$string['blockGameRemoveTutorial'] = 'Como Remover o Block Game do Curso';
+
+$string['blockGameRemoveDescription'] = 'Siga os passos abaixo para remover o bloco Block Game do seu curso.';
+
+$string['blockGameRemoveStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de remover o bloco só estará disponível 
+com o modo de edição do curso ativo.';
+
+$string['blockGameRemoveStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Block Game, clique no 
+ícone de engrenagem (⚙️) no widget do jogo.';
+
+$string['blockGameRemoveStep2'] = '<strong>Selecionar Apagar Bloco:</strong> No menu suspenso, selecione a opção "Apagar 
+bloco Jogo".';
+
+$string['blockGameRemoveStep3'] = '<strong>Confirmar Ação:</strong> Na janela de confirmação que aparece, clique em 
+"Excluir" para confirmar a remoção do bloco.';
+
+// Configurar permissões
+$string['blockGamePermissionsTutorial'] = 'Como Configurar Permissões no Block Game';
+
+$string['blockGamePermissionsDescription'] = 'Siga os passos abaixo para configurar as permissões dos usuários no bloco 
+Block Game do seu curso.';
+
+$string['blockGamePermissionsStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de configurar permissões só estará 
+disponível com o modo de edição do curso ativo.';
+
+$string['blockGamePermissionsStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Block Game, clique 
+no ícone de engrenagem (⚙️) no widget do jogo.';
+
+$string['blockGamePermissionsStep2'] = '<strong>Selecionar Permissões:</strong> No menu suspenso, selecione a opção 
+"Permissões".';
+
+$string['blockGamePermissionsStep3'] = '<strong>Configurar Permissões:</strong> Na página de permissões, ajuste as 
+permissões conforme necessário selecionando os papéis e ações autorizadas ou proibidas.';
+
+
+// Verificar permissões
+$string['blockGameCheckPermissionsTutorial'] = 'Como Verificar Permissões no Block Game';
+
+$string['blockGameCheckPermissionsDescription'] = 'Siga os passos abaixo para verificar as permissões dos usuários no bloco 
+Block Game do seu curso.';
+
+$string['blockGameCheckPermissionsStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de verificar permissões só 
+estará disponível com o modo de edição do curso ativo.';
+
+$string['blockGameCheckPermissionsStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Block Game, 
+clique no ícone de engrenagem (⚙️) no widget do jogo.';
+
+$string['blockGameCheckPermissionsStep2'] = '<strong>Selecionar Verificar Permissões:</strong> No menu suspenso, selecione 
+a opção "Verificar permissões".';
+
+$string['blockGameCheckPermissionsStep3'] = '<strong>Escolher Usuário:</strong> Na página de verificação de permissões, 
+selecione o usuário desejado na lista de usuários inscritos.';
+
+$string['blockGameCheckPermissionsStep4'] = '<strong>Mostrar Permissões:</strong> Clique no botão "Mostrar as permissões 
+para esse usuário" para ver as permissões detalhadas do usuário selecionado.';
+
 /**********************************************************************************************************************/
 
 /**
@@ -1075,3 +1132,4 @@ estiver no formato de trilha.';
 $string['trailResetAllImageNavigation'] = '<strong>Navegação por container de imagens:</strong> Redefine a navegação do 
 container de imagens para o valor padrão de todos os cursos, para que seja o mesmo de um curso na primeira vez que 
 estiver no formato de trilha.';
+

@@ -29,7 +29,7 @@ echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 echo html_writer::tag('li', '<i class="fa fa-question-circle" aria-hidden="true""></i> <b>' . get_string('btnAbout', 'local_gamificationhelper') . '</b>: '. get_string('btnAboutDesc', 'local_gamificationhelper'));
 echo html_writer::tag('li', '<i class="fa fa-list-alt" aria-hidden="true""></i> <b>' . get_string('btnPermissions', 'local_gamificationhelper') . '</b>: '. get_string('btnPermissionsDesc', 'local_gamificationhelper'));
 echo html_writer::tag('li', '<i class="fa fa-download" aria-hidden="true""></i> <b>' . get_string('btnDownload', 'local_gamificationhelper') . '</b>: '. get_string('btnDownloadDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<i class="fa fa-cog" aria-hidden="true"></i> <b>' . get_string('btnConfig', 'local_gamificationhelper') . '</b>: '. get_string('btnConfigDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<i class="fas fa-book" aria-hidden="true"></i> <b>' . get_string('btnConfig', 'local_gamificationhelper') . '</b>: '. get_string('btnConfigDesc', 'local_gamificationhelper'));
 
 echo html_writer::end_tag('ul');
 

@@ -78,7 +78,7 @@ if (!empty($recommendedPlugins)) {
             }
 
             echo html_writer::link('#', 
-            '<i class="fa fa-cog" aria-hidden="true"></i>', 
+            '<i class="fas fa-book" aria-hidden="true"></i>', 
             [
                 'class' => 'btn btn-primary', 
                 'title' => get_string('btnConfig', 'local_gamificationhelper'),

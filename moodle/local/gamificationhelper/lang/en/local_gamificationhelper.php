@@ -440,6 +440,58 @@ $string['blockGameResetPointsStep2'] = '<strong>Select Reset Points:</strong> Se
 $string['blockGameResetPointsStep3'] = '<strong>Confirm Action:</strong> Confirm the action in the confirmation window 
 that appears by clicking "Yes".';
 
+// How to Remove Block Game
+$string['blockGameRemoveTutorial'] = 'How to Remove Block Game from the Course';
+
+$string['blockGameRemoveDescription'] = 'Follow the steps below to remove the Block Game block from your course.';
+
+$string['blockGameRemoveStep0'] = '<strong>Activate Edit Mode:</strong> The option to remove the block will only be 
+available when the course edit mode is active.';
+
+$string['blockGameRemoveStep1'] = '<strong>Access the Block Menu:</strong> In the Block Game plugin interface, click the 
+gear icon (⚙️) in the game widget.';
+
+$string['blockGameRemoveStep2'] = '<strong>Select Delete Block:</strong> In the dropdown menu, select the "Delete Block 
+Game" option.';
+
+$string['blockGameRemoveStep3'] = '<strong>Confirm Action:</strong> In the confirmation window that appears, click "Delete" 
+to confirm the removal of the block.';
+
+// Configure Permissions
+$string['blockGamePermissionsTutorial'] = 'How to Configure Permissions in Block Game';
+
+$string['blockGamePermissionsDescription'] = 'Follow the steps below to configure user permissions in the Block Game block of your course.';
+
+$string['blockGamePermissionsStep0'] = '<strong>Activate Edit Mode:</strong> The option to configure permissions will only be available when the course edit mode is active.';
+
+$string['blockGamePermissionsStep1'] = '<strong>Access the Block Menu:</strong> In the Block Game plugin interface, click the gear icon (⚙️) in the game widget.';
+
+$string['blockGamePermissionsStep2'] = '<strong>Select Permissions:</strong> In the dropdown menu, select the "Permissions" option.';
+
+$string['blockGamePermissionsStep3'] = '<strong>Configure Permissions:</strong> On the permissions page, adjust the permissions as needed by selecting the roles and authorized or prohibited actions.';
+
+
+// Check permissions
+$string['blockGameCheckPermissionsTutorial'] = 'How to Check Permissions in Block Game';
+
+$string['blockGameCheckPermissionsDescription'] = 'Follow the steps below to check user permissions in the Block Game block 
+of your course.';
+
+$string['blockGameCheckPermissionsStep0'] = '<strong>Activate Edit Mode:</strong> The option to check permissions will only 
+be available when the course edit mode is active.';
+
+$string['blockGameCheckPermissionsStep1'] = '<strong>Access the Block Menu:</strong> In the Block Game plugin interface, 
+click the gear icon (⚙️) in the game widget.';
+
+$string['blockGameCheckPermissionsStep2'] = '<strong>Select Check Permissions:</strong> In the dropdown menu, select the 
+"Check permissions" option.';
+
+$string['blockGameCheckPermissionsStep3'] = '<strong>Choose User:</strong> On the permissions verification page, select 
+the desired user from the list of enrolled users.';
+
+$string['blockGameCheckPermissionsStep4'] = '<strong>Show Permissions:</strong> Click the "Show permissions for this user" 
+button to view the detailed permissions of the selected user.';
+
 /**********************************************************************************************************************/
 
 /**
