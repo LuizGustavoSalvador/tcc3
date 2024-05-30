@@ -215,7 +215,7 @@ $string['defaultInstallUpdateVersion'] = 'Atualizando para Nova Versão: Na tela
 
 $string['defaultInstallConfigIntro'] = 'Configuração do Plugin';
 
-$string['defaultInstallConfigFields'] = 'Configurar Campos:';
+$string['defaultInstallConfigFields'] = 'Configurar Campos';
 
 $string['defaultInstallCourseConfig'] = 'Configuração para um Curso Específico';
 

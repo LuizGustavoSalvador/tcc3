@@ -215,7 +215,7 @@ $string['defaultInstallUpdateVersion'] = 'Updating to New Version: On the "Updat
 
 $string['defaultInstallConfigIntro'] = 'Plugin Configuration';
 
-$string['defaultInstallConfigFields'] = 'Configure Fields:';
+$string['defaultInstallConfigFields'] = 'Configure Fields';
 
 $string['defaultInstallCourseConfig'] = 'Course-Specific Configuration';
 
