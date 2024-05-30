@@ -691,7 +691,8 @@ $string['blockXpLevelConfigTab'] = 'Configuração dos Níveis';
 $string['blockXpLevelConfigDescription'] = 'Personalize as configurações de cada nível, incluindo os pontos necessários 
 para alcançar o nível, nomes e descrições.';
 
-$string['blockXpLevelNumberOfLevels'] = '<strong>Número de Níveis:</strong> Defina o número total de níveis que os participantes podem alcançar. Por padrão, o Level Up XP configura 10 níveis de dificuldade crescente.';
+$string['blockXpLevelNumberOfLevels'] = '<strong>Número de Níveis:</strong> Defina o número total de níveis que os 
+participantes podem alcançar. Por padrão, o Level Up XP configura 10 níveis de dificuldade crescente.';
 
 $string['blockXpLevelQuickEditPoints'] = '<strong>Edição Rápida de Pontos:</strong> Permite editar rapidamente os pontos 
 necessários para alcançar cada nível. Recomendamos o uso do método "Bola de Neve" para criar um ambiente onde os primeiros 
@@ -846,7 +847,8 @@ o bloco exibirá uma pequena lista de eventos recentes que recompensaram o estud
 // Aba XP+
 $string['blockXpPlusTab'] = '<strong>XP+</strong>';
 
-$string['blockXpPlusDescription'] = 'O Level Up XP+ é uma extensão paga que oferece funcionalidades extras, mas a gamificação efetiva pode ser alcançada apenas com o plugin base, sem a necessidade de adquirir a ferramenta adicional.';
+$string['blockXpPlusDescription'] = 'O Level Up XP+ é uma extensão paga que oferece funcionalidades extras, mas a 
+gamificação efetiva pode ser alcançada apenas com o plugin base, sem a necessidade de adquirir a ferramenta adicional.';
 
 ////
 $string['blockXpBlockConfigTab'] = 'Configurar Bloco';

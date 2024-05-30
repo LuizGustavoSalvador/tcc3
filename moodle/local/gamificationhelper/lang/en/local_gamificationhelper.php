@@ -460,15 +460,20 @@ to confirm the removal of the block.';
 // Configure Permissions
 $string['blockGamePermissionsTutorial'] = 'How to Configure Permissions in Block Game';
 
-$string['blockGamePermissionsDescription'] = 'Follow the steps below to configure user permissions in the Block Game block of your course.';
+$string['blockGamePermissionsDescription'] = 'Follow the steps below to configure user permissions in the Block Game block 
+of your course.';
 
-$string['blockGamePermissionsStep0'] = '<strong>Activate Edit Mode:</strong> The option to configure permissions will only be available when the course edit mode is active.';
+$string['blockGamePermissionsStep0'] = '<strong>Activate Edit Mode:</strong> The option to configure permissions will 
+only be available when the course edit mode is active.';
 
-$string['blockGamePermissionsStep1'] = '<strong>Access the Block Menu:</strong> In the Block Game plugin interface, click the gear icon (⚙️) in the game widget.';
+$string['blockGamePermissionsStep1'] = '<strong>Access the Block Menu:</strong> In the Block Game plugin interface, click 
+the gear icon (⚙️) in the game widget.';
 
-$string['blockGamePermissionsStep2'] = '<strong>Select Permissions:</strong> In the dropdown menu, select the "Permissions" option.';
+$string['blockGamePermissionsStep2'] = '<strong>Select Permissions:</strong> In the dropdown menu, select the "Permissions" 
+option.';
 
-$string['blockGamePermissionsStep3'] = '<strong>Configure Permissions:</strong> On the permissions page, adjust the permissions as needed by selecting the roles and authorized or prohibited actions.';
+$string['blockGamePermissionsStep3'] = '<strong>Configure Permissions:</strong> On the permissions page, adjust the 
+permissions as needed by selecting the roles and authorized or prohibited actions.';
 
 
 // Check permissions
@@ -521,64 +526,66 @@ $string['blockXpDefaultSettingsDescription'] = 'The default settings for the Lev
 the plugin will operate across the entire site. Configure the global options for course gamification, including how points 
 are used, navigation visibility, and whether administrators can earn points.';
 
-$string['blockXpDefaultSettingsPointsContext'] = '<strong>Where are points used?</strong> When selecting "In courses", experience points 
-earned will only be counted in the course where the block was added. If you choose "For the whole site", points will be 
-accumulated across all courses, allowing for global leveling up.';
+$string['blockXpDefaultSettingsPointsContext'] = '<strong>Where are points used?</strong> When selecting "In courses", 
+experience points earned will only be counted in the course where the block was added. If you choose "For the whole site", 
+points will be accumulated across all courses, allowing for global leveling up.';
 
-$string['blockXpDefaultSettingsNavBarDisplay'] = '<strong>Show in navigation bar:</strong> When enabled, the user\'s level will be displayed 
-in the top navigation bar.';
+$string['blockXpDefaultSettingsNavBarDisplay'] = '<strong>Show in navigation bar:</strong> When enabled, the user\'s 
+level will be displayed in the top navigation bar.';
 
-$string['blockXpDefaultSettingsAdminsCanEarnXp'] = '<strong>Admins can earn points:</strong> By default, administrators do not earn 
-points. This setting allows them to be included in the points system.';
+$string['blockXpDefaultSettingsAdminsCanEarnXp'] = '<strong>Admins can earn points:</strong> By default, administrators 
+do not earn points. This setting allows them to be included in the points system.';
 
-$string['blockXpDefaultSettingsKeepLogs'] = '<strong>Keep logs:</strong> Defines the duration for which logs will be kept before being 
-deleted.';
+$string['blockXpDefaultSettingsKeepLogs'] = '<strong>Keep logs:</strong> Defines the duration for which logs will be kept 
+before being deleted.';
 
-$string['blockXpDefaultSettingsUsageReport'] = '<strong>Share usage report:</strong> Periodically shares anonymous usage information 
-with the plugin developers to help improve the plugin.';
+$string['blockXpDefaultSettingsUsageReport'] = '<strong>Share usage report:</strong> Periodically shares anonymous usage 
+information with the plugin developers to help improve the plugin.';
 
-$string['blockXpDefaultSettingsEnableInfos'] = '<strong>Enable info page:</strong> When disabled, the info page will not be visible to 
-students.';
+$string['blockXpDefaultSettingsEnableInfos'] = '<strong>Enable info page:</strong> When disabled, the info page will not 
+be visible to students.';
 
-$string['blockXpDefaultSettingsEnableLevelUpNotif'] = '<strong>Enable level up notifications:</strong> When enabled, students will see 
-a popup congratulating them for reaching a new level.';
+$string['blockXpDefaultSettingsEnableLevelUpNotif'] = '<strong>Enable level up notifications:</strong> When enabled, 
+students will see a popup congratulating them for reaching a new level.';
 
-$string['blockXpDefaultSettingsEnableLeader'] = '<strong>Enable leaderboard:</strong> When disabled, the leaderboard will not be visible 
-to students.';
+$string['blockXpDefaultSettingsEnableLeader'] = '<strong>Enable leaderboard:</strong> When disabled, the leaderboard will 
+not be visible to students.';
 
-$string['blockXpDefaultSettingsIdentityMode'] = '<strong>Anonymity:</strong> Controls whether participants can see each other\'s names 
-and avatars.';
+$string['blockXpDefaultSettingsIdentityMode'] = '<strong>Anonymity:</strong> Controls whether participants can see each 
+other\'s names and avatars.';
 
-$string['blockXpDefaultSettingsNeighbours'] = '<strong>Participants limit:</strong> Controls who is displayed on the leaderboard.';
+$string['blockXpDefaultSettingsNeighbours'] = '<strong>Participants limit:</strong> Controls who is displayed on the 
+leaderboard.';
 
-$string['blockXpDefaultSettingsRankMode'] = '<strong>Ranking:</strong> The ranking is the absolute position of the current user on the 
-leaderboard. The relative ranking is the difference in experience points between a user and their neighbors.';
+$string['blockXpDefaultSettingsRankMode'] = '<strong>Ranking:</strong> The ranking is the absolute position of the 
+current user on the leaderboard. The relative ranking is the difference in experience points between a user and their 
+neighbors.';
 
-$string['blockXpDefaultSettingsLadderCols'] = '<strong>Additional columns:</strong> This setting determines which additional columns are 
-displayed on the leaderboard.';
+$string['blockXpDefaultSettingsLadderCols'] = '<strong>Additional columns:</strong> This setting determines which additional 
+columns are displayed on the leaderboard.';
 
-$string['blockXpDefaultSettingsEnableCheatGuard'] = '<strong>Enable cheat guard:</strong> The cheat guard provides a simple and effective 
-mechanism to prevent abuse in the points system.';
+$string['blockXpDefaultSettingsEnableCheatGuard'] = '<strong>Enable cheat guard:</strong> The cheat guard provides a simple 
+and effective mechanism to prevent abuse in the points system.';
 
-$string['blockXpDefaultSettingsMaxActionsPerTime'] = '<strong>Max actions in time interval:</strong> Defines the maximum number of actions 
-that will count towards points during a specific time interval.';
+$string['blockXpDefaultSettingsMaxActionsPerTime'] = '<strong>Max actions in time interval:</strong> Defines the maximum 
+number of actions that will count towards points during a specific time interval.';
 
-$string['blockXpDefaultSettingsTimeForMaxActions'] = '<strong>Time interval for max actions:</strong> Defines the time interval during 
-which the user should not exceed a maximum number of actions.';
+$string['blockXpDefaultSettingsTimeForMaxActions'] = '<strong>Time interval for max actions:</strong> Defines the time 
+interval during which the user should not exceed a maximum number of actions.';
 
-$string['blockXpDefaultSettingsTimeBetweenSameActions'] = '<strong>Time required between identical actions:</strong> Defines the minimum 
-time between identical actions for them to be accepted again.';
+$string['blockXpDefaultSettingsTimeBetweenSameActions'] = '<strong>Time required between identical actions:</strong> 
+Defines the minimum time between identical actions for them to be accepted again.';
 
 $string['blockXpDefaultSettingsBlockTitle'] = '<strong>Block title:</strong> Defines the title of the block.';
 
-$string['blockXpDefaultSettingsBlockDescription'] = '<strong>Block description:</strong> Defines an introductory message displayed in 
-the block.';
+$string['blockXpDefaultSettingsBlockDescription'] = '<strong>Block description:</strong> Defines an introductory message 
+displayed in the block.';
 
-$string['blockXpDefaultSettingsRankingSnapshot'] = '<strong>Show ranking snapshot:</strong> Displays a snapshot of the ranking in 
-the block.';
+$string['blockXpDefaultSettingsRankingSnapshot'] = '<strong>Show ranking snapshot:</strong> Displays a snapshot of the 
+ranking in the block.';
 
-$string['blockXpDefaultSettingsBlockRecentActivity'] = '<strong>Show recent rewards:</strong> Displays a list of recent events that 
-rewarded the student with points.';
+$string['blockXpDefaultSettingsBlockRecentActivity'] = '<strong>Show recent rewards:</strong> Displays a list of recent 
+events that rewarded the student with points.';
 
 // Tutorial to Add Level Up XP to the Course
 $string['blockXpAddToCourseTutorial'] = 'How to Add Level Up XP to Your Course';
@@ -772,24 +779,24 @@ them on reaching a new level.';
 // Settings Tab -> Ranking
 $string['blockXpRankingSettings'] = 'Ranking';
 
-$string['blockXpRankingSettingsEnable'] = '<strong>Enable ranking:</strong> Allows enabling or disabling the ranking view for 
-students. When set to "No," students will not be able to view the ranking.';
+$string['blockXpRankingSettingsEnable'] = '<strong>Enable ranking:</strong> Allows enabling or disabling the ranking view 
+for students. When set to "No," students will not be able to view the ranking.';
 
-$string['blockXpRankingSettingsAnonymity'] = '<strong>Anonymity:</strong> Controls whether participants can see each other\'s 
-names and avatars in the ranking. When enabled, participants\' identities will be displayed. Otherwise, they will remain 
-anonymous.';
+$string['blockXpRankingSettingsAnonymity'] = '<strong>Anonymity:</strong> Controls whether participants can see each 
+other\'s names and avatars in the ranking. When enabled, participants\' identities will be displayed. Otherwise, they will 
+remain anonymous.';
 
-$string['blockXpRankingSettingsParticipantLimit'] = '<strong>Participant limit:</strong> Controls how many participants will be 
-displayed in the ranking. You can choose to display all participants or limit the view to immediate neighbors (the two 
-participants above and below the current user, for example).';
+$string['blockXpRankingSettingsParticipantLimit'] = '<strong>Participant limit:</strong> Controls how many participants 
+will be displayed in the ranking. You can choose to display all participants or limit the view to immediate neighbors 
+(the two participants above and below the current user, for example).';
 
 $string['blockXpRankingSettingsDisplay'] = '<strong>Ranking:</strong> Defines which columns will be displayed in the ranking. 
 Absolute ranking is the user\'s position in the ranking. Relative ranking is the difference in experience points between 
 a user and their neighbors.';
 
-$string['blockXpRankingSettingsAdditionalColumns'] = '<strong>Additional columns:</strong> Determines which additional columns are 
-displayed in the ranking. To select more than one column or deselect a selected column, press the CTRL or CMD key while 
-clicking.';
+$string['blockXpRankingSettingsAdditionalColumns'] = '<strong>Additional columns:</strong> Determines which additional 
+columns are displayed in the ranking. To select more than one column or deselect a selected column, press the CTRL or 
+CMD key while clicking.';
 
 // Settings Tab -> Fraud Protection
 $string['blockXpFraudProtectionSettings'] = 'Fraud Protection';
@@ -804,8 +811,8 @@ will be ignored. When this value is empty or zero, it is not applied.';
 
 $string['blockXpFraudProtectionSettingsTimeRequiredBetweenIdenticalActions'] = '<strong>Time required between identical 
 actions:</strong> The minimum amount of time required before an action that has previously occurred is accepted again. 
-An action is considered identical if it was performed in the same context and object; reading a forum post will be considered 
-identical if the same post is read again. When this value is empty or zero, it does not apply.';
+An action is considered identical if it was performed in the same context and object; reading a forum post will be 
+considered identical if the same post is read again. When this value is empty or zero, it does not apply.';
 
 // Settings Tab -> Block Appearance
 $string['blockXpBlockAppearanceSettings'] = 'Block Appearance';
@@ -832,8 +839,8 @@ $string['blockXpReportTab'] = 'Report';
 $string['blockXpReportDescription'] = 'The Report tab provides detailed information about the points of the participants.';
 $string['blockXpEditPoints'] = '<strong>Edit Participant Points:</strong> Allows you to manually credit or debit points for 
 users.';
-$string['blockXpLogTab'] = '<strong>Log Tab:</strong> Displays a detailed log of user actions and awarded points, useful for 
-monitoring progress and adjusting scoring rules.';
+$string['blockXpLogTab'] = '<strong>Log Tab:</strong> Displays a detailed log of user actions and awarded points, useful 
+for monitoring progress and adjusting scoring rules.';
 
 $string['blockXpRankingTab'] = 'Ranking';
 
@@ -930,8 +937,9 @@ format to be lost, but only if the format change is altered and saved.';
 $string['trailFormatSettingsTitle'] = 'How to configure Trail Format fields';
 
 $string['trailFormatSettingsDescription'] = 'Configuring the Trail Format allows you to adjust various visual and functional 
-aspects of the course to optimize gamification and student engagement. While the color fields are not mandatory for gamification, 
-they provide better styling for the course, allowing you to customize the look according to your needs and preferences.';
+aspects of the course to optimize gamification and student engagement. While the color fields are not mandatory for 
+gamification, they provide better styling for the course, allowing you to customize the look according to your needs and 
+preferences.';
 
 $string['trailFormatSettingsNumberOfSections'] = '<strong>Number of sections:</strong> This field sets the number of 
 sections in the course that will have the trail format applied. By default, it is pre-filled with the current number of 

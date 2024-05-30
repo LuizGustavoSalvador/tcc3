@@ -8,6 +8,7 @@ require_once(__DIR__ . '/classes/objectivesForm.php');
 use gamificationhelper\classes\objectivesForm;
 
 require_login();
+
 admin_externalpage_setup('local_gamificationhelper_setobjectives');
 
 $PAGE->set_url(new moodle_url('/local/gamificationhelper/setObjectives.php'));
@@ -26,11 +27,25 @@ echo html_writer::tag('p', get_string('txtListObjectives', 'local_gamificationhe
 
 echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 
-echo html_writer::tag('li', '<b>' . get_string('developmentAndAchievement', 'local_gamificationhelper') . '</b>: '. get_string('developmentAndAchievementDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('ownershipAndPossession', 'local_gamificationhelper') . '</b>: '. get_string('ownershipAndPossessionDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('empowermentAndCreativity', 'local_gamificationhelper') . '</b>: '. get_string('empowermentAndCreativityDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('unpredictabilityAndCuriosity', 'local_gamificationhelper') . '</b>: '. get_string('unpredictabilityAndCuriosityDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('socialInfluenceAndRelatedness', 'local_gamificationhelper') . '</b>: '. get_string('socialInfluenceAndRelatednessDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('developmentAndAchievement', 'local_gamificationhelper') . '</b>: '
+    . get_string('developmentAndAchievementDesc', 'local_gamificationhelper')
+);
+
+echo html_writer::tag('li', '<b>' . get_string('ownershipAndPossession', 'local_gamificationhelper') . '</b>: '
+    . get_string('ownershipAndPossessionDesc', 'local_gamificationhelper')
+);
+
+echo html_writer::tag('li', '<b>' . get_string('empowermentAndCreativity', 'local_gamificationhelper') . '</b>: '
+    . get_string('empowermentAndCreativityDesc', 'local_gamificationhelper')
+);
+
+echo html_writer::tag('li', '<b>' . get_string('unpredictabilityAndCuriosity', 'local_gamificationhelper') . '</b>: '
+    . get_string('unpredictabilityAndCuriosityDesc', 'local_gamificationhelper')
+);
+
+echo html_writer::tag('li', '<b>' . get_string('socialInfluenceAndRelatedness', 'local_gamificationhelper') . '</b>: '
+    . get_string('socialInfluenceAndRelatednessDesc', 'local_gamificationhelper')
+);
 
 echo html_writer::end_tag('ul');
 
@@ -38,10 +53,21 @@ echo html_writer::tag('p', get_string('txtListApproach', 'local_gamificationhelp
 
 echo html_writer::start_tag('ul', ['class' => 'gamificationhelper-list']);
 
-echo html_writer::tag('li', '<b>' . get_string('competitive', 'local_gamificationhelper') . '</b>: '. get_string('competitiveDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('cooperative', 'local_gamificationhelper') . '</b>: '. get_string('cooperativeDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('independent', 'local_gamificationhelper') . '</b>: '. get_string('independentDesc', 'local_gamificationhelper'));
-echo html_writer::tag('li', '<b>' . get_string('epicNarrative', 'local_gamificationhelper') . '</b>: '. get_string('epicNarrativeDesc', 'local_gamificationhelper'));
+echo html_writer::tag('li', '<b>' . get_string('competitive', 'local_gamificationhelper') . '</b>: '
+    . get_string('competitiveDesc', 'local_gamificationhelper')
+);
+
+echo html_writer::tag('li', '<b>' . get_string('cooperative', 'local_gamificationhelper') . '</b>: '
+    . get_string('cooperativeDesc', 'local_gamificationhelper')
+);
+
+echo html_writer::tag('li', '<b>' . get_string('independent', 'local_gamificationhelper') . '</b>: '
+    . get_string('independentDesc', 'local_gamificationhelper')
+);
+
+echo html_writer::tag('li', '<b>' . get_string('epicNarrative', 'local_gamificationhelper') . '</b>: '
+    . get_string('epicNarrativeDesc', 'local_gamificationhelper')
+);
 
 echo html_writer::end_tag('ul');
 
@@ -60,5 +86,5 @@ if ($form->is_cancelled()) {
 } else {
     $form->display();
 }
-echo html_writer::end_tag('div');
-echo $OUTPUT->footer();
+
+echo html_writer::end_tag('div') . $OUTPUT->footer();

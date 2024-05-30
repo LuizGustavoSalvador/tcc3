@@ -23,10 +23,11 @@ class objectivesForm extends moodleform {
             'epicNarrative' => get_string('epicNarrative', 'local_gamificationhelper')
         ]);
 
-        $formButtons = '<div class="form-buttons">';
-        $formButtons .= '<a href="index.php" class="btn btn-primary">' . get_string('btnBack', 'local_gamificationhelper') . '</a>';
-        $formButtons .= '<input class="btn btn-primary" type="submit" name="submitbutton" value="' . get_string('btnNext', 'local_gamificationhelper') . '" />';
-        $formButtons .= '</div>';
+        $formButtons = '<div class="form-buttons
+                <a href="index.php" class="btn btn-primary">' . get_string('btnBack', 'local_gamificationhelper') . '</a>
+                <input class="btn btn-primary" type="submit" name="submitbutton" value="' 
+                    . get_string('btnNext', 'local_gamificationhelper') . 
+                '" /></div>';
 
         $mform->addElement('html', $formButtons);
     }

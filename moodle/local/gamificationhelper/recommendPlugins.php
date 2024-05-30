@@ -20,7 +20,8 @@ $objective = required_param('objective', PARAM_ALPHANUMEXT);
 $approach = required_param('learningstyle', PARAM_ALPHANUMEXT);
 
 $pluginManager = core_plugin_manager::instance();
-$pluginsInstalled = \array_merge($pluginManager->get_installed_plugins('block'), $pluginManager->get_installed_plugins('format'));
+$pluginsInstalled = \array_merge($pluginManager->get_installed_plugins('block'), 
+        $pluginManager->get_installed_plugins('format'));
 
 $recommendedPlugins = recommendationPlugin::getPlugins($objective, $approach);
 
@@ -96,7 +97,8 @@ if (!empty($recommendedPlugins)) {
 
     echo html_writer::tag('h4', get_string('noRecommendationsTitle', 'local_gamificationhelper'));
     
-    echo html_writer::tag('p', get_string('noRecommendations', 'local_gamificationhelper', ['objective' => $objectiveString, 'approach' => $approachString]));
+    echo html_writer::tag('p', get_string('noRecommendations', 'local_gamificationhelper', 
+        ['objective' => $objectiveString, 'approach' => $approachString]));
     
     echo html_writer::start_tag('ul', ['class' => 'no-recommendations-list']);
 

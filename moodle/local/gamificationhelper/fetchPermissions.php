@@ -17,17 +17,29 @@ class fetchPermissions {
     public function getPermissionsHtml() {
         $permissionsDetails = $this->getPermissionsDetails();
         $html = '<div class="modal-header">
-                    <h5 class="modal-title" id="permissionsModalLabel">Permissões Necessárias do plugin ' . $this->pluginName . '</h5>
-                    <button type="button" class="btn-close" onclick="closeModalPermisson()"><i class="fa fa-times"></i></button>
+                    <h5 class="modal-title" id="permissionsModalLabel">Permissões Necessárias do plugin ' 
+                        . $this->pluginName . 
+                    '</h5>
+                    <button type="button" class="btn-close" onclick="closeModalPermisson()">
+                        <i class="fa fa-times"></i>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <p>' . get_string('permissionsDescription', 'local_gamificationhelper') . '</p>
                     <ul>
-                        <li class="allow-li"><i class="fa fa-check"></i> ' . get_string('permissionGranted', 'local_gamificationhelper') . '</li>
-                        <li class="not-allow-li"><i class="fa fa-times"></i> ' . get_string('permissionDenied', 'local_gamificationhelper') . '</li>
-                        <li class="not-allow-warning-li"><i class="fa fa-exclamation-triangle"></i> ' . get_string('permissionDeniedNotInstalled', 'local_gamificationhelper') . '</li>
+                        <li class="allow-li"><i class="fa fa-check"></i> ' 
+                            . get_string('permissionGranted', 'local_gamificationhelper') . 
+                        '</li>
+                        <li class="not-allow-li"><i class="fa fa-times"></i> ' 
+                            . get_string('permissionDenied', 'local_gamificationhelper') . 
+                        '</li>
+                        <li class="not-allow-warning-li"><i class="fa fa-exclamation-triangle"></i> ' 
+                            . get_string('permissionDeniedNotInstalled', 'local_gamificationhelper') . 
+                        '</li>
                     </ul>
-                    <h5 class="list-permissions">' . get_string('permissionsListTitle', 'local_gamificationhelper') . '</h5>';
+                    <h5 class="list-permissions">' 
+                        . get_string('permissionsListTitle', 'local_gamificationhelper') . 
+                    '</h5>';
     
         foreach ($permissionsDetails as $permission => $details) {
             $component = $this->getComponentFromCapability($permission);
@@ -90,23 +102,34 @@ class fetchPermissions {
     private function getPermissionsMap() {
         return [
             'blockGame' => [
-                'moodle/site:manageblocks' => get_string('moodleSite:manageblocks', 'local_gamificationhelper') . ': moodle/site:manageblocks',
-                'block/game:addinstance' => get_string('blockGame:addinstance', 'local_gamificationhelper') . ': block/game:addinstance'
+                'moodle/site:manageblocks' => get_string('moodleSite:manageblocks', 'local_gamificationhelper') . 
+                    ': moodle/site:manageblocks',
+                'block/game:addinstance' => get_string('blockGame:addinstance', 'local_gamificationhelper') . 
+                    ': block/game:addinstance'
             ],
             'blockXp' => [
-                'moodle/site:manageblocks' => get_string('moodleSite:manageblocks', 'local_gamificationhelper') . ': moodle/site:manageblocks',
-                'block/xp:addinstance' => get_string('blockXp:addinstance', 'local_gamificationhelper') . ': block/xp:addinstance',
+                'moodle/site:manageblocks' => get_string('moodleSite:manageblocks', 'local_gamificationhelper') . 
+                    ': moodle/site:manageblocks',
+                'block/xp:addinstance' => get_string('blockXp:addinstance', 'local_gamificationhelper') . 
+                    ': block/xp:addinstance',
                 'block/xp:manage' => get_string('blockXp:manage', 'local_gamificationhelper') . ': block/xp:manage',
                 'block/xp:viewlogs' => get_string('blockXp:viewlogs', 'local_gamificationhelper') . ': block/xp:viewlogs',
-                'block/xp:viewreport' => get_string('blockXp:viewreport', 'local_gamificationhelper') . ': block/xp:viewreport'
+                'block/xp:viewreport' => get_string('blockXp:viewreport', 'local_gamificationhelper') . 
+                    ': block/xp:viewreport'
             ],
             'trail' => [
-                'format/trail:changeimagecontaineralignment' => get_string('formatTrail:changeimagecontaineralignment', 'local_gamificationhelper') . ': format/trail:changeimagecontaineralignment',
-                'format/trail:changeimagecontainernavigation' => get_string('formatTrail:changeimagecontainernavigation', 'local_gamificationhelper') . ': format/trail:changeimagecontainernavigation',
-                'format/trail:changeimagecontainersize' => get_string('formatTrail:changeimagecontainersize', 'local_gamificationhelper') . ': format/trail:changeimagecontainersize',
-                'format/trail:changeimageresizemethod' => get_string('formatTrail:changeimageresizemethod', 'local_gamificationhelper') . ': format/trail:changeimageresizemethod',
-                'format/trail:changeimagecontainerstyle' => get_string('formatTrail:changeimagecontainerstyle', 'local_gamificationhelper') . ': format/trail:changeimagecontainerstyle',
-                'format/trail:changesectiontitleoptions' => get_string('formatTrail:changesectiontitleoptions', 'local_gamificationhelper') . ': format/trail:changesectiontitleoptions'
+                'format/trail:changeimagecontaineralignment' => get_string('formatTrail:changeimagecontaineralignment', 
+                    'local_gamificationhelper') . ': format/trail:changeimagecontaineralignment',
+                'format/trail:changeimagecontainernavigation' => get_string('formatTrail:changeimagecontainernavigation', 
+                    'local_gamificationhelper') . ': format/trail:changeimagecontainernavigation',
+                'format/trail:changeimagecontainersize' => get_string('formatTrail:changeimagecontainersize', 
+                    'local_gamificationhelper') . ': format/trail:changeimagecontainersize',
+                'format/trail:changeimageresizemethod' => get_string('formatTrail:changeimageresizemethod', 
+                    'local_gamificationhelper') . ': format/trail:changeimageresizemethod',
+                'format/trail:changeimagecontainerstyle' => get_string('formatTrail:changeimagecontainerstyle', 
+                    'local_gamificationhelper') . ': format/trail:changeimagecontainerstyle',
+                'format/trail:changesectiontitleoptions' => get_string('formatTrail:changesectiontitleoptions', 
+                    'local_gamificationhelper') . ': format/trail:changesectiontitleoptions'
             ]
         ];
     }

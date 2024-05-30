@@ -208,7 +208,8 @@
     color: var(--danger);
 }
 
-.gamification-helper-modal .not-allow-warning, .gamification-helper-modal .not-allow-warning-li i, .gamification-helper-modal .not-allow-warning-li strong{
+.gamification-helper-modal .not-allow-warning, .gamification-helper-modal .not-allow-warning-li i, 
+.gamification-helper-modal .not-allow-warning-li strong{
     color: var(--warning);
 }
 
