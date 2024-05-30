@@ -568,6 +568,46 @@ class ModalInstallPlugin
                 . get_string('blockXpPlusTab', 'local_gamificationhelper') . 
             '</strong></span>
             <p>' . get_string('blockXpPlusDescription', 'local_gamificationhelper') . '</p>
+            <h5 class="section-title">' . get_string('blockXpRemoveTutorial', 'local_gamificationhelper') . '</h5>
+            <p>' . get_string('blockXpRemoveDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML(
+                    $blockXpPath, 
+                    'como-remover-level-up.png', 
+                    get_string('blockXpRemoveTutorial', 'local_gamificationhelper')
+                ) . '
+            <ol>
+                <li>' . get_string('blockXpRemoveStep0', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpRemoveStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpRemoveStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpRemoveStep3', 'local_gamificationhelper') . '</li>
+            </ol>
+            <h5 class="section-title">' . get_string('blockXpPermissionsTutorial', 'local_gamificationhelper') . '</h5>
+            <p>' . get_string('blockXpPermissionsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML(
+                    $blockXpPath, 
+                    'configurar-permissoes-level-up.png', 
+                    get_string('blockXpPermissionsTutorial', 'local_gamificationhelper')
+                ) . '
+            <ol>
+                <li>' . get_string('blockXpPermissionsStep0', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPermissionsStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPermissionsStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpPermissionsStep3', 'local_gamificationhelper') . '</li>
+            </ol>
+            <h5 class="section-title">' . get_string('blockXpCheckPermissionsTutorial', 'local_gamificationhelper') . '</h5>
+            <p>' . get_string('blockXpCheckPermissionsDescription', 'local_gamificationhelper') . '</p>
+            ' . self::getImageHTML(
+                    $blockXpPath, 
+                    'check-permissoes-level-up.png', 
+                    get_string('blockXpCheckPermissionsTutorial', 'local_gamificationhelper')
+                ) . '
+            <ol>
+                <li>' . get_string('blockXpCheckPermissionsStep0', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpCheckPermissionsStep1', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpCheckPermissionsStep2', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpCheckPermissionsStep3', 'local_gamificationhelper') . '</li>
+                <li>' . get_string('blockXpCheckPermissionsStep4', 'local_gamificationhelper') . '</li>
+            </ol>
             <h5 class="section-title">' . get_string('defaultInstallSupportLinks', 'local_gamificationhelper') . '</h5>
             <ul class="support-link-list">
             <li><a href="https://docs.moodle.org/404/en/Installing_plugins" target="_blank">
@@ -575,6 +615,9 @@ class ModalInstallPlugin
             </a></li>
             <li><a href="https://docs.levelup.plus/xp/docs" target="_blank">
                 ' . get_string('blockXpSupportLink1', 'local_gamificationhelper') . '
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=dPbIbCDwg3k&ab_channel=LINCDigital" target="_blank">
+                ' . get_string('blockXpSupportLink2', 'local_gamificationhelper') . '
             </a></li>
             </ul>
             ';
@@ -721,6 +764,12 @@ class ModalInstallPlugin
             </ol>
             <h5 class="section-title">' . get_string('defaultInstallSupportLinks', 'local_gamificationhelper') . '</h5>
             <ul class="support-link-list">
+            <li><a href="https://docs.moodle.org/404/en/Installing_plugins" target="_blank">
+            ' . get_string('defaultSupportLink1', 'local_gamificationhelper') . '
+            </a></li>
+            <li><a href="https://www.youtube.com/watch?v=shge05pvyxc&t=981s&ab_channel=DesignInstrucional" target="_blank">
+                ' . get_string('blockGameSupportLink3', 'local_gamificationhelper') . '
+            </a></li>
             </ul>';
         }
 

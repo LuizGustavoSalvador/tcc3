@@ -433,6 +433,8 @@ $string['blockGameSupportLink1'] = 'Como instalar e configurar o plugin Block Ga
 
 $string['blockGameSupportLink2'] = 'Gamificação na Prática com a Plataforma Moodle';
 
+$string['blockGameSupportLink3'] = 'Instalando e Configurando o Plugin Block Game no Moodle';
+
 // Como redefinir os pontos
 $string['blockGameResetPointsTutorial'] = 'Como Redefinir Pontos no Block Game';
 
@@ -482,7 +484,6 @@ $string['blockGamePermissionsStep2'] = '<strong>Selecionar Permissões:</strong>
 
 $string['blockGamePermissionsStep3'] = '<strong>Configurar Permissões:</strong> Na página de permissões, ajuste as 
 permissões conforme necessário selecionando os papéis e ações autorizadas ou proibidas.';
-
 
 // Verificar permissões
 $string['blockGameCheckPermissionsTutorial'] = 'Como Verificar Permissões no Block Game';
@@ -850,36 +851,66 @@ $string['blockXpPlusTab'] = '<strong>XP+</strong>';
 $string['blockXpPlusDescription'] = 'O Level Up XP+ é uma extensão paga que oferece funcionalidades extras, mas a 
 gamificação efetiva pode ser alcançada apenas com o plugin base, sem a necessidade de adquirir a ferramenta adicional.';
 
-////
-$string['blockXpBlockConfigTab'] = 'Configurar Bloco';
+// Como remover o Level Up XP do curso
+$string['blockXpRemoveTutorial'] = 'Como Remover o Level Up XP do Curso';
 
-$string['blockXpBlockConfigDescription'] = 'Esta aba permite configurar a posição do bloco do plugin na tela e sua 
-visibilidade.';
+$string['blockXpRemoveDescription'] = 'Siga os passos abaixo para remover o bloco Level Up XP do seu curso.';
 
-$string['blockXpBlockPosition'] = '<strong>Posicionamento do Bloco:</strong> Define onde o bloco será exibido na página 
-do curso.';
+$string['blockXpRemoveStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de remover o bloco só estará disponível 
+com o modo de edição do curso ativo.';
 
-$string['blockXpBlockVisibility'] = '<strong>Visibilidade:</strong> Define se o bloco será visível ou não para os 
-participantes.';
+$string['blockXpRemoveStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Level Up XP, clique no 
+ícone de engrenagem (⚙️) no widget do jogo.';
 
-$string['blockXpPermissionsTab'] = 'Permissões';
+$string['blockXpRemoveStep2'] = '<strong>Selecionar Apagar Bloco:</strong> No menu suspenso, selecione a opção "Apagar 
+bloco Level Up XP".';
 
-$string['blockXpPermissionsDescription'] = 'Nesta aba, você pode definir quais permissões cada nível de usuário terá. 
-Isso é útil para controlar o acesso a determinadas funcionalidades do plugin.';
+$string['blockXpRemoveStep3'] = '<strong>Confirmar Ação:</strong> Na janela de confirmação que aparece, clique em "Excluir" 
+para confirmar a remoção do bloco.';
 
-$string['blockXpEditPermissions'] = '<strong>Editar Permissões:</strong> Permite ajustar as permissões para diferentes 
-níveis de usuário.';
+// Configurar permissões
+$string['blockXpPermissionsTutorial'] = 'Como Configurar Permissões no Level Up XP';
 
-$string['blockXpCheckPermissionsTab'] = 'Checar Permissões';
+$string['blockXpPermissionsDescription'] = 'Siga os passos abaixo para configurar as permissões dos usuários no bloco 
+Level Up XP do seu curso.';
 
-$string['blockXpCheckPermissionsDescription'] = 'A aba Checar Permissões exibe uma lista de participantes e suas respectivas 
-permissões no plugin.';
+$string['blockXpPermissionsStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de configurar permissões só 
+estará disponível com o modo de edição do curso ativo.';
 
-$string['blockXpParticipantsPermissions'] = '<strong>Lista de Participantes e Permissões:</strong> Mostra quais permissões 
-cada usuário possui.';
+$string['blockXpPermissionsStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Level Up XP, 
+clique no ícone de engrenagem (⚙️) no widget do jogo.';
+
+$string['blockXpPermissionsStep2'] = '<strong>Selecionar Permissões:</strong> No menu suspenso, selecione a opção 
+"Permissões".';
+
+$string['blockXpPermissionsStep3'] = '<strong>Configurar Permissões:</strong> Na página de permissões, ajuste as 
+permissões conforme necessário selecionando os papéis e ações autorizadas ou proibidas.';
+
+// Verificar permissões
+$string['blockXpCheckPermissionsTutorial'] = 'Como Verificar Permissões no Level Up XP';
+
+$string['blockXpCheckPermissionsDescription'] = 'Siga os passos abaixo para verificar as permissões dos usuários no 
+bloco Level Up XP do seu curso.';
+
+$string['blockXpCheckPermissionsStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de verificar permissões 
+só estará disponível com o modo de edição do curso ativo.';
+
+$string['blockXpCheckPermissionsStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Level 
+Up XP, clique no ícone de engrenagem (⚙️) no widget do jogo.';
+
+$string['blockXpCheckPermissionsStep2'] = '<strong>Selecionar Verificar Permissões:</strong> No menu suspenso, 
+selecione a opção "Verificar permissões".';
+
+$string['blockXpCheckPermissionsStep3'] = '<strong>Escolher Usuário:</strong> Na página de verificação de permissões, 
+selecione o usuário desejado na lista de usuários inscritos.';
+
+$string['blockXpCheckPermissionsStep4'] = '<strong>Mostrar Permissões:</strong> Clique no botão "Mostrar as permissões 
+para esse usuário" para ver as permissões detalhadas do usuário selecionado.';
 
 // Links de apoio
 $string['blockXpSupportLink1'] = 'Documentação oficial do plugin';
+
+$string['blockXpSupportLink2'] = 'Gamificação com o Level UP! no Moodle';
 
 /**********************************************************************************************************************/
 
