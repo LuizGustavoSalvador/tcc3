@@ -66,14 +66,14 @@ class ModalInstallPlugin
                     <li>' . get_string('defaultInstallInstallStep2', 'block_gamificationhelper') . '</li>
                     ' . self::getImageHTML(
                             $installPath, 
-                            'area-upload-plugin.jpeg', 
+                            'area-upload-plugin.png', 
                             get_string('defaultInstallInstallIntro', 'block_gamificationhelper')
                         ) . '
                     <li>' . get_string('defaultInstallInstallStep3', 'block_gamificationhelper') . '</li>
                     <li>' . get_string('defaultInstallValidation', 'block_gamificationhelper') . '</li>
                     ' . self::getImageHTML(
                             $installPath, 
-                            'validacao-plugin.jpeg', 
+                            'validacao-plugin.png', 
                             get_string('defaultInstallInstallIntro', 'block_gamificationhelper')
                         ) . '
                     <li>' . get_string('defaultInstallMoodleVersionInfo', 'block_gamificationhelper') . '</li>
