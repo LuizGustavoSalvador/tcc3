@@ -209,11 +209,11 @@ cumpridos.';
 
 $string['defaultInstallStatusOK'] = 'OK - O componente está correto e sem problemas.';
 
-$string['defaultInstallPluginVerification'] = 'Verificação de Plugins: Na tela "Verificação de plugins", o plugin já está no 
-banco de dados do Moodle e está pronto para ser atualizado. Clique em "Atualizar a base de dados do Moodle agora".';
+$string['defaultInstallPluginVerification'] = 'Verificação de Plugins: Na tela "Verificação de plugins", o plugin já está 
+no banco de dados do Moodle e está pronto para ser atualizado. Clique em "Atualizar a base de dados do Moodle agora".';
 
-$string['defaultInstallUpdateVersion'] = 'Atualizando para Nova Versão: Na tela "Atualizando para nova versão", clique em 
-"Continuar".';
+$string['defaultInstallUpdateVersion'] = 'Atualizando para Nova Versão: Na tela "Atualizando para nova versão", clique 
+em "Continuar".';
 
 $string['defaultInstallConfigIntro'] = 'Configuração do Plugin';
 
@@ -264,17 +264,17 @@ plugin é opcional e deve ser feito apenas se você desejar que o plugin adote u
 
 $string['blockGameDefaultUseAvatar'] = '<strong>Utilizar Avatar:</strong> Permite o uso de avatares.';
 
-$string['blockGameDefaultReplaceAvatars'] = '<strong>Substituir Imagens de Avatares:</strong> Permite alterar todos os avatares 
-disponíveis.';
+$string['blockGameDefaultReplaceAvatars'] = '<strong>Substituir Imagens de Avatares:</strong> Permite alterar todos os 
+avatares disponíveis.';
 
-$string['blockGameDefaultAllowAvatarChange'] = '<strong>Permitir Mudança de Avatar no Curso:</strong> Define se os participantes 
-podem alterar seus avatares.';
+$string['blockGameDefaultAllowAvatarChange'] = '<strong>Permitir Mudança de Avatar no Curso:</strong> Define se os 
+participantes podem alterar seus avatares.';
 
-$string['blockGameDefaultShowPlayerInfo'] = '<strong>Mostrar Informações do Jogador:</strong> Exibe informações de todos os cursos 
-do participante.';
+$string['blockGameDefaultShowPlayerInfo'] = '<strong>Mostrar Informações do Jogador:</strong> Exibe informações de todos 
+os cursos do participante.';
 
-$string['blockGameDefaultPointForActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza a nota das atividades 
-como pontos.';
+$string['blockGameDefaultPointForActivities'] = '<strong>Pontuar Notas de Atividades:</strong> Contabiliza a nota das 
+atividades como pontos.';
 
 $string['blockGameDefaultDailyBonus'] = '<strong>Bônus do Dia:</strong> Define pontos por dia de acesso.';
 
@@ -283,20 +283,20 @@ $string['blockGameDefaultBonusForBadge'] = '<strong>Bônus para Emblema:</strong
 $string['blockGameDefaultShowRanking'] = '<strong>Mostrar Classificação:</strong> Permite que os participantes vejam a 
 classificação.';
 
-$string['blockGameDefaultPreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do usuário 
-na classificação.';
+$string['blockGameDefaultPreserveIdentity'] = '<strong>Preservar Identidade do Usuário:</strong> Preserva a identidade do 
+usuário na classificação.';
 
 $string['blockGameDefaultShowScore'] = '<strong>Mostrar Pontuação:</strong> Exibe a pontuação dos participantes.';
 
 $string['blockGameDefaultShowLevel'] = '<strong>Mostrar Nível:</strong> Exibe o nível dos participantes.';
 
-$string['blockGameDefaultCustomLevelImages'] = '<strong>Substituir Imagens de Níveis:</strong> Permite alterar todas as imagens 
-dos níveis.';
+$string['blockGameDefaultCustomLevelImages'] = '<strong>Substituir Imagens de Níveis:</strong> Permite alterar todas as 
+imagens dos níveis.';
 
 $string['blockGameDefaultNumberOfLevels'] = '<strong>Número de Níveis:</strong> Define o número de níveis para os cursos.';
 
-$string['blockGameDefaultSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em "Salvar 
-mudanças".';
+$string['blockGameDefaultSaveChanges'] = '<strong>Salvar Configurações:</strong> Após configurar os campos, clique em 
+"Salvar mudanças".';
 
 // Adicionar o Block Game ao Curso
 $string['blockGameAddToCourseTutorial'] = 'Como Adicionar o Block Game ao Seu Curso';
@@ -317,8 +317,8 @@ para permitir a adição de novos blocos.';
 $string['blockGameAddStep3'] = '<strong>Abrir Gaveta de Blocos:</strong> Com o modo de edição ativado, vá até o menu lateral 
 (gaveta de blocos) e clique em "Adicionar um bloco".';
 
-$string['blockGameAddStep4'] = '<strong>Adicionar Bloco:</strong> Na lista de blocos disponíveis, encontre e selecione "Jogo". 
-O bloco será adicionado ao seu curso.';
+$string['blockGameAddStep4'] = '<strong>Adicionar Bloco:</strong> Na lista de blocos disponíveis, encontre e selecione 
+"Jogo". O bloco será adicionado ao seu curso.';
 
 // Configuração para um Curso Específico
 $string['blockGameSettingsTutorial'] = 'Configurações do Block Game';
@@ -402,30 +402,30 @@ $string['blockGameSettingsWhereToShow'] = 'Onde exibir este bloco';
 $string['blockGameSettingsWhereToShowDescription'] = 'Configure onde o bloco Jogo será exibido no curso, incluindo a página 
 específica e a região na tela.';
 
-$string['blockGameSettingsBlockLocation'] = '<strong>Localização original do bloco:</strong> O local original onde o bloco foi 
-criado. As configurações de bloqueio podem fazer com que ele apareça em outros locais (contextos) dentro do local original. 
-Por exemplo, um bloco criado na página de um curso pode ser exibido nas atividades desse curso. Um bloco criado na página 
-inicial do site pode ser exibido em todo o site.';
+$string['blockGameSettingsBlockLocation'] = '<strong>Localização original do bloco:</strong> O local original onde o bloco 
+foi criado. As configurações de bloqueio podem fazer com que ele apareça em outros locais (contextos) dentro do local 
+original. Por exemplo, um bloco criado na página de um curso pode ser exibido nas atividades desse curso. Um bloco criado 
+na página inicial do site pode ser exibido em todo o site.';
 
-$string['blockGameSettingsShowOnPageType'] = '<strong>Mostrar nos tipos de página:</strong> Seleciona em quais tipos de página o 
-bloco será exibido. As opções incluem "Qualquer página", "Qualquer página de curso" e "Qualquer tipo de página principal 
-de curso".';
+$string['blockGameSettingsShowOnPageType'] = '<strong>Mostrar nos tipos de página:</strong> Seleciona em quais tipos de 
+página o bloco será exibido. As opções incluem "Qualquer página", "Qualquer página de curso" e "Qualquer tipo de página 
+principal de curso".';
 
-$string['blockGameSettingsDefaultRegion'] = '<strong>Região padrão:</strong> Define em qual região do curso o bloco será exibido 
-por padrão. As opções podem incluir regiões como "Direita", "Esquerda", etc., dependendo do tema utilizado.';
+$string['blockGameSettingsDefaultRegion'] = '<strong>Região padrão:</strong> Define em qual região do curso o bloco será 
+exibido por padrão. As opções podem incluir regiões como "Direita", "Esquerda", etc., dependendo do tema utilizado.';
 
-$string['blockGameSettingsDefaultWeight'] = '<strong>Peso padrão:</strong> Permite ajustar a posição do bloco dentro da região 
-selecionada. Valores mais baixos colocam o bloco mais próximo do topo.';
+$string['blockGameSettingsDefaultWeight'] = '<strong>Peso padrão:</strong> Permite ajustar a posição do bloco dentro da 
+região selecionada. Valores mais baixos colocam o bloco mais próximo do topo.';
 
 $string['blockGameSettingsOnThisPage'] = 'Nessa página';
 
 $string['blockGameSettingsOnThisPageDescription'] = 'Configure como o bloco será exibido nesta página específica do curso.';
 
-$string['blockGameSettingsVisible'] = '<strong>Visível:</strong> Define se o bloco estará visível ou oculto na página. As opções 
-são "Sim" para tornar o bloco visível e "Não" para ocultá-lo.';
+$string['blockGameSettingsVisible'] = '<strong>Visível:</strong> Define se o bloco estará visível ou oculto na página. As 
+opções são "Sim" para tornar o bloco visível e "Não" para ocultá-lo.';
 
-$string['blockGameSettingsRegion'] = '<strong>Região:</strong> Define em qual região da página o bloco será exibido. As opções 
-variam de acordo com o tema utilizado, como "Direita" ou "Esquerda".';
+$string['blockGameSettingsRegion'] = '<strong>Região:</strong> Define em qual região da página o bloco será exibido. As 
+opções variam de acordo com o tema utilizado, como "Direita" ou "Esquerda".';
 
 $string['blockGameSettingsWeight'] = '<strong>Peso:</strong> Permite ajustar a posição do bloco dentro da região selecionada. 
 Valores negativos colocam o bloco mais próximo do topo, enquanto valores positivos o colocam mais próximo da parte inferior.';
@@ -478,8 +478,8 @@ Block Game do seu curso.';
 $string['blockGamePermissionsStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de configurar permissões só estará 
 disponível com o modo de edição do curso ativo.';
 
-$string['blockGamePermissionsStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Block Game, clique 
-no ícone de engrenagem (⚙️) no widget do jogo.';
+$string['blockGamePermissionsStep1'] = '<strong>Acessar o Menu do Bloco:</strong> Na interface do plugin Block Game, 
+clique no ícone de engrenagem (⚙️) no widget do jogo.';
 
 $string['blockGamePermissionsStep2'] = '<strong>Selecionar Permissões:</strong> No menu suspenso, selecione a opção 
 "Permissões".';
@@ -490,8 +490,8 @@ permissões conforme necessário selecionando os papéis e ações autorizadas o
 // Verificar permissões
 $string['blockGameCheckPermissionsTutorial'] = 'Como Verificar Permissões no Block Game';
 
-$string['blockGameCheckPermissionsDescription'] = 'Siga os passos abaixo para verificar as permissões dos usuários no bloco 
-Block Game do seu curso.';
+$string['blockGameCheckPermissionsDescription'] = 'Siga os passos abaixo para verificar as permissões dos usuários no 
+bloco Block Game do seu curso.';
 
 $string['blockGameCheckPermissionsStep0'] = '<strong>Ativar Modo de Edição:</strong> A opção de verificar permissões só 
 estará disponível com o modo de edição do curso ativo.';
@@ -533,62 +533,65 @@ $string['blockXpDefaultSettingsDescription'] = 'As configurações padrão do pl
 plugin funcionará em todo o site. Configure as opções globais para a gamificação do curso, incluindo como os pontos são 
 usados, a visibilidade na navegação e se os administradores podem ganhar pontos.';
 
-$string['blockXpDefaultSettingsPointsContext'] = '<strong>Onde os pontos são usados?</strong> Quando selecionar "Em cursos", os pontos 
-de experiência ganhos serão contados apenas no curso onde o bloco foi adicionado. Se escolher "Para todo o site", os pontos 
-serão somados em todos os cursos, permitindo subir de nível globalmente.';
+$string['blockXpDefaultSettingsPointsContext'] = '<strong>Onde os pontos são usados?</strong> Quando selecionar "Em cursos", 
+os pontos de experiência ganhos serão contados apenas no curso onde o bloco foi adicionado. Se escolher "Para todo o site", 
+os pontos serão somados em todos os cursos, permitindo subir de nível globalmente.';
 
-$string['blockXpDefaultSettingsNavBarDisplay'] = '<strong>Mostrar na barra de navegação:</strong> Quando ativado, o nível do usuário será 
-exibido na barra de navegação superior.';
+$string['blockXpDefaultSettingsNavBarDisplay'] = '<strong>Mostrar na barra de navegação:</strong> Quando ativado, o nível 
+do usuário será exibido na barra de navegação superior.';
 
-$string['blockXpDefaultSettingsAdminsCanEarnXp'] = '<strong>Administradores podem ganhar pontos:</strong> Por padrão, os administradores 
-não ganham pontos. Esta configuração permite incluí-los no sistema de pontuação.';
+$string['blockXpDefaultSettingsAdminsCanEarnXp'] = '<strong>Administradores podem ganhar pontos:</strong> Por padrão, os 
+administradores não ganham pontos. Esta configuração permite incluí-los no sistema de pontuação.';
 
-$string['blockXpDefaultSettingsKeepLogs'] = '<strong>Manter logs</strong> Define o tempo durante o qual os logs serão mantidos antes de 
-serem excluídos.';
+$string['blockXpDefaultSettingsKeepLogs'] = '<strong>Manter logs</strong> Define o tempo durante o qual os logs serão 
+mantidos antes de serem excluídos.';
 
-$string['blockXpDefaultSettingsUsageReport'] = '<strong>Compartilhar relatório de uso:</strong> Periodicamente compartilha informações de 
-uso anônimas com os desenvolvedores do plugin para ajudar a melhorar o plugin.';
+$string['blockXpDefaultSettingsUsageReport'] = '<strong>Compartilhar relatório de uso:</strong> Periodicamente compartilha 
+informações de uso anônimas com os desenvolvedores do plugin para ajudar a melhorar o plugin.';
 
-$string['blockXpDefaultSettingsEnableInfos'] = '<strong>Habilitar a página de informações:</strong> Quando desativado, a página de 
-informações não estará visível para os estudantes.';
+$string['blockXpDefaultSettingsEnableInfos'] = '<strong>Habilitar a página de informações:</strong> Quando desativado, a 
+página de informações não estará visível para os estudantes.';
 
-$string['blockXpDefaultSettingsEnableLevelUpNotif'] = '<strong>Habilitar notificações de mudança de nível:</strong> Quando ativado, os 
-estudantes verão um popup parabenizando-os por alcançar um novo nível.';
+$string['blockXpDefaultSettingsEnableLevelUpNotif'] = '<strong>Habilitar notificações de mudança de nível:</strong> Quando 
+ativado, os estudantes verão um popup parabenizando-os por alcançar um novo nível.';
 
-$string['blockXpDefaultSettingsEnableLeader'] = '<strong>Habilitar ranking:</strong> Quando desativado, o ranking não estará visível para 
-os estudantes.';
+$string['blockXpDefaultSettingsEnableLeader'] = '<strong>Habilitar ranking:</strong> Quando desativado, o ranking não 
+estará visível para os estudantes.';
 
-$string['blockXpDefaultSettingsIdentityMode'] = '<strong>Anonimato:</strong> Controla se os participantes podem ver o nome e o avatar uns 
-dos outros.';
+$string['blockXpDefaultSettingsIdentityMode'] = '<strong>Anonimato:</strong> Controla se os participantes podem ver o nome 
+e o avatar uns dos outros.';
 
-$string['blockXpDefaultSettingsNeighbours'] = '<strong>Limite de participantes:</strong> Controla quem é exibido no placar do ranking.';
+$string['blockXpDefaultSettingsNeighbours'] = '<strong>Limite de participantes:</strong> Controla quem é exibido no placar 
+do ranking.';
 
-$string['blockXpDefaultSettingsRankMode'] = '<strong>Ranking:</strong> A classificação é a posição absoluta do usuário no ranking. A 
-classificação relativa é a diferença dos pontos de experiência entre um usuário e seus vizinhos.';
+$string['blockXpDefaultSettingsRankMode'] = '<strong>Ranking:</strong> A classificação é a posição absoluta do usuário no 
+ranking. A classificação relativa é a diferença dos pontos de experiência entre um usuário e seus vizinhos.';
 
-$string['blockXpDefaultSettingsLadderCols'] = '<strong>Colunas adicionais:</strong> Esta configuração determina quais colunas adicionais 
-são exibidas no ranking.';
+$string['blockXpDefaultSettingsLadderCols'] = '<strong>Colunas adicionais:</strong> Esta configuração determina quais 
+colunas adicionais são exibidas no ranking.';
 
-$string['blockXpDefaultSettingsEnableCheatGuard'] = '<strong>Ativar proteção contra fraude:</strong> O cheat guard oferece um mecanismo 
-simples e eficaz para prevenir abusos no sistema de pontuação.';
+$string['blockXpDefaultSettingsEnableCheatGuard'] = '<strong>Ativar proteção contra fraude:</strong> O cheat guard oferece 
+um mecanismo simples e eficaz para prevenir abusos no sistema de pontuação.';
 
-$string['blockXpDefaultSettingsMaxActionsPerTime'] = '<strong>Max. ações no intervalo de tempo:</strong> Define o número máximo de ações 
-que contarão para pontos durante um intervalo de tempo específico.';
+$string['blockXpDefaultSettingsMaxActionsPerTime'] = '<strong>Max. ações no intervalo de tempo:</strong> Define o número 
+máximo de ações que contarão para pontos durante um intervalo de tempo específico.';
 
-$string['blockXpDefaultSettingsTimeForMaxActions'] = '<strong>Intervalo de tempo para max. ações:</strong> Define o intervalo de tempo 
-durante o qual o usuário não deve exceder um número máximo de ações.';
+$string['blockXpDefaultSettingsTimeForMaxActions'] = '<strong>Intervalo de tempo para max. ações:</strong> Define o 
+intervalo de tempo durante o qual o usuário não deve exceder um número máximo de ações.';
 
-$string['blockXpDefaultSettingsTimeBetweenSameActions'] = '<strong>Tempo requerido entre ações idênticas:</strong> Define o tempo mínimo 
-entre ações idênticas para serem aceitas novamente.';
+$string['blockXpDefaultSettingsTimeBetweenSameActions'] = '<strong>Tempo requerido entre ações idênticas:</strong> Define 
+o tempo mínimo entre ações idênticas para serem aceitas novamente.';
 
 $string['blockXpDefaultSettingsBlockTitle'] = '<strong>Título do bloco:</strong> Define o título do bloco.';
 
-$string['blockXpDefaultSettingsBlockDescription'] = '<strong>Descrição do bloco:</strong> Define uma mensagem de introdução exibida no bloco.';
+$string['blockXpDefaultSettingsBlockDescription'] = '<strong>Descrição do bloco:</strong> Define uma mensagem de introdução 
+exibida no bloco.';
 
-$string['blockXpDefaultSettingsRankingSnapshot'] = '<strong>Exibir amostra do ranking:</strong> Mostra uma amostra do ranking no bloco.';
+$string['blockXpDefaultSettingsRankingSnapshot'] = '<strong>Exibir amostra do ranking:</strong> Mostra uma amostra do 
+ranking no bloco.';
 
-$string['blockXpDefaultSettingsBlockRecentActivity'] = '<strong>Mostrar recompensas recentes:</strong> Mostra uma lista de eventos 
-recentes que recompensaram o estudante com pontos.';
+$string['blockXpDefaultSettingsBlockRecentActivity'] = '<strong>Mostrar recompensas recentes:</strong> Mostra uma lista 
+de eventos recentes que recompensaram o estudante com pontos.';
 
 // Adicionar o Level Up XP ao Curso
 $string['blockXpAddToCourseTutorial'] = 'Como Adicionar o Level Up XP ao Seu Curso';
@@ -639,8 +642,8 @@ motivá-los a continuar participando ativamente do curso. As funcionalidades de 
 adaptar a gamificação às necessidades específicas de seus cursos, tornando a experiência de aprendizagem mais envolvente 
 e eficaz.';
 
-$string['blockXpInformationLevel'] = 'Mostra o número do nível e a quantidade de pontos XP necessários para alcançá-lo. Esta 
-visualização ajuda os alunos a entenderem seu progresso e os incentiva a alcançar o próximo nível.';
+$string['blockXpInformationLevel'] = 'Mostra o número do nível e a quantidade de pontos XP necessários para alcançá-lo. 
+Esta visualização ajuda os alunos a entenderem seu progresso e os incentiva a alcançar o próximo nível.';
 
 $string['blockXpInformationUsageExample'] = '<strong>Visualizar Progresso:</strong> Cada estrela colorida representa um 
 nível específico que os alunos podem alcançar. Ao passar o cursor sobre uma estrela, é possível ver quantos pontos são 
@@ -663,8 +666,8 @@ acumulados. Esta visualização pode ser utilizada para fomentar a competitivida
 $string['blockXpReportTab'] = 'Relatório';
 
 $string['blockXpReportDescription'] = 'A aba Relatório permite visualizar e gerenciar os níveis e pontos dos participantes 
-do curso. Aqui, você pode editar manualmente os pontos de cada aluno, verificar logs de ações e redefinir os dados de pontuação 
-do curso.';
+do curso. Aqui, você pode editar manualmente os pontos de cada aluno, verificar logs de ações e redefinir os dados de 
+pontuação do curso.';
 
 $string['blockXpReportResetCourseData'] = '<strong>Resetar os dados do curso:</strong> Reseta todas as pontuações de todos 
 os participantes do curso. Esta ação redefine os níveis e pontos de todos os estudantes, sendo útil para reiniciar a 
@@ -743,8 +746,8 @@ os pontos de experiência. Esta opção está disponível apenas com o Level Up 
 $string['blockXpLevelPreview'] = '<strong>Ver Prévia:</strong> Exibe uma visualização de como os emblemas dos níveis 
 aparecerão para os participantes do curso.';
 
-$string['blockXpLevelResetAppearance'] = '<strong>Redefinir aparência para padrões:</strong> Redefine a aparência de todos os 
-níveis do curso para o padrão. Tenha certeza de que deseja aplicar esta ação, pois não é possível desfazê-la.';
+$string['blockXpLevelResetAppearance'] = '<strong>Redefinir aparência para padrões:</strong> Redefine a aparência de todos 
+os níveis do curso para o padrão. Tenha certeza de que deseja aplicar esta ação, pois não é possível desfazê-la.';
 
 // Aba Pontos
 $string['blockXpPointsTab'] = 'Pontos';
@@ -756,21 +759,21 @@ $string['blockXpPointsEventRulesDescription'] = '<strong>Regras de Eventos:</str
 estudantes conforme realizam atividades específicas. É aconselhável verificar a página de Log do plugin para identificar 
 quais eventos são acionados à medida que os estudantes realizam ações no curso.';
 
-$string['blockXpPointsCompletionRulesDescription'] = '<strong>Regras de Conclusão:</strong> Atribui pontos aos estudantes conforme 
-completam atividades, seções ou cursos. Esta funcionalidade requer o Level Up XP+.';
+$string['blockXpPointsCompletionRulesDescription'] = '<strong>Regras de Conclusão:</strong> Atribui pontos aos estudantes 
+conforme completam atividades, seções ou cursos. Esta funcionalidade requer o Level Up XP+.';
 
 $string['blockXpPointsGradeRulesDescription'] = '<strong>Regras de Notas: </strong> Permitem que os usuários recebam pontos 
 equivalentes às notas que recebem. Esta funcionalidade requer o Level Up XP+.';
 
-$string['blockXpPointsDropsDescription'] = '<strong>Drops:</strong> São trechos de código colocados diretamente no conteúdo que 
-concedem pontos quando encontrados por um usuário. Esta funcionalidade requer o Level Up XP+.';
+$string['blockXpPointsDropsDescription'] = '<strong>Drops:</strong> São trechos de código colocados diretamente no conteúdo 
+que concedem pontos quando encontrados por um usuário. Esta funcionalidade requer o Level Up XP+.';
 
 $string['blockXpPointsImportDescription'] = '<strong>Importar Pontos:</strong> Permite importar pontos de um arquivo CSV 
 e, opcionalmente, enviar uma mensagem ao destinatário. Esta funcionalidade requer o Level Up XP+.';
 
 $string['blockXpPointsResetRulesDescription'] = '<strong>Redefinir as Regras do Curso para o Padrão:</strong> Esta ação 
-redefine todas as regras de pontuação do curso para as configurações padrão. Use esta opção com cuidado, pois não é possível 
-desfazê-la.';
+redefine todas as regras de pontuação do curso para as configurações padrão. Use esta opção com cuidado, pois não é 
+possível desfazê-la.';
 
 // Aba Configurações
 $string['blockXpSettingsTab'] = 'Configurações';
@@ -798,30 +801,31 @@ verão um popup parabenizando-os pelo novo nível alcançado.';
 // Aba Configurações -> Ranking
 $string['blockXpRankingSettings'] = '<strong>Ranking</strong>';
 
-$string['blockXpRankingSettingsEnable'] = '<strong>Habilitar ranking:</strong> Permite ativar ou desativar a visualização do 
-ranking para os estudantes. Quando definido como "Não", os estudantes não poderão visualizar o ranking.';
+$string['blockXpRankingSettingsEnable'] = '<strong>Habilitar ranking:</strong> Permite ativar ou desativar a visualização 
+do ranking para os estudantes. Quando definido como "Não", os estudantes não poderão visualizar o ranking.';
 
-$string['blockXpRankingSettingsAnonymity'] = '<strong>Anonimato:</strong> Controla se os participantes podem ver o nome e o avatar 
-uns dos outros no ranking. Quando ativado, a identidade dos participantes será exibida. Caso contrário, permanecerá anônima.';
+$string['blockXpRankingSettingsAnonymity'] = '<strong>Anonimato:</strong> Controla se os participantes podem ver o nome 
+e o avatar uns dos outros no ranking. Quando ativado, a identidade dos participantes será exibida. Caso contrário, 
+permanecerá anônima.';
 
-$string['blockXpRankingSettingsParticipantLimit'] = '<strong>Limite de participantes:</strong> Controla quantos participantes serão 
-exibidos no ranking. Você pode escolher exibir todos os participantes ou limitar a visualização aos vizinhos imediatos 
+$string['blockXpRankingSettingsParticipantLimit'] = '<strong>Limite de participantes:</strong> Controla quantos participantes 
+serão exibidos no ranking. Você pode escolher exibir todos os participantes ou limitar a visualização aos vizinhos imediatos 
 (os dois participantes acima e abaixo do usuário atual, por exemplo).';
 
-$string['blockXpRankingSettingsDisplay'] = '<strong>Ranking:</strong> Define quais colunas serão exibidas no ranking. A classificação 
-absoluta é a posição do usuário no ranking. A classificação relativa é a diferença dos pontos de experiência entre um 
-usuário e seus vizinhos.';
+$string['blockXpRankingSettingsDisplay'] = '<strong>Ranking:</strong> Define quais colunas serão exibidas no ranking. 
+A classificação absoluta é a posição do usuário no ranking. A classificação relativa é a diferença dos pontos de experiência 
+entre um usuário e seus vizinhos.';
 
-$string['blockXpRankingSettingsAdditionalColumns'] = '<strong>Colunas adicionais:</strong> Determina quais colunas adicionais são 
-exibidas no ranking. Para selecionar mais de uma coluna ou desmarcar uma coluna selecionada, pressione a tecla CTRL ou CMD 
-enquanto clica.';
+$string['blockXpRankingSettingsAdditionalColumns'] = '<strong>Colunas adicionais:</strong> Determina quais colunas 
+adicionais são exibidas no ranking. Para selecionar mais de uma coluna ou desmarcar uma coluna selecionada, pressione a 
+tecla CTRL ou CMD enquanto clica.';
 
 // Aba Configurações -> Proteção contra fraude
 $string['blockXpFraudProtectionSettings'] = '<strong>Proteção contra fraude</strong>';
 
-$string['blockXpFraudProtectionSettingsEnable'] = '<strong>Ativar proteção contra fraude:</strong> A proteção contra fraude 
-oferece um mecanismo simples e barato para evitar que os estudantes abusem do sistema usando técnicas óbvias, como atualizar 
-a mesma página indefinidamente ou repetir a mesma ação repetidas vezes.';
+$string['blockXpFraudProtectionSettingsEnable'] = '<strong>Ativar proteção contra fraude:</strong> A proteção contra 
+fraude oferece um mecanismo simples e barato para evitar que os estudantes abusem do sistema usando técnicas óbvias, 
+como atualizar a mesma página indefinidamente ou repetir a mesma ação repetidas vezes.';
 
 $string['blockXpFraudProtectionSettingsMaxActionsInterval'] = '<strong>Max. ações no intervalo de tempo:</strong> O número 
 máximo de ações que contarão para ganho de pontos de experiência durante o intervalo de tempo fornecido. Qualquer ação 
@@ -840,9 +844,9 @@ $string['blockXpBlockAppearanceSettingsTitle'] = '<strong>Título:</strong> O t�
 $string['blockXpBlockAppearanceSettingsIntroduction'] = '<strong>Introdução:</strong> Uma pequena mensagem de introdução 
 exibida no bloco. Os estudantes podem descartar a mensagem e, nesse caso, eles não a verão novamente.';
 
-$string['blockXpBlockAppearanceSettingsShowRankingSample'] = '<strong>Exibir amostra do ranking:</strong> A amostra do ranking 
-exibe a classificação do usuário. Ele também tentará exibir as duas pessoas ao redor do usuário. Esse recurso requer que 
-a tabela de classificação seja ativada e suas classificações sejam exibidas.';
+$string['blockXpBlockAppearanceSettingsShowRankingSample'] = '<strong>Exibir amostra do ranking:</strong> A amostra do 
+ranking exibe a classificação do usuário. Ele também tentará exibir as duas pessoas ao redor do usuário. Esse recurso 
+requer que a tabela de classificação seja ativada e suas classificações sejam exibidas.';
 
 $string['blockXpBlockAppearanceSettingsShowRecentRewards'] = '<strong>Mostrar recompensas recentes:</strong> Quando ativado, 
 o bloco exibirá uma pequena lista de eventos recentes que recompensaram o estudante com pontos.';
@@ -937,9 +941,9 @@ $string['formatTrail:changesectiontitleoptions'] = 'Alterar ou redefinir as opç
 $string['trailFormatDefaultSettings'] = 'Configurações Padrão do Plugin Trail Format';
 
 $string['trailFormatDefaultSettingsDescription'] = 'Após a instalação, a tela de configuração padrão do plugin será 
-exibida. Se não houver configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os dados 
-padrão do plugin é opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico por 
-padrão. A descrição dos campos você pode ver abaixo na seção "Como configurar os campos do Trail Format".';
+exibida. Se não houver configurações específicas para um curso, as configurações padrão serão utilizadas. Alterar os 
+dados padrão do plugin é opcional e deve ser feito apenas se você desejar que o plugin adote um comportamento específico 
+por padrão. A descrição dos campos você pode ver abaixo na seção "Como configurar os campos do Trail Format".';
 
 // Como acessar as configurações do plugin Trail Format
 $string['trailFormatAccessSettingsTutorial'] = 'Como acessar as configurações do plugin Trail Format';
@@ -957,9 +961,9 @@ $string['trailFormatAccessStep4'] = '<strong>Configurações do Formato de Trilh
 os campos de configuração específicos para esse formato estarão disponíveis logo abaixo para serem ajustados conforme 
 necessário.';
 
-$string['trailFormatAccessStep5'] = '<strong>Desabilitando o plugin:</strong> Para desabilitar o plugin do curso, é necessário 
-apenas alterar a opção do campo "Formato" para outra forma. Isso fará também com que todas as configurações feitas para 
-o formato de trilha sejam perdidas, mas apenas se for alterado e salvo a alteração de formato.';
+$string['trailFormatAccessStep5'] = '<strong>Desabilitando o plugin:</strong> Para desabilitar o plugin do curso, é 
+necessário apenas alterar a opção do campo "Formato" para outra forma. Isso fará também com que todas as configurações 
+feitas para o formato de trilha sejam perdidas, mas apenas se for alterado e salvo a alteração de formato.';
 
 $string['trailFormatSettingsTitle'] = 'Como configurar os campos do Trail Format';
 
@@ -1021,8 +1025,8 @@ cor atual da seção selecionada.';
 $string['trailFormatSettingsContainerImageTextColor'] = '<strong>Defina a cor do texto do container de imagens atual 
 selecionado:</strong> Define a cor do texto do container de imagens atual selecionado.';
 
-$string['trailFormatSettingsSelectedContainerColor'] = '<strong>Defina a cor atual do container da imagem selecionada:</strong> 
-Define a cor atual do container da imagem selecionada, 999999 para transparente.';
+$string['trailFormatSettingsSelectedContainerColor'] = '<strong>Defina a cor atual do container da imagem selecionada:
+</strong> Define a cor atual do container da imagem selecionada, 999999 para transparente.';
 
 $string['trailFormatSettingsSectionTitleHide'] = '<strong>Ocultar opção do título da seção:</strong> Defina se deseja 
 ocultar o título da seção.';
@@ -1049,8 +1053,8 @@ do título da seção entre 12 e 24 pixels, onde 0 representa "não definido, ma
 $string['trailFormatSettingsSectionTitleAlignment'] = '<strong>Alinhamento do título da seção:</strong> Defina o alinhamento 
 do título da seção como "Esquerda", "Centro" ou "Direita".';
 
-$string['trailFormatSettingsSectionTitleTextColor'] = '<strong>Cor do texto do título da seção quando a opção "Dentro":</strong> 
-Defina a cor do texto do título da seção quando a opção "Dentro".';
+$string['trailFormatSettingsSectionTitleTextColor'] = '<strong>Cor do texto do título da seção quando a opção "Dentro":
+</strong> Defina a cor do texto do título da seção quando a opção "Dentro".';
 
 $string['trailFormatSettingsSectionTitleBgColor'] = '<strong>Cor do fundo do título:</strong> Defina a cor do fundo do 
 título da seção quando a opção "Dentro".';
@@ -1167,4 +1171,3 @@ estiver no formato de trilha.';
 $string['trailResetAllImageNavigation'] = '<strong>Navegação por container de imagens:</strong> Redefine a navegação do 
 container de imagens para o valor padrão de todos os cursos, para que seja o mesmo de um curso na primeira vez que 
 estiver no formato de trilha.';
-

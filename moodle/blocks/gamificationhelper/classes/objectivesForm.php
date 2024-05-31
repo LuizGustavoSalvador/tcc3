@@ -4,8 +4,10 @@ namespace gamificationhelper\classes;
 
 use moodleform;
 
-class objectivesForm extends moodleform {
-    function definition() {
+class objectivesForm extends moodleform
+{
+    public function definition()
+    {
         $mform = $this->_form;
 
         $mform->addElement('hidden', 'id', optional_param('id', 0, PARAM_INT));
@@ -23,12 +25,16 @@ class objectivesForm extends moodleform {
             'competitive' => get_string('competitive', 'block_gamificationhelper'),
             'cooperative' => get_string('cooperative', 'block_gamificationhelper'),
             'independent' => get_string('independent', 'block_gamificationhelper'),
-            'epicNarrative' => get_string('epicNarrative', 'block_gamificationhelper')
+            'epicNarrative' => get_string('epicNarrative', 'block_gamificationhelper'),
         ]);
 
         $formButtons = '<div class="form-buttons">
-            <a href="index.php?id=' . optional_param('courseid', 0, PARAM_INT) . '" class="btn btn-primary">' . get_string('btnBack', 'block_gamificationhelper') . '</a>
-            <input class="btn btn-primary" type="submit" name="submitbutton" value="' . get_string('btnNext', 'block_gamificationhelper') . '" /></div>';
+            <a href="index.php?id='
+                . optional_param('courseid', 0, PARAM_INT) . '" class="btn btn-primary">'
+                . get_string('btnBack', 'block_gamificationhelper') .
+            '</a>
+            <input class="btn btn-primary" type="submit" name="submitbutton" value="'
+                . get_string('btnNext', 'block_gamificationhelper') . '" /></div>';
 
         $mform->addElement('html', $formButtons);
     }

@@ -281,8 +281,8 @@ $string['blockGameDefaultBonusForBadge'] = '<strong>Bonus for Badge:</strong> Ap
 
 $string['blockGameDefaultShowRanking'] = '<strong>Show Ranking:</strong> Allows participants to see the ranking.';
 
-$string['blockGameDefaultPreserveIdentity'] = '<strong>Preserve User Identity:</strong> Preserves the user\'s identity in the 
-ranking.';
+$string['blockGameDefaultPreserveIdentity'] = '<strong>Preserve User Identity:</strong> Preserves the user\'s identity in 
+the ranking.';
 
 $string['blockGameDefaultShowScore'] = '<strong>Show Score:</strong> Displays participants\' scores.';
 
@@ -413,14 +413,14 @@ $string['blockGameSettingsOnThisPage'] = 'On this page';
 
 $string['blockGameSettingsOnThisPageDescription'] = 'Configure how the block will be displayed on this specific course page.';
 
-$string['blockGameSettingsVisible'] = '<strong>Visible:</strong> Defines whether the block will be visible or hidden on the page. 
-Options are "Yes" to make the block visible and "No" to hide it.';
+$string['blockGameSettingsVisible'] = '<strong>Visible:</strong> Defines whether the block will be visible or hidden on 
+the page. Options are "Yes" to make the block visible and "No" to hide it.';
 
-$string['blockGameSettingsRegion'] = '<strong>Region:</strong> Defines in which region of the page the block will be displayed. 
-Options vary depending on the theme used, such as "Right" or "Left".';
+$string['blockGameSettingsRegion'] = '<strong>Region:</strong> Defines in which region of the page the block will be 
+displayed. Options vary depending on the theme used, such as "Right" or "Left".';
 
-$string['blockGameSettingsWeight'] = '<strong>Weight:</strong> Allows adjusting the block\'s position within the selected region. 
-Negative values place the block closer to the top, while positive values place it closer to the bottom.';
+$string['blockGameSettingsWeight'] = '<strong>Weight:</strong> Allows adjusting the block\'s position within the selected 
+region. Negative values place the block closer to the top, while positive values place it closer to the bottom.';
 
 // Support links
 $string['blockGameSupportLink1'] = 'How to install and configure the Block Game plugin';
@@ -637,9 +637,9 @@ $string['blockXpInformationTab'] = 'Information';
 
 $string['blockXpInformationTabDescription'] = 'The "Information" tab of the Level Up XP plugin provides a visual summary 
 of students\' levels in a course. In this tab, you can see the distribution of levels, add relevant information, and 
-customize levels as needed. It is essential to keep students informed about their progress and to motivate them to continue 
-actively participating in the course. The customization features allow teachers to tailor gamification to the specific 
-needs of their courses, making the learning experience more engaging and effective.';
+customize levels as needed. It is essential to keep students informed about their progress and to motivate them to 
+continue actively participating in the course. The customization features allow teachers to tailor gamification to the 
+specific needs of their courses, making the learning experience more engaging and effective.';
 
 $string['blockXpInformationLevel'] = 'Displays the level number and the amount of XP points needed to reach it. This 
 visualization helps students understand their progress and encourages them to reach the next level.';
@@ -647,8 +647,8 @@ visualization helps students understand their progress and encourages them to re
 $string['blockXpInformationUsageExample'] = '<strong>View Progress:</strong> Each colored star represents a specific level 
 that students can achieve. Hovering over a star shows how many points are needed to reach the next level.';
 
-$string['blockXpInformationAdd'] = '<strong>Add Information:</strong> Allows including additional descriptions or goals that 
-can help students better understand the level system and what is expected of them.';
+$string['blockXpInformationAdd'] = '<strong>Add Information:</strong> Allows including additional descriptions or goals 
+that can help students better understand the level system and what is expected of them.';
 
 $string['blockXpInformationCustomizeLevelsInstructions'] = '<strong>Customize Levels:</strong> Opens the "Levels" tab 
 if you want to change the point requirements or the appearance of the levels.';
@@ -732,8 +732,8 @@ experience points. This option is available only with Level Up XP+ enabled.';
 $string['blockXpLevelPreview'] = '<strong>Preview:</strong> Displays a preview of how the level badges will appear to the 
 course participants.';
 
-$string['blockXpLevelResetAppearance'] = '<strong>Reset Appearance to Defaults:</strong> Resets the appearance of all course 
-levels to the default settings. Be sure you want to apply this action, as it cannot be undone.';
+$string['blockXpLevelResetAppearance'] = '<strong>Reset Appearance to Defaults:</strong> Resets the appearance of all 
+course levels to the default settings. Be sure you want to apply this action, as it cannot be undone.';
 
 // Points Tab
 $string['blockXpPointsTab'] = 'Points';
@@ -811,8 +811,8 @@ simple and cost-effective mechanism to prevent students from abusing the system 
 the same page indefinitely or repeating the same action multiple times.';
 
 $string['blockXpFraudProtectionSettingsMaxActionsInterval'] = '<strong>Max. actions in time interval:</strong> The maximum 
-number of actions that will count towards gaining experience points during the provided time interval. Any subsequent actions 
-will be ignored. When this value is empty or zero, it is not applied.';
+number of actions that will count towards gaining experience points during the provided time interval. Any subsequent 
+actions will be ignored. When this value is empty or zero, it is not applied.';
 
 $string['blockXpFraudProtectionSettingsTimeRequiredBetweenIdenticalActions'] = '<strong>Time required between identical 
 actions:</strong> The minimum amount of time required before an action that has previously occurred is accepted again. 
@@ -873,8 +873,8 @@ $string['blockXpPermissionsTab'] = 'Permissions';
 $string['blockXpPermissionsDescription'] = 'In this tab, you can define what permissions each user level will have. This 
 is useful for controlling access to certain plugin functionalities.';
 
-$string['blockXpEditPermissions'] = '<strong>Edit Permissions:</strong> Allows you to adjust permissions for different user 
-levels.';
+$string['blockXpEditPermissions'] = '<strong>Edit Permissions:</strong> Allows you to adjust permissions for different 
+user levels.';
 
 $string['blockXpCheckPermissionsTab'] = 'Check Permissions';
 
@@ -975,8 +975,8 @@ $string['trailFormatDefaultSettings'] = 'Configurações Padrão do Plugin Trail
 
 $string['trailFormatDefaultSettingsDescription'] = 'After installation, the plugin\'s default configuration screen will 
 be displayed. If there are no specific settings for a course, the default settings will be used. Changing the plugin\'s 
-default data is optional and should only be done if you want the plugin to adopt specific behavior by default. You can see 
-the description of the fields below in the section "How to configure the Trail Format fields".';
+default data is optional and should only be done if you want the plugin to adopt specific behavior by default. You can 
+see the description of the fields below in the section "How to configure the Trail Format fields".';
 
 // How to access the Trail Format plugin settings
 $string['trailFormatAccessSettingsTutorial'] = 'How to access the Trail Format plugin settings';
@@ -1033,8 +1033,8 @@ format. Options include "Left", "Center", and "Right". Choosing "Center" will ce
 $string['trailFormatSettingsContainerImageWidth'] = '<strong>Set the width of the image container:</strong> Allows setting 
 the width of the image container, with options such as 192 and 210.';
 
-$string['trailFormatSettingsContainerImageProportion'] = '<strong>Set the image container proportion relative to width:</strong> 
-Defines the image container proportion, with options such as 3:2 and 3:1.';
+$string['trailFormatSettingsContainerImageProportion'] = '<strong>Set the image container proportion relative to width:
+</strong> Defines the image container proportion, with options such as 3:2 and 3:1.';
 
 $string['trailFormatSettingsImageMethodResize'] = '<strong>Set the image resizing method:</strong> Defines the image resizing 
 method to "Scale" or "Crop".';
@@ -1057,8 +1057,8 @@ the current color for the selected section.';
 $string['trailFormatSettingsContainerImageTextColor'] = '<strong>Set the text color for the currently selected image 
 container:</strong> Sets the text color for the currently selected image container.';
 
-$string['trailFormatSettingsSelectedContainerColor'] = '<strong>Set the current color for the selected image container:</strong> 
-Sets the current color for the selected image container, 999999 for transparent.';
+$string['trailFormatSettingsSelectedContainerColor'] = '<strong>Set the current color for the selected image container:
+</strong> Sets the current color for the selected image container, 999999 for transparent.';
 
 $string['trailFormatSettingsSectionTitleHide'] = '<strong>Hide section title option:</strong> Define if you want to hide 
 the section title.';
@@ -1114,9 +1114,9 @@ the section title in the trail box.';
 $string['trailFormatSettingsNewActivityNotification'] = '<strong>Show new activity notification image:</strong> Show the 
 new activity notification image when a new activity or resource is added to a section.';
 
-$string['trailFormatSettingsAdjustPopupToWindow'] = '<strong>Adjust section popup to window:</strong> If enabled, the pop-up 
-box with the section content will fit the window size and scroll within if necessary. If disabled, the entire page will 
-scroll.';
+$string['trailFormatSettingsAdjustPopupToWindow'] = '<strong>Adjust section popup to window:</strong> If enabled, the 
+pop-up box with the section content will fit the window size and scroll within if necessary. If disabled, the entire page 
+will scroll.';
 
 $string['trailFormatSettingsUnavailableGrayOutside'] = '<strong>Unavailable gray outside:</strong> In trail view, show 
 unavailable section images in gray and unlinked.';
