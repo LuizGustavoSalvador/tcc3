@@ -1,0 +1,300 @@
+
+:root{
+    --grayDark: #333333;
+}
+
+.gamificationhelper-content h2{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.gamificationhelper-content p, .gamificationhelper-content label, .gamificationhelper-content li,
+.permissions-modal li, .permissions-modal p {
+    font-size: 1rem;
+}
+
+.gamificationhelper-content li {
+    margin-bottom: 1rem;
+}
+
+.gamificationhelper-content ul{
+    list-style-type: none;
+}
+
+.gamificationhelper-content .btn-start{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.gamificationhelper-content .txt-promt-select{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gamificationhelper-content .mform {
+    width: 100%;
+    margin: auto;
+}
+
+.gamificationhelper-content .mform .row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gamificationhelper-content .mform .row > div{
+    max-width: unset;
+    width: 100%;
+}
+
+.gamificationhelper-content .mform .row label {
+    text-align: center;
+    width: 100%;
+}
+
+.gamificationhelper-content .mform .row select{
+    width: 270px;
+}
+
+.gamificationhelper-content .mform .row select, .gamificationhelper-content .mform .row label {
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+.gamificationhelper-content .form-buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gamificationhelper-content .form-buttons .btn{
+    width: 100px;
+}
+
+.gamificationhelper-content .recommendations-list{
+    padding: 20px;
+    border: 1px solid var(--primary);
+    width: fit-content;
+    border-radius: 4px;
+    list-style: none;
+    margin: 30px 0;
+}
+
+.gamificationhelper-content .recommendations-list li{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.gamificationhelper-content .recommendations-list li p{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.gamificationhelper-content .recommendations-list li .actions{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.gamificationhelper-content .recommendations-list li .btn-about, 
+.gamificationhelper-content .recommendations-list li .btn-permissions{
+    background-color: var(--gray);
+    color: white;
+}
+
+.gamificationhelper-content .recommendations-list li .btn-about:hover, 
+.gamificationhelper-content .recommendations-list li .btn-permissions:hover{
+    background-color: var(--secondary);
+    color: var(--gray);
+}
+
+.gamificationhelper-content .recommendations-list li:not(:last-of-type){
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary);
+}
+
+.gamificationhelper-content .no-recommendations-list{
+    list-style-type: decimal;
+}
+
+/* Modal */
+.modal-backdrop{
+    position: absolute;
+    left: -285px;
+    top: 0;
+    opacity: 0.7;
+    z-index: 99998;
+    margin-top: -60px;
+}
+
+.gamification-helper-modal .content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.gamification-helper-modal .content::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
+.gamification-helper-modal .content::-webkit-scrollbar-thumb {
+    background-color: var(--grayDark);
+    border-radius: 20px;
+    border: 3px solid var(--secondary);
+}
+
+.gamification-helper-modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.gamification-helper-modal .modal-content{
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.gamification-helper-modal .content{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.gamification-helper-modal .modal-content .btn-close{
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.gamification-helper-modal .modal-content .btn-close{
+    color: var(--gray);
+}
+
+.gamification-helper-modal .modal-content .btn-close:hover{
+    color: var(--grayDark);
+}
+
+.gamification-helper-modal li {
+    font-weight: normal !important;
+    border-bottom: unset !important;
+}
+
+.gamification-helper-modal ol li {
+    display: list-item !important;
+    list-style-type: decimal !important;
+}
+
+.gamification-helper-modal ul li {
+    list-style-type: none !important;
+}
+
+.gamification-helper-modal .allow, .gamification-helper-modal .allow-li i, .gamification-helper-modal .allow-li strong{
+    color: var(--success);
+}
+
+.gamification-helper-modal .not-allow, .gamification-helper-modal .not-allow-li i, .gamification-helper-modal .not-allow-li strong{
+    color: var(--danger);
+}
+
+.gamification-helper-modal .not-allow-warning, .gamification-helper-modal .not-allow-warning-li i, 
+.gamification-helper-modal .not-allow-warning-li strong{
+    color: var(--warning);
+}
+
+.gamification-helper-modal .list-permissions{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gamification-helper-modal .install-plugin-content{
+    padding: 1rem;
+}
+
+.gamification-helper-modal .install-plugin-content img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: fit-content;
+    height: auto;
+    margin-bottom: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.gamification-helper-modal .install-plugin-content ol li{
+    display: block;
+}
+
+.gamification-helper-modal .install-plugin-content ol li:first-child{
+    counter-reset: item;
+}
+
+.gamification-helper-modal .install-plugin-content ol li{
+    counter-increment: item;
+    list-style-type: none !important;
+    position: relative;
+}
+
+.gamification-helper-modal .install-plugin-content ol li:before {
+    content:counters(item, ".") ". "; 
+    position: absolute; 
+    margin-right: 100%; 
+    right: 10px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-title.admin {
+    font-size: 1.6rem;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.gamification-helper-modal .install-plugin-content .title-install{
+    margin-top: 20px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-desc{
+    text-align: justify;
+    font-weight: normal;
+}
+
+.gamification-helper-modal .install-plugin-content .section-subtitle{
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+
+.gamification-helper-modal .install-plugin-content .section-subtitle.sub-with-description{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.gamification-helper-modal .install-plugin-content .support-link-list{
+    padding-left: 30px;
+}
+
+.gamification-helper-modal .install-plugin-content .support-link-list li{
+    color: var(--blue);
+    margin-left: 0;
+    display: list-item;
+    list-style-type: disc !important;
+}
