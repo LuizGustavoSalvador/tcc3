@@ -25,7 +25,7 @@ class recommendationPlugin {
         [
             'name' => 'Level Up XP - Gamification',
             'slug' => 'blockXp',
-            'key' => 'block_xp',
+            'key' => 'xp',
             'download' => 'https://moodle.org/plugins/download.php/31773/block_xp_moodle44_2024042104.zip',
             'url' => 'https://moodle.org/plugins/block_xp',
             'objectives' => [self::DEVELOPMENT_AND_ACHIEVEMENT, self::SOCIAL_INFLUENCE_AND_RELATEDNESS],

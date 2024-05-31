@@ -25,7 +25,7 @@ $PAGE->set_heading(get_string('recommendationPluginTitlePage', 'block_gamificati
 $PAGE->requires->css(new moodle_url('/blocks/gamificationhelper/styles/styles.css'));
 
 $pluginManager = core_plugin_manager::instance();
-$pluginsInstalled = array_merge(
+$pluginsInstalled = \array_merge(
     $pluginManager->get_installed_plugins('block'), 
     $pluginManager->get_installed_plugins('format')
 );
@@ -44,7 +44,7 @@ if (!empty($recommendedPlugins)) {
             echo html_writer::start_tag('p');
                 echo html_writer::tag('span', $plugin['name']);
 
-                if (array_key_exists($plugin['key'], $pluginsInstalled)) {
+                if (\array_key_exists($plugin['key'], $pluginsInstalled)) {
                     echo html_writer::tag('span', ' (' . get_string('alreadyInstalled', 'block_gamificationhelper') . ')');
                 }
 
@@ -72,7 +72,7 @@ if (!empty($recommendedPlugins)) {
                 ]
             );
         
-            if (!array_key_exists($plugin['key'], $pluginsInstalled)) {
+            if (!\array_key_exists($plugin['key'], $pluginsInstalled)) {
                 echo html_writer::tag(
                     'a', 
                     '<i class="fa fa-download" aria-hidden="true"></i>', 
@@ -94,7 +94,7 @@ if (!empty($recommendedPlugins)) {
             ]);
 
             echo html_writer::end_tag('div');
-            echo modalInstallPlugin::getModalHTML($plugin['slug'], array_key_exists($plugin['key'], $pluginsInstalled));
+            echo modalInstallPlugin::getModalHTML($plugin['slug'], \array_key_exists($plugin['key'], $pluginsInstalled));
         echo html_writer::end_tag('li');
     }
     echo html_writer::end_tag('ul');

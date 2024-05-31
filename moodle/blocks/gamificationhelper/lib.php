@@ -3,7 +3,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 function block_gamificationhelper_extend_settings_navigation(settings_navigation $settingsnav, $context) {
-    global $CFG, $PAGE;
+    global $PAGE;
 
     if ($PAGE->course->id == 1) {
         return;

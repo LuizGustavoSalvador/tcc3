@@ -30,12 +30,20 @@ class block_gamificationhelper extends block_base {
         }
 
         $this->content = new stdClass();
-        $this->content->text = html_writer::link(
-            new moodle_url('/blocks/gamificationhelper/index.php', ['id' => $COURSE->id]),
-            get_string('pluginname', 'block_gamificationhelper')
-        );
+        $context = context_course::instance($COURSE->id);
 
-        return $this->content;
+        if (!has_capability('block/gamificationhelper:view', $context)) {
+            $this->content->text = '';
+            $this->content->footer = '';
+            return $this->content;
+        }else{
+            $this->content->text = html_writer::link(
+                new moodle_url('/blocks/gamificationhelper/index.php', ['id' => $COURSE->id]),
+                get_string('pluginname', 'block_gamificationhelper')
+            );
+    
+            return $this->content;
+        }
     }
 }
 
