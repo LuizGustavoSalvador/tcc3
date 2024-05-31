@@ -39,7 +39,7 @@ class block_gamificationhelper extends block_base {
         }else{
             $this->content->text = html_writer::link(
                 new moodle_url('/blocks/gamificationhelper/index.php', ['id' => $COURSE->id]),
-                get_string('pluginname', 'block_gamificationhelper')
+                get_string('accessPlugin', 'block_gamificationhelper')
             );
     
             return $this->content;

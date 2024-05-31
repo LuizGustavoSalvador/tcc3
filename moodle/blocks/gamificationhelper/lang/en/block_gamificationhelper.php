@@ -6,12 +6,14 @@
 
 $string['pluginname'] = 'MGA - Moodle Gamification Assistant';
 
+$string['accessPlugin'] = 'Access AGM';
+
 $string['installplugin'] = 'Install new plugin';
 
 // Permissions
-$string['gamificationhelper:view'] = 'Access to the Gamification Helper';
+$string['gamificationhelper:view'] = 'Access to the MGA';
 
-$string['gamificationhelper:manage'] = 'Allows configuration of the Gamification Helper';
+$string['gamificationhelper:manage'] = 'Allows configuration of the MGA';
 
 // General Moodle permissions
 $string['moodleSite:manageblocks'] = 'Manage blocks on a page';
