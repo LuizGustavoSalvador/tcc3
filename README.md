@@ -57,7 +57,7 @@ Após buildar o container e iniciar os serviços, acesse o Moodle através do na
 
 ### Passo 4: Instalação e Configuração do Plugin
 
-Após a criação do curso, o plugin de gamificação já estará disponível para configuração e uso dentro do curso criado. Siga as instruções do plugin para configurá-lo conforme os objetivos e abordagem definidos.
+Após a criação do curso, o plugin AGM já estará disponível para uso na 'gaveta de blocos'. Siga as instruções do plugin para utilizá-lo.
 
 ## Links Úteis
 
