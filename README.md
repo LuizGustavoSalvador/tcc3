@@ -1,7 +1,5 @@
 
-# Projeto TCC - GAMIFICAÇÃO EM AMBIENTES VIRTUAIS DE APRENDIZAGEM:
-UMA PROPOSTA DE FRAMEWORK PARA INTEGRAÇÃO DE RECURSOS
-UTILIZANDO FERRAMENTAS LIVRES
+# Projeto TCC - GAMIFICAÇÃO EM AMBIENTES VIRTUAIS DE APRENDIZAGEM
 ## Autor: Luiz Gustavo Fontanela Salvador
 
 Este projeto é parte do meu Trabalho de Conclusão de Curso (TCC) e consiste na criação de um ambiente Moodle que possibilite a utilização do plugin AGM utilizando Docker e Docker-compose. O ambiente utiliza as seguintes tecnologias:
