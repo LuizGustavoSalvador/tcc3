@@ -60,7 +60,7 @@ class fetchPermissions {
     
         $html .= '</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Fechar</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModalPermisson()">Fechar</button>
                 </div>';
     
         return $html;
