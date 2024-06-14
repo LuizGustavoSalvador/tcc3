@@ -30,7 +30,7 @@ class objectivesForm extends moodleform
 
         $formButtons = '<div class="form-buttons">
             <a href="index.php?id='
-                . optional_param('courseid', 0, PARAM_INT) . '" class="btn btn-primary">'
+                . optional_param('id', 0, PARAM_INT) . '" class="btn btn-primary">'
                 . get_string('btnBack', 'block_gamificationhelper') .
             '</a>
             <input class="btn btn-primary" type="submit" name="submitbutton" value="'
